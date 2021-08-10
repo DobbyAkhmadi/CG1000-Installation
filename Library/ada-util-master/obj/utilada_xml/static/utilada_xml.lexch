@@ -1,0 +1,5 @@
+[LIBRARY PATH]
+/home/scada/Downloads/ada-util-master/lib/utilada_xml/static/libutilada_xml.a
+[OBJECT FILES]
+/home/scada/Downloads/ada-util-master/obj/utilada_xml/static/util-serialize-io-xml.o
+20210315020353

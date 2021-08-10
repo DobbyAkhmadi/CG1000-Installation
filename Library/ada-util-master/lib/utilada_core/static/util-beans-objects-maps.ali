@@ -1,0 +1,457 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.beans.objects.maps%b  util-beans-objects-maps.adb  b8a82b3a OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+U util.beans.objects.maps%s  util-beans-objects-maps.ads  00ebb56e EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.hash_tables%s  a-cohata.ads	a-cohata.ali
+Z ada.containers.hash_tables.generic_keys%s
+Z ada.containers.hash_tables.generic_operations%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+W ada.containers.indefinite_hashed_maps%s
+Z ada.containers.prime_numbers%s  a-coprnu.adb	a-coprnu.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.hash%s	a-strhas.adb		a-strhas.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+Z system%s		system.ads		system.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.basic%s	util-beans-basic.ads	util-beans-basic.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihama.ads		20190518041255 bece8dbf ada.containers.indefinite_hashed_maps%s
+D a-cihama.adb		20190518041254 94909b4a ada.containers.indefinite_hashed_maps%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strhas.ads		20190518041256 c71c2a52 ada.strings.hash%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20190518041254 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20190518041256 e2f873d3 system.fat_sflt%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-stratt.adb		20190518041255 56ef263e system.stream_attributes%b
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-beans-objects-maps.ads  20210228093152 420c813c util.beans.objects.maps%s
+D util-beans-objects-maps.adb  20210228093152 faa4aa06 util.beans.objects.maps%b
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+G a e
+G c Z s s [has_element util__beans__objects__maps__maps 72 13 24_4]
+G c Z s s [Oeq util__beans__objects__maps__maps 78 24 24_4]
+G c Z s s [capacity util__beans__objects__maps__maps 89 13 24_4]
+G c Z s s [reserve_capacity util__beans__objects__maps__maps 93 14 24_4]
+G c Z s s [length util__beans__objects__maps__maps 103 13 24_4]
+G c Z s s [is_empty util__beans__objects__maps__maps 106 13 24_4]
+G c Z s s [clear util__beans__objects__maps__maps 109 14 24_4]
+G c Z s s [key util__beans__objects__maps__maps 112 13 24_4]
+G c Z s s [element util__beans__objects__maps__maps 115 13 24_4]
+G c Z s s [replace_element util__beans__objects__maps__maps 118 14 24_4]
+G c Z s s [query_element util__beans__objects__maps__maps 124 14 24_4]
+G c Z s s [update_element util__beans__objects__maps__maps 131 14 24_4]
+G c Z s s [constant_reference util__beans__objects__maps__maps 148 13 24_4]
+G c Z s s [reference util__beans__objects__maps__maps 153 13 24_4]
+G c Z s s [constant_reference util__beans__objects__maps__maps 158 13 24_4]
+G c Z s s [reference util__beans__objects__maps__maps 163 13 24_4]
+G c Z s s [assign util__beans__objects__maps__maps 168 14 24_4]
+G c Z s s [copy util__beans__objects__maps__maps 170 13 24_4]
+G c Z s s [move util__beans__objects__maps__maps 172 14 24_4]
+G c Z s s [insert util__beans__objects__maps__maps 176 14 24_4]
+G c Z s s [insert util__beans__objects__maps__maps 194 14 24_4]
+G c Z s s [include util__beans__objects__maps__maps 205 14 24_4]
+G c Z s s [replace util__beans__objects__maps__maps 216 14 24_4]
+G c Z s s [exclude util__beans__objects__maps__maps 227 14 24_4]
+G c Z s s [delete util__beans__objects__maps__maps 236 14 24_4]
+G c Z s s [delete util__beans__objects__maps__maps 244 14 24_4]
+G c Z s s [first util__beans__objects__maps__maps 250 13 24_4]
+G c Z s s [next util__beans__objects__maps__maps 254 13 24_4]
+G c Z s s [next util__beans__objects__maps__maps 262 14 24_4]
+G c Z s s [find util__beans__objects__maps__maps 265 13 24_4]
+G c Z s s [contains util__beans__objects__maps__maps 271 13 24_4]
+G c Z s s [element util__beans__objects__maps__maps 274 13 24_4]
+G c Z s s [equivalent_keys util__beans__objects__maps__maps 277 13 24_4]
+G c Z s s [equivalent_keys util__beans__objects__maps__maps 281 13 24_4]
+G c Z s s [equivalent_keys util__beans__objects__maps__maps 285 13 24_4]
+G c Z s s [iterate util__beans__objects__maps__maps 289 14 24_4]
+G c Z s s [iterate util__beans__objects__maps__maps 294 13 24_4]
+G c Z s s [node_typeIP util__beans__objects__maps__maps 318 9 24_4]
+G c Z s s [adjust util__beans__objects__maps__maps__ht_types__implementation 90 28 58_7_324_4_24_4]
+G c Z s s [finalize util__beans__objects__maps__maps__ht_types__implementation 93 28 58_7_324_4_24_4]
+G c Z s s [zero_counts util__beans__objects__maps__maps__ht_types__implementation 96 17 58_7_324_4_24_4]
+G c Z s s [busy util__beans__objects__maps__maps__ht_types__implementation 100 17 58_7_324_4_24_4]
+G c Z s s [unbusy util__beans__objects__maps__maps__ht_types__implementation 104 17 58_7_324_4_24_4]
+G c Z s s [lock util__beans__objects__maps__maps__ht_types__implementation 108 17 58_7_324_4_24_4]
+G c Z s s [unlock util__beans__objects__maps__maps__ht_types__implementation 112 17 58_7_324_4_24_4]
+G c Z s s [tc_check util__beans__objects__maps__maps__ht_types__implementation 116 17 58_7_324_4_24_4]
+G c Z s s [te_check util__beans__objects__maps__maps__ht_types__implementation 120 17 58_7_324_4_24_4]
+G c Z s s [initialize util__beans__objects__maps__maps__ht_types__implementation 139 28 58_7_324_4_24_4]
+G c Z s s [finalize util__beans__objects__maps__maps__ht_types__implementation 140 28 58_7_324_4_24_4]
+G c Z s s [initialize util__beans__objects__maps__maps__ht_types__implementation 145 28 58_7_324_4_24_4]
+G c Z s s [finalize util__beans__objects__maps__maps__ht_types__implementation 146 28 58_7_324_4_24_4]
+G c Z s s [reference_control_typeDA util__beans__objects__maps__maps__ht_types__implementation 84 12 58_7_324_4_24_4]
+G c Z s s [reference_control_typeDF util__beans__objects__maps__maps__ht_types__implementation 84 12 58_7_324_4_24_4]
+G c Z s s [reference_control_typeIP util__beans__objects__maps__maps__ht_types__implementation 84 12 58_7_324_4_24_4]
+G c Z s s [with_busyDF util__beans__objects__maps__maps__ht_types__implementation 136 12 58_7_324_4_24_4]
+G c Z s s [with_busyIP util__beans__objects__maps__maps__ht_types__implementation 136 12 58_7_324_4_24_4]
+G c Z s s [with_lockDF util__beans__objects__maps__maps__ht_types__implementation 142 12 58_7_324_4_24_4]
+G c Z s s [with_lockIP util__beans__objects__maps__maps__ht_types__implementation 142 12 58_7_324_4_24_4]
+G c Z s s [buckets_typeIP util__beans__objects__maps__maps__ht_types 46 12 324_4_24_4]
+G c Z s s [hash_table_typeDA util__beans__objects__maps__maps__ht_types 52 12 324_4_24_4]
+G c Z s s [hash_table_typeDF util__beans__objects__maps__maps__ht_types 52 12 324_4_24_4]
+G c Z s s [hash_table_typeIP util__beans__objects__maps__maps__ht_types 52 12 324_4_24_4]
+G c Z s s [adjust util__beans__objects__maps__maps 331 25 24_4]
+G c Z s s [finalize util__beans__objects__maps__maps 333 25 24_4]
+G c Z s s [write util__beans__objects__maps__maps 339 14 24_4]
+G c Z s s [read util__beans__objects__maps__maps 345 14 24_4]
+G c Z s s [write util__beans__objects__maps__maps 360 14 24_4]
+G c Z s s [read util__beans__objects__maps__maps 366 14 24_4]
+G c Z s s [write util__beans__objects__maps__maps 385 14 24_4]
+G c Z s s [read util__beans__objects__maps__maps 391 14 24_4]
+G c Z s s [write util__beans__objects__maps__maps 407 14 24_4]
+G c Z s s [read util__beans__objects__maps__maps 413 14 24_4]
+G c Z s s [pseudo_reference util__beans__objects__maps__maps 424 13 24_4]
+G c Z s s [get_element_access util__beans__objects__maps__maps 431 13 24_4]
+G c Z s s [mapDA util__beans__objects__maps__maps 327 9 24_4]
+G c Z s s [mapDF util__beans__objects__maps__maps 327 9 24_4]
+G c Z s s [mapIP util__beans__objects__maps__maps 327 9 24_4]
+G c Z s s [cursorIP util__beans__objects__maps__maps 354 9 24_4]
+G c Z s s [constant_reference_typeDI util__beans__objects__maps__maps 375 9 24_4]
+G c Z s s [constant_reference_typeDA util__beans__objects__maps__maps 375 9 24_4]
+G c Z s s [constant_reference_typeDF util__beans__objects__maps__maps 375 9 24_4]
+G c Z s s [constant_reference_typeIP util__beans__objects__maps__maps 375 9 24_4]
+G c Z s s [reference_typeDI util__beans__objects__maps__maps 397 9 24_4]
+G c Z s s [reference_typeDA util__beans__objects__maps__maps 397 9 24_4]
+G c Z s s [reference_typeDF util__beans__objects__maps__maps 397 9 24_4]
+G c Z s s [reference_typeIP util__beans__objects__maps__maps 397 9 24_4]
+G c Z s s [finalize util__beans__objects__maps__maps 447 25 24_4]
+G c Z s s [first util__beans__objects__maps__maps 449 24 24_4]
+G c Z s s [next util__beans__objects__maps__maps 451 24 24_4]
+G c Z s s [iteratorDF util__beans__objects__maps__maps 440 9 24_4]
+G c Z s s [iteratorIP util__beans__objects__maps__maps 440 9 24_4]
+G c Z s s [free_key util__beans__objects__maps__maps 48 14 24_4]
+G c Z s s [free_element util__beans__objects__maps__maps 51 14 24_4]
+G c Z s s [copy_node util__beans__objects__maps__maps 58 13 24_4]
+G c Z s s [equivalent_key_node util__beans__objects__maps__maps 61 13 24_4]
+G c Z s s [find_equal_key util__beans__objects__maps__maps 66 13 24_4]
+G c Z s s [free util__beans__objects__maps__maps 70 14 24_4]
+G c Z s s [hash_node util__beans__objects__maps__maps 73 13 24_4]
+G c Z s s [next util__beans__objects__maps__maps 76 13 24_4]
+G c Z s s [read_node util__beans__objects__maps__maps 79 13 24_4]
+G c Z s s [set_next util__beans__objects__maps__maps 82 14 24_4]
+G c Z s s [vet util__beans__objects__maps__maps 85 13 24_4]
+G c Z s s [write_node util__beans__objects__maps__maps 87 14 24_4]
+G c Z s s [free_hash_table util__beans__objects__maps__maps__ht_ops 57 14 95_4_24_4]
+G c Z s s [index util__beans__objects__maps__maps__ht_ops 61 13 95_4_24_4]
+G c Z s s [index util__beans__objects__maps__maps__ht_ops 67 13 95_4_24_4]
+G c Z s s [checked_index util__beans__objects__maps__maps__ht_ops 74 13 95_4_24_4]
+G c Z s s [checked_index util__beans__objects__maps__maps__ht_ops 81 13 95_4_24_4]
+G c Z s s [adjust util__beans__objects__maps__maps__ht_ops 86 14 95_4_24_4]
+G c Z s s [finalize util__beans__objects__maps__maps__ht_ops 92 14 95_4_24_4]
+G c Z s s [clear util__beans__objects__maps__maps__ht_ops 108 14 95_4_24_4]
+G c Z s s [move util__beans__objects__maps__maps__ht_ops 113 14 95_4_24_4]
+G c Z s s [capacity util__beans__objects__maps__maps__ht_ops 119 13 95_4_24_4]
+G c Z s s [reserve_capacity util__beans__objects__maps__maps__ht_ops 122 14 95_4_24_4]
+G c Z s s [delete_node_at_index util__beans__objects__maps__maps__ht_ops 131 14 95_4_24_4]
+G c Z s s [delete_node_sans_free util__beans__objects__maps__maps__ht_ops 140 14 95_4_24_4]
+G c Z s s [first util__beans__objects__maps__maps__ht_ops 145 13 95_4_24_4]
+G c Z s s [first util__beans__objects__maps__maps__ht_ops 147 13 95_4_24_4]
+G c Z s s [next util__beans__objects__maps__maps__ht_ops 154 13 95_4_24_4]
+G c Z s s [next util__beans__objects__maps__maps__ht_ops 157 13 95_4_24_4]
+G c Z s s [new_buckets util__beans__objects__maps__maps__ht_ops 204 13 95_4_24_4]
+G c Z s s [free_buckets util__beans__objects__maps__maps__ht_ops 208 14 95_4_24_4]
+G c Z s s [index util__beans__objects__maps__maps__key_ops 56 13 103_4_24_4]
+G c Z s s [checked_index util__beans__objects__maps__maps__key_ops 62 13 103_4_24_4]
+G c Z s s [checked_equivalent_keys util__beans__objects__maps__maps__key_ops 69 13 103_4_24_4]
+G c Z s s [delete_key_sans_free util__beans__objects__maps__maps__key_ops 76 14 103_4_24_4]
+G c Z s s [find util__beans__objects__maps__maps__key_ops 84 13 103_4_24_4]
+G c Z s s [is_equalR util__beans__objects__maps__maps__is_equalGP4669 115 13 24_4]
+G c Z s s [is_equal util__beans__objects__maps__maps 115 13 24_4]
+G c Z s s [read_nodesR util__beans__objects__maps__maps__read_nodesGP25869 957 14 24_4]
+G c Z s s [read_nodes util__beans__objects__maps__maps 957 14 24_4]
+G c Z s s [write_nodesR util__beans__objects__maps__maps__write_nodesGP34912 1317 14 24_4]
+G c Z s s [write_nodes util__beans__objects__maps__maps 1317 14 24_4]
+G c Z s b [get_value util__beans__objects__maps 69 13 none]
+G c Z s b [set_value util__beans__objects__maps 75 14 none]
+G c Z s b [create util__beans__objects__maps 80 13 none]
+G c Z s b [iterate util__beans__objects__maps 83 14 none]
+G c Z s s [map_beanDA util__beans__objects__maps 89 9 none]
+G c Z s s [map_beanDF util__beans__objects__maps 89 9 none]
+G c Z s s [map_beanIP util__beans__objects__maps 89 9 none]
+G r d object [get_value util__beans__objects__maps 69 13 none] [adjust util__beans__objects 635 14 none]
+G r c none [create util__beans__objects__maps 80 13 none] [to_object util__beans__objects 229 13 none]
+G r c none [iterate util__beans__objects__maps 83 14 none] [to_bean util__beans__objects 195 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 65|19r6 20r6 25r10 27r68 34r48 56r52
+X 4 a-contai.ads
+16K13*Containers 24e19 65|19r10 25r14 34r52 56r56
+19M9*Hash_Type
+20I9*Count_Type<integer> 65|34r63 56r67
+X 12 a-cihama.ads
+41+9 Key_Type 65|25r49
+42+9 Element_Type 65|26r49
+44V18 Hash{4|19M9} 65|27r49
+45V18 Equivalent_Keys{boolean} 65|28r49
+48k24*Indefinite_Hashed_Maps 455e42 65|19w21 25r25
+53R9*Map<16|43R9> 65|31r24[24] 56r33[24] 56r91[24] 64r30[24] 89r30[24]
+61R9*Cursor 65|30r27[24] 66|54r44[65|24] 56r44[65|24]
+72V13*Has_Element{boolean} 65|47r73[24]
+89V13*Capacity{4|20I9}
+93U14*Reserve_Capacity
+103V13*Length{4|20I9} 65|34r87[24]
+106V13*Is_Empty{boolean} 65|35r71[24]
+109U14*Clear 65|36r58[24]
+112V13*Key{string} 65|37r64[24] 66|58s24[65|24]
+115V13*Element{64|83R9} 65|48r68[24] 66|58s40[65|24]
+118U14*Replace_Element
+124U14*Query_Element 65|45r42[24]
+131U14*Update_Element
+139R9*Constant_Reference_Type
+144R9*Reference_Type
+148V13*Constant_Reference{139R9[65|24]}
+153V13*Reference{144R9[65|24]}
+158V13*Constant_Reference{139R9[65|24]}
+163V13*Reference{144R9[65|24]}
+168U14*Assign
+170V13*Copy{53R9[65|24]} 65|57r19[24]
+172U14*Move
+176U14*Insert
+194U14*Insert
+205U14*Include 65|41r58[24] 66|45s12[65|24]
+216U14*Replace
+227U14*Exclude
+236U14*Delete
+244U14*Delete
+250V13*First{61R9[65|24]}
+254V13*Next{61R9[65|24]} 65|50r65[24]
+262U14*Next 65|49r59[24]
+265V13*Find{61R9[65|24]} 66|27s37[65|24]
+271V13*Contains{boolean}
+274V13*Element{64|83R9}
+277V13*Equivalent_Keys{boolean} 65|51r80[24]
+281V13*Equivalent_Keys{boolean} 65|53r43[24]
+285V13*Equivalent_Keys{boolean} 65|55r43[24]
+289U14*Iterate 66|64R36[65|24]
+294V13*Iterate{18|24C9[75[65|24]]}
+331U25 Adjust<16|47p14>
+333U25 Finalize<16|48p14>
+339U14 Write
+345U14 Read
+X 16 a-finali.ads
+46U14*Initialize<42|44p14>
+X 18 a-iteint.ads
+24C9*Forward_Iterator<24R9[12|75[65|24]]>
+24h9 Forward_Iterator
+X 20 a-string.ads
+16K13*Strings 35e16 65|20r10 27r72
+X 21 a-strhas.ads
+20V22*Hash{4|19M9} 65|20w18 27r80
+X 30 system.ads
+67M9*Address
+X 43 s-memory.ads
+53V13*Alloc{30|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{30|67M9} 105i<c,__gnat_realloc>22
+X 50 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 61 util.ads
+18K9*Util 28e9 65|21r6 22r9 64r38 89r38 91r5 66|19r14 61r30 63r44 77r5
+X 62 util-beans.ads
+50K14*Beans 61|18k9 62|54e15 65|21r11 22r14 64r43 89r43 91r10 66|19r19 61r35
+. 63r49 77r10
+X 63 util-beans-basic.ads
+26K20*Basic 97e21 65|21w17 64r49 89r49 66|61r41
+42h9*Readonly_Bean 66|61r47
+54h9*Bean<42R9> 65|64r55 89r55
+X 64 util-beans-objects.ads
+43K20*Objects 62|50k14 64|644e23 65|22r20 91r16 66|19r25 63r55 77r16
+71n34*DYNAMIC{71E9} 66|74r48
+83R9*Object<16|43R9> 632e14 65|26r68 41r37 44r77 48r48 70r49 77r36 80r27
+. 83r36 85r70 66|26r49 43r36 51r36 53r70 71r27
+90r4*Null_Object{83R9} 66|32r17
+97h9*Object_Type
+195V13*To_Bean 66|61s70
+229V13*To_Object{83R9} 66|74s14
+229p24 Value 66|74r25
+230e24 Storage{71E9} 66|74r37
+237V14*"="{boolean} 12|46i19
+X 65 util-beans-objects-maps.ads
+22K28*Maps 64|43k20 65|89E9 91l24 91e28 66|19b33 63r63 77l24 77t28
+24K12*Maps[12|48] 30r22 31r19 34r82 35r66 36r53 37r59 41r53 45r37 47r68 48r63
+. 49r54 50r60 51r75 53r38 55r38 56r28 56r86 57r14 64r25 89r25 66|54r39 56r39
+. 58r19 58r35
+30R12*Cursor{12|61R9[24]} 37r29 42r43 47r37 48r33 49r38 50r30 50r45 51r44
+. 52r37 54r53 66|27r22
+31R12*Map{12|53R9[24]} 34r36 35r38 36r40 39r42
+34V13*Length=34:87{4|20I9}
+34r21 Container{31R12}
+35V13*Is_Empty=35:71{boolean}
+35r23 Container{31R12}
+36U14*Clear=36:58
+36r21 Container{31R12}
+37V13*Key=37:64{string}
+37r18 Position{30R12}
+39U14*Include=41:58
+39r23 Container{31R12}
+40a23 Key{string}
+41r23 New_Item{64|83R9}
+42U14*Query_Element=45:42
+42r29 Position{30R12}
+43p29 Process
+43a67 Key{string}
+44r67 Element{64|83R9}
+47V13*Has_Element=47:73{boolean} 66|29s10
+47r26 Position{30R12}
+48V13*Element=48:68{64|83R9} 66|30s17
+48r22 Position{30R12}
+49U14*Next=49:59
+49r20 Position{30R12}
+50V13*Next=50:65{12|61R9[24]}
+50r19 Position{30R12}
+51V13*Equivalent_Keys=51:80{boolean}
+51r30 Left{30R12}
+51r36 Right{30R12}
+52V13*Equivalent_Keys=53:43{boolean}
+52r30 Left{30R12}
+52a45 Right{string}
+54V13*Equivalent_Keys=55:43{boolean}
+54a30 Left{string}
+54r45 Right{30R12}
+56V13*Copy=57:19{12|53R9[24]}
+56r19 Source{12|53R9[24]}
+56i38 Capacity{4|20I9}
+64R9*Map_Bean<12|53R9[24]><63|54R9> 16|46P14 65|65r39 69P13 69r34 75P14 75r40
+. 89c9 89e76 66|25r34 41r40 63r68 64r10 72r43
+65P9*Map_Bean_Access(64R9) 66|72r20
+69V13*Get_Value{64|83R9}<63|47p13> 69>24 70>24 66|25b13 34l8 34t17
+69r24 From{64R9} 66|25b24 27r32
+70a24 Name{string} 66|26b24 27r43
+75U14*Set_Value<63|59p14> 75=25 76>25 77>25 66|41b14 46l8 46t17
+75r25 From{64R9} 66|41b25 45m7 45r7
+76a25 Name{string} 66|42b25 45r21
+77r25 Value{64|83R9} 66|43b25 45r27
+80V13*Create{64|83R9} 66|71b13 75l8 75t14
+83U14*Iterate 83>23 84^23 66|51b14 66l8 66t15
+83r23 From{64|83R9} 66|51b23 61r79
+84p23 Process 66|52b23 58r10
+84a60 Name{string}
+85r60 Item{64|83R9}
+X 66 util-beans-objects-maps.adb
+27r7 Pos{65|30R12} 29r23 30r26
+52a60 Name{string}
+53r60 Item{64|83R9}
+54U17 Process_One 54>30 56b17 59l11 59t22 64r45
+54r30 Pos{12|61R9[65|24]} 56b30 58r29 58r49
+61p7 Bean(63|42R9) 63r10 63r32 64r26
+72p7 M{65|65P9} 74r34
+

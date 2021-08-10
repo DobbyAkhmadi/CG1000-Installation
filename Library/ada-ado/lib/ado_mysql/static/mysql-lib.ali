@@ -1,0 +1,31 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U mysql.lib%s		mysql-lib.ads		ffbba10c NE OO PU PK
+W mysql%s		mysql.ads		mysql.ali
+
+D mysql.ads		20200810200714 83c4e906 mysql%s
+D mysql-lib.ads		20200826022214 7c7f480a mysql.lib%s
+D system.ads		20190518041255 4635ec04 system%s
+G a e
+X 1 mysql.ads
+19K9*Mysql 21e10 2|19r9 26r5
+X 2 mysql-lib.ads
+19K15*Lib 1|19k9 2|26l11 26e14
+24a4*MYSQL_LIB_NAME{string}
+

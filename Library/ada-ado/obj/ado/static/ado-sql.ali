@@ -1,0 +1,514 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_LONG_LONG_INTEGERS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U ado.sql%b		ado-sql.adb		59be4c38 OO PK IU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.fat_lflt%s	s-fatlfl.ads		s-fatlfl.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_lli%s	s-imglli.adb		s-imglli.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+U ado.sql%s		ado-sql.ads		b308c8e3 EE OO PF PK IU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+W ado.dialects%s	ado-dialects.adb	ado-dialects.ali
+W ado.parameters%s	ado-parameters.adb	ado-parameters.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-convec.ads		20190518041256 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20190518041254 32f4e1a7 ada.containers.vectors%b
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D ado.ads		20200810200714 1ec4b94f ado%s
+D ado-dialects.ads	20200810200714 eb00eeaf ado.dialects%s
+D ado-parameters.ads	20200810200714 ad5888fa ado.parameters%s
+D ado-sql.ads		20200810200714 ba8ff082 ado.sql%s
+D ado-sql.adb		20200810200714 e331bcba ado.sql%b
+D ado-utils.ads		20200810200714 ef23a2c0 ado.utils%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20190518041254 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20190518041256 e2f873d3 system.fat_sflt%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-imgint.ads		20190518041254 02dbe0c2 system.img_int%s
+D s-imglli.ads		20190518041256 114f55d1 system.img_lli%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-stratt.adb		20190518041255 56ef263e system.stream_attributes%b
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20200215171848 36301479 util%s
+D util-beans.ads	20200215171848 362abe70 util.beans%s
+D util-beans-basic.ads	20200215171848 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20200215171848 aef7462e util.beans.objects%s
+D util-concurrent.ads	20200215171848 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20200215171848 2618dd23 util.concurrent.counters%s
+D util-nullables.ads	20200215171848 cb4c8fed util.nullables%s
+D util-refs.ads		20200215171848 e592e98d util.refs%s
+D util-refs.adb		20200215171848 f4fdc937 util.refs%b
+G a e
+G c Z s b [clear ado__sql 39 14 none]
+G c Z s b [append ado__sql 42 14 none]
+G c Z s b [append_name ado__sql 47 14 none]
+G c Z s b [append_value ado__sql 52 14 none]
+G c Z s b [append_value ado__sql 57 14 none]
+G c Z s b [append_value ado__sql 61 14 none]
+G c Z s b [append_value ado__sql 65 14 none]
+G c Z s b [append_value ado__sql 69 14 none]
+G c Z s b [to_string ado__sql 73 13 none]
+G c Z s b [clear ado__sql 95 14 none]
+G c Z s b [set_dialect ado__sql 98 14 none]
+G c Z s b [set_filter ado__sql 101 14 none]
+G c Z s b [has_filter ado__sql 104 13 none]
+G c Z s b [get_filter ado__sql 106 13 none]
+G c Z s b [set_join ado__sql 109 14 none]
+G c Z s b [has_join ado__sql 113 13 none]
+G c Z s b [get_join ado__sql 116 13 none]
+G c Z s b [set_parameters ado__sql 120 14 none]
+G c Z s b [expand ado__sql 124 13 none]
+G c Z s b [set_dialect ado__sql 135 14 none]
+G c Z s b [save_field ado__sql 140 14 none]
+G c Z s b [save_field ado__sql 146 14 none]
+G c Z s b [save_field ado__sql 152 14 none]
+G c Z s b [save_field ado__sql 158 14 none]
+G c Z s b [save_field ado__sql 164 14 none]
+G c Z s b [save_field ado__sql 170 14 none]
+G c Z s b [save_field ado__sql 176 14 none]
+G c Z s b [save_field ado__sql 182 14 none]
+G c Z s b [save_field ado__sql 188 14 none]
+G c Z s b [save_field ado__sql 194 14 none]
+G c Z s b [save_null_field ado__sql 200 14 none]
+G c Z s b [has_save_fields ado__sql 204 13 none]
+G c Z s b [set_insert_mode ado__sql 206 14 none]
+G c Z s b [append_fields ado__sql 208 14 none]
+G c Z s s [bufferDA ado__sql 213 9 none]
+G c Z s s [bufferDF ado__sql 213 9 none]
+G c Z s s [bufferDI ado__sql 213 9 none]
+G c Z s s [bufferIP ado__sql 213 9 none]
+G c Z s s [queryDA ado__sql 86 9 none]
+G c Z s s [queryDF ado__sql 86 9 none]
+G c Z s s [queryDI ado__sql 86 9 none]
+G c Z s s [queryIP ado__sql 86 9 none]
+G c Z s b [add_field ado__sql 224 14 none]
+G c Z s s [update_queryDA ado__sql 217 9 none]
+G c Z s s [update_queryDF ado__sql 217 9 none]
+G c Z s s [update_queryDI ado__sql 217 9 none]
+G c Z s s [update_queryIP ado__sql 217 9 none]
+G r c none [append_name ado__sql 47 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [clear ado__sql 95 14 none] [clear ado__parameters 276 14 none]
+G r c none [set_dialect ado__sql 98 14 none] [set_dialect ado__parameters 115 14 none]
+G r c none [set_parameters ado__sql 120 14 none] [set_parameters ado__parameters 260 14 none]
+G r j list [set_parameters ado__sql 120 14 none] [listDA ado__parameters 292 9 none]
+G r c none [expand ado__sql 124 13 none] [expand ado__parameters 248 13 none]
+G r c none [set_dialect ado__sql 135 14 none] [set_dialect ado__parameters 115 14 none]
+G r c none [save_field ado__sql 140 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_field ado__sql 140 14 none] [bind_param ado__parameters 184 14 none]
+G r c none [save_field ado__sql 146 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_field ado__sql 146 14 none] [bind_param ado__parameters 196 14 none]
+G r c none [save_field ado__sql 152 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_field ado__sql 152 14 none] [bind_param ado__parameters 187 14 none]
+G r c none [save_field ado__sql 158 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_field ado__sql 158 14 none] [bind_param ado__parameters 190 14 none]
+G r c none [save_field ado__sql 164 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_field ado__sql 164 14 none] [add_param ado__parameters 223 14 none]
+G r c none [save_field ado__sql 170 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_field ado__sql 170 14 none] [add_param ado__parameters 225 14 none]
+G r c none [save_field ado__sql 176 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_field ado__sql 176 14 none] [add_param ado__parameters 231 14 none]
+G r c none [save_field ado__sql 182 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_field ado__sql 182 14 none] [bind_param ado__parameters 202 14 none]
+G r c none [save_field ado__sql 188 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_field ado__sql 188 14 none] [bind_param ado__parameters 205 14 none]
+G r c none [save_field ado__sql 194 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_field ado__sql 194 14 none] [bind_param ado__parameters 211 14 none]
+G r c none [save_null_field ado__sql 200 14 none] [get_dialect ado__parameters 123 13 none]
+G r c none [save_null_field ado__sql 200 14 none] [bind_null_param ado__parameters 214 14 none]
+G r j list [bufferDA ado__sql 213 9 none] [listDA ado__parameters 292 9 none]
+G r k list [bufferDF ado__sql 213 9 none] [listDF ado__parameters 292 9 none]
+G r s list [bufferIP ado__sql 213 9 none] [listIP ado__parameters 292 9 none]
+G r k list [bufferIP ado__sql 213 9 none] [listDF ado__parameters 292 9 none]
+G r j list [queryDA ado__sql 86 9 none] [listDA ado__parameters 292 9 none]
+G r k list [queryDF ado__sql 86 9 none] [listDF ado__parameters 292 9 none]
+G r s list [queryIP ado__sql 86 9 none] [listIP ado__parameters 292 9 none]
+G r k list [queryIP ado__sql 86 9 none] [listDF ado__parameters 292 9 none]
+G r c none [add_field ado__sql 224 14 none] [get_dialect ado__parameters 123 13 none]
+G r j list [update_queryDA ado__sql 217 9 none] [listDA ado__parameters 292 9 none]
+G r k list [update_queryDF ado__sql 217 9 none] [listDF ado__parameters 292 9 none]
+G r s list [update_queryIP ado__sql 217 9 none] [listIP ado__parameters 292 9 none]
+G r k list [update_queryIP ado__sql 217 9 none] [listDF ado__parameters 292 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 31|19r6 20r6 28r8 178r38 32|328r38
+X 2 a-calend.ads
+36K13*Calendar 409e17 31|20w10 178r42 32|328r42
+42I9*Time<222I9> 31|178r51 32|328r51
+222I9 Time_Rep<long_long_integer>
+X 14 a-finali.ads
+46U14*Initialize<48|44p14>
+47U14*Adjust<48|42p14>
+48U14*Finalize<48|43p14>
+X 16 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[11|111]>
+X 18 a-string.ads
+16K13*Strings 35e16 31|19r10 28r12
+X 21 a-strunb.ads
+82K21*Unbounded 756e26 31|19w18 28r20
+87R9*Unbounded_String<14|43R9> 739e14 31|58r40 190r38 214r17 32|80r40 352r38
+90r4*Null_Unbounded_String{87R9} 32|155r30 164r35 182r33 191r28
+92V13*Length{natural} 32|165s13 183s13
+103V13*To_Unbounded_String{87R9} 32|31s21 150s28 174s26
+116V13*To_String{string} 32|120s14 158s17 194s17 221s60 398s47 400s47
+127U14*Append 32|82s7
+135U14*Append 32|40s7 57s13 61s10 72s7 92s7 102s7 112s7
+143U14*Append 32|56s13 58s13
+238V14*"="{boolean} 32|155s28 164s32 182s30 191s26
+X 28 ado.ads
+25K9*ADO 150e8 31|22r6 23r6 26r9 86r22 99r39 121r42 136r39 196r38 213r23
+. 227r5 32|20r14 49r16 50r26 129r7 139r39 141r7 203r42 205r7 221r14 243r39
+. 364r38 404r5
+39I9*Identifier<long_integer> 31|70r40 166r38 32|109r40 110r30 304r38
+43I9*Entity_Type<integer> 31|172r38 32|316r38
+107R12*Blob_Ref{76|67R12[106]} 31|196r42 32|364r42
+X 29 ado-dialects.ads
+21K13*Dialects 65e17 31|23w10 99r43 136r43 32|49r20 50r30 139r43 243r43
+36P9*Dialect_Access(35R9) 31|99r52 136r52 32|49r29 50r39 139r52 243r52
+39y13*Is_Reserved{boolean} 32|52R43
+43y13*Get_Identifier_Quote{character} 32|54R51
+X 30 ado-parameters.ads
+58K13*Parameters 296e19 31|22w10 86r26 121r46 213r27 32|129r11 141r11 203r46
+. 205r11 221r18
+111H9*Abstract_List<14|43R9> 290e14 31|121r57 32|141r22 203r57 221r29
+115U14*Set_Dialect 32|141s45 142s7 143s7 144s7 245s25 246s21
+119U14*Set_Expander
+123V13*Get_Dialect{29|36P9} 32|50s64
+150U14*Bind_Param
+153U14*Bind_Param
+156U14*Bind_Param
+159U14*Bind_Param
+162U14*Bind_Param
+165U14*Bind_Param
+168U14*Bind_Param
+171U14*Bind_Param
+174U14*Bind_Param
+177U14*Bind_Param
+180U14*Bind_Param
+184U14*Bind_Param 32|259R35
+185i26 Position{natural} 32|259r47
+186b26 Value{boolean} 32|259r71
+187U14*Bind_Param 32|283R35
+188i26 Position{natural} 32|283r47
+189i26 Value{long_long_integer} 32|283r71
+190U14*Bind_Param 32|295R35
+191i26 Position{natural} 32|295r47
+192f26 Value{long_float} 32|295r71
+193U14*Bind_Param
+196U14*Bind_Param 32|271R35
+197i26 Position{natural} 32|271r47
+198i26 Value{integer} 32|271r71
+199U14*Bind_Param
+202U14*Bind_Param 32|343R35
+203i26 Position{natural} 32|343r47
+204a26 Value{string} 32|343r71
+205U14*Bind_Param 32|355R35
+206i26 Position{natural} 32|355r47
+207r26 Value{21|87R9} 32|355r71
+208U14*Bind_Param
+211U14*Bind_Param 32|367R35
+212i26 Position{natural} 32|367r47
+213r26 Value{28|107R12} 32|367r71
+214U14*Bind_Null_Param 32|378R35
+215i31 Position{natural} 32|378r52
+216U14*Bind_Null_Param
+219U14*Add_Param
+221U14*Add_Param
+223U14*Add_Param 32|307R35
+224i26 Value{28|39I9} 32|307r46
+225U14*Add_Param 32|319R35
+226i26 Value{integer} 32|319r46
+227U14*Add_Param
+229U14*Add_Param
+231U14*Add_Param 32|331R35
+232i25 Value{2|42I9} 32|331r46
+235U14*Add_Null_Param
+248V13*Expand{string} 32|221s52
+255R9*List<111R9> 294e14 31|86r37 213r38 32|129r22 205r22
+257U14*Add_Parameter<126p14>
+260U14*Set_Parameters<130p14> 32|205s36
+264V13*Length{natural}<134p13>
+267V13*Element{67R9}<137p13>
+271U14*Query_Element<141p14>
+276U14*Clear<147p14> 32|129s36
+X 31 ado-sql.ads
+26K13*SQL 28|25k9 31|213E9 227l9 227e12 32|20b18 404l9 404t12
+35R9*Buffer<30|255R9> 36r37 39r37 42r38 47r43 52r44 57r44 61r44 65r44 69r44
+. 73r34 87r16 88r16 89r16 213c9 215e14 219r24 220r24 32|29r37 37r38 47r43
+. 69r44 79r44 88r44 98r44 108r44 118r34
+36P9*Buffer_Access(35R9)
+39U14*Clear<30|276p14> 39=21 32|29b14 32l8 32t13 130s19 131s21 132s18
+39r21 Target{35R9} 32|29b21 31m7
+42U14*Append 42=22 43>22 32|37b14 41l8 41t14 229s10 230s10 234s10 236s7 398s10
+. 400s10
+42r22 Target{35R9} 32|37b22 40m15 40r15 229r18 230r18 234r18 236r15 398r18
+. 400r18
+43a22 SQL{string} 32|38b22 40r27 229r47 230r43 234r47 236r40 398r40 400r40
+47U14*Append_Name 47=27 48>27 32|47b14 63l8 63t19 232s7
+47r27 Target{35R9} 32|47b27 50r57 56m21 56r21 57m21 57r21 58m21 58r21 61m18
+. 61r18 232r20
+48a27 Name{string} 32|48b27 52r56 57r33 61r30 232r49
+52U14*Append_Value 52=28 53>28 32|69b14 73l8 73t20
+52r28 Target{35R9} 32|69b28 72m15 72r15
+53a28 Value{string} 32|70b28 72r27
+57U14*Append_Value 57=28 58>28 32|79b14 83l8 83t20
+57r28 Target{35R9} 32|79b28 82m15 82r15
+58r28 Value{21|87R9} 32|80b28 82r27
+61U14*Append_Value 61=28 62>28 32|88b14 93l8 93t20
+61r28 Target{35R9} 32|88b28 92m15 92r15
+62i28 Value{long_integer} 32|89b28 90r50
+65U14*Append_Value 65=28 66>28 32|98b14 103l8 103t20
+65r28 Target{35R9} 32|98b28 102m15 102r15
+66i28 Value{integer} 32|99b28 100r45
+69U14*Append_Value 69=28 70>28 32|108b14 113l8 113t20
+69r28 Target{35R9} 32|108b28 112m15 112r15
+70i28 Value{28|39I9} 32|109b28 110r48
+73V13*To_String{string} 73>24 32|118b13 121l8 121t17
+73r24 From{35R9} 32|118b24 120r25
+86R9*Query<30|255R9> 14|46P14 47P14 48P14 30|119p14 123p13 150p14 153p14
+. 156p14 159p14 162p14 165p14 168p14 171p14 174p14 177p14 180p14 184p14 187p14
+. 190p14 193p14 196p14 199p14 202p14 205p14 208p14 211p14 214p14 216p14 219p14
+. 221p14 223p14 225p14 227p14 229p14 231p14 235p14 257P14 264P13 267P13 271P14
+. 31|90e14 91r36 95P14 95r37 98P14 98r43 101p14 101r42 104p13 104r37 106p13
+. 106r37 109p14 109r40 113p13 113r35 116p13 116r35 120P14 120r46 124p13 124r33
+. 131r29 217r29 32|127r37 138r43 147r42 153r37 162r37 171r40 180r35 189r35
+. 202r46 206r18 208r26 208r41 219r33 247r7
+87r7*SQL{35R9} 32|132m14 142m27 221r78 398m35 400m35
+88r7*Filter{35R9} 32|131m14 143m27 150m14 155r17 158r35 164r21 165r28 210m20
+. 210r32
+89r7*Join{35R9} 32|130m14 144m27 174m14 182r21 183r28 191r17 194r35 211m20
+. 211r32
+91P9*Query_Access(86R9)
+95U14*Clear<30|276p14> 95=21 32|127b14 133l8 133t13
+95r21 Target{86R9} 32|127b21 129m28 129r28 130m7 130r7 131m7 131r7 132m7
+. 132r7
+98U14*Set_Dialect<30|115p14> 98=27 99>27 32|138b14 145l8 145t19 247s22
+98r27 Target{86R9} 32|138b27 141m37 141r37 142m20 142r20 143m20 143r20 144m20
+. 144r20
+99p27 D{29|36P9} 32|139b27 141r58 142r32 143r35 144r33
+101U14*Set_Filter 101=26 102>26 32|147b14 151l8 151t18
+101r26 Target{86R9} 32|147b26 150m7 150r7
+102a26 Filter{string} 32|148b26 150r49
+104V13*Has_Filter{boolean} 104>25 32|162b13 166l8 166t18
+104r25 Source{86R9} 32|162b25 164r14 165r21
+106V13*Get_Filter{string} 106>25 32|153b13 160l8 160t18
+106r25 Source{86R9} 32|153b25 155r10 158r28
+109U14*Set_Join 109=24 110>24 32|171b14 175l8 175t16
+109r24 Target{86R9} 32|171b24 174m7 174r7
+110a24 Join{string} 32|172b24 174r47
+113V13*Has_Join{boolean} 113>23 32|180b13 184l8 184t16
+113r23 Source{86R9} 32|180b23 182r14 183r21
+116V13*Get_Join{string} 116>23 32|189b13 196l8 196t16
+116r23 Source{86R9} 32|189b23 191r10 194r28
+120U14*Set_Parameters<30|260p14> 120=30 121>30 32|202b14 214l8 214t22
+120r30 Params{86R9} 32|202b30 205m28 205r28 210m13 211m13
+121c30 From<30|111R9> 32|203b30 205r52 206r10 208r54
+124V13*Expand{string} 124>21 32|219b13 222l8 222t14
+124r21 Source{86R9} 32|219b21 221r44 221r71
+131R9*Update_Query<86R9> 14|46P14 47P14 48P14 30|119p14 123p13 150p14 153p14
+. 156p14 159p14 162p14 165p14 168p14 171p14 174p14 177p14 180p14 184p14 187p14
+. 190p14 193p14 196p14 199p14 202p14 205p14 208p14 211p14 214p14 216p14 219p14
+. 221p14 223p14 225p14 227p14 229p14 231p14 235p14 257P14 264P13 267P13 271P14
+. 31|95P14 101p14 104p13 106p13 109p14 113p13 116p13 120P14 124p13 132r43
+. 135P14 135r43 140p14 140r42 146p14 146r42 152p14 152r42 158p14 158r42 164p14
+. 164r42 170p14 170r42 176p14 176r42 182p14 182r42 188p14 188r42 194p14 194r42
+. 200p14 200r47 204p13 204r42 206p14 206r47 208p14 208r45 217c9 222e14 224r41
+. 32|224r41 242r43 254r42 259r7 266r42 271r7 278r42 283r7 290r42 295r7 302r42
+. 307r7 314r42 319r7 326r42 331r7 338r42 343r7 350r42 355r7 362r42 367r7
+. 374r47 378r7 384r42 389r47 394r45
+132P9*Update_Query_Access(131R9)
+135U14*Set_Dialect<98p14> 135=27 136>27 32|242b14 248l8 248t19
+135r27 Target{131R9} 32|242b27 245m7 245r7 246m7 246r7 247m14 247r14
+136p27 D{29|36P9} 32|243b27 245r38 246r34 247r35
+140U14*Save_Field 140=26 141>26 142>26 32|254b14 260l8 260t18
+140r26 Update{131R9} 32|254b26 258m7 258r7 259m27 259r27 259r59
+141a26 Name{string} 32|255b26 258r33
+142b26 Value{boolean} 32|256b26 259r80
+146U14*Save_Field 146=26 147>26 148>26 32|266b14 272l8 272t18
+146r26 Update{131R9} 32|266b26 270m7 270r7 271m27 271r27 271r59
+147a26 Name{string} 32|267b26 270r33
+148i26 Value{integer} 32|268b26 271r80
+152U14*Save_Field 152=26 153>26 154>26 32|278b14 284l8 284t18
+152r26 Update{131R9} 32|278b26 282m7 282r7 283m27 283r27 283r59
+153a26 Name{string} 32|279b26 282r33
+154i26 Value{long_long_integer} 32|280b26 283r80
+158U14*Save_Field 158=26 159>26 160>26 32|290b14 296l8 296t18
+158r26 Update{131R9} 32|290b26 294m7 294r7 295m27 295r27 295r59
+159a26 Name{string} 32|291b26 294r33
+160f26 Value{long_float} 32|292b26 295r80
+164U14*Save_Field 164=26 165>26 166>26 32|302b14 308l8 308t18
+164r26 Update{131R9} 32|302b26 306m7 306r7 307m27 307r27
+165a26 Name{string} 32|303b26 306r33
+166i26 Value{28|39I9} 32|304b26 307r55
+170U14*Save_Field 170=26 171>26 172>26 32|314b14 320l8 320t18
+170r26 Update{131R9} 32|314b26 318m7 318r7 319m27 319r27
+171a26 Name{string} 32|315b26 318r33
+172i26 Value{28|43I9} 32|316b26 319r64
+176U14*Save_Field 176=26 177>26 178>26 32|326b14 332l8 332t18
+176r26 Update{131R9} 32|326b26 330m7 330r7 331m27 331r27
+177a26 Name{string} 32|327b26 330r33
+178i26 Value{2|42I9} 32|328b26 331r55
+182U14*Save_Field 182=26 183>26 184>26 32|338b14 344l8 344t18
+182r26 Update{131R9} 32|338b26 342m7 342r7 343m27 343r27 343r59
+183a26 Name{string} 32|339b26 342r33
+184a26 Value{string} 32|340b26 343r80
+188U14*Save_Field 188=26 189>26 190>26 32|350b14 356l8 356t18
+188r26 Update{131R9} 32|350b26 354m7 354r7 355m27 355r27 355r59
+189a26 Name{string} 32|351b26 354r33
+190r26 Value{21|87R9} 32|352b26 355r80
+194U14*Save_Field 194=26 195>26 196>26 32|362b14 368l8 368t18
+194r26 Update{131R9} 32|362b26 366m7 366r7 367m27 367r27 367r59
+195a26 Name{string} 32|363b26 366r33
+196r26 Value{28|107R12} 32|364b26 367r80
+200U14*Save_Null_Field 200=31 201>31 32|374b14 379l8 379t23
+200r31 Update{131R9} 32|374b31 377m7 377r7 378m27 378r27 378r64
+201a31 Name{string} 32|375b31 377r33
+204V13*Has_Save_Fields{boolean} 204>30 32|384b13 387l8 387t23
+204r30 Update{131R9} 32|384b30 386r14
+206U14*Set_Insert_Mode 206=31 32|389b14 392l8 392t23
+206r31 Update{131R9} 32|389b31 391m7
+208U14*Append_Fields 208=29 209>29 32|394b14 402l8 402t21
+208r29 Update{131R9} 32|394b29 398m28 398r28 398r58 400m28 400r28 400r58
+209b29 Mode{boolean} 32|395b29 397r10
+214r7*Buf{21|87R9} 32|31m14 40m22 56m28 57m28 58m28 61m25 72m22 82m22 92m22
+. 102m22 112m22 120r30 150m21 155r24 158r42 164r28 165r35 174m19 182r26 183r33
+. 191r22 194r40 221r82 398r72 400r76
+218i7 Pos{natural} 32|227m14 227r28 228r17 259r66 271r66 283r66 295r66 343r66
+. 355r66 367r66 378r71 386r21
+219r7 Set_Fields{35R9} 32|229m35 232m37 234m35 245m14 400r65
+220r7 Fields{35R9} 32|230m35 236m32 246m14 398r65
+221b7 Is_Update_Stmt{boolean} 32|233r17 391m14
+224U14 Add_Field 224=25 225>25 32|224b14 237l8 237t17 258s14 270s14 282s14
+. 294s14 306s14 318s14 330s14 342s14 354s14 366s14 377s14
+224c25 Update<131R9> 32|224b25 227m7 227r21 228r10 229m28 229r28 230m28 230r28
+. 232m30 232r30 233r10 234m28 234r28 236m25 236r25
+225a25 Name{string} 32|225b25 232r57 258r25 270r25 282r25 294r25 306r25 318r25
+. 330r25 342r25 354r25 366r25 377r25
+X 32 ado-sql.adb
+50p7 Dialect{29|36P9} 52r10 52r35 54r43
+54e13 Quote{character} 56r33 58r33
+90a7 S{string} 92r27 92r30 92r45
+100a7 S{string} 102r27 102r30 102r45
+110a7 S{string} 112r27 112r30 112r45
+208c13 L<31|86R9> 210r30 211r30
+X 35 system.ads
+67M9*Address
+X 51 s-memory.ads
+53V13*Alloc{35|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{35|67M9} 105i<c,__gnat_realloc>22
+X 58 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 72 util-beans-objects.ads
+97h9*Object_Type
+X 76 util-refs.ads
+67R12*Ref<14|43R9>
+

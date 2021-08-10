@@ -1,0 +1,127 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_DISPATCH
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.commands.parsers%b  util-commands-parsers.adb  da920d98 NE OO PK
+W util.commands%s	util-commands.adb	util-commands.ali
+
+U util.commands.parsers%s  util-commands-parsers.ads  ea07ee4d EE NE OO PK
+W util.commands%s	util-commands.adb	util-commands.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-commands.ads	20210228093152 79391345 util.commands%s
+D util-commands-parsers.ads  20210228093152 933efd08 util.commands.parsers%s
+D util-commands-parsers.adb  20210228093152 49acf090 util.commands.parsers%b
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+G a e
+G c Z s b [execute util__commands__parsers 48 14 none]
+G c Z s s [usage util__commands__parsers 53 14 none]
+G c Z s s [no_config_typeIP util__commands__parsers 45 9 none]
+X 15 a-conhel.ads
+84R12 Reference_Control_Type<21|43R9>
+X 22 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[17|75]>
+X 52 util.ads
+18K9*Util 28e9 54|29r9 62r5 55|19r14 33r5
+X 53 util-commands.ads
+104K14*Commands 52|18k9 53|190e18 54|29r14 62r10 55|19r19 33r10
+110h9*Argument_List 54|36r44 38r58 49r35 51r58 55|25r35 27r50
+X 54 util-commands-parsers.ads
+29K23*Parsers 53|104k14 54|62l19 62e26 55|19b28 33l19 33t26
+34+12 Config_Type 35r48 40r45 58r25
+35U22 Execute 35=31 36>31 37^31 59r25
+35*31 Config{34+12}
+36c31 Args<53|110R9>
+37p31 Process
+38c44 Cmd_Args<53|110R9>
+39U22 Usage 39>29 40=29 60r25
+39a29 Name{string}
+40*29 Config{34+12}
+41k12*Config_Parser 34z12 35z22 39z22 42l8 42e21 58r10
+45R9*No_Config_Type 45e46 48r39 54r37 58r40 55|24r39
+48U14*Execute 48=23 49>23 50^23 59r40 55|24b14 31l8 31t15
+48r23 Config{45R9} 55|24b23 28r28
+49c23 Args<53|110R9> 55|25b23 30r16
+50p23 Process 55|26b23 30r7
+51c44 Cmd_Args<53|110R9>
+53U14*Usage 53>21 54=21 60r40
+53a21 Name{string}
+54r21 Config{45R9}
+57K12*No_Parser[41]
+X 55 util-commands-parsers.adb
+27c36 Cmd_Args<53|110R9>
+

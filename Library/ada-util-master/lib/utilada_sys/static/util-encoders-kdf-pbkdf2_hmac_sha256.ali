@@ -1,0 +1,119 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_NESTED_FINALIZATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.encoders.kdf.pbkdf2_hmac_sha256%b  util-encoders-kdf-pbkdf2_hmac_sha256.ads  2635da56 NE OO SU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+W util%s		util.ads		util.ali
+W util.encoders%s	util-encoders.adb	util-encoders.ali
+W util.encoders.hmac%s	util-encoders-hmac.ads	util-encoders-hmac.ali
+W util.encoders.hmac.sha256%s  util-encoders-hmac-sha256.adb  util-encoders-hmac-sha256.ali
+W util.encoders.kdf%s	util-encoders-kdf.ads	util-encoders-kdf.ali
+W util.encoders.kdf.pbkdf2%s  util-encoders-kdf-pbkdf2.adb  util-encoders-kdf-pbkdf2.ali  ED
+
+U util.encoders.kdf.pbkdf2_hmac_sha256%s  util-encoders-kdf-pbkdf2_hmac_sha256.ads  b86f0580 NE OO SU
+W util%s		util.ads		util.ali
+W util.encoders%s	util-encoders.adb	util-encoders.ali
+W util.encoders.hmac%s	util-encoders-hmac.ads	util-encoders-hmac.ali
+W util.encoders.hmac.sha256%s  util-encoders-hmac-sha256.adb  util-encoders-hmac-sha256.ali
+W util.encoders.kdf%s	util-encoders-kdf.ads	util-encoders-kdf.ali
+W util.encoders.kdf.pbkdf2%s  util-encoders-kdf-pbkdf2.adb  util-encoders-kdf-pbkdf2.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D gnat.ads		20190518041256 b5988c27 gnat%s
+D g-bytswa.ads		20190518041255 a4d21639 gnat.byte_swapping%s
+D g-sechas.ads		20190518041256 3b5ca98e gnat.secure_hashes%s
+D g-shsh32.ads		20190518041256 671c9849 gnat.secure_hashes.sha2_32%s
+D g-shshco.ads		20190518041256 1144502c gnat.secure_hashes.sha2_common%s
+D g-sha256.ads		20190518041256 c083f050 gnat.sha256%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D util.ads		20210228093152 36301479 util%s
+D util-encoders.ads	20210228093152 6d2d5bc8 util.encoders%s
+D util-encoders-hmac.ads  20210228093152 28b43bc3 util.encoders.hmac%s
+D util-encoders-hmac-sha256.ads  20210228093152 efb00836 util.encoders.hmac.sha256%s
+D util-encoders-kdf.ads	20210228093152 08fa9d2e util.encoders.kdf%s
+D util-encoders-kdf-pbkdf2.ads  20210228093152 79104ace util.encoders.kdf.pbkdf2%s
+D util-encoders-kdf-pbkdf2.adb  20210228093152 b51dd7a9 util.encoders.kdf.pbkdf2%b
+D util-encoders-kdf-pbkdf2_hmac_sha256.ads  20210228093152 2635da56 util.encoders.kdf.pbkdf2_hmac_sha256%s
+D util-encoders-kdf-pbkdf2_hmac_sha256.ads  20210228093152 2635da56 util.encoders.kdf.pbkdf2_hmac_sha256%b
+D util-encoders-sha256.ads  20210228093152 e28f1e02 util.encoders.sha256%s
+G a e
+G c s b b [s util__encoders__kdf__pbkdf2_hmac_sha256 20 1 none]
+G c Z b b [pbkdf2_hmac_sha256 util__encoders__kdf 20 29 none]
+G r i none [s util__encoders__kdf__pbkdf2_hmac_sha256 20 1 none] [pbkdf2 util__encoders__kdf 25 29 none]
+G r s secret_key [pbkdf2_hmac_sha256 util__encoders__kdf 20 29 none] [secret_keyIP util__encoders 211 9 none]
+G r c none [pbkdf2_hmac_sha256 util__encoders__kdf 20 29 none] [sign util__encoders__hmac__sha256 37 14 none]
+X 4 a-stream.ads
+44I9*Stream_Element_Offset<long_long_integer>
+X 14 system.ads
+67M9*Address
+X 18 s-memory.ads
+53V13*Alloc{14|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{14|67M9} 105i<c,__gnat_realloc>22
+X 25 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 29 util.ads
+18K9*Util 28e9 37|18r6 19r6 20r11 21r7 21r43 22r43
+X 30 util-encoders.ads
+29K14*Encoders 29|18k9 30|239e18 37|18r11 19r11 20r16 21r12 21r48 22r48
+X 31 util-encoders-hmac.ads
+19K23*HMAC 23e23 37|19r20 21r57 22r57
+X 32 util-encoders-hmac-sha256.ads
+24K28*SHA256 109e30 37|19w25 21r62 22r62
+26N4*HASH_SIZE 37|21r69
+37U14*Sign 37|22r69
+X 33 util-encoders-kdf.ads
+19K23*KDF 30|29k14 33|21e22 37|18r20 20r25 21r21
+X 34 util-encoders-kdf-pbkdf2.ads
+21i4 Length{4|44I9} 37|21r33
+22U19 Hash 37|22r33
+25u29*PBKDF2 33|19k23 37|18w24 21r25
+X 37 util-encoders-kdf-pbkdf2_hmac_sha256.ads
+20K29*PBKDF2_HMAC_SHA256 33|19k23 35|19b29
+

@@ -1,0 +1,311 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U ado.datasets%b	ado-datasets.adb	81e97655 NE OO PK IU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+W ado.schemas%s		ado-schemas.adb		ado-schemas.ali
+W ado.statements%s	ado-statements.adb	ado-statements.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+W util.beans.objects.time%s  util-beans-objects-time.adb  util-beans-objects-time.ali
+
+U ado.datasets%s	ado-datasets.ads	71bd569c EE NE OO PK IU
+W ado%s			ado.adb			ado.ali
+W ado.queries%s		ado-queries.adb		ado-queries.ali
+W ado.sessions%s	ado-sessions.adb	ado-sessions.ali
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+W util.beans.objects.datasets%s  util-beans-objects-datasets.adb  util-beans-objects-datasets.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihama.ads		20190518041255 bece8dbf ada.containers.indefinite_hashed_maps%s
+D a-cihama.adb		20190518041254 94909b4a ada.containers.indefinite_hashed_maps%b
+D a-cihase.ads		20190518041254 4f8a62e0 ada.containers.indefinite_hashed_sets%s
+D a-cihase.adb		20190518041256 f54eebd2 ada.containers.indefinite_hashed_sets%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-convec.ads		20190518041256 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20190518041254 32f4e1a7 ada.containers.vectors%b
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strhas.ads		20190518041256 c71c2a52 ada.strings.hash%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D ado.ads		20200810200714 1ec4b94f ado%s
+D ado-audits.ads	20200810200714 2a544c7e ado.audits%s
+D ado-caches.ads	20200810200714 3f821007 ado.caches%s
+D ado-configs.ads	20200810200714 1a13a13e ado.configs%s
+D ado-connections.ads	20200810200714 53398a84 ado.connections%s
+D ado-datasets.ads	20200810200714 a6e28c26 ado.datasets%s
+D ado-datasets.adb	20200810200714 e32c3863 ado.datasets%b
+D ado-dialects.ads	20200810200714 eb00eeaf ado.dialects%s
+D ado-objects.ads	20200810200714 b8c8fb60 ado.objects%s
+D ado-objects-cache.ads	20200810200714 aef66a18 ado.objects.cache%s
+D ado-parameters.ads	20200810200714 ad5888fa ado.parameters%s
+D ado-queries.ads	20200810200714 e566d425 ado.queries%s
+D ado-schemas.ads	20200810200714 b2b43658 ado.schemas%s
+D ado-schemas-entities.ads  20200810200714 3c0f0af5 ado.schemas.entities%s
+D ado-sequences.ads	20200810200714 1726cdc8 ado.sequences%s
+D ado-sessions.ads	20200810200714 20bb1cec ado.sessions%s
+D ado-sql.ads		20200810200714 ba8ff082 ado.sql%s
+D ado-statements.ads	20200810200714 752f695d ado.statements%s
+D ado-utils.ads		20200810200714 ef23a2c0 ado.utils%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrin.ads		20190518041255 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atacco.ads		20190518041256 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-linux.ads		20190518041256 ed0b8aee system.linux%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-multip.ads		20190518041254 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190518093549 c13b1f65 system.os_constants%s
+D s-osinte.ads		20190518041257 baabc537 system.os_interface%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stausa.ads		20190518041255 017a0a05 system.stack_usage%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-tasinf.ads		20190518041256 2b3f8252 system.task_info%s
+D s-taspri.ads		20190518041256 f40ac08d system.task_primitives%s
+D s-taskin.ads		20190518041257 b9d612e2 system.tasking%s
+D s-taprob.ads		20190518041256 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20200215171848 36301479 util%s
+D util-beans.ads	20200215171848 362abe70 util.beans%s
+D util-beans-basic.ads	20200215171848 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20200215171848 aef7462e util.beans.objects%s
+D util-beans-objects-datasets.ads  20200215171848 0c46ab3c util.beans.objects.datasets%s
+D util-beans-objects-time.ads  20200215171848 03bc9d15 util.beans.objects.time%s
+D util-concurrent.ads	20200215171848 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20200215171848 2618dd23 util.concurrent.counters%s
+D util-log.ads		20200215171848 0fb1ac89 util.log%s
+D util-log-appenders.ads  20200215171848 ddbe02c8 util.log.appenders%s
+D util-log-loggers.ads	20200215171848 3003bbc2 util.log.loggers%s
+D util-nullables.ads	20200215171848 cb4c8fed util.nullables%s
+D util-properties.ads	20200215171848 3ed4fee8 util.properties%s
+D util-refs.ads		20200215171848 e592e98d util.refs%s
+D util-refs.adb		20200215171848 f4fdc937 util.refs%b
+D util-strings.ads	20200215171848 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+G a e
+G c Z s b [list ado__datasets 29 14 none]
+G c Z s b [get_count ado__datasets 34 13 none]
+G r c none [list ado__datasets 29 14 none] [create_statement ado__sessions 110 13 none]
+G r d query_statement [list ado__datasets 29 14 none] [adjust ado__statements 494 14 none]
+G r e query_statement [list ado__datasets 29 14 none] [finalize ado__statements 497 14 none]
+G r c none [list ado__datasets 29 14 none] [execute ado__statements 170 14 none]
+G r c none [list ado__datasets 29 14 none] [clear util__beans__objects__datasets 72 14 none]
+G r c none [list ado__datasets 29 14 none] [has_elements ado__statements 176 13 none]
+G r c none [list ado__datasets 29 14 none] [get_column_count ado__statements 308 13 none]
+G r c none [list ado__datasets 29 14 none] [get_column_name ado__statements 303 13 none]
+G r c none [list ado__datasets 29 14 none] [add_column util__beans__objects__datasets 67 14 none]
+G r c none [list ado__datasets 29 14 none] [append util__beans__objects__datasets 61 14 none]
+G r c none [list ado__datasets 29 14 none] [next ado__statements 179 14 none]
+G r c none [get_count ado__datasets 34 13 none] [create_statement ado__sessions 110 13 none]
+G r d query_statement [get_count ado__datasets 34 13 none] [adjust ado__statements 494 14 none]
+G r e query_statement [get_count ado__datasets 34 13 none] [finalize ado__statements 497 14 none]
+G r c none [get_count ado__datasets 34 13 none] [execute ado__statements 170 14 none]
+G r c none [get_count ado__datasets 34 13 none] [get_result_integer ado__statements 312 13 none]
+X 2 a-calend.ads
+42I9*Time<222I9>
+222I9 Time_Rep<long_long_integer>
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<28|43R9>
+X 30 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[25|111]>
+X 42 ado.ads
+25K9*ADO 150e8 47|20r6 21r6 23r9 30r37 31r33 34r37 35r37 37r5 48|20r6 21r6
+. 23r14 30r37 31r33 34r14 37r14 91r37 92r37 93r14 99r5
+X 47 ado-datasets.ads
+23K13*Datasets 42|25k9 47|37l9 37e17 48|23b18 99l9 99t17
+25R12*Dataset{105|38R9} 29r37 48|29r37
+29U14*List 29=20 30=20 31>20 48|29b14 86l8 86t12
+29r20 Into{25R12} 48|29b20 76m7 76r7 79m13 79r13 82m13 82r13
+30c20 Session<57|71R9> 48|30b20 34r48
+31c20 Query<53|211R9> 48|31b20 34r74
+34V13*Get_Count{natural} 34>24 35>24 48|91b13 97l8 97t17
+34c24 Session<57|71R9> 48|91b24 93r48
+35c24 Query<53|211R9> 48|92b24 93r74
+X 48 ado-datasets.adb
+32U17 Fill 32=23 36b17 72l11 72t15 82r26
+32a23 Data{105|36A9} 36b23 39r19 41m16 46m19 49m19 52m19 55m19 58m19 61m19
+. 64m19 67m19
+34r7 Stmt{59|165R9} 40r16 43r21 46r61 49r61 55r61 58r66 61r61 75m7 75r7 77r10
+. 78r24 79r30 81r16 83m13 83r13
+39i14 I{integer} 40r30 41r22 43r43 46r25 46r79 49r25 49r79 52r25 55r25 55r78
+. 58r25 58r81 61r25 61r78 64r25 67r25
+78i14 I{integer} 79r52
+93r7 Stmt{59|165R9} 95m7 95r7 96r14
+X 52 ado-parameters.ads
+100h9*Expander
+X 53 ado-queries.ads
+188K13*Queries 47|21w10 31r37 35r41 48|31r37 92r41 53|373e16
+211R9*Context<58|86R9> 47|31r45 35r49 48|31r45 92r49 53|314e14
+X 54 ado-schemas.ads
+23K13*Schemas 48|20w10 37r18 54|215e16
+43n7*T_UNKNOWN{41E9} 48|66r29
+46n7*T_BOOLEAN{41E9} 48|45r21
+48n7*T_TINYINT{41E9} 48|48r21
+49n7*T_SMALLINT{41E9} 48|48r33
+50n7*T_INTEGER{41E9} 48|48r46
+51n7*T_LONG_INTEGER{41E9} 48|48r58
+53n7*T_FLOAT{41E9} 48|51r21
+54n7*T_DOUBLE{41E9} 48|51r31
+56n7*T_DECIMAL{41E9} 48|51r42
+58n7*T_ENUM{41E9} 48|54r21
+59n7*T_SET{41E9} 48|66r21
+61n7*T_TIME{41E9} 48|57r21
+62n7*T_YEAR{41E9} 48|48r75
+63n7*T_DATE{41E9} 48|57r30
+64n7*T_DATE_TIME{41E9} 48|57r39
+65n7*T_TIMESTAMP{41E9} 48|57r53
+67n7*T_CHAR{41E9} 48|60r21
+68n7*T_VARCHAR{41E9} 48|60r30
+69n7*T_BLOB{41E9} 48|63r21
+71n7*T_NULL{41E9} 48|66r41
+X 57 ado-sessions.ads
+51K13*Sessions 47|20w10 30r41 34r41 48|30r41 91r41 57|237e17
+71R9*Session<28|43R9> 47|30r50 34r50 48|30r50 91r50 57|218e14
+110V13*Create_Statement{59|165R9} 48|34R56 93R56
+X 59 ado-statements.ads
+83K13*Statements 48|21w10 34r18 93r18 59|565e19
+165R9*Query_Statement<103R9> 48|34r29 93r29 59|491e14
+170U14*Execute<157p14> 48|75s12 95s12
+176V13*Has_Elements{boolean} 48|77s15 81s21
+179U14*Next 48|83s18
+182V13*Is_Null{boolean} 48|40s21
+203V13*Get_Integer{integer} 48|49s66
+238V13*Get_Boolean{boolean} 48|46s66
+266V13*Get_String{string} 48|55s66 61s66
+278V13*Get_Time{2|42I9} 48|58s71
+297V13*Get_Column_Type{54|41E9} 48|43s26
+303V13*Get_Column_Name{string} 48|79s35
+308V13*Get_Column_Count{natural} 48|78s29
+312V13*Get_Result_Integer{integer} 48|96s19
+X 65 system.ads
+67M9*Address
+X 76 s-memory.ads
+53V13*Alloc{65|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{65|67M9} 105i<c,__gnat_realloc>22
+X 85 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 87 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 101 util.ads
+18K9*Util 47|18r6 25r23 48|18r6 32r37 36r37 41r28 46r31 49r31 52r31 55r31
+. 58r31 61r31 64r31 67r31 101|28e9
+X 102 util-beans.ads
+50K14*Beans 47|18r11 25r28 48|18r11 32r42 36r42 41r33 46r36 49r36 52r36 55r36
+. 58r36 61r36 64r36 67r36 102|54e15
+X 103 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+67h9*List_Bean<42R9>
+X 104 util-beans-objects.ads
+43K20*Objects 47|18r17 25r34 48|18r17 32r48 36r48 41r39 46r42 49r42 52r42
+. 55r42 58r42 61r42 64r42 67r42 104|644e23
+90r4*Null_Object{83R9} 48|41r47 52r50 64r50 67r50
+97h9*Object_Type
+211V13*To_Object{83R9} 48|49s50
+217V13*To_Object{83R9} 48|55s50 61s50
+221V13*To_Object{83R9} 48|46s50
+X 105 util-beans-objects-datasets.ads
+31K28*Datasets 47|18w25 25r42 48|32r56 36r56 105|126e32
+36A9*Object_Array(104|83R9)<integer> 48|32r65 36r65
+38R9*Dataset<103|67R9> 47|25r51 105|116e14
+61U14*Append 48|82s18
+67U14*Add_Column 48|79s18
+72U14*Clear 48|76s12
+X 106 util-beans-objects-time.ads
+21K28*Time 48|18w25 58r50 106|37e28
+24V13*To_Object{104|83R9} 48|58s55
+X 113 util-properties.ads
+256h12*Manager<103|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+

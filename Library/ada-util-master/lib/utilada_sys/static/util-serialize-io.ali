@@ -1,0 +1,512 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LONG_LONG_INTEGERS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.serialize.io%b	util-serialize-io.adb	8b3d0063 OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.streams.stream_io%s  a-ststio.adb		a-ststio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+W util%s		util.ads		util.ali
+Z util.log.loggers%s	util-log-loggers.adb	util-log-loggers.ali  AD
+W util.serialize%s	util-serialize.ads	util-serialize.ali
+W util.streams%s	util-streams.adb	util-streams.ali
+W util.streams.files%s	util-streams-files.adb	util-streams-files.ali
+
+U util.serialize.io%s	util-serialize-io.ads	6832a637 EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+W util.log%s		util-log.adb		util-log.ali
+W util.log.loggers%s	util-log-loggers.adb	util-log-loggers.ali
+W util.nullables%s	util-nullables.ads	util-nullables.ali
+W util.serialize%s	util-serialize.ads	util-serialize.ali
+W util.streams%s	util-streams.adb	util-streams.ali
+W util.streams.buffered%s  util-streams-buffered.adb  util-streams-buffered.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-ststio.ads		20190518041255 a75f3183 ada.streams.stream_io%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-exctab.adb		20190518041255 c756f391 system.exception_table%b
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20190518041254 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20190518041256 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-stratt.adb		20190518041255 56ef263e system.stream_attributes%b
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-log.ads		20210228093152 0fb1ac89 util.log%s
+D util-log-appenders.ads  20210228093152 898ccef8 util.log.appenders%s
+D util-log-loggers.ads	20210228093152 5659ff08 util.log.loggers%s
+D util-nullables.ads	20210228093152 cb4c8fed util.nullables%s
+D util-properties.ads	20210228093152 3ed4fee8 util.properties%s
+D util-serialize.ads	20210228093152 bb5084e8 util.serialize%s
+D util-serialize-io.ads	20210228093152 f7823694 util.serialize.io%s
+D util-serialize-io.adb	20210228093152 01775907 util.serialize.io%b
+D util-streams.ads	20210228093152 e241dcc4 util.streams%s
+D util-streams-buffered.ads  20210228093152 a458193f util.streams.buffered%s
+D util-streams-files.ads  20210228093152 06b5dc71 util.streams.files%s
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-texts.ads	20210228093152 096d4581 util.texts%s
+D util-texts-builders.ads  20210228093152 f2e717ef util.texts.builders%s
+D util-texts-builders.adb  20210228093152 38b5b7a7 util.texts.builders%b
+G a e
+G c b b b [b util__serialize__io 23 1 none]
+G c Z s s [start_document util__serialize__io 40 14 none]
+G c Z s s [end_document util__serialize__io 43 14 none]
+G c Z s s [start_entity util__serialize__io 45 14 none]
+G c Z s s [end_entity util__serialize__io 48 14 none]
+G c Z s b [write_attribute util__serialize__io 76 14 none]
+G c Z s b [write_entity util__serialize__io 113 14 none]
+G c Z s b [write_entity util__serialize__io 117 14 none]
+G c Z s b [write_entity util__serialize__io 121 14 none]
+G c Z s b [write_entity util__serialize__io 125 14 none]
+G c Z s b [write_entity util__serialize__io 129 14 none]
+G c Z s b [write_entity util__serialize__io 133 14 none]
+G c Z s s [start_array util__serialize__io 141 14 none]
+G c Z s s [end_array util__serialize__io 144 14 none]
+G c Z s s [start_document util__serialize__io 150 14 none]
+G c Z s s [end_document util__serialize__io 153 14 none]
+G c Z s b [parse util__serialize__io 194 14 none]
+G c Z s b [parse_string util__serialize__io 199 14 none]
+G c Z s b [has_error util__serialize__io 204 13 none]
+G c Z s b [set_logger util__serialize__io 207 14 none]
+G c Z s b [get_location util__serialize__io 211 13 none]
+G c Z s b [error util__serialize__io 216 14 none]
+G c Z s s [parserDA util__serialize__io 221 9 none]
+G c Z s s [parserDF util__serialize__io 221 9 none]
+G c Z s s [parserDI util__serialize__io 221 9 none]
+G c Z s s [parserIP util__serialize__io 221 9 none]
+G r c none [b util__serialize__io 23 1 none] [create util__log__loggers 41 13 none]
+G r s file_stream [parse util__serialize__io 194 14 none] [file_streamIP util__streams__files 63 9 none]
+G r s input_buffer_stream [parse util__serialize__io 194 14 none] [input_buffer_streamIP util__streams__buffered 218 9 none]
+G r c none [parse util__serialize__io 194 14 none] [info util__log__loggers 87 14 none]
+G r c none [parse util__serialize__io 194 14 none] [initialize util__streams__buffered 152 14 none]
+G r c none [parse util__serialize__io 194 14 none] [open util__streams__files 34 14 none]
+G r c none [parse util__serialize__io 194 14 none] [error util__log__loggers 112 14 none]
+G r s input_buffer_stream [parse_string util__serialize__io 199 14 none] [input_buffer_streamIP util__streams__buffered 218 9 none]
+G r c none [parse_string util__serialize__io 199 14 none] [initialize util__streams__buffered 148 14 none]
+G r c none [parse_string util__serialize__io 199 14 none] [error util__log__loggers 112 14 none]
+G r c none [error util__serialize__io 216 14 none] [error util__log__loggers 112 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 88|19r6 20r6 78r43 99r40 115r40 225r24 89|19r6 20r6 21r6 22r6
+. 33r43 35r37 40r40 42r34 114r23 117r28 125r12 130r58 145r23 156r58 183r14
+X 2 a-calend.ads
+36K13*Calendar 409e17 88|20w10 99r44
+42I9*Time<222I9> 88|99r53
+222I9 Time_Rep<long_long_integer>
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<22|43R9>
+X 21 a-except.ads
+54K13*Exceptions 349e19 89|21w10 130r62 156r62
+72V13*Exception_Name{string} 89|130s73 156s73
+X 23 a-ioexce.ads
+18K13*IO_Exceptions 30e22 89|22w10 125r16
+23X4*Name_Error 89|125r30
+X 24 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[18|75]>
+X 25 a-stream.ads
+36K13*Streams 87e16 89|19w10 20r10 117r32
+X 26 a-ststio.ads
+39K21*Stream_IO 223e26 89|20w18 117r40
+46n23*In_File{46E9} 89|117r50
+X 27 a-string.ads
+16K13*Strings 35e16 88|19r10 78r47 115r44 225r28 89|33r47 35r41 40r44 42r38
+. 114r27 145r27 183r18
+X 30 a-strunb.ads
+82K21*Unbounded 756e26 88|19w18 78r55 115r52 225r36 89|33r55 35r49 40r52
+. 42r46 114r35 145r35 183r26
+87R9*Unbounded_String<22|43R9> 739e14 88|78r65 115r62 225r46 89|33r65 40r62
+103V13*To_Unbounded_String{87R9} 89|114s45 145s45
+116V13*To_String{string} 89|35s59 42s56 183s36
+X 40 system.ads
+67M9*Address
+X 57 s-memory.ads
+53V13*Alloc{40|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{40|67M9} 105i<c,__gnat_realloc>22
+X 64 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 76 util.ads
+18K9*Util 28e9 88|22r6 23r6 24r6 25r6 26r6 27r9 37r48 70r43 111r40 119r40
+. 123r40 127r40 131r40 135r40 161r45 167r46 171r44 176r45 182r41 183r45 186r32
+. 190r38 208r39 221r32 228r24 231r5 89|18r6 23r14 26r13 29r27 29r54 30r79
+. 47r40 58r40 69r40 80r40 91r40 106r28 107r20 140r24 173r39 200r5
+X 77 util-beans.ads
+50K14*Beans 54e15 88|22r11 70r48 111r45 182r46
+X 78 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 79 util-beans-objects.ads
+43K20*Objects 644e23 88|22w17 70r54 111r51 182r52
+83R9*Object<22|43R9> 632e14 88|70r62 111r59 182r60
+97h9*Object_Type
+X 82 util-log.ads
+166K14*Log 192e13 88|25r11 161r50 167r51 171r49 176r50 183r50 186r37 208r44
+. 221r37 228r29 89|26r18 29r32 29r59 30r84 173r44
+170I12*Level_Type{natural}
+174i4*WARN_LEVEL{170I12} 89|30r88
+187h9*Logging 88|161r54 167r55 171r53 176r54 183r54 186r41 221r41
+X 84 util-log-loggers.ads
+24K18*Loggers 153e21 88|25w15 208r48 228r33 89|26r22 29r36 29r63 173r48
+34R9*Logger<22|50R9> 147e14 89|29r44
+35P9*Logger_Access(34R9) 88|208r56 228r41 89|26r30 173r56
+41V13*Create{34R9} 89|29s71
+87U14*Info 89|112s28
+112U14*Error 89|194s28
+X 85 util-nullables.ads
+28K14*Nullables 131e19 88|26w11 119r45 123r45 127r45 131r45 135r45 89|47r45
+. 58r45 69r45 80r45 91r45
+38R9*Nullable_Boolean 41e14 88|127r55 89|69r55
+39b7*Value{boolean} 89|74m43 74r43
+40b7*Is_Null{boolean} 89|71r16
+52R9*Nullable_Integer 55e14 88|131r55 89|80r55
+53i7*Value{integer} 89|85m43 85r43
+54b7*Is_Null{boolean} 89|82r16
+66R9*Nullable_Long 69e14 88|135r55 89|91r55
+67i7*Value{long_long_integer} 89|96r52
+68b7*Is_Null{boolean} 89|93r16
+80R9*Nullable_String 83e14 88|119r55 89|47r55
+81r7*Value{30|87R9} 89|52r43
+82b7*Is_Null{boolean} 89|49r16
+94R9*Nullable_Time 97e14 88|123r55 89|58r55
+95i7*Value{2|42I9} 89|63m43 63r43
+96b7*Is_Null{boolean} 89|60r16
+X 86 util-properties.ads
+256h12*Manager<78|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 87 util-serialize.ads
+18K14*Serialize 76|18k9 87|22e19 88|27r14 231r10 89|23r19 200r10
+X 88 util-serialize-io.ads
+27K24*IO 87|18k14 88|221E9 231l20 231e22 89|23b29 200l20 200t22
+29X4*Parse_Error
+37h9*Output_Stream<90|55R9> 40p14 40r46 43p14 43r44 45p14 45r44 48p14 48r42
+. 52p14 52r47 56p14 56r52 60p14 60r47 64p14 64r47 68p14 68r47 73p14 73r52
+. 76r47 81p14 81r44 85p14 85r49 89p14 89r44 93p14 93r44 97p14 97r44 101p14
+. 101r49 105p14 105r49 109p14 109r44 113r44 117r44 121r44 125r44 129r44 133r44
+. 138p14 138r49 141p14 141r43 144p14 144r41 89|31r47 38r44 45r44 56r44 67r44
+. 78r44 89r44 90|59p14 63p14 66p14
+40U14*Start_Document 40=30
+40r30 Stream{37R9}
+43U14*End_Document 43=28
+43r28 Stream{37R9}
+45U14*Start_Entity 45=28 46>28
+45r28 Stream{37R9}
+46a28 Name{string}
+48U14*End_Entity 48=26 49>26
+48r26 Stream{37R9}
+49a26 Name{string}
+52x14*Write_Attribute 52=31 53>31 54>31 89|35R14
+52r31 Stream{37R9}
+53a31 Name{string}
+54a31 Value{string}
+56x14*Write_Wide_Attribute 56=36 57>36 58>36
+56r36 Stream{37R9}
+57a36 Name{string}
+58a36 Value{wide_wide_string}
+60x14*Write_Attribute 60=31 61>31 62>31
+60r31 Stream{37R9}
+61a31 Name{string}
+62i31 Value{integer}
+64x14*Write_Attribute 64=31 65>31 66>31
+64r31 Stream{37R9}
+65a31 Name{string}
+66b31 Value{boolean}
+68x14*Write_Attribute 68=31 69>31 70>31
+68r31 Stream{37R9}
+69a31 Name{string}
+70r31 Value{79|83R9}
+73x14*Write_Null_Attribute 73=36 74>36
+73r36 Stream{37R9}
+74a36 Name{string}
+76U14*Write_Attribute 76=31 77>31 78>31 89|31b14 36l8 36t23
+76c31 Stream<37R9> 89|31b31 35m7 35r7
+77a31 Name{string} 89|32b31 35r31
+78r31 Value{30|87R9} 89|33b31 35r70
+81x14*Write_Entity 81=28 82>28 83>28 89|42R14
+81r28 Stream{37R9}
+82a28 Name{string}
+83a28 Value{string}
+85x14*Write_Wide_Entity 85=33 86>33 87>33
+85r33 Stream{37R9}
+86a33 Name{string}
+87a33 Value{wide_wide_string}
+89x14*Write_Entity 89=28 90>28 91>28 89|74R17
+89r28 Stream{37R9}
+90a28 Name{string}
+91b28 Value{boolean}
+93x14*Write_Entity 93=28 94>28 95>28 89|85R17 96R17
+93r28 Stream{37R9}
+94a28 Name{string}
+95i28 Value{integer}
+97x14*Write_Entity 97=28 98>28 99>28 89|63R17
+97r28 Stream{37R9}
+98a28 Name{string}
+99i28 Value{2|42I9}
+101x14*Write_Long_Entity 101=33 102>33 103>33
+101r33 Stream{37R9}
+102a33 Name{string}
+103i33 Value{long_long_integer}
+105x14*Write_Enum_Entity 105=33 106>33 107>33
+105r33 Stream{37R9}
+106a33 Name{string}
+107a33 Value{string}
+109x14*Write_Entity 109=28 110>28 111>28
+109r28 Stream{37R9}
+110a28 Name{string}
+111r28 Value{79|83R9}
+113U14*Write_Entity 113=28 114>28 115>28 89|38b14 43l8 43t20 52s17
+113c28 Stream<37R9> 89|38b28 42m7 42r7
+114a28 Name{string} 89|39b28 42r28
+115r28 Value{30|87R9} 89|40b28 42r67
+117U14*Write_Entity 117=28 118>28 119>28 89|45b14 54l8 54t20
+117c28 Stream<37R9> 89|45b28 50m10 50r10 52m10 52r10
+118a28 Name{string} 89|46b28 50r36 52r31
+119r28 Value{85|80R9} 89|47b28 49r10 52r37
+121U14*Write_Entity 121=28 122>28 123>28 89|56b14 65l8 65t20
+121c28 Stream<37R9> 89|56b28 61m10 61r10 63m10 63r10
+122a28 Name{string} 89|57b28 61r36 63r31
+123r28 Value{85|94R9} 89|58b28 60r10 63r37
+125U14*Write_Entity 125=28 126>28 127>28 89|67b14 76l8 76t20
+125c28 Stream<37R9> 89|67b28 72m10 72r10 74m10 74r10
+126a28 Name{string} 89|68b28 72r36 74r31
+127r28 Value{85|38R9} 89|69b28 71r10 74r37
+129U14*Write_Entity 129=28 130>28 131>28 89|78b14 87l8 87t20
+129c28 Stream<37R9> 89|78b28 83m10 83r10 85m10 85r10
+130a28 Name{string} 89|79b28 83r36 85r31
+131r28 Value{85|52R9} 89|80b28 82r10 85r37
+133U14*Write_Entity 133=28 134>28 135>28 89|89b14 98l8 98t20
+133c28 Stream<37R9> 89|89b28 94m10 94r10 96m10 96r10
+134a28 Name{string} 89|90b28 94r36 96r31
+135r28 Value{85|66R9} 89|91b28 93r10 96r46
+138x14*Write_Null_Entity 138=33 139>33 89|50R17 61R17 72R17 83R17 94R17
+138r33 Stream{37R9}
+139a33 Name{string}
+141U14*Start_Array 141=27 142>27
+141r27 Stream{37R9}
+142a27 Name{string}
+144U14*End_Array 144=25 145>25
+144r25 Stream{37R9}
+145a25 Name{string}
+147h9*Reader 150p14 150r46 153p14 153r44 159p14 159r45 165p14 165r46 169p14
+. 169r44 173p14 173r45 180p14 180r45 191r38 196r38 201r45 89|105r38 139r45
+150U14*Start_Document 150=30 89|118R12 147R12
+150r30 Stream{147R9}
+153U14*End_Document 153=28
+153r28 Stream{147R9}
+159x14*Start_Object 159=28 160>28 161=28
+159r28 Handler{147R9}
+160a28 Name{string}
+161c28 Logger<82|187R9>
+165x14*Finish_Object 165=29 166>29 167=29
+165r29 Handler{147R9}
+166a29 Name{string}
+167c29 Logger<82|187R9>
+169x14*Start_Array 169=27 170>27 171=27
+169r27 Handler{147R9}
+170a27 Name{string}
+171c27 Logger<82|187R9>
+173x14*Finish_Array 173=28 174>28 175>28 176=28
+173r28 Handler{147R9}
+174a28 Name{string}
+175i28 Count{natural}
+176c28 Logger<82|187R9>
+180x14*Set_Member 180=26 181>26 182>26 183=26 184>26
+180r26 Handler{147R9}
+181a26 Name{string}
+182r26 Value{79|83R9}
+183c26 Logger<82|187R9>
+184b26 Attribute{boolean}
+186H9*Parser<82|187R9> 189p14 189r38 194p14 194r38 199p14 199r45 204p13 204r37
+. 207p14 207r43 211p13 211r40 216P14 216r38 221c9 229e14 89|103r38 119r7
+. 126r10 130r13 137r45 148r7 156r13 164r37 172r43 181r40 191r38 195r35
+189x14*Parse 189=21 190=21 191=21 89|119R30 148R30
+189r21 Handler{186R9}
+190c21 Stream<91|145R9>
+191c21 Sink<147R9>
+194U14*Parse 194=21 195>21 196=21 89|103b14 132l8 132t13
+194r21 Handler{186R9} 89|103b21 109r10 110m10 112r7 114m7 119m21 119r21 126m24
+. 126r24 129r17 130m27 130r27
+195a21 File{string} 89|104b21 112r54 114r66 117r67 126r51
+196c21 Sink<147R9> 89|105b21 118m7 118r7 119m45
+199U14*Parse_String 199=28 200>28 201=28 89|137b14 159l8 159t20
+199r28 Handler{186R9} 89|137b28 142r10 143m10 145m7 148m21 148r21 155r17
+. 156m27 156r27
+200a28 Content{string} 89|138b28 146r38
+201c28 Sink<147R9> 89|139b28 147m7 147r7 148m45
+204V13*Has_Error{boolean} 204>24 89|164b13 167l8 167t17
+204r24 Handler{186R9} 89|164b24 166r14
+207U14*Set_Logger 207=26 208>26 89|172b14 176l8 176t18
+207r26 Handler{186R9} 89|172b26 175m7
+208p26 Logger{84|35P9} 89|173b26 175r31
+211V13*Get_Location{string} 211>27 89|181b13 184l8 184t20 195R58
+211r27 Handler{186R9} 89|181b27 183r47
+216U14*Error<82|189p14> 216=21 217>21 89|126R33 130R36 156R36 191b14 198l8
+. 198t13
+216r21 Handler{186R9} 89|191b21 194r7 195r49 197m7
+217a21 Message{string} 89|192b21 196r35
+222b7 Error_Flag{boolean} 89|129r25 155r25 166r22 197m15
+225r7 File{30|87R9} 89|114m15 145m15 183r55
+228p7 Error_Logger{84|35P9} 89|109r18 110m18 112r15 142r18 143m18 175m15
+. 194r15
+X 89 util-serialize-io.adb
+29r4 Log{84|34R9} 110r34 143r34
+106r7 Stream{92|31R9} 115m36 115r36 117m7 117r7
+107r7 Buffer{91|145R9} 115m7 115r7 119m37 119r37
+128r12 E{21|63R9} 130r89
+140r7 Stream{91|145R9} 146m7 146r7 148m37 148r37
+154r12 E{21|63R9} 156r89
+X 90 util-streams.ads
+46K14*Streams 88|23w11 24r11 37r53 190r43 89|18r11 106r33 107r25 140r29 90|118e17
+55h9*Output_Stream 88|37r61
+59x14*Write
+63U14*Flush
+66U14*Close
+73h9*Input_Stream
+X 91 util-streams-buffered.ads
+64K22*Buffered 88|24w19 190r51 89|107r33 140r37 91|240e26
+145R9*Input_Buffer_Stream<75R9><90|73R9> 88|190r60 89|107r42 140r46 91|224e14
+148U14*Initialize<83p14> 89|146s14
+149a26 Content{string} 89|146r26
+152U14*Initialize 89|115s14
+153p26 Input(90|73R9) 89|115r26
+154i26 Size{positive} 89|116r26
+X 92 util-streams-files.ads
+24K22*Files 89|18w19 106r41 92|72e23
+31R9*File_Stream<90|55R9><90|73R9> 89|106r47 92|66e14
+34U14*Open 89|117s14
+35e20 Mode{26|46E9} 89|117r20
+36a20 Name{string} 89|117r59
+

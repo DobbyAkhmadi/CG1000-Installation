@@ -1,0 +1,858 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_LONG_LONG_INTEGERS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U ado.parameters%b	ado-parameters.adb	c02edab1 OO PF PK IU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.formatting%s  a-calfor.adb	a-calfor.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.fat_lflt%s	s-fatlfl.ads		s-fatlfl.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W util%s		util.ads		util.ali
+W util.log%s		util-log.adb		util-log.ali
+W util.log.loggers%s	util-log-loggers.adb	util-log-loggers.ali  AD
+W util.strings%s	util-strings.adb	util-strings.ali
+
+U ado.parameters%s	ado-parameters.ads	eedb1630 EE OO PF PK IU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.generic_array_sort%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+W ada.containers.indefinite_vectors%s
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+W ado%s			ado.adb			ado.ali
+W ado.dialects%s	ado-dialects.adb	ado-dialects.ali
+W ado.utils%s		ado-utils.adb		ado-utils.ali
+Z system%s		system.ads		system.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-calfor.ads		20190518041254 0a6f9afc ada.calendar.formatting%s
+D a-catizo.ads		20190518041256 409d7e5b ada.calendar.time_zones%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-convec.ads		20190518041256 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20190518041254 32f4e1a7 ada.containers.vectors%b
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D ado.ads		20200810200714 1ec4b94f ado%s
+D ado-dialects.ads	20200810200714 eb00eeaf ado.dialects%s
+D ado-parameters.ads	20200810200714 ad5888fa ado.parameters%s
+D ado-parameters.adb	20200810200714 ceec1db0 ado.parameters%b
+D ado-utils.ads		20200810200714 ef23a2c0 ado.utils%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20190518041254 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20190518041256 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-imgint.ads		20190518041254 02dbe0c2 system.img_int%s
+D s-imgrea.ads		20190518041254 c7a851e2 system.img_real%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-stratt.adb		20190518041255 56ef263e system.stream_attributes%b
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20200215171848 36301479 util%s
+D util-beans.ads	20200215171848 362abe70 util.beans%s
+D util-beans-basic.ads	20200215171848 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20200215171848 aef7462e util.beans.objects%s
+D util-concurrent.ads	20200215171848 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20200215171848 2618dd23 util.concurrent.counters%s
+D util-log.ads		20200215171848 0fb1ac89 util.log%s
+D util-log-appenders.ads  20200215171848 ddbe02c8 util.log.appenders%s
+D util-log-loggers.ads	20200215171848 3003bbc2 util.log.loggers%s
+D util-nullables.ads	20200215171848 cb4c8fed util.nullables%s
+D util-properties.ads	20200215171848 3ed4fee8 util.properties%s
+D util-refs.ads		20200215171848 e592e98d util.refs%s
+D util-refs.adb		20200215171848 f4fdc937 util.refs%b
+D util-strings.ads	20200215171848 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+G a e
+G c b b b [b ado__parameters 23 1 none]
+G c Z s b [set_dialect ado__parameters 115 14 none]
+G c Z s b [set_expander ado__parameters 119 14 none]
+G c Z s b [get_dialect ado__parameters 123 13 none]
+G c Z s b [bind_param ado__parameters 150 14 none]
+G c Z s b [bind_param ado__parameters 153 14 none]
+G c Z s b [bind_param ado__parameters 156 14 none]
+G c Z s b [bind_param ado__parameters 159 14 none]
+G c Z s b [bind_param ado__parameters 162 14 none]
+G c Z s b [bind_param ado__parameters 165 14 none]
+G c Z s b [bind_param ado__parameters 168 14 none]
+G c Z s b [bind_param ado__parameters 171 14 none]
+G c Z s b [bind_param ado__parameters 174 14 none]
+G c Z s b [bind_param ado__parameters 177 14 none]
+G c Z s b [bind_param ado__parameters 180 14 none]
+G c Z s b [bind_param ado__parameters 184 14 none]
+G c Z s b [bind_param ado__parameters 187 14 none]
+G c Z s b [bind_param ado__parameters 190 14 none]
+G c Z s b [bind_param ado__parameters 193 14 none]
+G c Z s b [bind_param ado__parameters 196 14 none]
+G c Z s b [bind_param ado__parameters 199 14 none]
+G c Z s b [bind_param ado__parameters 202 14 none]
+G c Z s b [bind_param ado__parameters 205 14 none]
+G c Z s b [bind_param ado__parameters 208 14 none]
+G c Z s b [bind_param ado__parameters 211 14 none]
+G c Z s b [bind_null_param ado__parameters 214 14 none]
+G c Z s b [bind_null_param ado__parameters 216 14 none]
+G c Z s b [add_param ado__parameters 219 14 none]
+G c Z s b [add_param ado__parameters 221 14 none]
+G c Z s b [add_param ado__parameters 223 14 none]
+G c Z s b [add_param ado__parameters 225 14 none]
+G c Z s b [add_param ado__parameters 227 14 none]
+G c Z s b [add_param ado__parameters 229 14 none]
+G c Z s b [add_param ado__parameters 231 14 none]
+G c Z s b [add_null_param ado__parameters 235 14 none]
+G c Z s b [expand ado__parameters 248 13 none]
+G c Z s b [add_parameter ado__parameters 257 14 none]
+G c Z s b [set_parameters ado__parameters 260 14 none]
+G c Z s b [length ado__parameters 264 13 none]
+G c Z s b [element ado__parameters 267 13 none]
+G c Z s b [query_element ado__parameters 271 14 none]
+G c Z s b [clear ado__parameters 276 14 none]
+G c Z s b [compare_on_name ado__parameters 280 13 none]
+G c Z s s [parameterDI ado__parameters 67 9 none]
+G c Z s s [parameterDA ado__parameters 67 9 none]
+G c Z s s [parameterDF ado__parameters 67 9 none]
+G c Z s s [parameterIP ado__parameters 67 9 none]
+G c Z s s [has_element ado__parameters__parameter_vectors 73 13 282_4]
+G c Z s s [Oeq ado__parameters__parameter_vectors 78 24 282_4]
+G c Z s s [to_vector ado__parameters__parameter_vectors 80 13 282_4]
+G c Z s s [to_vector ado__parameters__parameter_vectors 82 13 282_4]
+G c Z s s [Oconcat ado__parameters__parameter_vectors 86 13 282_4]
+G c Z s s [Oconcat ado__parameters__parameter_vectors 88 13 282_4]
+G c Z s s [Oconcat ado__parameters__parameter_vectors 90 13 282_4]
+G c Z s s [Oconcat ado__parameters__parameter_vectors 92 13 282_4]
+G c Z s s [capacity ado__parameters__parameter_vectors 94 13 282_4]
+G c Z s s [reserve_capacity ado__parameters__parameter_vectors 96 14 282_4]
+G c Z s s [length ado__parameters__parameter_vectors 100 13 282_4]
+G c Z s s [set_length ado__parameters__parameter_vectors 102 14 282_4]
+G c Z s s [is_empty ado__parameters__parameter_vectors 106 13 282_4]
+G c Z s s [clear ado__parameters__parameter_vectors 108 14 282_4]
+G c Z s s [constant_reference ado__parameters__parameter_vectors 119 13 282_4]
+G c Z s s [reference ado__parameters__parameter_vectors 124 13 282_4]
+G c Z s s [constant_reference ado__parameters__parameter_vectors 129 13 282_4]
+G c Z s s [reference ado__parameters__parameter_vectors 134 13 282_4]
+G c Z s s [to_cursor ado__parameters__parameter_vectors 139 13 282_4]
+G c Z s s [to_index ado__parameters__parameter_vectors 143 13 282_4]
+G c Z s s [element ado__parameters__parameter_vectors 145 13 282_4]
+G c Z s s [element ado__parameters__parameter_vectors 149 13 282_4]
+G c Z s s [replace_element ado__parameters__parameter_vectors 151 14 282_4]
+G c Z s s [replace_element ado__parameters__parameter_vectors 156 14 282_4]
+G c Z s s [query_element ado__parameters__parameter_vectors 161 14 282_4]
+G c Z s s [query_element ado__parameters__parameter_vectors 166 14 282_4]
+G c Z s s [update_element ado__parameters__parameter_vectors 170 14 282_4]
+G c Z s s [update_element ado__parameters__parameter_vectors 175 14 282_4]
+G c Z s s [assign ado__parameters__parameter_vectors 180 14 282_4]
+G c Z s s [copy ado__parameters__parameter_vectors 182 13 282_4]
+G c Z s s [move ado__parameters__parameter_vectors 184 14 282_4]
+G c Z s s [insert ado__parameters__parameter_vectors 186 14 282_4]
+G c Z s s [insert ado__parameters__parameter_vectors 191 14 282_4]
+G c Z s s [insert ado__parameters__parameter_vectors 196 14 282_4]
+G c Z s s [insert ado__parameters__parameter_vectors 202 14 282_4]
+G c Z s s [insert ado__parameters__parameter_vectors 208 14 282_4]
+G c Z s s [insert ado__parameters__parameter_vectors 214 14 282_4]
+G c Z s s [prepend ado__parameters__parameter_vectors 221 14 282_4]
+G c Z s s [prepend ado__parameters__parameter_vectors 225 14 282_4]
+G c Z s s [append ado__parameters__parameter_vectors 230 14 282_4]
+G c Z s s [append ado__parameters__parameter_vectors 234 14 282_4]
+G c Z s s [insert_space ado__parameters__parameter_vectors 239 14 282_4]
+G c Z s s [insert_space ado__parameters__parameter_vectors 244 14 282_4]
+G c Z s s [delete ado__parameters__parameter_vectors 250 14 282_4]
+G c Z s s [delete ado__parameters__parameter_vectors 255 14 282_4]
+G c Z s s [delete_first ado__parameters__parameter_vectors 260 14 282_4]
+G c Z s s [delete_last ado__parameters__parameter_vectors 264 14 282_4]
+G c Z s s [reverse_elements ado__parameters__parameter_vectors 268 14 282_4]
+G c Z s s [swap ado__parameters__parameter_vectors 270 14 282_4]
+G c Z s s [swap ado__parameters__parameter_vectors 272 14 282_4]
+G c Z s s [first_index ado__parameters__parameter_vectors 274 13 282_4]
+G c Z s s [first ado__parameters__parameter_vectors 276 13 282_4]
+G c Z s s [first_element ado__parameters__parameter_vectors 278 13 282_4]
+G c Z s s [last_index ado__parameters__parameter_vectors 280 13 282_4]
+G c Z s s [last ado__parameters__parameter_vectors 282 13 282_4]
+G c Z s s [last_element ado__parameters__parameter_vectors 284 13 282_4]
+G c Z s s [next ado__parameters__parameter_vectors 286 13 282_4]
+G c Z s s [next ado__parameters__parameter_vectors 288 14 282_4]
+G c Z s s [previous ado__parameters__parameter_vectors 290 13 282_4]
+G c Z s s [previous ado__parameters__parameter_vectors 292 14 282_4]
+G c Z s s [find_index ado__parameters__parameter_vectors 294 13 282_4]
+G c Z s s [find ado__parameters__parameter_vectors 299 13 282_4]
+G c Z s s [reverse_find_index ado__parameters__parameter_vectors 304 13 282_4]
+G c Z s s [reverse_find ado__parameters__parameter_vectors 309 13 282_4]
+G c Z s s [contains ado__parameters__parameter_vectors 314 13 282_4]
+G c Z s s [iterate ado__parameters__parameter_vectors 318 14 282_4]
+G c Z s s [iterate ado__parameters__parameter_vectors 322 13 282_4]
+G c Z s s [iterate ado__parameters__parameter_vectors 325 13 282_4]
+G c Z s s [reverse_iterate ado__parameters__parameter_vectors 330 14 282_4]
+G c Z s s [adjust ado__parameters__parameter_vectors__implementation 90 28 363_4_282_4]
+G c Z s s [finalize ado__parameters__parameter_vectors__implementation 93 28 363_4_282_4]
+G c Z s s [zero_counts ado__parameters__parameter_vectors__implementation 96 17 363_4_282_4]
+G c Z s s [busy ado__parameters__parameter_vectors__implementation 100 17 363_4_282_4]
+G c Z s s [unbusy ado__parameters__parameter_vectors__implementation 104 17 363_4_282_4]
+G c Z s s [lock ado__parameters__parameter_vectors__implementation 108 17 363_4_282_4]
+G c Z s s [unlock ado__parameters__parameter_vectors__implementation 112 17 363_4_282_4]
+G c Z s s [tc_check ado__parameters__parameter_vectors__implementation 116 17 363_4_282_4]
+G c Z s s [te_check ado__parameters__parameter_vectors__implementation 120 17 363_4_282_4]
+G c Z s s [initialize ado__parameters__parameter_vectors__implementation 139 28 363_4_282_4]
+G c Z s s [finalize ado__parameters__parameter_vectors__implementation 140 28 363_4_282_4]
+G c Z s s [initialize ado__parameters__parameter_vectors__implementation 145 28 363_4_282_4]
+G c Z s s [finalize ado__parameters__parameter_vectors__implementation 146 28 363_4_282_4]
+G c Z s s [reference_control_typeDA ado__parameters__parameter_vectors__implementation 84 12 363_4_282_4]
+G c Z s s [reference_control_typeDF ado__parameters__parameter_vectors__implementation 84 12 363_4_282_4]
+G c Z s s [reference_control_typeIP ado__parameters__parameter_vectors__implementation 84 12 363_4_282_4]
+G c Z s s [with_busyDF ado__parameters__parameter_vectors__implementation 136 12 363_4_282_4]
+G c Z s s [with_busyIP ado__parameters__parameter_vectors__implementation 136 12 363_4_282_4]
+G c Z s s [with_lockDF ado__parameters__parameter_vectors__implementation 142 12 363_4_282_4]
+G c Z s s [with_lockIP ado__parameters__parameter_vectors__implementation 142 12 363_4_282_4]
+G c Z s s [adjust ado__parameters__parameter_vectors 386 25 282_4]
+G c Z s s [finalize ado__parameters__parameter_vectors 387 25 282_4]
+G c Z s s [write ado__parameters__parameter_vectors 389 14 282_4]
+G c Z s s [read ado__parameters__parameter_vectors 395 14 282_4]
+G c Z s s [read ado__parameters__parameter_vectors 409 14 282_4]
+G c Z s s [write ado__parameters__parameter_vectors 415 14 282_4]
+G c Z s s [write ado__parameters__parameter_vectors 434 14 282_4]
+G c Z s s [read ado__parameters__parameter_vectors 440 14 282_4]
+G c Z s s [write ado__parameters__parameter_vectors 456 14 282_4]
+G c Z s s [read ado__parameters__parameter_vectors 462 14 282_4]
+G c Z s s [pseudo_reference ado__parameters__parameter_vectors 473 13 282_4]
+G c Z s s [get_element_access ado__parameters__parameter_vectors 480 13 282_4]
+G c Z s s [cursorIP ado__parameters__parameter_vectors 404 9 282_4]
+G c Z s s [vectorDA ado__parameters__parameter_vectors 380 9 282_4]
+G c Z s s [vectorDF ado__parameters__parameter_vectors 380 9 282_4]
+G c Z s s [vectorIP ado__parameters__parameter_vectors 380 9 282_4]
+G c Z s s [constant_reference_typeDI ado__parameters__parameter_vectors 424 9 282_4]
+G c Z s s [constant_reference_typeDA ado__parameters__parameter_vectors 424 9 282_4]
+G c Z s s [constant_reference_typeDF ado__parameters__parameter_vectors 424 9 282_4]
+G c Z s s [constant_reference_typeIP ado__parameters__parameter_vectors 424 9 282_4]
+G c Z s s [reference_typeDI ado__parameters__parameter_vectors 446 9 282_4]
+G c Z s s [reference_typeDA ado__parameters__parameter_vectors 446 9 282_4]
+G c Z s s [reference_typeDF ado__parameters__parameter_vectors 446 9 282_4]
+G c Z s s [reference_typeIP ado__parameters__parameter_vectors 446 9 282_4]
+G c Z s s [finalize ado__parameters__parameter_vectors 496 25 282_4]
+G c Z s s [first ado__parameters__parameter_vectors 498 24 282_4]
+G c Z s s [last ado__parameters__parameter_vectors 499 24 282_4]
+G c Z s s [next ado__parameters__parameter_vectors 501 24 282_4]
+G c Z s s [previous ado__parameters__parameter_vectors 505 24 282_4]
+G c Z s s [elements_arrayIP ado__parameters__parameter_vectors 368 9 282_4]
+G c Z s s [elements_typeIP ado__parameters__parameter_vectors 371 9 282_4]
+G c Z s s [iteratorDF ado__parameters__parameter_vectors 488 9 282_4]
+G c Z s s [iteratorIP ado__parameters__parameter_vectors 488 9 282_4]
+G c Z s s [free ado__parameters__parameter_vectors 41 14 282_4]
+G c Z s s [free ado__parameters__parameter_vectors 44 14 282_4]
+G c Z s s [append_slow_path ado__parameters__parameter_vectors 47 14 282_4]
+G c Z s s [abstract_listDA ado__parameters 287 9 none]
+G c Z s s [abstract_listDF ado__parameters 287 9 none]
+G c Z s s [abstract_listIP ado__parameters 287 9 none]
+G c Z s s [listDA ado__parameters 292 9 none]
+G c Z s s [listDF ado__parameters 292 9 none]
+G c Z s s [listDI ado__parameters 292 9 none]
+G c Z s s [listIP ado__parameters 292 9 none]
+G r c none [b ado__parameters 23 1 none] [create util__log__loggers 38 13 none]
+G r d ref [bind_param ado__parameters 150 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 150 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 153 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 153 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 156 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 156 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 159 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 159 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 162 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 162 14 none] [finalize ado__blob_references 113 17 106_4]
+G r e ref [bind_param ado__parameters 165 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 168 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 168 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 171 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 171 14 none] [finalize ado__blob_references 113 17 106_4]
+G r e ref [bind_param ado__parameters 174 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 177 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 177 14 none] [finalize ado__blob_references 113 17 106_4]
+G r c none [bind_param ado__parameters 180 14 none] [to_parameter_list ado__utils 43 13 none]
+G r e ref [bind_param ado__parameters 180 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 184 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 184 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 187 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 187 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 190 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 190 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 193 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 193 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 196 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 196 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 199 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 199 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 202 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 202 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 205 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 205 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 208 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 208 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_param ado__parameters 211 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_param ado__parameters 211 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_null_param ado__parameters 214 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_null_param ado__parameters 214 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [bind_null_param ado__parameters 216 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [bind_null_param ado__parameters 216 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [add_param ado__parameters 219 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [add_param ado__parameters 219 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [add_param ado__parameters 221 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [add_param ado__parameters 221 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [add_param ado__parameters 223 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [add_param ado__parameters 223 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [add_param ado__parameters 225 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [add_param ado__parameters 225 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [add_param ado__parameters 227 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [add_param ado__parameters 227 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [add_param ado__parameters 229 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [add_param ado__parameters 229 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [add_param ado__parameters 231 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [add_param ado__parameters 231 14 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [add_null_param ado__parameters 235 14 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [add_null_param ado__parameters 235 14 none] [finalize ado__blob_references 113 17 106_4]
+G r c none [expand ado__parameters 248 13 none] [warn util__log__loggers 110 14 none]
+G r c none [expand ado__parameters 248 13 none] [image util__strings 75 13 none]
+G r c none [expand ado__parameters 248 13 none] [image util__strings 72 13 none]
+G r c none [expand ado__parameters 248 13 none] [escape_sql ado__dialects 57 14 none]
+G r c none [expand ado__parameters 248 13 none] [escape_sql ado__dialects 47 14 none]
+G r e ref [expand ado__parameters 248 13 none] [finalize ado__blob_references 113 17 106_4]
+G r d ref [parameterDA ado__parameters 67 9 none] [adjust ado__blob_references 117 17 106_4]
+G r e ref [parameterDF ado__parameters 67 9 none] [finalize ado__blob_references 113 17 106_4]
+G r s ref [parameterIP ado__parameters 67 9 none] [refIP ado__blob_references 106 12 106_4]
+G r e ref [parameterIP ado__parameters 67 9 none] [finalize ado__blob_references 113 17 106_4]
+X 1 ada.ads
+16K9*Ada 20e8 43|19r6 20r6 21r6 22r6 60r8 90r20 111r39 173r38 210r40 232r36
+. 283r10 287r39 44|22r6 189r38 331r40 423r36 454r42 474r42 477r26
+X 2 a-calend.ads
+36K13*Calendar 409e17 43|21w10 90r24 173r42 210r44 232r40 44|22r10 189r42
+. 331r44 423r40 454r46 474r46 477r30
+42I9*Time<222I9> 43|90r33 173r51 210r53 232r49 44|189r51 331r53 423r49 454r55
+. 474r55
+222I9 Time_Rep<long_long_integer>
+X 3 a-calfor.ads
+24K22*Formatting 215e28 44|22w19 477r39
+176V13*Image{string} 44|477s50
+X 7 a-contai.ads
+16K13*Containers 24e19 43|22r10 283r14
+20I9*Count_Type<integer>
+X 18 a-conhel.ads
+84R12 Reference_Control_Type<26|43R9>
+X 20 a-coinve.ads
+41I9 Index_Type 43|283r45
+42+9 Element_Type 43|284r45
+44V19 "="{boolean} 43|285r46
+46k24*Indefinite_Vectors 509e38 43|22w21 283r25
+51I12*Extended_Index{integer} 44|710r31[43|282]
+55i4*No_Index{51I12[43|282]} 44|714r38[43|282]
+57R9*Vector<26|43R9> 43|293r34[282]
+100V13*Length{7|20I9} 44|720s39[43|282] 733s23[43|282]
+108U14*Clear 44|741s25[43|282]
+145V13*Element{43|67R9} 44|760s14[43|282]
+151U14*Replace_Element 44|715s27[43|282] 723s24[43|282]
+153i7 Index{integer} 44|715r44[43|282] 723r41[43|282]
+154r7 New_Item{43|67R9} 44|716r44[43|282] 724r41[43|282]
+161U14*Query_Element 44|770s7[43|282]
+234U14*Append 44|718s27[43|282] 721s24[43|282]
+294V13*Find_Index{51I12[43|282]} 44|713s31[43|282]
+X 23 a-convec.ads
+88R9*Vector<26|43R9>
+X 26 a-finali.ads
+40K13*Finalization 68e21 43|20w10 111r43 287r43
+43H9*Controlled<63|40R9> 59e72 43|111r56 287r56
+46U14*Initialize<63|44p14>
+47U14*Adjust<63|42p14>
+48U14*Finalize<63|43p14>
+X 28 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[23|111]>
+X 30 a-string.ads
+16K13*Strings 35e16 43|19r10 60r12
+X 33 a-strunb.ads
+82K21*Unbounded 756e26 43|19w18 60r20
+87R9*Unbounded_String<26|43R9> 739e14 43|170r38 207r40 230r37 44|175r37 314r40
+. 417r36 453r46 473r46 482r16
+116V13*To_String{string} 44|176s34 315s32 697s14
+135U14*Append 44|476s10 477s10 478s10 491s16 494s16 497s16 506s16 509s16
+. 599s16 607s16 644s16 653s16 695s10
+X 41 ado.ads
+25K9*ADO 150e8 43|24r6 25r6 58r9 93r20 116r39 120r42 123r58 164r38 179r38
+. 182r38 213r40 288r18 296r5 44|23r14 33r39 42r42 50r58 109r38 148r37 161r38
+. 162r30 347r40 773r5
+39I9*Identifier<long_integer> 43|158r38 195r40 224r37 44|96r37 250r40 399r36
+43I9*Entity_Type<integer> 43|164r42 201r40 44|109r42 282r40
+107R12*Blob_Ref{96|67R12[106]} 43|93r24 179r42 213r44 44|148r41 347r44
+X 42 ado-dialects.ads
+21K13*Dialects 65e17 43|25w10 116r43 123r62 288r22 44|33r43 50r62
+36P9*Dialect_Access(35R9) 43|116r52 123r71 288r31 44|33r52 50r71
+47U14*Escape_Sql 44|515R31
+52x14*Escape_Sql 44|512R31
+57U14*Escape_Sql 44|500R31
+X 43 ado-parameters.ads
+58K13*Parameters 41|25k9 43|120r46 280E13 296l9 296e19 44|23b18 42r46 773l9
+. 773t19
+62A9*Token<string>(character)<integer> 176r38 44|135r37
+64E9*Parameter_Type 65e71 67r26
+64n28*T_NULL{64E9} 74r15 44|363r49 377r58 505r18
+64n36*T_STRING{64E9} 44|125r49 177r62 299r49 316r49
+64n46*T_TOKEN{64E9} 44|138r49 508r18
+64n55*T_LIST{64E9} 44|165r49 508r28
+64n63*T_DATE{64E9} 89r15 44|190r62 332r49 502r18
+64n71*T_LONG_INTEGER{64E9} 77r15 44|84r62 97r62 110r62 219r49 251r49 490r18
+65n28*T_INTEGER{64E9} 80r15 44|71r62 267r49 283r49 493r18
+65n39*T_BOOLEAN{64E9} 83r15 44|58r62 203r49 499r18
+65n50*T_LONG_FLOAT{64E9} 86r15 44|235r49 496r18
+65n64*T_BLOB{64E9} 92r15 44|151r49 348r49 511r18
+67R9*Parameter 67d20 68d20 69d20 98e17 109r50 127r41 138r52 144r55 258r41
+. 268r52 273r80 280r47 284r61 44|58r24 58r37 71r24 71r37 84r24 84r37 97r24
+. 97r37 110r24 110r37 125r24 138r24 151r24 165r24 177r24 177r37 190r24 190r37
+. 203r11 203r24 219r11 219r24 235r11 235r24 251r11 251r24 267r11 267r24 283r11
+. 283r24 299r11 299r24 316r11 316r24 332r11 332r24 348r11 348r24 363r11 363r24
+. 377r20 377r33 457r47 487r47 539r40 546r40 700r47 709r41 758r52 768r80
+67e20*T{64E9} 73r15 44|58m49 71m49 84m49 97m49 110m49 125m36 138m36 151m36
+. 165m36 177m49 190m49 203m36 219m36 235m36 251m36 267m36 283m36 299m36 316m36
+. 332m36 348m36 363m36 377m45 489r21
+68i20*Len{natural} 72r34 44|59m49 72m49 85m49 98m49 111m49 126m36 139m36
+. 152m36 166m36 178m49 191m49 204m36 220m36 236m36 252m36 268m36 284m36 300m36
+. 317m36 333m36 349m36 364m36 378m45
+69i20*Value_Len{natural} 96r32 44|60m49 73m49 86m49 99m49 112m49 127m36 140m36
+. 153m36 167m36 179m49 192m49 205m36 221m36 237m36 253m36 269m36 285m36 301m36
+. 318m36 334m36 350m36 365m36 379m45
+71i10*Position{natural} 44|62m49 75m49 88m49 101m49 114m49 129m36 142m36
+. 155m36 169m36 181m49 194m49 207m36 211m12 223m36 227m12 239m36 243m12 255m36
+. 259m12 271m36 275m12 287m36 291m12 303m36 307m12 320m36 324m12 336m36 340m12
+. 352m36 356m12 367m36 370m12 381m45 712r16 720r19 723r59
+72a10*Name{string} 44|61m49 74m49 87m49 100m49 113m49 128m36 141m36 154m36
+. 168m36 180m49 193m49 206m36 222m36 238m36 254m36 270m36 286m36 302m36 319m36
+. 335m36 351m36 366m36 380m45 548r22 702r19 702r32
+78i13*Long_Num{long_long_integer} 44|89m49 102m49 115m49 224m36 256m36 491r58
+81i13*Num{integer} 44|76m49 272m36 288m36 494r58
+84b13*Bool{boolean} 44|63m49 208m36 500m57 500r57
+87f13*Float{long_float} 44|240m36 497r56
+90i13*Time{2|42I9} 44|195m49 337m36 503r43
+93r13*Data{41|107R12} 44|156m36 353m36 512m57 512r57
+96a13*Str{string} 44|130m36 143m36 170m36 182m49 304m36 321m36 509r38 515m57
+. 515r57
+100h9*Expander 101r39 107p13 107r35
+101P9*Expander_Access(100R9) 120r57 289r18 44|42r57
+107y13*Expand{67R9} 107>21 108>21 109>21 44|578R48
+107r21 Instance{100R9}
+108a21 Group{string}
+109a21 Name{string}
+111H9*Abstract_List<26|43R9> 26|46P14 47P14 48P14 43|112r44 115p14 115r43
+. 119p14 119r46 123p13 123r36 126p14 126r45 130p14 130r50 131r46 134p13 134r33
+. 137p13 137r36 141p14 141r43 147p14 147r41 150p14 150r42 153p14 153r42 156p14
+. 156r42 159p14 159r42 162p14 162r42 165p14 165r42 168p14 168r42 171p14 171r42
+. 174p14 174r42 177p14 177r42 180p14 180r42 184p14 184r44 187p14 187r44 190p14
+. 190r44 193p14 193r44 196p14 196r44 199p14 199r44 202p14 202r44 205p14 205r44
+. 208p14 208r44 211p14 211r44 214p14 214r49 216p14 216r49 219p14 219r41 221p14
+. 221r41 223p14 223r41 225p14 225r41 227p14 227r41 229p14 229r41 231p14 231r41
+. 235p14 235r46 248r33 255r21 261r42 287c9 290e14 292r21 44|32r43 41r46 50r36
+. 55r42 65r7 68r42 78r7 81r42 91r7 94r42 104r7 107r42 117r7 120r42 124r7
+. 133r42 137r7 146r42 150r7 159r42 164r7 173r42 184r7 187r42 197r7 200r44
+. 211r24 213r7 216r44 227r24 229r7 232r44 243r24 245r7 248r44 259r24 261r7
+. 264r44 275r24 277r7 280r44 291r24 293r7 296r44 307r24 309r7 312r44 324r24
+. 326r7 329r45 340r24 342r7 345r44 356r24 358r7 361r49 370r24 372r7 375r49
+. 383r7 386r41 392r41 398r41 404r41 410r41 416r41 422r41 431r46 449r33 748r42
+112P9*Abstract_List_Access(111R9)
+115U14*Set_Dialect 115=27 116>27 44|32b14 36l8 36t19
+115r27 Params{111R9} 44|32b27 35m7
+116p27 D{42|36P9} 44|33b27 35r25
+119U14*Set_Expander 119=28 120>28 44|41b14 45l8 45t20
+119r28 Params{111R9} 44|41b28 44m7
+120p28 Expander{101P9} 44|42b28 44r26
+123V13*Get_Dialect{42|36P9} 123>26 44|50b13 53l8 53t19
+123r26 From{111R9} 44|50b26 52r14
+126x14*Add_Parameter 126=29 127>29 44|65R36 78R36 91R36 104R36 117R36 125R9
+. 138R9 151R9 165R9 184R36 197R36 213R36 229R36 245R36 261R36 277R36 293R36
+. 309R36 326R36 342R36 358R36 372R36 383R36
+126r29 Params{111R9}
+127r29 Param{67R9}
+130x14*Set_Parameters 130=30 131>30
+130r30 Parameters{111R9}
+131c30 From<111R9>
+134y13*Length{natural} 134>21 44|211R53 227R53 243R53 259R53 275R53 291R53
+. 307R53 324R53 340R53 356R53 370R53 481R43
+134r21 Params{111R9}
+137y13*Element{67R9} 137>22 138>22
+137r22 Params{111R9}
+138i22 Position{natural}
+141x14*Query_Element 141>29 142>29 143^29 44|528R20 559R20
+141r29 Params{111R9}
+142i29 Position{natural} 44|528r35
+143p29 Process 44|529r35
+144r42 Element{67R9}
+147x14*Clear 147=21
+147r21 Parameters{111R9}
+150U14*Bind_Param 150=26 151>26 152>26 44|55b14 66l8 66t18
+150r26 Params{111R9} 44|55b26 65m28 65r28
+151a26 Name{string} 44|56b26 59r62 61r62
+152b26 Value{boolean} 44|57b26 63r62
+153U14*Bind_Param 153=26 154>26 155>26 44|81b14 92l8 92t18
+153r26 Params{111R9} 44|81b26 91m28 91r28
+154a26 Name{string} 44|82b26 85r62 87r62
+155i26 Value{long_long_integer} 44|83b26 89r62
+156U14*Bind_Param 156=26 157>26 158>26 44|94b14 105l8 105t18
+156r26 Params{111R9} 44|94b26 104m28 104r28
+157a26 Name{string} 44|95b26 98r62 100r62
+158i26 Value{41|39I9} 44|96b26 102r81
+159U14*Bind_Param 159=26 160>26 161>26 44|68b14 79l8 79t18
+159r26 Params{111R9} 44|68b26 78m28 78r28
+160a26 Name{string} 44|69b26 72r62 74r62
+161i26 Value{integer} 44|70b26 76r62
+162U14*Bind_Param 162=26 163>26 164>26 44|107b14 118l8 118t18
+162r26 Params{111R9} 44|107b26 117m28 117r28
+163a26 Name{string} 44|108b26 111r62 113r62
+164i26 Value{41|43I9} 44|109b26 115r81
+165U14*Bind_Param 165=26 166>26 167>26 44|120b14 131l8 131t18
+165r26 Params{111R9} 44|120b26 124m28 124r28
+166a26 Name{string} 44|121b26 126r49 128r49
+167a26 Value{string} 44|122b26 127r49 130r49
+168U14*Bind_Param 168=26 169>26 170>26 44|173b14 185l8 185t18
+168r26 Params{111R9} 44|173b26 184m28 184r28
+169a26 Name{string} 44|174b26 178r62 180r62
+170r26 Value{33|87R9} 44|175b26 176r45
+171U14*Bind_Param 171=26 172>26 173>26 44|187b14 198l8 198t18
+171r26 Params{111R9} 44|187b26 197m28 197r28
+172a26 Name{string} 44|188b26 191r62 193r62
+173i26 Value{2|42I9} 44|189b26 195r62
+174U14*Bind_Param 174=26 175>26 176>26 44|133b14 144l8 144t18
+174r26 Params{111R9} 44|133b26 137m28 137r28
+175a26 Name{string} 44|134b26 139r49 141r49
+176a26 Value{62A9} 44|135b26 140r49 143r57
+177U14*Bind_Param 177=26 178>26 179>26 44|146b14 157l8 157t18
+177r26 Params{111R9} 44|146b26 150m28 150r28
+178a26 Name{string} 44|147b26 152r49 154r49
+179r26 Value{41|107R12} 44|148b26 156r49
+180U14*Bind_Param 180=26 181>26 182>26 44|159b14 171l8 171t18
+180r26 Params{111R9} 44|159b26 164m28 164r28
+181a26 Name{string} 44|160b26 166r49 168r49
+182r26 Value{45|39R12} 44|161b26 162r59
+184U14*Bind_Param 184=26 185>26 186>26 44|200b14 214l8 214t18 389s14
+184r26 Params{111R9} 44|200b26 211r45 213m28 213r28
+185i26 Position{natural} 44|201b26 207r49 210r10 389r26
+186b26 Value{boolean} 44|202b26 208r49 389r41
+187U14*Bind_Param 187=26 188>26 189>26 44|216b14 230l8 230t18 395s14
+187r26 Params{111R9} 44|216b26 227r45 229m28 229r28
+188i26 Position{natural} 44|217b26 223r49 226r10 395r26
+189i26 Value{long_long_integer} 44|218b26 224r49 395r41
+190U14*Bind_Param 190=26 191>26 192>26 44|232b14 246l8 246t18
+190r26 Params{111R9} 44|232b26 243r45 245m28 245r28
+191i26 Position{natural} 44|233b26 239r49 242r10
+192f26 Value{long_float} 44|234b26 240r49
+193U14*Bind_Param 193=26 194>26 195>26 44|248b14 262l8 262t18 401s14
+193r26 Params{111R9} 44|248b26 259r45 261m28 261r28
+194i26 Position{natural} 44|249b26 255r49 258r10 401r26
+195i26 Value{41|39I9} 44|250b26 256r68 401r41
+196U14*Bind_Param 196=26 197>26 198>26 44|264b14 278l8 278t18 407s14
+196r26 Params{111R9} 44|264b26 275r45 277m28 277r28
+197i26 Position{natural} 44|265b26 271r49 274r10 407r26
+198i26 Value{integer} 44|266b26 272r49 407r41
+199U14*Bind_Param 199=26 200>26 201>26 44|280b14 294l8 294t18
+199r26 Params{111R9} 44|280b26 291r45 293m28 293r28
+200i26 Position{natural} 44|281b26 287r49 290r10
+201i26 Value{41|43I9} 44|282b26 288r58
+202U14*Bind_Param 202=26 203>26 204>26 44|296b14 310l8 310t18 413s14
+202r26 Params{111R9} 44|296b26 307r45 309m28 309r28
+203i26 Position{natural} 44|297b26 303r49 306r10 413r26
+204a26 Value{string} 44|298b26 301r49 304r49 413r41
+205U14*Bind_Param 205=26 206>26 207>26 44|312b14 327l8 327t18 419s14
+205r26 Params{111R9} 44|312b26 324r45 326m28 326r28
+206i26 Position{natural} 44|313b26 320r49 323r10 419r26
+207r26 Value{33|87R9} 44|314b26 315r43 419r41
+208U14*Bind_Param 208=26 209>26 210>26 44|329b14 343l8 343t18 425s14
+208r26 Params{111R9} 44|329b26 340r45 342m28 342r28
+209i26 Position{natural} 44|330b26 336r49 339r10 425r26
+210i26 Value{2|42I9} 44|331b26 337r49 425r41
+211U14*Bind_Param 211=26 212>26 213>26 44|345b14 359l8 359t18
+211r26 Params{111R9} 44|345b26 356r45 358m28 358r28
+212i26 Position{natural} 44|346b26 352r49 355r10
+213r26 Value{41|107R12} 44|347b26 353r49
+214U14*Bind_Null_Param 214=31 215>31 44|361b14 373l8 373t23 433s14
+214r31 Params{111R9} 44|361b31 370r45 372m28 372r28
+215i31 Position{natural} 44|362b31 367r49 369r10 433r31
+216U14*Bind_Null_Param 216=31 217>31 44|375b14 384l8 384t23
+216r31 Params{111R9} 44|375b31 383m28 383r28
+217a31 Name{string} 44|376b31 378r58 380r58
+219U14*Add_Param 219=25 220>26 44|386b14 390l8 390t17
+219r25 Params{111R9} 44|386b25 389m7 389r7
+220b26 Value{boolean} 44|387b25 389r50
+221U14*Add_Param 221=25 222>26 44|392b14 396l8 396t17
+221r25 Params{111R9} 44|392b25 395m7 395r7
+222i26 Value{long_long_integer} 44|393b25 395r50
+223U14*Add_Param 223=25 224>26 44|398b14 402l8 402t17
+223r25 Params{111R9} 44|398b25 401m7 401r7
+224i26 Value{41|39I9} 44|399b25 401r50
+225U14*Add_Param 225=25 226>26 44|404b14 408l8 408t17
+225r25 Params{111R9} 44|404b25 407m7 407r7
+226i26 Value{integer} 44|405b25 407r50
+227U14*Add_Param 227=25 228>26 44|410b14 414l8 414t17
+227r25 Params{111R9} 44|410b25 413m7 413r7
+228a26 Value{string} 44|411b25 413r50
+229U14*Add_Param 229=25 230>26 44|416b14 420l8 420t17
+229r25 Params{111R9} 44|416b25 419m7 419r7
+230r26 Value{33|87R9} 44|417b25 419r50
+231U14*Add_Param 231=25 232>25 44|422b14 426l8 426t17
+231r25 Params{111R9} 44|422b25 425m7 425r7
+232i25 Value{2|42I9} 44|423b25 425r50
+235U14*Add_Null_Param 235=30 44|431b14 434l8 434t22
+235r30 Params{111R9} 44|431b30 433m7 433r7
+248V13*Expand{string} 248>21 249>21 44|449b13 698l8 698t14
+248c21 Params<111R9> 44|449b21 481r36 500r16 512r16 515r16 528r13 559r13
+. 575r13 578r32
+249a21 SQL{string} 44|450b21 526r49 565r70 593r14 595r20 596r15 599r32 602r33
+. 605r39 607r32 610r18 616r35 617r24 632r38 633r27 637r46 644r32 653r32 664r24
+. 667r35 668r24 673r27 676r38 677r27 680r49 681r49 694r23 695r26 695r44
+255R9*List<111R9> 26|46P14 47P14 48P14 43|115p14 119p14 123p13 150p14 153p14
+. 156p14 159p14 162p14 165p14 168p14 171p14 174p14 177p14 180p14 184p14 187p14
+. 190p14 193p14 196p14 199p14 202p14 205p14 208p14 211p14 214p14 216p14 219p14
+. 221p14 223p14 225p14 227p14 229p14 231p14 235p14 257P14 257r45 260P14 260r46
+. 264P13 264r33 267P13 267r36 271P14 271r43 276P14 276r37 292c9 294e14 44|708r45
+. 731r33 739r37 747r46 749r20 749r34 757r36 766r43
+257U14*Add_Parameter<126p14> 257=29 258>29 44|708b14 726l8 726t21
+257r29 Params{255R9} 44|708b29 713r17 715m13 715r13 718m13 718r13 720r47
+. 721m10 721r10 723m10 723r10
+258r29 Param{67R9} 44|709b29 712r10 713r43 716r56 718r35 720r13 721r32 723r53
+. 724r53
+260U14*Set_Parameters<130p14> 260=30 261>30 44|747b14 752l8 752t22
+260r30 Params{255R9} 44|747b30 751m7
+261c30 From<111R9> 44|748b30 749r46
+264V13*Length{natural}<134p13> 264>21 44|731b13 734l8 734t14
+264r21 Params{255R9} 44|731b21 733r31
+267V13*Element{67R9}<137p13> 267>22 268>22 44|757b13 761l8 761t15
+267r22 Params{255R9} 44|757b22 760r23
+268i22 Position{natural} 44|758b22 760r38
+271U14*Query_Element<141p14> 271>29 272>29 273^29 44|766b14 771l8 771t21
+271r29 Params{255R9} 44|766b29 770r22
+272i29 Position{natural} 44|767b29 770r37
+273p29 Process 44|768b29 770r47
+273r67 Element{67R9}
+276U14*Clear<147p14> 276=21 44|739b14 742l8 742t13
+276r21 Params{255R9} 44|739b21 741m32 741r32
+280V13 Compare_On_Name{boolean} 280>30 280>36 285r61 44|700b13 703l8 703t23
+280r30 Left{67R9} 44|700b30 702r14
+280r36 Right{67R9} 44|700b36 702r26
+282K12 Parameter_Vectors[20|46] 293r16 44|25r8 710r13 714r20 741r7
+288p7 Dialect{42|36P9} 44|35m14 52r19 500r23 512r23 515r23
+289p7 Expander{101P9} 44|44m14 575r20 578r39
+293r7 Params{20|57R9[282]} 44|713r24 715m20 718m20 720r54 721m17 723m17 733r38
+. 741m39 751m14 751r26 760r30 770r29
+X 44 ado-parameters.adb
+27r4 Log{93|34R9} 525r13 565r10 576r13 583r13
+58r7 Param{43|67R9} 65r51
+71r7 Param{43|67R9} 78r51
+84r7 Param{43|67R9} 91r51
+97r7 Param{43|67R9} 104r51
+110r7 Param{43|67R9} 117r51
+162a7 S{string} 167r49 170r49
+176a7 Val{string} 179r62 182r62
+177r7 Param{43|67R9} 184r51
+190r7 Param{43|67R9} 197r51
+203r7 P{43|67R9} 211m10 213r51
+219r7 P{43|67R9} 227m10 229r51
+235r7 P{43|67R9} 243m10 245r51
+251r7 P{43|67R9} 259m10 261r51
+267r7 P{43|67R9} 275m10 277r51
+283r7 P{43|67R9} 291m10 293r51
+299r7 P{43|67R9} 307m10 309r51
+315a7 Val{string} 318r49 321r49
+316r7 P{43|67R9} 324m10 326r51
+332r7 P{43|67R9} 340m10 342r51
+348r7 P{43|67R9} 356m10 358r51
+363r7 P{43|67R9} 370m10 372r51
+377r7 P{43|67R9} 383r51
+453U17 Append_Date 453=30 454>30 473b17 479l11 479t22 503s16
+453r30 Buffer{33|87R9} 473b30 476m18 477m18 478m18
+454i30 Time{2|42I9} 474b30 477r57
+457U17 Replace_Parameter 457>36 487b17 517l11 517t28 529r47 549s16 578s13
+457r36 Param{43|67R9} 487b36 489r15 491r52 494r52 497r50 500r51 503r37 509r32
+. 512r51 515r51
+460U17 Replace_Parameter 460>36 536b17 566l11 566t28 637s19
+460a36 Name{string} 536b36 548r29 565r64 637r38
+463U17 Replace_Parameter 463>36 522b17 531l11 531t28 620s16 647s13
+463i36 Position{natural} 522b36 524r13 524r29 526r38 528r47 620r35 647r32
+467U17 Replace_Expander 467>35 468>35 572b17 585l11 585t27 680s22
+467a35 Group{string} 572b35 576r69 578r56 583r67 680r40
+468a35 Name{string} 573b35 576r76 578r63 583r74 681r40
+481i7 Max{natural} 524r40 558r24
+482r7 Buffer{33|87R9} 491m24 491r24 494m24 494r24 497m24 497r24 500m43 500r43
+. 503m29 503r29 506m24 506r24 509m24 509r24 512m43 512r43 515m43 515r43 599m24
+. 599r24 607m24 607r24 644m24 644r24 653m24 653r24 695m18 695r18 697r25
+539U20 Process 539>29 546b20 552l14 552t21 559r38
+539r29 Param{43|67R9} 546b29 548r16 549r35
+541b10 Found{boolean} 550m16 560r16
+558i14 I{integer} 559r35
+587i7 Num{natural} 612m16 614m19 614r26 620r47 646m13 646r20 647r44
+588i7 Pos{natural} 593m7 594r20 595r13 596r20 598r29 599r50 601r26 602r23
+. 603m13 603r20 605r28 606r29 607r50 609m13 609r20 610r23 615m19 615r26 616r29
+. 617r29 621r29 625r51 631m22 631r29 632r32 633r32 637r64 638r32 643r29 644r50
+. 648m13 648r20 649r26 652r29 653r50 657m13 657r20 659r50 664r29 666m19 666r26
+. 667r29 668r29 671r32 673r32 675m22 675r29 676r32 677r32 681r71 682m22 682r29
+. 687r29 691m13 691r20
+589e7 C{character} 596m10 597r13 605r16 610m13 611r16 611r29 614r61 617m19
+. 618r34 618r47 629r37 629r50 629r69 629r82 630r33 630r46 630r60 633m22 642r16
+. 651r16 664m19 665r29 668m19 670r19 673m22 674r32 677m22 679r22
+590i7 First_Pos{natural} 594m7 598r16 599r37 601m13 606r16 607r37 621m16
+. 638m19 643r16 644r37 649m13 652r16 653r37 687m16 694r10 695r31
+625i19 Start_Pos{natural} 637r51
+659i16 Group_Start{natural} 680r54
+660i16 Group_End{natural} 671m19 680r69 681r54
+710i7 Pos{20|51I12[43|282]} 713m10 714r13 715r56
+749c7 L<43|255R9> 751r24
+768r67 Element{43|67R9}
+X 45 ado-utils.ads
+23K13*Utils 43|24w10 182r42 44|161r42 162r34 45|45e14
+39R12*Identifier_Vector{23|88R9[34]} 43|182r48 44|161r48
+43V13*To_Parameter_List{string} 44|162s40
+X 48 system.ads
+67M9*Address
+X 66 s-memory.ads
+53V13*Alloc{48|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{48|67M9} 105i<c,__gnat_realloc>22
+X 73 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 85 util.ads
+18K9*Util 44|19r6 20r6 27r19 27r46 491r32 494r32 85|28e9
+X 87 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 88 util-beans-objects.ads
+97h9*Object_Type
+X 91 util-log.ads
+166K14*Log 44|20r11 27r24 27r51 91|192e13
+X 93 util-log-loggers.ads
+24K18*Loggers 44|20w15 27r28 27r55 93|165e21
+34R9*Logger<26|50R9> 44|27r36 93|159e14
+38V13*Create{34R9} 44|27s63
+110U14*Warn 44|525s17 565s14 576s17 583s17
+X 95 util-properties.ads
+256h12*Manager<87|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 96 util-refs.ads
+67R12*Ref<26|43R9>
+X 98 util-strings.ads
+24K14*Strings 44|19w11 491r37 494r37 98|139e17
+72V13*Image{string} 44|494s45
+75V13*Image{string} 44|491s45
+

@@ -1,0 +1,338 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_STREAMS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_ALIASING
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.strings.sets%b	util-strings-sets.ads	2dff3736 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.hash_tables%s  a-cohata.ads	a-cohata.ali
+Z ada.containers.hash_tables.generic_keys%s
+Z ada.containers.hash_tables.generic_operations%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+W ada.containers.indefinite_hashed_sets%s
+Z ada.containers.prime_numbers%s  a-coprnu.adb	a-coprnu.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.hash%s	a-strhas.adb		a-strhas.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+W util.strings%s	util-strings.adb	util-strings.ali
+
+U util.strings.sets%s	util-strings-sets.ads	3c9f1141 EB EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.hash_tables%s  a-cohata.ads	a-cohata.ali
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+W ada.containers.indefinite_hashed_sets%s
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.hash%s	a-strhas.adb		a-strhas.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W util.strings%s	util-strings.adb	util-strings.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihase.ads		20190518041254 4f8a62e0 ada.containers.indefinite_hashed_sets%s
+D a-cihase.adb		20190518041256 f54eebd2 ada.containers.indefinite_hashed_sets%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strhas.ads		20190518041256 c71c2a52 ada.strings.hash%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20190518041254 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20190518041256 e2f873d3 system.fat_sflt%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-stratt.adb		20190518041255 56ef263e system.stream_attributes%b
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-sets.ads	20210228093152 2dff3736 util.strings.sets%s
+D util-strings-sets.ads	20210228093152 2dff3736 util.strings.sets%b
+G a e
+G c Z s s [has_element util__strings__sets 74 13 23_1]
+G c Z s s [Oeq util__strings__sets 80 13 23_1]
+G c Z s s [equivalent_sets util__strings__sets 93 13 23_1]
+G c Z s s [to_set util__strings__sets 98 13 23_1]
+G c Z s s [capacity util__strings__sets 102 13 23_1]
+G c Z s s [reserve_capacity util__strings__sets 106 14 23_1]
+G c Z s s [length util__strings__sets 117 13 23_1]
+G c Z s s [is_empty util__strings__sets 120 13 23_1]
+G c Z s s [clear util__strings__sets 123 14 23_1]
+G c Z s s [element util__strings__sets 126 13 23_1]
+G c Z s s [replace_element util__strings__sets 129 14 23_1]
+G c Z s s [query_element util__strings__sets 144 14 23_1]
+G c Z s s [constant_reference util__strings__sets 154 13 23_1]
+G c Z s s [assign util__strings__sets 159 14 23_1]
+G c Z s s [copy util__strings__sets 161 13 23_1]
+G c Z s s [move util__strings__sets 163 14 23_1]
+G c Z s s [insert util__strings__sets 167 14 23_1]
+G c Z s s [insert util__strings__sets 185 14 23_1]
+G c Z s s [include util__strings__sets 194 14 23_1]
+G c Z s s [replace util__strings__sets 203 14 23_1]
+G c Z s s [exclude util__strings__sets 211 14 23_1]
+G c Z s s [delete util__strings__sets 220 14 23_1]
+G c Z s s [delete util__strings__sets 228 14 23_1]
+G c Z s s [union util__strings__sets 234 14 23_1]
+G c Z s s [union util__strings__sets 239 13 23_1]
+G c Z s s [intersection util__strings__sets 245 14 23_1]
+G c Z s s [intersection util__strings__sets 250 13 23_1]
+G c Z s s [difference util__strings__sets 257 14 23_1]
+G c Z s s [difference util__strings__sets 262 13 23_1]
+G c Z s s [symmetric_difference util__strings__sets 269 14 23_1]
+G c Z s s [symmetric_difference util__strings__sets 276 13 23_1]
+G c Z s s [overlap util__strings__sets 287 13 23_1]
+G c Z s s [is_subset util__strings__sets 294 13 23_1]
+G c Z s s [first util__strings__sets 302 13 23_1]
+G c Z s s [next util__strings__sets 306 13 23_1]
+G c Z s s [next util__strings__sets 314 14 23_1]
+G c Z s s [find util__strings__sets 317 13 23_1]
+G c Z s s [contains util__strings__sets 324 13 23_1]
+G c Z s s [equivalent_elements util__strings__sets 327 13 23_1]
+G c Z s s [equivalent_elements util__strings__sets 331 13 23_1]
+G c Z s s [equivalent_elements util__strings__sets 337 13 23_1]
+G c Z s s [iterate util__strings__sets 343 14 23_1]
+G c Z s s [iterate util__strings__sets 348 13 23_1]
+G c Z s s [node_typeIP util__strings__sets 483 9 23_1]
+G c Z s s [adjust util__strings__sets__ht_types__implementation 90 28 58_7_488_4_23_1]
+G c Z s s [finalize util__strings__sets__ht_types__implementation 93 28 58_7_488_4_23_1]
+G c Z s s [zero_counts util__strings__sets__ht_types__implementation 96 17 58_7_488_4_23_1]
+G c Z s s [busy util__strings__sets__ht_types__implementation 100 17 58_7_488_4_23_1]
+G c Z s s [unbusy util__strings__sets__ht_types__implementation 104 17 58_7_488_4_23_1]
+G c Z s s [lock util__strings__sets__ht_types__implementation 108 17 58_7_488_4_23_1]
+G c Z s s [unlock util__strings__sets__ht_types__implementation 112 17 58_7_488_4_23_1]
+G c Z s s [tc_check util__strings__sets__ht_types__implementation 116 17 58_7_488_4_23_1]
+G c Z s s [te_check util__strings__sets__ht_types__implementation 120 17 58_7_488_4_23_1]
+G c Z s s [initialize util__strings__sets__ht_types__implementation 139 28 58_7_488_4_23_1]
+G c Z s s [finalize util__strings__sets__ht_types__implementation 140 28 58_7_488_4_23_1]
+G c Z s s [initialize util__strings__sets__ht_types__implementation 145 28 58_7_488_4_23_1]
+G c Z s s [finalize util__strings__sets__ht_types__implementation 146 28 58_7_488_4_23_1]
+G c Z s s [reference_control_typeDA util__strings__sets__ht_types__implementation 84 12 58_7_488_4_23_1]
+G c Z s s [reference_control_typeDF util__strings__sets__ht_types__implementation 84 12 58_7_488_4_23_1]
+G c Z s s [reference_control_typeIP util__strings__sets__ht_types__implementation 84 12 58_7_488_4_23_1]
+G c Z s s [with_busyDF util__strings__sets__ht_types__implementation 136 12 58_7_488_4_23_1]
+G c Z s s [with_busyIP util__strings__sets__ht_types__implementation 136 12 58_7_488_4_23_1]
+G c Z s s [with_lockDF util__strings__sets__ht_types__implementation 142 12 58_7_488_4_23_1]
+G c Z s s [with_lockIP util__strings__sets__ht_types__implementation 142 12 58_7_488_4_23_1]
+G c Z s s [buckets_typeIP util__strings__sets__ht_types 46 12 488_4_23_1]
+G c Z s s [hash_table_typeDA util__strings__sets__ht_types 52 12 488_4_23_1]
+G c Z s s [hash_table_typeDF util__strings__sets__ht_types 52 12 488_4_23_1]
+G c Z s s [hash_table_typeIP util__strings__sets__ht_types 52 12 488_4_23_1]
+G c Z s s [adjust util__strings__sets 495 25 23_1]
+G c Z s s [finalize util__strings__sets 497 25 23_1]
+G c Z s s [write util__strings__sets 503 14 23_1]
+G c Z s s [read util__strings__sets 509 14 23_1]
+G c Z s s [write util__strings__sets 523 14 23_1]
+G c Z s s [read util__strings__sets 529 14 23_1]
+G c Z s s [read util__strings__sets 548 14 23_1]
+G c Z s s [write util__strings__sets 554 14 23_1]
+G c Z s s [pseudo_reference util__strings__sets 565 13 23_1]
+G c Z s s [get_element_access util__strings__sets 572 13 23_1]
+G c Z s s [setDA util__strings__sets 491 9 23_1]
+G c Z s s [setDF util__strings__sets 491 9 23_1]
+G c Z s s [setIP util__strings__sets 491 9 23_1]
+G c Z s s [cursorIP util__strings__sets 518 9 23_1]
+G c Z s s [constant_reference_typeDI util__strings__sets 538 9 23_1]
+G c Z s s [constant_reference_typeDA util__strings__sets 538 9 23_1]
+G c Z s s [constant_reference_typeDF util__strings__sets 538 9 23_1]
+G c Z s s [constant_reference_typeIP util__strings__sets 538 9 23_1]
+G c Z s s [finalize util__strings__sets 587 25 23_1]
+G c Z s s [first util__strings__sets 589 24 23_1]
+G c Z s s [next util__strings__sets 591 24 23_1]
+G c Z s s [iteratorDF util__strings__sets 580 9 23_1]
+G c Z s s [iteratorIP util__strings__sets 580 9 23_1]
+G c Z s s [assign util__strings__sets 54 14 23_1]
+G c Z s s [copy_node util__strings__sets 57 13 23_1]
+G c Z s s [equivalent_keys util__strings__sets 60 13 23_1]
+G c Z s s [find_equal_key util__strings__sets 65 13 23_1]
+G c Z s s [find_equivalent_key util__strings__sets 69 13 23_1]
+G c Z s s [free util__strings__sets 73 14 23_1]
+G c Z s s [hash_node util__strings__sets 75 13 23_1]
+G c Z s s [insert util__strings__sets 78 14 23_1]
+G c Z s s [is_in util__strings__sets 84 13 23_1]
+G c Z s s [next util__strings__sets 89 13 23_1]
+G c Z s s [read_node util__strings__sets 92 13 23_1]
+G c Z s s [set_next util__strings__sets 96 14 23_1]
+G c Z s s [vet util__strings__sets 99 13 23_1]
+G c Z s s [write_node util__strings__sets 101 14 23_1]
+G c Z s s [free_element util__strings__sets 110 14 23_1]
+G c Z s s [free_hash_table util__strings__sets__ht_ops 57 14 113_4_23_1]
+G c Z s s [index util__strings__sets__ht_ops 61 13 113_4_23_1]
+G c Z s s [index util__strings__sets__ht_ops 67 13 113_4_23_1]
+G c Z s s [checked_index util__strings__sets__ht_ops 74 13 113_4_23_1]
+G c Z s s [checked_index util__strings__sets__ht_ops 81 13 113_4_23_1]
+G c Z s s [adjust util__strings__sets__ht_ops 86 14 113_4_23_1]
+G c Z s s [finalize util__strings__sets__ht_ops 92 14 113_4_23_1]
+G c Z s s [clear util__strings__sets__ht_ops 108 14 113_4_23_1]
+G c Z s s [move util__strings__sets__ht_ops 113 14 113_4_23_1]
+G c Z s s [capacity util__strings__sets__ht_ops 119 13 113_4_23_1]
+G c Z s s [reserve_capacity util__strings__sets__ht_ops 122 14 113_4_23_1]
+G c Z s s [delete_node_at_index util__strings__sets__ht_ops 131 14 113_4_23_1]
+G c Z s s [delete_node_sans_free util__strings__sets__ht_ops 140 14 113_4_23_1]
+G c Z s s [first util__strings__sets__ht_ops 145 13 113_4_23_1]
+G c Z s s [first util__strings__sets__ht_ops 147 13 113_4_23_1]
+G c Z s s [next util__strings__sets__ht_ops 154 13 113_4_23_1]
+G c Z s s [next util__strings__sets__ht_ops 157 13 113_4_23_1]
+G c Z s s [new_buckets util__strings__sets__ht_ops 204 13 113_4_23_1]
+G c Z s s [free_buckets util__strings__sets__ht_ops 208 14 113_4_23_1]
+G c Z s s [index util__strings__sets__element_keys 56 13 121_4_23_1]
+G c Z s s [checked_index util__strings__sets__element_keys 62 13 121_4_23_1]
+G c Z s s [checked_equivalent_keys util__strings__sets__element_keys 69 13 121_4_23_1]
+G c Z s s [delete_key_sans_free util__strings__sets__element_keys 76 14 121_4_23_1]
+G c Z s s [find util__strings__sets__element_keys 84 13 121_4_23_1]
+G c Z s s [is_equalR util__strings__sets__is_equalGP5085 129 13 23_1]
+G c Z s s [is_equal util__strings__sets 129 13 23_1]
+G c Z s s [is_equivalentR util__strings__sets__is_equivalentGP5159 132 13 23_1]
+G c Z s s [is_equivalent util__strings__sets 132 13 23_1]
+G c Z s s [read_nodesR util__strings__sets__read_nodesGP5244 135 14 23_1]
+G c Z s s [read_nodes util__strings__sets 135 14 23_1]
+G c Z s s [replace_elementR util__strings__sets__replace_elementGP5315 138 14 23_1]
+G c Z s s [replace_element util__strings__sets 138 14 23_1]
+G c Z s s [write_nodesR util__strings__sets__write_nodesGP5416 141 14 23_1]
+G c Z s s [write_nodes util__strings__sets 141 14 23_1]
+X 1 ada.ads
+16K9*Ada 20e8 68|18r6 19r6 23r34 25r27
+X 4 a-contai.ads
+16K13*Containers 24e19 68|19r10 23r38
+19M9*Hash_Type
+X 14 a-conhel.ads
+84R12 Reference_Control_Type<20|43R9>
+X 16 a-cihase.ads
+42+9 Element_Type 68|24r4
+44V18 Hash{4|19M9} 68|25r4
+46V18 Equivalent_Elements{boolean} 68|26r4
+51k24*Indefinite_Hashed_Sets 595e42 68|19w21 23r49
+X 22 a-iteint.ads
+24h9 Forward_Iterator
+X 24 a-string.ads
+16K13*Strings 35e16 68|18r10 25r31
+X 25 a-strhas.ads
+20V22*Hash{4|19M9} 68|18w18 25r39
+X 32 system.ads
+67M9*Address
+X 45 s-memory.ads
+53V13*Alloc{32|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{32|67M9} 105i<c,__gnat_realloc>22
+X 52 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 63 util.ads
+18K9*Util 28e9 68|23r9
+X 66 util-strings.ads
+24K14*Strings 63|18k9 66|139e17 68|23r14
+X 68 util-strings-sets.ads
+23K22*Sets[16|51] 66|24k14
+

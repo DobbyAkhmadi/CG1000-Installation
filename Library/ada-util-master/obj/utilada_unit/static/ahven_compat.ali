@@ -1,0 +1,38 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -gnaty-
+A -gnatyc
+A -gnatys
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U ahven_compat%b	ahven_compat.adb	a994aa31 NE OO PK
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U ahven_compat%s	ahven_compat.ads	8861d619 EE NE OO PK
+
+D ahven_compat.ads	20210228093152 8861d619 ahven_compat%s
+D ahven_compat.adb	20210228093152 21f57c28 ahven_compat%b
+D system.ads		20190518041255 4635ec04 system%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+G a e
+G c Z s b [directory_separator ahven_compat 19 13 none]
+X 1 ahven_compat.ads
+18K9*Ahven_Compat 21l5 21e17 2|18b14 23l5 23t17
+19V13*Directory_Separator{string} 2|19b13 22l8 22t27
+

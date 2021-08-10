@@ -1,0 +1,164 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_LONG_LONG_INTEGERS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.nullables%s	util-nullables.ads	ac677cef EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+W util%s		util.ads		util.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-nullables.ads	20210228093152 cb4c8fed util.nullables%s
+G a e
+G c Z s s [Oeq util__nullables 46 13 none]
+G c Z s s [Oeq util__nullables 60 13 none]
+G c Z s s [Oeq util__nullables 74 13 none]
+G c Z s s [Oeq util__nullables 88 13 none]
+G c Z s s [Oeq util__nullables 102 13 none]
+G c Z s s [nullable_booleanIP util__nullables 38 9 none]
+G c Z s s [nullable_integerIP util__nullables 52 9 none]
+G c Z s s [nullable_longIP util__nullables 66 9 none]
+G c Z s s [nullable_stringDI util__nullables 80 9 none]
+G c Z s s [nullable_stringDA util__nullables 80 9 none]
+G c Z s s [nullable_stringDF util__nullables 80 9 none]
+G c Z s s [nullable_stringIP util__nullables 80 9 none]
+G c Z s s [nullable_timeIP util__nullables 94 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 37|18r6 19r6 30r13 31r13 33r28 81r17 95r17 107r28 107r49 125r38
+X 2 a-calend.ads
+36K13*Calendar 409e17 37|18w10 31r17 33r32 95r21 107r32 107r53
+42I9*Time<222I9> 37|31r26 33r41 95r30 107r41
+48I12*Year_Number{integer}
+49I12*Month_Number{integer}
+50I12*Day_Number{integer}
+54O12*Day_Duration{duration}
+83V13*Time_Of{42I9} 37|107s62
+84i7 Year{48I12} 37|107r71
+85i7 Month{49I12} 37|108r71
+86i7 Day{50I12} 37|109r71
+87o7 Seconds{54O12} 37|110r71
+222I9 Time_Rep<long_long_integer>
+X 8 a-string.ads
+16K13*Strings 35e16 37|19r10 30r17 81r21 125r42
+X 11 a-strunb.ads
+82K21*Unbounded 756e26 37|19w18 30r25 81r29 125r50
+87R9*Unbounded_String<6|43R9> 739e14 37|30r35 81r39
+90r4*Null_Unbounded_String{87R9} 37|125r60
+238V14*"="{boolean} 37|89s74
+X 17 system.ads
+67M9*Address
+X 23 s-memory.ads
+53V13*Alloc{17|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{17|67M9} 105i<c,__gnat_realloc>22
+X 29 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 36 util.ads
+18K9*Util 28e9 37|28r9 131r5
+X 37 util-nullables.ads
+28K14*Nullables 36|18k9 37|107E4 131l10 131e19
+33i4*DEFAULT_TIME{2|42I9} 95r38 107c4 129r36
+38R9*Nullable_Boolean 41e14 43r28 46r35 111r28 112r9
+39b7*Value{boolean} 47r68 47r82 113m28
+40b7*Is_Null{boolean} 47r13 47r29 47r47 112m28
+43r4*Null_Boolean{38R9} 111c4
+46V14*"="{boolean} 46>18 46>24
+46r18 Left{38R9} 47r8 47r42 47r63
+46r24 Right{38R9} 47r23 47r76
+52R9*Nullable_Integer 55e14 57r28 60r35 115r28 116r9
+53i7*Value{integer} 61r68 61r82 117m28
+54b7*Is_Null{boolean} 61r13 61r29 61r47 116m28
+57r4*Null_Integer{52R9} 115c4
+60V14*"="{boolean} 60>18 60>24
+60r18 Left{52R9} 61r8 61r42 61r63
+60r24 Right{52R9} 61r23 61r76
+66R9*Nullable_Long 69e14 71r25 74r35 119r25 120r9
+67i7*Value{long_long_integer} 75r68 75r82 121m25
+68b7*Is_Null{boolean} 75r13 75r29 75r47 120m25
+71r4*Null_Long{66R9} 119c4
+74V14*"="{boolean} 74>18 74>24
+74r18 Left{66R9} 75r8 75r42 75r63
+74r24 Right{66R9} 75r23 75r76
+80R9*Nullable_String 83e14 85r27 88r35 123r27 124r9
+81r7*Value{11|87R9} 89r68 89r82 125m27
+82b7*Is_Null{boolean} 89r13 89r29 89r47 124m27
+85r4*Null_String{80R9} 123c4
+88V14*"="{boolean} 88>18 88>24
+88r18 Left{80R9} 89r8 89r42 89r63
+88r24 Right{80R9} 89r23 89r76
+94R9*Nullable_Time 97e14 99r25 102r35 127r25 128r9
+95i7*Value{2|42I9} 103r68 103r82 129m25
+96b7*Is_Null{boolean} 103r13 103r29 103r47 128m25
+99r4*Null_Time{94R9} 127c4
+102V14*"="{boolean} 102>18 102>24
+102r18 Left{94R9} 103r8 103r42 103r63
+102r24 Right{94R9} 103r23 103r76
+

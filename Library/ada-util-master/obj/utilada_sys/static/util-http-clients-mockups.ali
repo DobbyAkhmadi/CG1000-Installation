@@ -1,0 +1,372 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_FIXED_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.http.clients.mockups%b  util-http-clients-mockups.adb  43402d41 OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W util%s		util.ads		util.ali
+W util.files%s		util-files.adb		util-files.ali
+W util.http%s		util-http.adb		util-http.ali
+W util.http.clients%s	util-http-clients.adb	util-http-clients.ali
+W util.http.mockups%s	util-http-mockups.adb	util-http-mockups.ali
+
+U util.http.clients.mockups%s  util-http-clients-mockups.ads  e8b9fccb EE OO PF PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+W util%s		util.ads		util.ali
+W util.http%s		util-http.adb		util-http.ali
+W util.http.clients%s	util-http-clients.adb	util-http-clients.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-calfor.ads		20190518041254 0a6f9afc ada.calendar.formatting%s
+D a-catizo.ads		20190518041256 409d7e5b ada.calendar.time_zones%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihama.ads		20190518041255 bece8dbf ada.containers.indefinite_hashed_maps%s
+D a-cihama.adb		20190518041254 94909b4a ada.containers.indefinite_hashed_maps%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strhas.ads		20190518041256 c71c2a52 ada.strings.hash%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D gnat.ads		20190518041256 b5988c27 gnat%s
+D g-calend.ads		20190518041255 cad86fa7 gnat.calendar%s
+D g-catiio.ads		20190518041254 b8a4f3d4 gnat.calendar.time_io%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-files.ads	20210228093152 320752cb util.files%s
+D util-http.ads		20210228093152 d6d6d34c util.http%s
+D util-http-clients.ads	20210228093152 bf756f92 util.http.clients%s
+D util-http-clients-mockups.ads  20210228093152 feef8c90 util.http.clients.mockups%s
+D util-http-clients-mockups.adb  20210228093152 6e207043 util.http.clients.mockups%b
+D util-http-cookies.ads	20210228093152 6ad4737d util.http.cookies%s
+D util-http-mockups.ads	20210228093152 e1888359 util.http.mockups%s
+D util-log.ads		20210228093152 0fb1ac89 util.log%s
+D util-log-appenders.ads  20210228093152 898ccef8 util.log.appenders%s
+D util-log-loggers.ads	20210228093152 5659ff08 util.log.loggers%s
+D util-nullables.ads	20210228093152 cb4c8fed util.nullables%s
+D util-properties.ads	20210228093152 3ed4fee8 util.properties%s
+D util-serialize.ads	20210228093152 bb5084e8 util.serialize%s
+D util-serialize-io.ads	20210228093152 f7823694 util.serialize.io%s
+D util-serialize-io-form.ads  20210228093152 8d19946f util.serialize.io.form%s
+D util-streams.ads	20210228093152 e241dcc4 util.streams%s
+D util-streams-buffered.ads  20210228093152 a458193f util.streams.buffered%s
+D util-streams-texts.ads  20210228093152 e18922e6 util.streams.texts%s
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-maps.ads	20210228093152 a16bc59e util.strings.maps%s
+D util-strings-maps.ads	20210228093152 a16bc59e util.strings.maps%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-texts.ads	20210228093152 096d4581 util.texts%s
+D util-texts-builders.ads  20210228093152 f2e717ef util.texts.builders%s
+D util-texts-builders.adb  20210228093152 38b5b7a7 util.texts.builders%b
+G a e
+G c Z s b [register util__http__clients__mockups 24 14 none]
+G c Z s b [set_file util__http__clients__mockups 28 14 none]
+G c Z s b [create util__http__clients__mockups 37 14 none]
+G c Z s b [do_get util__http__clients__mockups 41 14 none]
+G c Z s b [do_head util__http__clients__mockups 47 14 none]
+G c Z s b [do_post util__http__clients__mockups 53 14 none]
+G c Z s b [do_put util__http__clients__mockups 60 14 none]
+G c Z s b [do_patch util__http__clients__mockups 67 14 none]
+G c Z s b [do_delete util__http__clients__mockups 74 14 none]
+G c Z s b [do_options util__http__clients__mockups 80 14 none]
+G c Z s b [set_timeout util__http__clients__mockups 87 14 none]
+G c Z s s [file_http_managerDA util__http__clients__mockups 32 9 none]
+G c Z s s [file_http_managerDF util__http__clients__mockups 32 9 none]
+G c Z s s [file_http_managerDI util__http__clients__mockups 32 9 none]
+G c Z s s [file_http_managerIP util__http__clients__mockups 32 9 none]
+G r s mockup_request [create util__http__clients__mockups 37 14 none] [mockup_requestIP util__http__mockups 94 9 none]
+G r l mockup_request [create util__http__clients__mockups 37 14 none] [mockup_requestDI util__http__mockups 94 9 none]
+G r s mockup_response [do_get util__http__clients__mockups 41 14 none] [mockup_responseIP util__http__mockups 96 9 none]
+G r l mockup_response [do_get util__http__clients__mockups 41 14 none] [mockup_responseDI util__http__mockups 96 9 none]
+G r c none [do_get util__http__clients__mockups 41 14 none] [read_file util__files 29 14 none]
+G r c none [do_get util__http__clients__mockups 41 14 none] [set_body util__http__mockups 85 14 none]
+G r c none [do_get util__http__clients__mockups 41 14 none] [set_status util__http__mockups 81 14 none]
+G r s mockup_response [do_head util__http__clients__mockups 47 14 none] [mockup_responseIP util__http__mockups 96 9 none]
+G r l mockup_response [do_head util__http__clients__mockups 47 14 none] [mockup_responseDI util__http__mockups 96 9 none]
+G r c none [do_head util__http__clients__mockups 47 14 none] [set_body util__http__mockups 85 14 none]
+G r c none [do_head util__http__clients__mockups 47 14 none] [set_status util__http__mockups 81 14 none]
+G r s mockup_response [do_post util__http__clients__mockups 53 14 none] [mockup_responseIP util__http__mockups 96 9 none]
+G r l mockup_response [do_post util__http__clients__mockups 53 14 none] [mockup_responseDI util__http__mockups 96 9 none]
+G r c none [do_post util__http__clients__mockups 53 14 none] [read_file util__files 29 14 none]
+G r c none [do_post util__http__clients__mockups 53 14 none] [set_body util__http__mockups 85 14 none]
+G r c none [do_post util__http__clients__mockups 53 14 none] [set_status util__http__mockups 81 14 none]
+G r s mockup_response [do_put util__http__clients__mockups 60 14 none] [mockup_responseIP util__http__mockups 96 9 none]
+G r l mockup_response [do_put util__http__clients__mockups 60 14 none] [mockup_responseDI util__http__mockups 96 9 none]
+G r c none [do_put util__http__clients__mockups 60 14 none] [read_file util__files 29 14 none]
+G r c none [do_put util__http__clients__mockups 60 14 none] [set_body util__http__mockups 85 14 none]
+G r c none [do_put util__http__clients__mockups 60 14 none] [set_status util__http__mockups 81 14 none]
+G r s mockup_response [do_patch util__http__clients__mockups 67 14 none] [mockup_responseIP util__http__mockups 96 9 none]
+G r l mockup_response [do_patch util__http__clients__mockups 67 14 none] [mockup_responseDI util__http__mockups 96 9 none]
+G r c none [do_patch util__http__clients__mockups 67 14 none] [read_file util__files 29 14 none]
+G r c none [do_patch util__http__clients__mockups 67 14 none] [set_body util__http__mockups 85 14 none]
+G r c none [do_patch util__http__clients__mockups 67 14 none] [set_status util__http__mockups 81 14 none]
+G r s mockup_response [do_delete util__http__clients__mockups 74 14 none] [mockup_responseIP util__http__mockups 96 9 none]
+G r l mockup_response [do_delete util__http__clients__mockups 74 14 none] [mockup_responseDI util__http__mockups 96 9 none]
+G r c none [do_delete util__http__clients__mockups 74 14 none] [read_file util__files 29 14 none]
+G r c none [do_delete util__http__clients__mockups 74 14 none] [set_body util__http__mockups 85 14 none]
+G r c none [do_delete util__http__clients__mockups 74 14 none] [set_status util__http__mockups 81 14 none]
+G r s mockup_response [do_options util__http__clients__mockups 80 14 none] [mockup_responseIP util__http__mockups 96 9 none]
+G r l mockup_response [do_options util__http__clients__mockups 80 14 none] [mockup_responseDI util__http__mockups 96 9 none]
+G r c none [do_options util__http__clients__mockups 80 14 none] [read_file util__files 29 14 none]
+G r c none [do_options util__http__clients__mockups 80 14 none] [set_body util__http__mockups 85 14 none]
+G r c none [do_options util__http__clients__mockups 80 14 none] [set_status util__http__mockups 81 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 85|20r6 33r14 86|23r8 60r17
+X 18 a-conhel.ads
+84R12 Reference_Control_Type<26|43R9>
+X 28 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[22|75]>
+X 30 a-string.ads
+16K13*Strings 35e16 85|20r10 33r18 86|23r12 60r21
+X 34 a-strunb.ads
+82K21*Unbounded 756e26 85|20w18 33r26 86|23r20 60r29
+87R9*Unbounded_String<26|43R9> 739e14 85|33r36 86|60r39
+103V13*To_Unbounded_String{87R9} 86|41s23
+116V13*To_String{string} 86|63s41 66s21
+X 48 system.ads
+67M9*Address
+X 58 s-memory.ads
+53V13*Alloc{48|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{48|67M9} 105i<c,__gnat_realloc>22
+X 65 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 76 util.ads
+18K9*Util 28e9 85|19r6 21r9 91r5 86|19r6 20r6 21r14 48r28 58r22 59r16 63r7
+. 77r22 78r16 148r5
+X 78 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 79 util-beans-objects.ads
+97h9*Object_Type
+X 82 util-files.ads
+21K14*Files 114e15 86|19w11 63r12
+29U14*Read_File 86|63s18
+29a25 Path{string} 86|63r29
+30r25 Into{34|87R9} 86|64r29
+31i25 Max_Size{natural} 86|65r29
+X 83 util-http.ads
+26K14*Http 76|18k9 83|159e14 85|19r11 21r14 91r10 86|20r11 21r19 48r33 58r27
+. 59r21 77r27 78r21 148r10
+31i4*SC_OK{natural} 86|67r23 82r23
+76h9*Abstract_Message
+143h9*Abstract_Request<76R9>
+144P9*Abstract_Request_Access(143R9)
+150h9*Abstract_Response<76R9>
+151P9*Abstract_Response_Access(150R9)
+X 84 util-http-clients.ads
+50K19*Clients 83|26k14 84|300e22 85|19w16 21r19 91r15 86|21r24 148r15
+63R9*Response<83|150R9> 277e14 85|44r37 50r38 57r38 64r37 71r39 77r40 83r41
+. 86|55r37 74r38 90r38 101r37 112r39 122r40 131r41
+114R9*Client<83|143R9> 287e14 85|38r40 42r36 48r37 54r37 61r36 68r38 75r39
+. 81r40 88r40 86|45r40 53r36 72r37 87r37 98r36 109r38 120r39 129r40 141r40
+218P12 Http_Request_Access{83|144P9}
+223h9 Http_Manager 85|32r34
+224P9 Http_Manager_Access(223R9)
+272p4 Default_Http_Manager{224P9} 86|32m7
+276p7 Delegate{83|151P9} 86|62m13 80m13
+286p7 Delegate{218P12} 86|48m12
+X 85 util-http-clients-mockups.ads
+21K27*Mockups 84|50k19 85|32E9 91l23 91e30 86|21b32 148l23 148t30
+24U14*Register 86|30b14 33l8 33t16
+28U14*Set_File 28>24 86|39b14 42l8 42t16
+28a24 Path{string} 86|39b24 41r44
+32R9 File_Http_Manager<84|223R9> 34e14 35r48 37P14 37r36 41P14 41r36 47P14
+. 47r37 53P14 53r37 60P14 60r36 67P14 67r38 74P14 74r39 80P14 80r40 87P14
+. 87r40 86|25r22 44r36 52r36 71r37 86r37 97r36 108r38 119r39 128r40 140r40
+33r7*File{34|87R9} 86|41m15 63r60
+35P9 File_Http_Manager_Access(32R9)
+37U14 Create<84|226p14> 37>22 38=22 86|44b14 49l8 49t14
+37r22 Manager{32R9} 86|44b22 46r28
+38c22 Http<84|114R9> 86|45b22 48m7
+41U14 Do_Get<84|229p14> 41>22 42>22 43>22 44<22 86|52b14 68l8 68t14 93s15
+. 104s15 115s15 124s15 133s15
+41r22 Manager{32R9} 86|52b22 63r52
+42c22 Http<84|114R9> 86|53b22 56r28
+43a22 URI{string} 86|54b22 56r34
+44c22 Reply<84|63R9> 86|55b22 62m7
+47U14 Do_Head<84|234p14> 47>23 48>23 49>23 50<23 86|71b14 83l8 83t15
+47r23 Manager{32R9} 86|71b23 75r28
+48c23 Http<84|114R9> 86|72b23 75r37
+49a23 URI{string} 86|73b23 75r43
+50c23 Reply<84|63R9> 86|74b23 80m7
+53U14 Do_Post<84|239p14> 53>23 54>23 55>23 56>23 57<23 86|86b14 94l8 94t15
+53r23 Manager{32R9} 86|86b23 93r7
+54c23 Http<84|114R9> 86|87b23 93r23
+55a23 URI{string} 86|88b23 93r29
+56a23 Data{string} 86|89b23 91r28
+57c23 Reply<84|63R9> 86|90b23 93m34
+60U14 Do_Put<84|245p14> 60>22 61>22 62>22 63>22 64<22 86|97b14 105l8 105t14
+60r22 Manager{32R9} 86|97b22 104r7
+61c22 Http<84|114R9> 86|98b22 104r23
+62a22 URI{string} 86|99b22 104r29
+63a22 Data{string} 86|100b22 102r28
+64c22 Reply<84|63R9> 86|101b22 104m34
+67U14 Do_Patch<84|251p14> 67>24 68>24 69>24 70>24 71<24 86|108b14 116l8 116t16
+67r24 Manager{32R9} 86|108b24 115r7
+68c24 Http<84|114R9> 86|109b24 115r23
+69a24 URI{string} 86|110b24 115r29
+70a24 Data{string} 86|111b24 113r28
+71c24 Reply<84|63R9> 86|112b24 115m34
+74U14 Do_Delete<84|257p14> 74>25 75>25 76>25 77<25 86|119b14 125l8 125t17
+74r25 Manager{32R9} 86|119b25 124r7
+75c25 Http<84|114R9> 86|120b25 124r23
+76a25 URI{string} 86|121b25 124r29
+77c25 Reply<84|63R9> 86|122b25 124m34
+80U14 Do_Options<84|262p14> 80>26 81>26 82>26 83<26 86|128b14 134l8 134t18
+80r26 Manager{32R9} 86|128b26 133r7
+81c26 Http<84|114R9> 86|129b26 133r23
+82a26 URI{string} 86|130b26 133r29
+83c26 Reply<84|63R9> 86|131b26 133m34
+87U14 Set_Timeout<84|268p14> 87>27 88>27 89>27 86|140b14 146l8 146t19
+87r27 Manager{32R9} 86|140b27 143r28
+88c27 Http<84|114R9> 86|141b27 143r37
+89o27 Timeout{duration} 86|142b27 143r43
+X 86 util-http-clients-mockups.adb
+25r4 Manager{85|32R9} 32m31 32r31 41m7
+58p7 Rep{88|70P9} 62r25 66r7 67r7
+60r7 Content{34|87R9} 64m41 66r32
+77p7 Rep{88|70P9} 80r25 81r7 82r7
+X 88 util-http-mockups.ads
+22K19*Mockups 86|20w16 48r38 58r32 59r26 77r32 78r26 88|101e22
+66R9*Mockup_Request<26R9><83|143R9> 86|48r46 88|94e83
+69R9*Mockup_Response<26R9><83|150R9> 86|59r34 78r34 88|99e14
+70P9*Mockup_Response_Access(69R9) 86|58r40 77r40
+81U14*Set_Status 86|67R11 82R11
+85U14*Set_Body 86|66R11 81R11
+X 89 util-log.ads
+187h9*Logging
+X 93 util-properties.ads
+256h12*Manager<78|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 95 util-serialize-io.ads
+37h9*Output_Stream<97|55R9>
+X 97 util-streams.ads
+55h9*Output_Stream
+73h9*Input_Stream
+

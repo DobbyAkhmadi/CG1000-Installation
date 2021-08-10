@@ -1,0 +1,187 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.commands.consoles%b  util-commands-consoles.adb  30c66634 NE OO PK GE
+W util%s		util.ads		util.ali
+W util.commands%s	util-commands.adb	util-commands.ali
+W util.strings%s	util-strings.adb	util-strings.ali
+
+U util.commands.consoles%s  util-commands-consoles.ads  bfebc3d7 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W util.commands%s	util-commands.adb	util-commands.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-commands.ads	20210228093152 79391345 util.commands%s
+D util-commands-consoles.ads  20210228093152 d084a0c9 util.commands.consoles%s
+D util-commands-consoles.adb  20210228093152 79b4a838 util.commands.consoles%b
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+G a e
+G c Z s b [consoles util__commands 22 23 none]
+X 1 ada.ads
+16K9*Ada 20e8 54|18r6 80r40 55|59r40 61r24
+X 15 a-conhel.ads
+84R12 Reference_Control_Type<21|43R9>
+X 22 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[17|75]>
+X 24 a-string.ads
+16K13*Strings 35e16 54|18r10 80r44 55|59r44 61r28
+X 26 a-strunb.ads
+82K21*Unbounded 756e26 54|18w18 80r52 55|59r52 61r36
+87R9*Unbounded_String<21|43R9> 739e14 54|80r62 55|59r62
+116V13*To_String{string} 55|61s46
+X 52 util.ads
+18K9*Util 28e9 54|22r9 102r5 55|19r6 20r14 49r32 89r5
+X 53 util-commands.ads
+104K14*Commands 52|18k9 53|190e18 54|22r14 102r10 55|20r19 89r10
+110h9*Argument_List
+X 54 util-commands-consoles.ads
+20E9 Field_Type 44r40 50r40 67r40 73r40 79r40 91r36 93r69 55|26r40 46r40
+. 58r40
+21E9 Notice_Type 39r35
+22k23*Consoles 53|104k14 54|20z9 21z9 91E9 102l19 102e27 55|20b28 89l19 89t27
+24E9*Justify_Type 28e26 46r40 75r40 81r40 55|48r40 60r40
+24n26*J_LEFT{24E9} 46r56 75r56 81r56 55|48r56 60r56
+25n26*J_RIGHT{24E9}
+26n26*J_CENTER{24E9}
+27n26*J_RIGHT_NO_FILL{24E9}
+30H9*Console_Type 31r38 34p14 34r38 38p14 38r39 43p14 43r44 49p14 49r44 54p14
+. 54r44 57p14 57r42 60p14 60r42 63p14 63r40 66p14 66r44 72p14 72r44 78p14
+. 78r44 84p13 84r43 87p14 87r45 95c9 100e14 55|25r44 39r7 45r44 51r7 57r44
+. 66r10 69r10 76r43 84r45
+31P9*Console_Access(30R9)
+34x14*Error 34=21 35>21
+34r21 Console{30R9}
+35a21 Message{string}
+38x14*Notice 38=22 39>22 40>22
+38r22 Console{30R9}
+39*22 Kind{21E9}
+40a22 Message{string}
+43x14*Print_Field 43=27 44>27 45>27 46>27 55|51R36 66R39 69R39
+43r27 Console{30R9}
+44*27 Field{20E9}
+45a27 Value{string}
+46e27 Justify{24E9}
+49x14*Print_Title 49=27 50>27 51>27 55|39R36
+49r27 Console{30R9}
+50*27 Field{20E9}
+51a27 Title{string}
+54x14*Start_Title 54=27
+54r27 Console{30R9}
+57x14*End_Title 57=25
+57r25 Console{30R9}
+60x14*Start_Row 60=25
+60r25 Console{30R9}
+63x14*End_Row 63=23
+63r23 Console{30R9}
+66U14*Print_Title 66=27 67>27 68>27 69>27 55|25b14 40l8 40t19
+66r27 Console{30R9} 55|25b27 30m7 31r10 32m10 32r34 32r48 32r64 33r14 33r29
+. 33r45 35m10 37m7 37r30 38m7 38r23 39m27 39r27
+67*27 Field{20E9} 55|26b27 30r22 32r24 35r24 38r47 39r49
+68a27 Title{string} 55|27b27 39r56
+69i27 Length{positive} 55|28b27 30r32
+72U14*Print_Field 72=27 73>27 74>27 75>27 55|45b14 52l8 52t19
+72r27 Console{30R9} 55|45b27 51m27 51r27
+73*27 Field{20E9} 55|46b27 51r49
+74i27 Value{integer} 55|47b27 49r52
+75e27 Justify{24E9} 55|48b27 51r61
+78U14*Print_Field 78=27 79>27 80>27 81>27 55|57b14 71l8 71t19
+78r27 Console{30R9} 55|57b27 62r34 66m30 66r30 69m30 69r30
+79*27 Field{20E9} 55|58b27 62r49 66r52 69r52
+80r27 Value{26|87R9} 55|59b27 61r57
+81e27 Justify{24E9} 55|60b27 69r65
+84V13*Get_Field_Count{natural} 84>30 55|76b13 79l8 79t23
+84r30 Console{30R9} 55|76b30 78r14
+87U14*Clear_Fields 87=28 55|84b14 87l8 87t20
+87r28 Console{30R9} 55|84b28 86m7
+91A9 Field_Size_Array(natural)<20E9> 93r41 96r21 97r21
+93A9 Field_List_Array(20E9)<integer> 98r21
+96a7 Sizes{91A9} 55|30m15 33r22 62r42
+97a7 Cols{91A9} 55|32m18 32r42 35m18
+98a7 Fields{93A9} 55|32r56 33r37 38m15
+99i7 Field_Count{natural} 55|31r18 32r72 33r53 37m15 37r38 38r31 78r22 86m15
+X 55 util-commands-consoles.adb
+49a7 Val{string} 51r56
+61a7 Item{string} 64r18 65m10 65r16 65r40 67r52 67r58 67r82 69r59
+62i7 Size{natural} 64r10 65r28 65r52 67r70
+X 58 util-strings.ads
+24K14*Strings 55|19w11 49r37 58|139e17
+72V13*Image{string} 55|49s45
+

@@ -1,0 +1,405 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U ado.model%b		ado-model.adb		0082fb13 OO PK IU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+W ado.objects%s		ado-objects.adb		ado-objects.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+
+U ado.model%s		ado-model.ads		36fc249f EE OO PF PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+W ado.schemas%s		ado-schemas.adb		ado-schemas.ali
+W ado.sessions%s	ado-sessions.adb	ado-sessions.ali
+W ado.sql%s		ado-sql.adb		ado-sql.ali
+W ado.statements%s	ado-statements.adb	ado-statements.ali
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihase.ads		20190518041254 4f8a62e0 ada.containers.indefinite_hashed_sets%s
+D a-cihase.adb		20190518041256 f54eebd2 ada.containers.indefinite_hashed_sets%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-convec.ads		20190518041256 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20190518041254 32f4e1a7 ada.containers.vectors%b
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D ado.ads		20200810200714 1ec4b94f ado%s
+D ado-audits.ads	20200810200714 2a544c7e ado.audits%s
+D ado-caches.ads	20200810200714 3f821007 ado.caches%s
+D ado-configs.ads	20200810200714 1a13a13e ado.configs%s
+D ado-connections.ads	20200810200714 53398a84 ado.connections%s
+D ado-dialects.ads	20200810200714 eb00eeaf ado.dialects%s
+D ado-model.ads		20200810200714 63c15ee0 ado.model%s
+D ado-model.adb		20200810200714 db8b5e93 ado.model%b
+D ado-objects.ads	20200810200714 b8c8fb60 ado.objects%s
+D ado-objects-cache.ads	20200810200714 aef66a18 ado.objects.cache%s
+D ado-parameters.ads	20200810200714 ad5888fa ado.parameters%s
+D ado-queries.ads	20200810200714 e566d425 ado.queries%s
+D ado-schemas.ads	20200810200714 b2b43658 ado.schemas%s
+D ado-schemas-entities.ads  20200810200714 3c0f0af5 ado.schemas.entities%s
+D ado-sequences.ads	20200810200714 1726cdc8 ado.sequences%s
+D ado-sessions.ads	20200810200714 20bb1cec ado.sessions%s
+D ado-sql.ads		20200810200714 ba8ff082 ado.sql%s
+D ado-statements.ads	20200810200714 752f695d ado.statements%s
+D ado-utils.ads		20200810200714 ef23a2c0 ado.utils%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrin.ads		20190518041255 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atacco.ads		20190518041256 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-exctab.adb		20190518041255 c756f391 system.exception_table%b
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20190518041254 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20190518041256 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-linux.ads		20190518041256 ed0b8aee system.linux%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-multip.ads		20190518041254 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190518093549 c13b1f65 system.os_constants%s
+D s-osinte.ads		20190518041257 baabc537 system.os_interface%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stausa.ads		20190518041255 017a0a05 system.stack_usage%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-stratt.adb		20190518041255 56ef263e system.stream_attributes%b
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-tasinf.ads		20190518041256 2b3f8252 system.task_info%s
+D s-taspri.ads		20190518041256 f40ac08d system.task_primitives%s
+D s-taskin.ads		20190518041257 b9d612e2 system.tasking%s
+D s-taprob.ads		20190518041256 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20200215171848 36301479 util%s
+D util-beans.ads	20200215171848 362abe70 util.beans%s
+D util-beans-basic.ads	20200215171848 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20200215171848 aef7462e util.beans.objects%s
+D util-concurrent.ads	20200215171848 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20200215171848 2618dd23 util.concurrent.counters%s
+D util-log.ads		20200215171848 0fb1ac89 util.log%s
+D util-log-appenders.ads  20200215171848 ddbe02c8 util.log.appenders%s
+D util-log-loggers.ads	20200215171848 3003bbc2 util.log.loggers%s
+D util-nullables.ads	20200215171848 cb4c8fed util.nullables%s
+D util-properties.ads	20200215171848 3ed4fee8 util.properties%s
+D util-refs.ads		20200215171848 e592e98d util.refs%s
+D util-refs.adb		20200215171848 f4fdc937 util.refs%b
+D util-strings.ads	20200215171848 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+G a e
+G c Z s b [set_name ado__model 45 14 none]
+G c Z s b [set_name ado__model 47 14 none]
+G c Z s b [get_name ado__model 51 13 none]
+G c Z s b [get_name ado__model 53 13 none]
+G c Z s b [get_version ado__model 56 13 none]
+G c Z s b [set_value ado__model 60 14 none]
+G c Z s b [get_value ado__model 64 13 none]
+G c Z s b [set_block_size ado__model 68 14 none]
+G c Z s b [get_block_size ado__model 72 13 none]
+G c Z s b [find ado__model 77 14 none]
+G c Z s b [save ado__model 85 14 none]
+G c Z s b [create ado__model 88 14 none]
+G c Z s b [load ado__model 131 14 none]
+G c Z s s [sequence_refDA ado__model 36 9 none]
+G c Z s s [sequence_refDF ado__model 36 9 none]
+G c Z s s [sequence_refDI ado__model 36 9 none]
+G c Z s s [sequence_refIP ado__model 36 9 none]
+G r c none [find ado__model 77 14 none] [create_statement ado__sessions 100 13 none]
+G r d query_statement [find ado__model 77 14 none] [adjust ado__statements 494 14 none]
+G r e query_statement [find ado__model 77 14 none] [finalize ado__statements 497 14 none]
+G r c none [find ado__model 77 14 none] [set_parameters ado__statements 111 14 none]
+G r c none [find ado__model 77 14 none] [execute ado__statements 170 14 none]
+G r c none [find ado__model 77 14 none] [has_elements ado__statements 176 13 none]
+G r c none [find ado__model 77 14 none] [get_unbounded_string ado__statements 252 13 none]
+G r c none [find ado__model 77 14 none] [get_identifier ado__statements 196 13 none]
+G r c none [find ado__model 77 14 none] [get_integer ado__statements 203 13 none]
+G r c none [find ado__model 77 14 none] [next ado__statements 179 14 none]
+G r c none [save ado__model 85 14 none] [create_statement ado__sessions 164 13 none]
+G r d update_statement [save ado__model 85 14 none] [adjust ado__statements 556 14 none]
+G r e update_statement [save ado__model 85 14 none] [finalize ado__statements 559 14 none]
+G r c none [save ado__model 85 14 none] [save_field ado__statements 386 14 none]
+G r c none [save ado__model 85 14 none] [has_save_fields ado__statements 456 13 none]
+G r c none [save ado__model 85 14 none] [save_field ado__statements 356 14 none]
+G r c none [save ado__model 85 14 none] [set_filter ado__statements 153 14 none]
+G r c none [save ado__model 85 14 none] [add_param ado__parameters 229 14 none]
+G r c none [save ado__model 85 14 none] [add_param ado__parameters 225 14 none]
+G r c none [save ado__model 85 14 none] [execute ado__statements 463 14 none]
+G r c none [create ado__model 88 14 none] [create_statement ado__sessions 169 13 none]
+G r d update_statement [create ado__model 88 14 none] [adjust ado__statements 556 14 none]
+G r e update_statement [create ado__model 88 14 none] [finalize ado__statements 559 14 none]
+G r c none [create ado__model 88 14 none] [save_field ado__statements 422 14 none]
+G r c none [create ado__model 88 14 none] [save_field ado__statements 356 14 none]
+G r c none [create ado__model 88 14 none] [save_field ado__statements 386 14 none]
+G r c none [create ado__model 88 14 none] [execute ado__statements 463 14 none]
+G r c none [load ado__model 131 14 none] [get_unbounded_string ado__statements 252 13 none]
+G r c none [load ado__model 131 14 none] [get_identifier ado__statements 196 13 none]
+G r c none [load ado__model 131 14 none] [get_integer ado__statements 203 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 47|27r6 37r20 46r36 52r25 48|32r20 35r36 42r14 45r26
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<26|43R9>
+X 28 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[20|75]>
+X 30 a-string.ads
+16K13*Strings 35e16 47|27r10 37r24 46r40 52r29 48|32r24 35r40 42r18 45r30
+X 33 a-strunb.ads
+82K21*Unbounded 756e26 47|27w18 37r32 46r48 52r37 48|32r32 35r48 42r26 45r38
+87R9*Unbounded_String<26|43R9> 739e14 47|37r42 46r58 52r47 48|35r58 45r48
+103V13*To_Unbounded_String{87R9} 48|32s42
+116V13*To_String{string} 48|42s36
+X 41 ado.ads
+25K9*ADO 150e8 47|23r6 24r6 25r6 26r6 28r17 39r20 40r20 61r37 65r25 69r42
+. 73r25 78r37 79r33 86r37 89r39 92r38 99r41 107r38 121r41 132r37 133r37 135r5
+. 48|23r6 24r14 55r37 61r26 66r42 71r26 80r37 81r37 90r37 91r33 93r14 108r37
+. 109r14 139r25 141r25 148r39 149r15 164r16 168r5
+39I9*Identifier<long_integer> 47|39r24 40r24 61r41 65r29 69r46 73r29 48|55r41
+. 61r30 66r46 71r30
+X 47 ado-model.ads
+28K21*Model 41|25k9 47|102E4 135l9 135e14 48|24b18 168l9 168t14
+30X4*NOT_FOUND
+36R9*Sequence_Ref 42e14 45p14 45r40 47p14 47r40 51p13 51r35 53p13 53r35 56p13
+. 56r38 60p14 60r41 64p13 64r36 68p14 68r46 72p13 72r41 77p14 77r37 85p14
+. 85r37 88p14 88r39 131p14 131r37 48|29r40 34r40 39r35 44r35 49r38 54r41
+. 60r36 65r46 70r41 79r37 89r37 107r37 147r39
+37r7*Id{33|87R9} 48|32m14 37m14 47r21 84m14 131r42 155r41
+38i7*Version{integer} 48|52r21 87m14 127m17 127r35 129r43 132r42 153m14 157r41
+39i7*Value{41|39I9} 48|57m14 63r21 85m14 119r43 159r41
+40i7*Block_Size{41|39I9} 48|68m14 73r21 86m14 161r41
+41b7*Need_Save{boolean} 48|58m14 117r17
+45U14*Set_Name 45=24 46>24 48|34b14 38l8 38t16
+45r24 Object{36R9} 48|34b24 37m7
+46r24 Value{33|87R9} 48|35b24 37r20
+47U14*Set_Name 47=24 48>24 48|29b14 33l8 33t16
+47r24 Object{36R9} 48|29b24 32m7
+48a24 Value{string} 48|30b25 32r63
+51V13*Get_Name{33|87R9} 51>23 48|42s54 44b13 48l8 48t16
+51r23 Object{36R9} 48|44b23 47r14
+53V13*Get_Name{string} 53>23 48|39b13 43l8 43t16
+53r23 Object{36R9} 48|39b23 42r47
+56V13*Get_Version{integer} 56>26 48|49b13 53l8 53t19
+56r26 Object{36R9} 48|49b26 52r14
+60U14*Set_Value 60=25 61>25 48|54b14 59l8 59t17
+60r25 Object{36R9} 48|54b25 57m7 58m7
+61i25 Value{41|39I9} 48|55b25 57r23
+64V13*Get_Value{41|39I9} 64>24 48|60b13 64l8 64t17
+64r24 Object{36R9} 48|60b24 63r14
+68U14*Set_Block_Size 68=30 69>30 48|65b14 69l8 69t22
+68r30 Object{36R9} 48|65b30 68m7
+69i30 Value{41|39I9} 48|66b30 68r28
+72V13*Get_Block_Size{41|39I9} 72>29 48|70b13 74l8 74t22
+72r29 Object{36R9} 48|70b29 73r14
+77U14*Find 77=20 78=20 79>20 80<20 48|89b14 105l8 105t12
+77r20 Object{36R9} 48|89b20 99m10 99r10
+78c20 Session<56|71R9> 48|90b20 94r14 99m29
+79c20 Query<57|86R9> 48|91b20 96r28
+80b20 Found{boolean} 48|92b20 101m10 103m10
+85U14*Save 85=20 86=20 48|107b14 146l8 146t12
+85r20 Object{36R9} 48|107b20 117r10 119r36 127m10 127r28 129r36 131r35 132r35
+86c20 Session<56|140R9> 48|108b20 110r13
+88U14*Create 88=22 89=22 48|147b14 166l8 166t14
+88r22 Object{36R9} 48|147b22 153m7 155r34 157r34 159r34 161r34
+89c22 Session<56|140R9> 48|148b22 150r22
+92r4*SEQUENCE_TABLE{53|29R9} 107c4 48|94r40 110r39 150r48
+99r4*ENTITY_TYPE_TABLE{53|29R9} 121c4
+102a4 SEQUENCE_NAME{string} 109r16
+103a4 COL_0_1_NAME{string} 111r19 48|154r34
+104a4 COL_1_1_NAME{string} 112r19 48|156r34
+105a4 COL_2_1_NAME{string} 113r19 48|118r36 158r34
+106a4 COL_3_1_NAME{string} 114r19 48|160r34
+118a4 ENTITY_TYPE_NAME{string} 123r16
+119a4 COL_0_2_NAME{string} 125r19
+120a4 COL_1_2_NAME{string} 126r19
+131U14 Load 131=20 132=20 133=20 48|79b14 88l8 88t12 99s17
+131r20 Object{36R9} 48|79b20 84m7 85m7 86m7 87m7
+132c20 Stmt<58|165R9> 48|80b20 84r20 85r23 86r28 87r25
+133c20 Session<56|71R9> 48|81b20 82r28
+X 48 ado-model.adb
+93r7 Stmt{58|165R9} 96m7 96r7 97m7 97r7 98r10 99m23 99r23 100m10 100r10 101r23
+109r7 Stmt{58|335R9} 118m10 118r10 126r10 128m10 128r10 130m10 130r10 131m10
+. 131r10 132m10 132r10 136m13 136r13
+134i13 Result{integer} 136m27 137r16 138r19
+149r7 Query{58|469R9} 154m7 154r7 156m7 156r7 158m7 158r7 160m7 160r7 162m7
+. 162r7
+151i7 Result{integer} 162m22 163r10
+X 49 ado-objects.ads
+155K13*Objects 48|23w10 139r29 141r29 164r20 49|602e16
+159X4*LAZY_LOCK 48|141r37
+161X4*INSERT_ERROR 48|164r28
+163X4*UPDATE_ERROR 48|139r37
+X 51 ado-parameters.ads
+100h9*Expander
+225U14*Add_Param 48|132s15
+226i26 Value{integer} 48|132r26
+229U14*Add_Param 48|131s15
+230r26 Value{33|87R9} 48|131r26
+X 53 ado-schemas.ads
+23K13*Schemas 47|26w10 92r42 99r45 107r42 121r45 53|215e16
+25I9*Column_Index<integer>
+27A9*Member_Names(123|29P9)<25I9>
+29R9*Class_Mapping 47|92r50 99r53 107r50 121r53 53|33e14
+29i24*Count{25I9} 47|108m7 122m7
+31p7*Table{123|29P9} 47|109m7 123m7
+32a7*Members{27A9} 47|110m7 124m7
+X 56 ado-sessions.ads
+51K13*Sessions 47|23w10 78r41 86r41 89r43 133r41 48|81r41 90r41 108r41 148r43
+. 56|237e17
+71R9*Session<26|43R9> 47|78r50 133r50 48|81r50 90r50 56|218e14
+100V13*Create_Statement{58|165R9} 48|94R22
+140R9*Master_Session<71R9> 47|86r50 89r52 48|108r50 148r52 56|231e14
+164V13*Create_Statement{58|335R9} 48|110R21
+169V13*Create_Statement{58|469R9} 48|150R30
+X 57 ado-sql.ads
+26K13*SQL 47|25w10 79r37 48|91r37 57|227e12
+86R9*Query<51|255R9> 47|79r41 48|91r41 57|90e14
+X 58 ado-statements.ads
+83K13*Statements 47|24w10 132r41 48|80r41 93r18 109r18 149r19 58|565e19
+111U14*Set_Parameters<51|130p14> 48|96s12
+153U14*Set_Filter 48|130s15
+154a26 Filter{string} 48|130r27
+165R9*Query_Statement<103R9> 47|132r52 48|80r52 93r29 58|491e14
+170U14*Execute<157p14> 48|97s12
+176V13*Has_Elements{boolean} 48|98s15 101s28
+179U14*Next 48|100s15
+196V13*Get_Identifier{41|39I9} 48|85R28 86R33
+203V13*Get_Integer{integer} 48|87R30
+252V13*Get_Unbounded_String{33|87R9} 48|84R25
+335R9*Update_Statement<103R9> 48|109r29 58|553e14
+356U14*Save_Field 48|128s15 156s13
+357a26 Name{string} 48|128r27 156r25
+358i26 Value{integer} 48|129r27 157r25
+386U14*Save_Field 48|118s15 158s13 160s13
+387a26 Name{string} 48|118r27 158r25 160r25
+388i26 Value{41|39I9} 48|119r27 159r25 161r25
+422U14*Save_Field 48|154s13
+423a26 Name{string} 48|154r25
+424r26 Value{33|87R9} 48|155r25
+456V13*Has_Save_Fields{boolean} 48|126s15
+463U14*Execute 48|136s18 162s13
+469R9*Insert_Statement<335R9> 48|149r30 58|563e14
+X 64 system.ads
+67M9*Address
+X 83 s-memory.ads
+53V13*Alloc{64|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{64|67M9} 105i<c,__gnat_realloc>22
+X 92 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 94 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 112 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 113 util-beans-objects.ads
+97h9*Object_Type
+X 120 util-properties.ads
+256h12*Manager<112|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 123 util-strings.ads
+29P9*Name_Access(string)
+

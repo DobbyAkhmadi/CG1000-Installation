@@ -1,0 +1,170 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U util.http.tools%b	util-http-tools.adb	14c23c5c NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+W util%s		util.ads		util.ali
+W util.files%s		util-files.adb		util-files.ali
+W util.http%s		util-http.adb		util-http.ali
+
+U util.http.tools%s	util-http-tools.ads	165d370c EE NE OO PK
+W util.http%s		util-http.adb		util-http.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihama.ads		20190518041255 bece8dbf ada.containers.indefinite_hashed_maps%s
+D a-cihama.adb		20190518041254 94909b4a ada.containers.indefinite_hashed_maps%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strhas.ads		20190518041256 c71c2a52 ada.strings.hash%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-files.ads	20210228093152 320752cb util.files%s
+D util-http.ads		20210228093152 d6d6d34c util.http%s
+D util-http-tools.ads	20210228093152 c08be440 util.http.tools%s
+D util-http-tools.adb	20210228093152 f018fa8c util.http.tools%b
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-maps.ads	20210228093152 a16bc59e util.strings.maps%s
+D util-strings-maps.ads	20210228093152 a16bc59e util.strings.maps%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+G a e
+G c Z s b [save_response util__http__tools 23 14 none]
+G r c none [save_response util__http__tools 23 14 none] [write_file util__files 44 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 67|18r6 32r14 37r10 38r10 39r10 40r10 47r7 49r41
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<24|43R9>
+X 25 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[20|75]>
+X 27 a-string.ads
+16K13*Strings 35e16 67|18r10 32r18 37r14 38r14 39r14 40r14 47r11 49r45
+X 31 a-strunb.ads
+82K21*Unbounded 756e26 67|18w18 32r26 37r22 38r22 39r22 40r22 47r19 49r53
+87R9*Unbounded_String<24|43R9> 739e14 67|32r36
+116V13*To_String{string} 67|49s63
+135U14*Append 67|37s32 38s32 39s32 40s32 47s29
+X 37 system.ads
+67M9*Address
+X 45 s-memory.ads
+53V13*Alloc{37|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{37|67M9} 105i<c,__gnat_realloc>22
+X 52 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 61 util.ads
+18K9*Util 28e9 66|19r9 27r5 67|19r6 20r14 48r7 52r5
+X 64 util-files.ads
+21K14*Files 114e15 67|19w11 48r12
+44U14*Write_File 67|48s18
+44a26 Path{string} 67|48r30
+45a26 Content{string} 67|49r30
+X 65 util-http.ads
+26K14*Http 61|18k9 65|159e14 66|19r14 27r10 67|20r19 52r10
+76h9*Abstract_Message
+105x14*Iterate_Headers 67|45R19
+150h9*Abstract_Response<76R9> 66|24r47 67|27r47
+157y13*Get_Body{string} 67|47R52
+X 66 util-http-tools.ads
+19K19*Tools 65|26k14 66|27l15 27e20 67|20b24 52l15 52t20
+23U14*Save_Response 23>29 24>29 25>29 67|26b14 50l8 50t21
+23a29 Path{string} 67|26b29 48r41
+24c29 Response<65|150R9> 67|27b29 45r10 47r43
+25b29 Save_Headers{boolean} 67|28b29 44r10
+X 67 util-http-tools.adb
+29U17 Write_Header 29>31 30>31 34b17 41l11 41t23 45r36
+29a31 Name{string} 34b31 37r46
+30a31 Value{string} 35b31 39r46
+32r7 Data{31|87R9} 37m40 37r40 38m40 38r40 39m40 39r40 40m40 40r40 47m37
+. 47r37 49r74
+

@@ -1,0 +1,166 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.beans.objects.pairs%b  util-beans-objects-pairs.adb  b7071472 OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+U util.beans.objects.pairs%s  util-beans-objects-pairs.ads  00985b9d EE OO PF PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.basic%s	util-beans-basic.ads	util-beans-basic.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-beans-objects-pairs.ads  20210228093152 3badc822 util.beans.objects.pairs%s
+D util-beans-objects-pairs.adb  20210228093152 8caadc50 util.beans.objects.pairs%b
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+G a e
+G c Z s b [get_value util__beans__objects__pairs 34 13 none]
+G c Z s b [set_value util__beans__objects__pairs 41 14 none]
+G c Z s b [to_object util__beans__objects__pairs 46 13 none]
+G c Z s s [pairDA util__beans__objects__pairs 25 9 none]
+G c Z s s [pairDF util__beans__objects__pairs 25 9 none]
+G c Z s s [pairDI util__beans__objects__pairs 25 9 none]
+G c Z s s [pairIP util__beans__objects__pairs 25 9 none]
+G r d object [get_value util__beans__objects__pairs 34 13 none] [adjust util__beans__objects 635 14 none]
+G r s object [to_object util__beans__objects__pairs 46 13 none] [objectIP util__beans__objects 629 9 none]
+G r e object [to_object util__beans__objects__pairs 46 13 none] [finalize util__beans__objects 638 14 none]
+G r c none [to_object util__beans__objects__pairs 46 13 none] [to_object util__beans__objects 229 13 none]
+G r d object [pairDA util__beans__objects__pairs 25 9 none] [adjust util__beans__objects 635 14 none]
+G r e object [pairDF util__beans__objects__pairs 25 9 none] [finalize util__beans__objects 638 14 none]
+G r s object [pairIP util__beans__objects__pairs 25 9 none] [objectIP util__beans__objects 629 9 none]
+G r e object [pairIP util__beans__objects__pairs 25 9 none] [finalize util__beans__objects 638 14 none]
+X 15 system.ads
+67M9*Address
+X 20 s-memory.ads
+53V13*Alloc{15|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{15|67M9} 105i<c,__gnat_realloc>22
+X 27 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 35 util.ads
+18K9*Util 28e9 39|19r6 21r9 25r21 35r49 43r36 48r5 40|19r14 27r49 46r36 66r5
+X 36 util-beans.ads
+50K14*Beans 35|18k9 36|54e15 39|19r11 21r14 25r26 35r54 43r41 48r10 40|19r19
+. 27r54 46r41 66r10
+X 37 util-beans-basic.ads
+26K20*Basic 97e21 39|19w17 25r32
+42h9*Readonly_Bean
+54h9*Bean<42R9> 39|25r38
+X 38 util-beans-objects.ads
+43K20*Objects 36|50k14 38|644e23 39|21r20 35r60 43r47 48r16 40|19r25 27r60
+. 46r47 66r16
+83R9*Object<5|43R9> 632e14 39|26r16 27r16 35r68 43r55 46r43 46r58 40|27r68
+. 46r55 58r43 58r58
+90r4*Null_Object{83R9} 40|34r17
+97h9*Object_Type
+229V13*To_Object{83R9} 40|63s14
+X 39 util-beans-objects-pairs.ads
+21K28*Pairs 38|43k20 39|48l24 48e29 40|19b33 66l24 66t29
+25R9*Pair<37|54R9> 28e14 29r35 34P13 34r34 41P14 41r40 40|26r34 44r40 59r44
+26r7*First{38|83R9} 40|30r22 49m15 61m14
+27r7*Second{38|83R9} 40|32r22 51m15 62m14
+29P9*Pair_Access(25R9) 40|59r25
+34V13*Get_Value{38|83R9}<37|47p13> 34>24 35>24 40|26b13 36l8 36t17
+34r24 From{25R9} 40|26b24 30r17 32r17
+35a24 Name{string} 40|27b24 29r10 29r26 31r13 31r31
+41U14*Set_Value<37|59p14> 41=25 42>25 43>25 40|44b14 53l8 53t17
+41r25 From{25R9} 40|44b25 49m10 51m10
+42a25 Name{string} 40|45b25 48r10 48r26 50r13 50r31
+43r25 Value{38|83R9} 40|46b25 49r24 51r25
+46V13*To_Object{38|83R9} 46>24 46>31 40|58b13 64l8 64t17
+46r24 First{38|83R9} 40|58b24 61r24
+46r31 Second{38|83R9} 40|58b31 62r24
+X 40 util-beans-objects-pairs.adb
+59p7 Result{39|29P9} 61r7 62r7 63r25
+

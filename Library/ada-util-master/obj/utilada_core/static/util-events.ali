@@ -1,0 +1,87 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DISPATCHING_CALLS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.events%b		util-events.adb		383ba985 OO PK
+W util%s		util.ads		util.ali
+
+U util.events%s		util-events.ads		56f5c0a6 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W util%s		util.ads		util.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-calend.adb		20190518041255 e65e26b2 ada.calendar%b
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-osprim.ads		20190518041254 07fd65f6 system.os_primitives%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D util.ads		20210228093152 36301479 util%s
+D util-events.ads	20210228093152 278843ff util.events%s
+D util-events.adb	20210228093152 1fb3ea7a util.events%b
+G a e
+G c Z s b [get_time util__events 24 13 none]
+G c Z s s [eventDF util__events 30 9 none]
+G c Z s s [eventIP util__events 30 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 26|18r6 24r42 31r14 31r35 27|23r42
+X 2 a-calend.ads
+36K13*Calendar 409e17 26|18w10 24r46 31r18 31r39 27|23r46
+42I9*Time<222I9> 26|24r55 31r27 27|23r55
+56V13*Clock{42I9} 26|31s48
+222I9 Time_Rep<long_long_integer>
+X 25 util.ads
+18K9*Util 28e9 26|19r9 34r5 27|18r14 28r5
+X 26 util-events.ads
+19K14*Events 25|18k9 26|30E9 34l10 34e16 27|18b19 28l10 28t16
+21R9*Event 24p13 24r28 30c9 32e14 27|23r28
+24V13*Get_Time{2|42I9} 24>23 27|23b13 26l8 26t16
+24r23 Ev{21R9} 27|23b23 25r14
+26h9*Event_Listener
+31i7*Date{2|42I9} 27|25r17
+

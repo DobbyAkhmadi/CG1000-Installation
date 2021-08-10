@@ -1,0 +1,321 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.beans.objects.readers%b  util-beans-objects-readers.adb  a76be4a3 OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+U util.beans.objects.readers%s  util-beans-objects-readers.ads  e8cf18f3 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+W util.beans.objects.maps%s  util-beans-objects-maps.adb  util-beans-objects-maps.ali
+W util.beans.objects.vectors%s  util-beans-objects-vectors.adb  util-beans-objects-vectors.ali
+W util.log%s		util-log.adb		util-log.ali
+W util.serialize%s	util-serialize.ads	util-serialize.ali
+W util.serialize.io%s	util-serialize-io.adb	util-serialize-io.ali
+W util.stacks%s		util-stacks.adb		util-stacks.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihama.ads		20190518041255 bece8dbf ada.containers.indefinite_hashed_maps%s
+D a-cihama.adb		20190518041254 94909b4a ada.containers.indefinite_hashed_maps%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-convec.ads		20190518041256 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20190518041254 32f4e1a7 ada.containers.vectors%b
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strhas.ads		20190518041256 c71c2a52 ada.strings.hash%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-beans-objects-maps.ads  20210228093152 420c813c util.beans.objects.maps%s
+D util-beans-objects-readers.ads  20210228093152 9667f510 util.beans.objects.readers%s
+D util-beans-objects-readers.adb  20210228093152 310c11b3 util.beans.objects.readers%b
+D util-beans-objects-vectors.ads  20210228093152 22b48a9c util.beans.objects.vectors%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-log.ads		20210228093152 0fb1ac89 util.log%s
+D util-log-appenders.ads  20210228093152 898ccef8 util.log.appenders%s
+D util-log-loggers.ads	20210228093152 5659ff08 util.log.loggers%s
+D util-nullables.ads	20210228093152 cb4c8fed util.nullables%s
+D util-properties.ads	20210228093152 3ed4fee8 util.properties%s
+D util-serialize.ads	20210228093152 bb5084e8 util.serialize%s
+D util-serialize-io.ads	20210228093152 f7823694 util.serialize.io%s
+D util-stacks.ads	20210228093152 48d43a70 util.stacks%s
+D util-stacks.adb	20210228093152 2962748b util.stacks%b
+D util-streams.ads	20210228093152 e241dcc4 util.streams%s
+D util-streams-buffered.ads  20210228093152 a458193f util.streams.buffered%s
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-texts.ads	20210228093152 096d4581 util.texts%s
+D util-texts-builders.ads  20210228093152 f2e717ef util.texts.builders%s
+D util-texts-builders.adb  20210228093152 38b5b7a7 util.texts.builders%b
+G a e
+G c s s s [s util__beans__objects__readers 23 1 none]
+G c Z s b [start_document util__beans__objects__readers 29 14 none]
+G c Z s b [start_object util__beans__objects__readers 36 14 none]
+G c Z s b [finish_object util__beans__objects__readers 43 14 none]
+G c Z s b [start_array util__beans__objects__readers 48 14 none]
+G c Z s b [finish_array util__beans__objects__readers 53 14 none]
+G c Z s b [set_member util__beans__objects__readers 61 14 none]
+G c Z s b [get_root util__beans__objects__readers 68 13 none]
+G c Z s s [object_contextIP util__beans__objects__readers 72 9 none]
+G c Z s s [current util__beans__objects__readers__object_stack 29 13 78_4]
+G c Z s s [push util__beans__objects__readers__object_stack 32 14 78_4]
+G c Z s s [pop util__beans__objects__readers__object_stack 35 14 78_4]
+G c Z s s [clear util__beans__objects__readers__object_stack 38 14 78_4]
+G c Z s s [finalize util__beans__objects__readers__object_stack 52 14 78_4]
+G c Z s s [stackDF util__beans__objects__readers__object_stack 44 9 78_4]
+G c Z s s [stackIP util__beans__objects__readers__object_stack 44 9 78_4]
+G c Z s s [element_type_arrayIP util__beans__objects__readers__object_stack 41 9 78_4]
+G c Z s s [free util__beans__objects__readers__object_stack 22 14 78_4]
+G c Z s s [readerDF util__beans__objects__readers 81 9 none]
+G c Z s s [readerDI util__beans__objects__readers 81 9 none]
+G c Z s s [readerIP util__beans__objects__readers 81 9 none]
+G r i none [s util__beans__objects__readers 23 1 none] [stacks util 22 14 none]
+G r s map_bean [start_object util__beans__objects__readers 36 14 none] [map_beanIP util__beans__objects__maps 89 9 none]
+G r c none [start_object util__beans__objects__readers 36 14 none] [to_object util__beans__objects 229 13 none]
+G r e object [start_object util__beans__objects__readers 36 14 none] [finalize util__beans__objects 638 14 none]
+G r s vector_bean [start_array util__beans__objects__readers 48 14 none] [vector_beanIP util__beans__objects__vectors 85 9 none]
+G r c none [start_array util__beans__objects__readers 48 14 none] [to_object util__beans__objects 229 13 none]
+G r e object [start_array util__beans__objects__readers 48 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_member util__beans__objects__readers 61 14 none] [set_value util__beans__objects__maps 75 14 none]
+G r d object [get_root util__beans__objects__readers 68 13 none] [adjust util__beans__objects 635 14 none]
+G r e object [readerDF util__beans__objects__readers 81 9 none] [finalize util__beans__objects 638 14 none]
+G r s object [readerIP util__beans__objects__readers 81 9 none] [objectIP util__beans__objects 629 9 none]
+G r e object [readerIP util__beans__objects__readers 81 9 none] [finalize util__beans__objects 638 14 none]
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<26|43R9>
+X 18 a-cihama.ads
+53R9*Map<26|43R9>
+205U14*Include 75|51R22[73|24] 85R22[73|24]
+X 23 a-convec.ads
+88R9*Vector<26|43R9>
+431U14*Append 75|53R23[76|23] 87R23[76|23] 119R23[76|23]
+X 28 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[20|75]>
+X 42 system.ads
+67M9*Address
+X 51 s-memory.ads
+53V13*Alloc{42|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{42|67M9} 105i<c,__gnat_realloc>22
+X 58 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 69 util.ads
+18K9*Util 28e9 74|18r6 19r6 20r6 21r6 22r6 23r9 25r31 38r45 45r46 50r44 56r45
+. 63r41 64r45 73r14 74r14 78r32 81r31 83r18 86r5 75|18r14 39r45 64r46 73r44
+. 95r45 108r41 109r45 131r5
+X 70 util-beans.ads
+50K14*Beans 69|18k9 70|54e15 74|18r11 19r11 23r14 63r46 73r19 74r19 83r23
+. 86r10 75|18r19 108r46 131r10
+X 71 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+87h9*Array_Bean<42R9>
+X 72 util-beans-objects.ads
+43K20*Objects 70|50k14 72|644e23 74|18r17 19r17 23r20 63r52 73r25 74r25 83r29
+. 86r16 75|18r25 108r52 131r16
+71n34*DYNAMIC{71E9} 75|49r47 51r58 53r52 83r48 85r59 87r53
+83R9*Object<26|43R9> 632e14 74|63r60 68r51 83r37 75|108r60 126r51
+97h9*Object_Type
+229V13*To_Object{83R9} 75|49s26 51s37 53s31 83s26 85s37 87s31
+237V14*"="{boolean} 18|46i19 23|64i19
+X 73 util-beans-objects-maps.ads
+22K28*Maps 91e28 74|18w25 73r33 75|20r13 46r24
+64R9*Map_Bean<18|53R9[24]><71|54R9> 89e76 75|46r29
+65P9*Map_Bean_Access(64R9) 74|73r38 75|20r18
+75U14*Set_Value<71|59p14> 75|117R22
+X 74 util-beans-objects-readers.ads
+23K28*Readers 72|43k20 74|72E9 86l24 86e31 75|18b33 131l24 131t31
+25R9*Reader<85|147R9> 29P14 29r47 36P14 36r45 43P14 43r46 48P14 48r44 53P14
+. 53r45 61P14 61r45 68p13 68r36 81c9 84e14 75|25r47 37r45 62r46 71r44 92r45
+. 106r45 126r36
+29U14*Start_Document<85|150p14> 29=30 75|25b14 28l8 28t22
+29r30 Handler{25R9} 75|25b30 27m27 27r27
+36U14*Start_Object<85|159p14> 36=28 37>28 38=28 75|37b14 55l8 55t20
+36r28 Handler{25R9} 75|37b28 41r73 44m26 44r26 45r37 49m10
+37a28 Name{string} 75|38b28 51r31
+38c28 Logger<79|187R9> 75|39b28 40r28
+43U14*Finish_Object<85|165p14> 43=29 44>29 45=29 75|62b14 68l8 68t21
+43r29 Handler{25R9} 75|62b29 67m25 67r25
+44a29 Name{string} 75|63b29 65r28
+45c29 Logger<79|187R9> 75|64b29 65r34
+48U14*Start_Array<85|169p14> 48=27 49>27 50=27 75|71b14 89l8 89t19
+48r27 Handler{25R9} 75|71b27 75r73 78m26 78r26 79r37 83m10
+49a27 Name{string} 75|72b27 85r31
+50c27 Logger<79|187R9> 75|73b27 74r28
+53U14*Finish_Array<85|173p14> 53=28 54>28 55>28 56=28 75|92b14 99l8 99t20
+53r28 Handler{25R9} 75|92b28 98m25 98r25
+54a28 Name{string} 75|93b28 96r28
+55i28 Count{natural} 75|94b28 96r34
+56c28 Logger<79|187R9> 75|95b28 96r41
+61U14*Set_Member<85|180p14> 61=26 62>26 63>26 64=26 65>26 75|106b14 121l8
+. 121t18
+61r26 Handler{25R9} 75|106b26 112r73 115m10
+62a26 Name{string} 75|107b26 117r33
+63r26 Value{72|83R9} 75|108b26 115r26 117r39 119r31
+64c26 Logger<79|187R9> 75|109b26 111r28
+65b26 Attribute{boolean} 75|110b26 111r36
+68V13*Get_Root{72|83R9} 68>23 75|126b13 129l8 129t16
+68r23 Handler{25R9} 75|126b23 128r14
+72R9 Object_Context 75e14 76r45 78r68
+73p7*Map{73|65P9} 75|46m12 49r42 50r21 51r18 51r53 53r47 81m12 84r21 85r18
+. 116r21 117r18
+74p7*List{76|63P9} 75|47m12 53r18 80m12 83r42 85r53 87r18 87r47 119r18
+76P9 Object_Context_Access(72R9) 79r68 75|41r26 42r17 75r26 76r17 112r26
+78K12 Object_Stack[86|22] 82r18 75|27r7 41r51 44r7 45r15 67r7 75r51 78r7
+. 79r15 98r7 112r51
+82r7 Context{86|26R9[78]} 75|27m35 41r81 44m34 45r45 67m33 75r81 78m34 79r45
+. 98m33 112r81
+83r7 Root{72|83R9} 75|49m18 83m18 115m18 128r22
+X 75 util-beans-objects-readers.adb
+41p7 Current{74|76P9} 48r10 50r13 51r10 53r10
+42p7 Next{74|76P9} 45m7 46r7 47r7 49r37 51r48 53r42
+75p7 Current{74|76P9} 82r10 84r13 85r10 87r10
+76p7 Next{74|76P9} 79m7 80r7 81r7 83r37 85r48 87r42
+112p7 Current{74|76P9} 114r10 116r13 117r10 119r10
+X 76 util-beans-objects-vectors.ads
+21K28*Vectors 74|19w25 74r33 75|21r13 80r24 76|87e31
+62R9*Vector_Bean<23|88R9[23]><71|87R9> 75|80r32 76|85e91
+63P9*Vector_Bean_Access(62R9) 74|74r41 75|21r21
+X 79 util-log.ads
+166K14*Log 74|22w11 38r50 45r51 50r49 56r50 64r50 75|39r50 64r51 73r49 95r50
+. 109r50 79|192e13
+187h9*Logging 74|38r54 45r55 50r53 56r54 64r54 75|39r54 64r55 73r53 95r54
+. 109r54
+X 83 util-properties.ads
+256h12*Manager<71|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 84 util-serialize.ads
+18K14*Serialize 74|20r11 25r36 81r36 84|22e19
+X 85 util-serialize-io.ads
+27K24*IO 74|20w21 25r46 81r46 85|231e22
+147h9*Reader 74|25r49 81r49
+X 86 util-stacks.ads
+20+9 Element_Type 74|78r45
+21P9 Element_Type_Access(20+9) 74|79r45
+22k14*Stacks 74|21w11 78r37 86|54e16
+26R9*Stack<26|50R9> 74|82r31[78]
+29V13*Current{74|76P9} 75|41s64[74|78] 45s28[74|78] 75s64[74|78] 79s28[74|78]
+. 112s64[74|78]
+32U14*Push 75|44s20[74|78] 78s20[74|78]
+35U14*Pop 75|67s20[74|78] 98s20[74|78]
+38U14*Clear 75|27s20[74|78]
+X 88 util-streams.ads
+55h9*Output_Stream
+73h9*Input_Stream
+

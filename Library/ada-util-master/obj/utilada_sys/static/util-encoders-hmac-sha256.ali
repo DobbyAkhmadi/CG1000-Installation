@@ -1,0 +1,276 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_NESTED_FINALIZATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.encoders.hmac.sha256%b  util-encoders-hmac-sha256.adb  5aa9bd78 OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+W util%s		util.ads		util.ali
+W util.encoders%s	util-encoders.adb	util-encoders.ali
+W util.encoders.base16%s  util-encoders-base16.adb  util-encoders-base16.ali
+W util.encoders.base64%s  util-encoders-base64.adb  util-encoders-base64.ali
+W util.encoders.hmac%s	util-encoders-hmac.ads	util-encoders-hmac.ali
+
+U util.encoders.hmac.sha256%s  util-encoders-hmac-sha256.ads  8b5f222f EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W util%s		util.ads		util.ali
+W util.encoders%s	util-encoders.adb	util-encoders.ali
+W util.encoders.hmac%s	util-encoders-hmac.ads	util-encoders-hmac.ali
+W util.encoders.sha256%s  util-encoders-sha256.adb  util-encoders-sha256.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D gnat.ads		20190518041256 b5988c27 gnat%s
+D g-bytswa.ads		20190518041255 a4d21639 gnat.byte_swapping%s
+D g-sechas.ads		20190518041256 3b5ca98e gnat.secure_hashes%s
+D g-shsh32.ads		20190518041256 671c9849 gnat.secure_hashes.sha2_32%s
+D g-shshco.ads		20190518041256 1144502c gnat.secure_hashes.sha2_common%s
+D g-sha256.ads		20190518041256 c083f050 gnat.sha256%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-encoders.ads	20210228093152 6d2d5bc8 util.encoders%s
+D util-encoders-base16.ads  20210228093152 14be0d3f util.encoders.base16%s
+D util-encoders-base64.ads  20210228093152 de548a88 util.encoders.base64%s
+D util-encoders-hmac.ads  20210228093152 28b43bc3 util.encoders.hmac%s
+D util-encoders-hmac-sha256.ads  20210228093152 efb00836 util.encoders.hmac.sha256%s
+D util-encoders-hmac-sha256.adb  20210228093152 7ff332f9 util.encoders.hmac.sha256%b
+D util-encoders-sha256.ads  20210228093152 e28f1e02 util.encoders.sha256%s
+G a e
+G c Z s b [sign util__encoders__hmac__sha256 29 13 none]
+G c Z s b [sign util__encoders__hmac__sha256 33 13 none]
+G c Z s b [sign util__encoders__hmac__sha256 37 14 none]
+G c Z s b [sign util__encoders__hmac__sha256 41 14 none]
+G c Z s b [sign_base64 util__encoders__hmac__sha256 47 13 none]
+G c Z s b [set_key util__encoders__hmac__sha256 58 14 none]
+G c Z s b [set_key util__encoders__hmac__sha256 63 14 none]
+G c Z s b [set_key util__encoders__hmac__sha256 65 14 none]
+G c Z s b [update util__encoders__hmac__sha256 69 14 none]
+G c Z s b [update util__encoders__hmac__sha256 73 14 none]
+G c Z s b [update util__encoders__hmac__sha256 77 14 none]
+G c Z s b [finish util__encoders__hmac__sha256 82 14 none]
+G c Z s b [finish util__encoders__hmac__sha256 87 14 none]
+G c Z s b [finish_base64 util__encoders__hmac__sha256 93 14 none]
+G c Z s b [initialize util__encoders__hmac__sha256 107 14 none]
+G c Z s s [contextDF util__encoders__hmac__sha256 99 9 none]
+G c Z s s [contextIP util__encoders__hmac__sha256 99 9 none]
+G r c none [sign util__encoders__hmac__sha256 29 13 none] [finish util__encoders__sha256 47 14 none]
+G r c none [sign util__encoders__hmac__sha256 33 13 none] [finish util__encoders__sha256 47 14 none]
+G r s encoder [sign util__encoders__hmac__sha256 33 13 none] [encoderIP util__encoders__base16 79 9 none]
+G r c none [sign util__encoders__hmac__sha256 33 13 none] [convert util__encoders 219 14 none]
+G r c none [sign util__encoders__hmac__sha256 37 14 none] [finish util__encoders__sha256 47 14 none]
+G r c none [sign util__encoders__hmac__sha256 41 14 none] [finish util__encoders__sha256 47 14 none]
+G r c none [sign_base64 util__encoders__hmac__sha256 47 13 none] [finish util__encoders__sha256 47 14 none]
+G r s encoder [sign_base64 util__encoders__hmac__sha256 47 13 none] [encoderIP util__encoders__base64 152 9 none]
+G r c none [sign_base64 util__encoders__hmac__sha256 47 13 none] [set_url_mode util__encoders__base64 68 14 none]
+G r c none [sign_base64 util__encoders__hmac__sha256 47 13 none] [convert util__encoders 219 14 none]
+G r c none [set_key util__encoders__hmac__sha256 58 14 none] [finish util__encoders__sha256 47 14 none]
+G r c none [set_key util__encoders__hmac__sha256 63 14 none] [finish util__encoders__sha256 47 14 none]
+G r c none [set_key util__encoders__hmac__sha256 65 14 none] [finish util__encoders__sha256 47 14 none]
+G r c none [finish util__encoders__hmac__sha256 82 14 none] [finish util__encoders__sha256 47 14 none]
+G r s encoder [finish util__encoders__hmac__sha256 87 14 none] [encoderIP util__encoders__base16 79 9 none]
+G r c none [finish util__encoders__hmac__sha256 87 14 none] [finish util__encoders__sha256 47 14 none]
+G r c none [finish util__encoders__hmac__sha256 87 14 none] [convert util__encoders 219 14 none]
+G r s encoder [finish_base64 util__encoders__hmac__sha256 93 14 none] [encoderIP util__encoders__base64 152 9 none]
+G r c none [finish_base64 util__encoders__hmac__sha256 93 14 none] [finish util__encoders__sha256 47 14 none]
+G r c none [finish_base64 util__encoders__hmac__sha256 93 14 none] [set_url_mode util__encoders__base64 68 14 none]
+G r c none [finish_base64 util__encoders__hmac__sha256 93 14 none] [convert util__encoders 219 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 37|18r6 19r6 37r32 38r32 42r32 64r32 74r29 99r24 101r17 102r17
+. 38|41r32 42r32 52r32 94r13 102r20 103r20 110r32 124r18 155r29 180r18
+X 3 a-finali.ads
+40K13*Finalization 68e21 37|19w10 99r28
+50H9*Limited_Controlled<17|40R9> 66e55 37|99r41
+X 4 a-stream.ads
+36K13*Streams 87e16 37|18w10 37r36 38r36 42r36 64r36 74r33 101r21 102r21
+. 38|41r36 42r36 52r36 94r17 102r24 103r24 110r36 124r22 155r33 180r22
+42M9*Stream_Element 38|102r32 103r32
+44I9*Stream_Element_Offset<long_long_integer> 37|102r29
+54A9*Stream_Element_Array(42M9)<44I9> 37|37r44 38r44 42r44 64r44 74r41 101r29
+. 38|41r44 42r44 52r44 94r25 110r44 124r30 155r41 180r30
+X 9 g-sechas.ads
+134R12*Context
+X 14 system.ads
+67M9*Address
+X 18 s-memory.ads
+53V13*Alloc{14|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{14|67M9} 105i<c,__gnat_realloc>22
+X 25 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 32 util.ads
+18K9*Util 28e9 37|20r6 24r9 26r28 30r44 34r44 39r33 43r33 49r61 83r33 88r33
+. 94r40 100r17 109r5 38|19r6 20r6 22r14 28r44 30r16 43r33 53r33 62r44 64r16
+. 78r61 80r16 114r10 115r10 132r10 148r7 157r7 174r33 176r7 190r10 192r7
+. 193r7 201r33 202r17 203r17 215r40 217r17 218r17 232r5
+X 33 util-encoders.ads
+29K14*Encoders 32|18k9 33|239e18 37|20r11 24r14 26r33 30r49 34r49 39r38 43r38
+. 49r66 83r38 88r38 94r45 100r22 109r10 38|19r11 20r11 22r19 28r49 30r21
+. 43r38 53r38 62r49 64r21 78r66 80r21 114r15 115r15 132r15 148r12 157r12
+. 174r38 176r12 190r15 192r12 193r12 201r38 202r22 203r22 215r45 217r22 218r22
+. 232r10
+58R9*Secret_Key<3|50R9> 213e14 37|41r32 66r32 78r29 38|51r32 137r32 164r29
+129h9*Transformer
+212a7*Secret{4|54A9} 38|55r17 139r23 166r20
+219U14 Convert 38|206s9 222s9
+X 34 util-encoders-base16.ads
+22K23*Base16 101e25 38|19w20 203r31
+31R9*Encoder<33|129R9> 79e66 38|203r38
+X 35 util-encoders-base64.ads
+23K23*Base64 236e25 38|20w20 218r31
+39R9*Encoder<33|129R9> 157e14 38|218r38
+68U14*Set_URL_Mode 38|221s9
+X 36 util-encoders-hmac.ads
+19K23*HMAC 33|29k14 36|23e23 37|24r23 109r19 38|22r28 232r19
+X 37 util-encoders-hmac-sha256.ads
+24K28*SHA256 36|19k23 37|99E9 109l24 109e30 38|22b33 232l24 232t30
+26N4*HASH_SIZE
+29V13*Sign{39|26A12} 29>19 30>19 38|27b13 36l8 36t12
+29a19 Key{string} 38|27b19 32r21
+30a19 Data{string} 38|28b19 33r20
+33V13*Sign{39|29A12} 33>19 34>19 38|61b13 70l8 70t12
+33a19 Key{string} 38|61b19 66r21
+34a19 Data{string} 38|62b19 67r20
+37U14*Sign 37>20 38>20 39<20 38|41b14 49l8 49t12 55s7
+37a20 Key{4|54A9} 38|41b20 46r21
+38a20 Data{4|54A9} 38|42b20 47r20
+39a20 Result{39|26A12} 38|43b20 48m20
+41U14*Sign 41>20 42>20 43<20 38|51b14 56l8 56t12
+41r20 Key{33|58R9} 38|51b20 55r13
+42a20 Data{4|54A9} 38|52b20 55r25
+43a20 Result{39|26A12} 38|53b20 55m31
+47V13*Sign_Base64{39|31A12} 47>26 48>26 49>26 38|76b13 86l8 86t19
+47a26 Key{string} 38|76b26 82r21
+48a26 Data{string} 38|77b26 83r20
+49b26 URL{boolean} 38|78b26 84r35
+54R9*Context<3|50R9> 58r36 63r36 65r36 69r33 73r33 77r33 82r36 87r36 93r43
+. 99c9 103e14 107r37 38|29r16 44r16 63r16 79r16 92r36 109r36 136r36 145r33
+. 154r33 163r33 173r36 200r36 214r43 227r37
+58U14*Set_Key 58=23 59>23 38|32s7 66s7 82s7 92b14 100l8 100t15
+58r23 E{54R9} 38|92b23 99m16
+59a23 Key{string} 38|93b23 94r52 95r27
+63U14*Set_Key 63=23 64>23 38|46s7 99s7 109b14 134l8 134t15 139s7
+63r23 E{54R9} 38|109b23 114m39 114r39 115m39 115r39 115m46 115r46 116m10
+. 118m10 119m10 119r22 126r24 127r35 129r19 132m39 132r39
+64a23 Key{4|54A9} 38|110b23 113r10 114r46 118r23 119r36
+65U14*Set_Key 65=23 66>23 38|136b14 140l8 140t15
+65r23 E{54R9} 38|136b23 139m16
+66r23 Key{33|58R9} 38|137b23 139r19
+69U14*Update 69=22 70>22 38|33s7 67s7 83s7 145b14 149l8 149t14
+69r22 E{54R9} 38|145b22 148m36 148r36
+70a22 S{string} 38|146b22 148r43
+73U14*Update 73=22 74>22 38|47s7 154b14 158l8 158t14 166s7
+73r22 E{54R9} 38|154b22 157m36 157r36
+74a22 S{4|54A9} 38|155b22 157r43
+77U14*Update 77=22 78>22 38|163b14 167l8 167t14
+77r22 E{54R9} 38|163b22 166m15
+78r22 S{33|58R9} 38|164b22 166r18
+82U14*Finish 82=22 83<22 38|34s7 48s7 173b14 194l8 194t14 205s7 220s7
+82r22 E{54R9} 38|173b22 176m36 176r36 182r24 183r35 185r13 186r22 190m39
+. 190r39 192m36 192r36 193m36 193r36
+83a22 Hash{39|26A12} 38|174b22 176m43 192r43 193m43
+87U14*Finish 87=22 88<22 38|68s7 200b14 207l8 207t14
+87r22 E{54R9} 38|200b22 205m15
+88a22 Hash{39|29A12} 38|201b22 206m21
+93U14*Finish_Base64 93=29 94<29 95>29 38|84s7 214b14 223l8 223t21
+93r29 E{54R9} 38|214b29 220m15
+94a29 Hash{39|31A12} 38|215b29 222m21
+95b29 URL{boolean} 38|216b29 221r23
+100r7*SHA{39|36R12} 38|114m41 115m41 132m41 148m38 157m38 176m38 190m41 192m38
+. 193m38
+101a7*Key{4|54A9} 38|115m48 119m12 127r37 183r37
+102i7*Key_Len{4|44I9} 38|116m12 118m12 119r24 126r26 129r21 182r26 185r15
+. 186r24
+107U14 Initialize<3|53p14> 107=26 38|227b14 230l8 230t18
+107r26 E{54R9} 38|227b26
+X 38 util-encoders-hmac-sha256.adb
+29r7 Ctx{37|54R9} 32m16 32r16 33m15 33r15 34m15 34r15
+30a7 Result{39|26A12} 34m20 35r14
+44r7 Ctx{37|54R9} 46m16 46r16 47m15 47r15 48m15 48r15
+63r7 Ctx{37|54R9} 66m16 66r16 67m15 67r15 68m15 68r15
+64a7 Result{39|29A12} 68m20 69r14
+79r7 Ctx{37|54R9} 82m16 82r16 83m15 83r15 84m22 84r22
+80a7 Result{39|31A12} 84m27 85r14
+94a7 Buf{4|54A9} 95m11 95r11 96m27 96r27 99r19
+102m4 IPAD{4|42M9} 127r26 130r26
+103m4 OPAD{4|42M9} 183r26 187r29
+124a10 Block{4|54A9} 127m13 130m13 132r46
+126i14 I<long_long_integer> 127r20 127r42
+129i14 I<long_long_integer> 130r20
+180a10 Block{4|54A9} 183m13 187m16 190r46
+182i14 I<long_long_integer> 183r20 183r42
+186i17 I<long_long_integer> 187r23
+202a7 H{39|26A12} 205m18 206r18
+203r7 B{34|31R9} 206m7 206r7
+217a7 H{39|26A12} 220m18 222r18
+218r7 B{35|39R9} 221m7 221r7 222m7 222r7
+X 39 util-encoders-sha256.ads
+21K23*SHA256 37|20w20 26r42 30r58 34r58 39r47 43r47 49r75 83r47 88r47 94r54
+. 100r31 38|28r58 30r30 43r47 53r47 62r58 64r30 78r75 80r30 114r24 115r24
+. 132r24 148r21 157r21 174r47 176r21 190r24 192r21 193r21 201r47 202r31 215r54
+. 217r31 39|58e25
+23N4*HASH_SIZE 37|26r49
+26A12*Hash_Array{4|54A9}<4|44I9> 37|30r65 39r54 43r54 83r54 38|28r65 30r37
+. 43r54 53r54 174r54 202r38 217r38
+29A12*Digest{string}<integer> 37|34r65 88r54 38|62r65 64r37 201r54
+31A12*Base64_Digest{string}<integer> 37|49r82 94r61 38|78r82 80r37 215r61
+36R12*Context{9|134R12[12|43]} 37|100r38
+39U14*Update=40:57 38|148s28
+43U14*Update=44:83 38|114s31 132s31 157s28 190s31 192s28
+47U14*Finish 38|115s31 176s28 193s28
+

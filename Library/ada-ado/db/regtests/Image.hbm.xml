@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping default-cascade="none">
+    <class name="Regtests.Images.Model.Image"
+        table="test_image" dynamic-insert="false" dynamic-update="false">
+        <id name="id" type="ADO.Identifier" unsaved-value="null">
+            <comment>the image identifier</comment>
+            <column name="id" sql-type="INTEGER"/>
+            <generator class="sequence"/>
+        </id>
+        <version name="version" type="int" column="version" not-null="true">
+            <comment>the image version.</comment>
+        </version> 
+        <property name="create_date" update="false">
+            <comment>the message creation date</comment>
+            <column name="create_date" not-null="true" unique="false"/>
+            <type name="Time"/>
+        </property>
+        <property name="image">
+            <comment>the image data</comment>
+            <column name="image" not-null="false" unique="false"/>
+            <type name="blob"/>
+        </property>
+    </class>
+</hibernate-mapping>

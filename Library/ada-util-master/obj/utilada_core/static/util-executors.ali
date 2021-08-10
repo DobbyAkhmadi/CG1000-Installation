@@ -1,0 +1,155 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DISPATCH
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_FIXED_POINT
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_TERMINATE_ALTERNATIVES
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=2
+RV MAX_TASK_ENTRIES=1
+
+U util.executors%b	util-executors.adb	c3224469 NE OO PK GE
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W util%s		util.ads		util.ali
+
+U util.executors%s	util-executors.ads	0a084cf8 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.unchecked_deallocation%s
+W util%s		util.ads		util.ali
+W util.concurrent%s	util-concurrent.ads	util-concurrent.ali
+W util.concurrent.fifos%s  util-concurrent-fifos.adb  util-concurrent-fifos.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D util.ads		20210228093152 36301479 util%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-fifos.ads  20210228093152 8d93dbcf util.concurrent.fifos%s
+D util-concurrent-fifos.adb  20210228093152 444147d3 util.concurrent.fifos%b
+D util-executors.ads	20210228093152 27fd11f0 util.executors%s
+D util-executors.adb	20210228093152 e4df5599 util.executors%b
+G a e
+G c Z s b [executors util 39 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 22|18r6 19r6 37r36 41r8
+X 2 a-except.ads
+54K13*Exceptions 349e19 22|19w10 37r40
+63R9*Exception_Occurrence 317e14 22|37r51
+X 3 a-finali.ads
+40K13*Finalization 68e21 22|18w10 41r12
+50H9*Limited_Controlled<10|40R9> 66e55 22|43r60 93r60
+X 10 s-finroo.ads
+42U14*Adjust
+X 18 util.ads
+18K9*Util 28e9 22|20r14 39r9 83r10 100r5 23|19r14 134r5
+X 19 util-concurrent.ads
+18K14*Concurrent 22e20 22|20r19 83r15
+X 20 util-concurrent-fifos.ads
+29+9 Element_Type 22|83r33
+32i4 Default_Size{positive} 22|84r33
+35b4 Clear_On_Dequeue{boolean} 22|85r33
+36k25*Fifos 116e26 22|20w30 83r26
+41X4 Timeout 23|128r29[22|82]
+44R9 Fifo<3|50R9> 22|96r29[82]
+47U14 Enqueue 23|34s21[22|82] 58s27[22|82]
+53U14 Dequeue 23|113s24[22|82] 115s24[22|82]
+58U14 Wait_Empty 23|77s21[22|82]
+61V13 Get_Count{natural} 23|85s28[22|82]
+64U14 Set_Size 23|69s21[22|82]
+X 22 util-executors.ads
+34+9 Work_Type 35r42 36r40 52r36 78r14 23|31r36
+35U19 Execute 35=28 23|120s16
+35*28 Work{34+9}
+36U19 Error 36=26 37>26 23|123s19
+36*26 Work{34+9}
+37r26 Err{2|63R9}
+38i4 Default_Queue_Size{positive} 84r53
+39k14*Executors 18|18k9 22|34z9 35z19 36z19 38z4 77E9 100l10 100e19 23|19b19
+. 134l10 134t19
+43R9*Executor_Manager<3|50R9> 10|42p14 22|43d27 45r47 48P14 48r43 51p14 51r40
+. 55p14 55r39 59p14 59r37 62p14 62r48 66p14 66r37 69p13 69r37 73P14 73r41
+. 93c9 98e14 23|22r43 30r40 40r39 52r37 66r48 75r37 83r37 92r41 98r25
+43i27 Count{positive} 93r27 97r42
+45P9*Executor_Manager_Access(43R9) 88r33 94r18 23|102r37
+48U14*Initialize<3|53p14> 48=26 23|22b14 25l8 25t18
+48r26 Manager{43R9} 23|22b26 24m7 24m23 24r23
+51U14*Execute 51=23 52>23 23|30b14 35l8 35t15
+51r23 Manager{43R9} 23|30b23 34m7 34r7
+52*23 Work{34+9} 23|31b23 32r53
+55U14*Start 55=21 56>21 23|40b14 47l8 47t13
+55r21 Manager{43R9} 23|40b21 43m7 44r21 45r24
+56b21 Autostop{boolean} 23|41b21 43r27
+59U14*Stop 59=20 23|52b14 61l8 61t12 94s15
+59r20 Manager{43R9} 23|52b20 56r21 58m13 58r13
+62U14*Set_Queue_Size 62=30 63>30 23|66b14 70l8 70t22
+62r30 Manager{43R9} 23|66b30 69m7 69r7
+63i30 Capacity{positive} 23|67b30 69r31
+66U14*Wait 66=20 23|75b14 78l8 78t12
+66r20 Manager{43R9} 23|75b20 77m7 77r7
+69V13*Get_Count{natural} 69>24 23|83b13 86l8 86t17
+69r24 Manager{43R9} 23|83b24 85r14
+73U14*Finalize<3|54p14> 73=24 23|92b14 95l8 95t16
+73r24 Manager{43R9} 23|92b24 94m7 94r7
+77R9 Work_Info 80e14 83r53 23|32r20 32r33 53r11 110r20
+78*7 Work{34+9} 23|32m45 120m30 123m31
+79b7 Done{boolean} 23|32m59 55m9 117r28
+82K12 Work_Queue[20|36] 96r18 23|128r18
+87T14 Worker_Task 89l8 89e19 91r59 23|97b14 132l8 132t19
+88Y13 Start 88>20 23|45s17 102b17 104l14 104t19
+88p20 Manager{45P9} 23|103r18
+91A9 Worker_Task_Array(87T14)<integer> 97r18
+94p7 Self{45P9} 23|24m15 45m32
+95b7 Autostop{boolean} 23|43m15 125r27
+96r7 Queue{20|44R9[82]} 23|34m15 58m21 69m15 77m15 85r22 113m18 115m18
+97a7 Workers{91A9} 23|44r29 56r29
+X 23 util-executors.adb
+32r7 W{22|77R9} 34r30
+44t11 Worker{22|87T14} 45r10
+53r7 W{22|77R9} 55m7 58r36
+56t11 Worker{22|87T14} 57r17
+98p7 M(22|43R9) 103m13 108r13 113r16 115r16 125r25
+99b7 Autostop{boolean} 112r16 125m13
+102p24 Manager{22|45P9}
+110r13 Work{22|77R9} 113m33 115m33 117r23 120m25 120r25 123m26 123r26
+122r21 E{2|63R9} 123r37
+

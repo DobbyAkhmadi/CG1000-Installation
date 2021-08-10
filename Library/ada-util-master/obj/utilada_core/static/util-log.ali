@@ -1,0 +1,111 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.log%b		util-log.adb		bad564a0 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W util%s		util.ads		util.ali
+
+U util.log%s		util-log.ads		3981b8f0 EE OO PR PK
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W util%s		util.ads		util.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strfix.ads		20190518041256 86d6bc21 ada.strings.fixed%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-imgint.ads		20190518041254 02dbe0c2 system.img_int%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-log.ads		20210228093152 0fb1ac89 util.log%s
+D util-log.adb		20210228093152 a31e139f util.log%b
+G a e
+G c Z s b [get_level_name util__log 179 13 none]
+G c Z s b [get_level util__log 182 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 30|18r6 19r6 48r11
+X 7 a-string.ads
+16K13*Strings 35e16 30|18w10 19r10 48r15
+33n37*Both{33E9} 30|50r52
+X 8 a-strfix.ads
+43K21*Fixed 596e22 30|19w18 50r33 51r33
+143V13*Index{natural} 30|51s39
+468V13*Trim{string} 30|50s39
+X 28 util.ads
+18K9*Util 28e9 29|166r9 192r5 30|21r14 70r5
+X 29 util-log.ads
+166K14*Log 28|18k9 29|192l10 192e13 30|21b19 70l10 70t13
+170I12*Level_Type{natural} 172r27 173r27 174r27 175r27 176r27 179r37 183r37
+. 183r70 30|26r37 39r17 47r37 47r70
+172i4*FATAL_LEVEL{170I12} 30|28r18 64r17
+173i4*ERROR_LEVEL{170I12} 30|30r21 62r17
+174i4*WARN_LEVEL{170I12} 30|32r21 60r17
+175i4*INFO_LEVEL{170I12} 183r51 30|34r21 47r51 56r17
+176i4*DEBUG_LEVEL{170I12} 30|36r21 58r17
+179V13*Get_Level_Name{string} 179>29 30|26b13 41l8 41t22
+179i29 Level{170I12} 30|26b29 28r10 30r13 32r13 34r13 36r13 39r35
+182V13*Get_Level{170I12} 182>24 183>24 30|46b13 54s17 68l8 68t17
+182a24 Value{string} 30|46b24 50r45
+183i24 Default{170I12} 30|47b24 54r56 66r17
+187h9*Logging 189p14 189r38
+189x14*Error 189=21 190>21
+189r21 Log{187R9}
+190a21 Message{string}
+X 30 util-log.adb
+50a7 Val{string} 51r46 53r16 54r28 54r33 55r13 57r13 59r13 61r13 63r13
+51i7 Pos{natural} 53r10 54r46
+

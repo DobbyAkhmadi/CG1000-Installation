@@ -1,0 +1,69 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.texts.formats%b	util-texts-formats.adb	55313c29 NE OO PK GE
+W util.texts%s		util-texts.ads		util-texts.ali
+
+U util.texts.formats%s	util-texts-formats.ads	4d224273 BN NE OO PR PK GE
+W util.texts%s		util-texts.ads		util-texts.ali
+
+D system.ads		20190518041255 4635ec04 system%s
+D util.ads		20210228093152 36301479 util%s
+D util-texts.ads	20210228093152 096d4581 util.texts%s
+D util-texts-formats.ads  20210228093152 444f07f2 util.texts.formats%s
+D util-texts-formats.adb  20210228093152 117e3bdb util.texts.formats%b
+G a e
+G c Z s b [formats util__texts 26 20 none]
+X 2 util.ads
+18K9*Util 28e9 4|26r9 40r5 5|19r14 80r5
+X 3 util-texts.ads
+19K14*Texts 2|18k9 3|23e15 4|26r14 40r10 5|19r19 80r10
+X 4 util-texts-formats.ads
+19+9 Stream 24r40 34r41 38r40 5|30r41 70r40
+20E9 Char 21r47 5|37r15 43r21 75r15
+21A9 Input(20E9)<integer> 25r51 32r37 5|28r37 71r26
+22+9 Value 23r52 25r37 37r36 5|69r36
+23A9 Value_List(22+9)<integer> 33r37 5|29r37
+24U19 Put 24=24 24>48 5|49s22 57s19 63s13 76s10
+24*24 Buffer{19+9}
+24e48 C{character}
+25V18 To_Input{21A9} 25>28 5|71s35
+25*28 Arg{22+9}
+26k20*Formats 3|19k14 4|19z9 20z9 21z9 22z9 23z9 24z19 25z18 37E14 40l16
+. 40e23 5|19b25 80l16 80t23
+32U14*Format 32>22 33>22 34=22 5|28b14 67l8 67t14
+32*22 Message{21A9} 5|28b22 34r28 36r20 37r25 42r26 43r31
+33*22 Arguments{23A9} 5|29b22 48r27 52r30 52r45
+34*22 Into{19+9} 5|30b22 49m27 52m63 57m24 63m18
+37U14 Format 37>22 38=22 5|52s22 69b14 78l8 78t14
+37*22 Argument{22+9} 5|69b22 71r45
+38*22 Into{19+9} 5|70b22 76m15
+X 5 util-texts-formats.adb
+21M9 Code 31r11 72r17
+31m7 C{21M9} 37m10 38r13 43m16 44r19 44r48 45r42 47r22 63r39
+32i7 Old_Pos{natural} 41m13 50r29 58r26
+33i7 N{natural} 39m13 45m19 45r24 48r22 52r41
+34i7 Pos{natural} 36r13 37r34 40m13 40r20 41r24 42r19 43r40 46m19 46r26 50m22
+. 53m22 53r29 58m19 64m13 64r20
+71*7 Content{4|21A9} 74r16 75r25
+72m7 C{21M9} 75m10 76r36
+74i11 I{integer} 75r34
+

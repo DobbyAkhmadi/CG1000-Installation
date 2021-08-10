@@ -1,0 +1,83 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U mysql.my_list%s	mysql-my_list.ads	30d58222 NE OO PR PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W mysql%s		mysql.ads		mysql.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D mysql.ads		20200810200714 83c4e906 mysql%s
+D mysql-my_list.ads	20200810200714 a10596bb mysql.my_list%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+G a e
+G c Z s s [list_add mysql__my_list 36 13 none]
+G c Z s s [list_delete mysql__my_list 39 13 none]
+G c Z s s [list_cons mysql__my_list 42 13 none]
+G c Z s s [list_reverse mysql__my_list 45 13 none]
+G c Z s s [list_free mysql__my_list 48 14 none]
+G c Z s s [list_length mysql__my_list 51 13 none]
+G c Z s s [st_listIP mysql__my_list 24 9 none]
+X 3 interfac.ads
+38K9*Interfaces 184e15 6|1r6 1r24
+X 4 i-c.ads
+18K20*C 230e17 6|1w17 1r35
+35I9*int<integer> 6|34r76
+43M9*unsigned 6|48r55 51r56
+X 5 mysql.ads
+19K9*Mysql 21e10 6|4r9 54r5
+X 6 mysql-my_list.ads
+4K15*My_list 5|19k9 6|54l11 54e18
+24R9*st_list 28e14
+25p7*prev
+26p7*next
+27m7*data{7|67M9}
+31R12*LIST{24R9}
+33P9*List_Walk_Action(4|35I9) 34>23 34>46
+34m23 arg1{7|67M9}
+34m46 arg2{7|67M9}
+36V13*list_add(24R9) 36^23 36^46 37b<c,list_add>22
+36p23 arg1(24R9)
+36p46 arg2(24R9)
+39V13*list_delete(24R9) 39^26 39^49 40b<c,list_delete>22
+39p26 arg1(24R9)
+39p49 arg2(24R9)
+42V13*list_cons(24R9) 42>24 42^47 43b<c,list_cons>22
+42m24 arg1{7|67M9}
+42p47 arg2(24R9)
+45V13*list_reverse(24R9) 45^27 46b<c,list_reverse>22
+45p27 arg1(24R9)
+48U14*list_free 48^25 48>48 49b<c,list_free>22
+48p25 arg1(24R9)
+48m48 arg2{4|43M9}
+51V13*list_length{4|43M9} 51^26 52b<c,list_length>22
+51p26 arg1(24R9)
+X 7 system.ads
+37K9*System 6|2w6 27r14 34r30 34r53 42r31 7|156e11
+67M9*Address 6|27r21 34r37 34r60 42r38
+

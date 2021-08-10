@@ -1,0 +1,163 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -gnaty-
+A -gnatyc
+A -gnatys
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U ahven.astrings%b	ahven-astrings.ads	1b9f3e2c EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.bounded%s	a-strbou.adb		a-strbou.ali
+W ahven%s		ahven.adb		ahven.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U ahven.astrings%s	ahven-astrings.ads	1326d524 EB EE NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.bounded%s	a-strbou.adb		a-strbou.ali
+W ahven%s		ahven.adb		ahven.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strbou.ads		20190518041254 84c37afd ada.strings.bounded%s
+D a-strbou.adb		20190518041255 adb4aa70 ada.strings.bounded%b
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strsup.ads		20190518041255 a27dcb33 ada.strings.superbounded%s
+D a-strsup.adb		20190518041254 8db84ca1 ada.strings.superbounded%b
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D ahven.ads		20210228093152 8c7a91f5 ahven%s
+D ahven-astrings.ads	20210228093152 1b9f3e2c ahven.astrings%s
+D ahven-astrings.ads	20210228093152 1b9f3e2c ahven.astrings%b
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+G a e
+G c Z s s [length ahven__astrings 65 16 19_1]
+G c Z s s [to_bounded_string ahven__astrings 72 16 19_1]
+G c Z s s [to_string ahven__astrings 82 16 19_1]
+G c Z s s [set_bounded_string ahven__astrings 86 17 19_1]
+G c Z s s [append ahven__astrings 96 16 19_1]
+G c Z s s [append ahven__astrings 109 16 19_1]
+G c Z s s [append ahven__astrings 122 16 19_1]
+G c Z s s [append ahven__astrings 135 16 19_1]
+G c Z s s [append ahven__astrings 146 16 19_1]
+G c Z s s [append ahven__astrings 157 17 19_1]
+G c Z s s [append ahven__astrings 170 17 19_1]
+G c Z s s [append ahven__astrings 183 17 19_1]
+G c Z s s [Oconcat ahven__astrings 194 16 19_1]
+G c Z s s [Oconcat ahven__astrings 202 16 19_1]
+G c Z s s [Oconcat ahven__astrings 210 16 19_1]
+G c Z s s [Oconcat ahven__astrings 218 16 19_1]
+G c Z s s [Oconcat ahven__astrings 226 16 19_1]
+G c Z s s [element ahven__astrings 234 16 19_1]
+G c Z s s [replace_element ahven__astrings 241 17 19_1]
+G c Z s s [slice ahven__astrings 250 16 19_1]
+G c Z s s [bounded_slice ahven__astrings 259 16 19_1]
+G c Z s s [bounded_slice ahven__astrings 270 17 19_1]
+G c Z s s [Oeq ahven__astrings 281 16 19_1]
+G c Z s s [Oeq ahven__astrings 287 16 19_1]
+G c Z s s [Oeq ahven__astrings 293 16 19_1]
+G c Z s s [Olt ahven__astrings 299 16 19_1]
+G c Z s s [Olt ahven__astrings 305 16 19_1]
+G c Z s s [Olt ahven__astrings 311 16 19_1]
+G c Z s s [Ole ahven__astrings 317 16 19_1]
+G c Z s s [Ole ahven__astrings 323 16 19_1]
+G c Z s s [Ole ahven__astrings 329 16 19_1]
+G c Z s s [Ogt ahven__astrings 335 16 19_1]
+G c Z s s [Ogt ahven__astrings 341 16 19_1]
+G c Z s s [Ogt ahven__astrings 347 16 19_1]
+G c Z s s [Oge ahven__astrings 353 16 19_1]
+G c Z s s [Oge ahven__astrings 359 16 19_1]
+G c Z s s [Oge ahven__astrings 365 16 19_1]
+G c Z s s [index ahven__astrings 375 16 19_1]
+G c Z s s [index ahven__astrings 384 16 19_1]
+G c Z s s [index ahven__astrings 393 16 19_1]
+G c Z s s [index ahven__astrings 401 16 19_1]
+G c Z s s [index ahven__astrings 415 16 19_1]
+G c Z s s [index ahven__astrings 429 16 19_1]
+G c Z s s [index_non_blank ahven__astrings 440 16 19_1]
+G c Z s s [index_non_blank ahven__astrings 446 16 19_1]
+G c Z s s [count ahven__astrings 455 16 19_1]
+G c Z s s [count ahven__astrings 463 16 19_1]
+G c Z s s [count ahven__astrings 471 16 19_1]
+G c Z s s [find_token ahven__astrings 477 17 19_1]
+G c Z s s [find_token ahven__astrings 489 17 19_1]
+G c Z s s [translate ahven__astrings 502 16 19_1]
+G c Z s s [translate ahven__astrings 509 17 19_1]
+G c Z s s [translate ahven__astrings 516 16 19_1]
+G c Z s s [translate ahven__astrings 523 17 19_1]
+G c Z s s [replace_slice ahven__astrings 534 16 19_1]
+G c Z s s [replace_slice ahven__astrings 562 17 19_1]
+G c Z s s [insert ahven__astrings 590 16 19_1]
+G c Z s s [insert ahven__astrings 605 17 19_1]
+G c Z s s [overwrite ahven__astrings 620 16 19_1]
+G c Z s s [overwrite ahven__astrings 637 17 19_1]
+G c Z s s [delete ahven__astrings 654 16 19_1]
+G c Z s s [delete ahven__astrings 669 17 19_1]
+G c Z s s [trim ahven__astrings 687 16 19_1]
+G c Z s s [trim ahven__astrings 694 17 19_1]
+G c Z s s [trim ahven__astrings 701 16 19_1]
+G c Z s s [trim ahven__astrings 709 17 19_1]
+G c Z s s [head ahven__astrings 717 16 19_1]
+G c Z s s [head ahven__astrings 727 17 19_1]
+G c Z s s [tail ahven__astrings 737 16 19_1]
+G c Z s s [tail ahven__astrings 747 17 19_1]
+G c Z s s [Omultiply ahven__astrings 761 16 19_1]
+G c Z s s [Omultiply ahven__astrings 769 16 19_1]
+G c Z s s [Omultiply ahven__astrings 777 16 19_1]
+G c Z s s [replicate ahven__astrings 785 16 19_1]
+G c Z s s [replicate ahven__astrings 796 16 19_1]
+G c Z s s [replicate ahven__astrings 810 16 19_1]
+G c Z s s [astringsInitial_Condition ahven__astrings 53 6 19_1]
+G c Z s s [from_string ahven__astrings 846 16 19_1]
+X 1 ada.ads
+16K9*Ada 20e8 15|17r6 20r7
+X 5 a-string.ads
+16K13*Strings 35e16 15|17r10 20r11
+X 6 a-strbou.ads
+45K21*Bounded 1281e24 15|17w18 20r19
+49i7 Max{positive} 15|20r51
+52k12*Generic_Bounded_Length 1279e30 15|20r27
+X 13 ahven.ads
+18K9*Ahven 47e10 15|19r9
+19N4*Max_String_Len 15|20r58
+X 15 ahven-astrings.ads
+19K15*AStrings[6|52] 13|18k9
+

@@ -1,0 +1,244 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U util.systems.os%s	util-systems-os.ads	3072975f NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W system%s		system.ads		system.ali
+W util%s		util.ads		util.ali
+W util.processes%s	util-processes.adb	util-processes.ali
+W util.systems%s	util-systems.ads	util-systems.ali
+W util.systems.constants%s  util-systems-constants.ads  util-systems-constants.ali
+W util.systems.types%s	util-systems-types.ads	util-systems-types.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrin.ads		20190518041255 341d0ddf interfaces.c.strings%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-processes.ads	20210228093152 655b8234 util.processes%s
+D util-streams.ads	20210228093152 e241dcc4 util.streams%s
+D util-systems.ads	20210228093152 be223f03 util.systems%s
+D util-systems-constants.ads  20210228093152 8d75e951 util.systems.constants%s
+D util-systems-os.ads	20210228093152 981d688b util.systems.os%s
+D util-systems-types.ads  20210228093152 d86a5bf2 util.systems.types%s
+G a e
+G c Z s s [close util__systems__os 74 13 none]
+G c Z s s [read util__systems__os 77 13 none]
+G c Z s s [write util__systems__os 82 13 none]
+G c Z s s [sys_exit util__systems__os 89 14 none]
+G c Z s s [sys_fork util__systems__os 93 13 none]
+G c Z s s [sys_vfork util__systems__os 97 13 none]
+G c Z s s [sys_execvp util__systems__os 101 13 none]
+G c Z s s [sys_waitpid util__systems__os 106 13 none]
+G c Z s s [sys_pipe util__systems__os 112 13 none]
+G c Z s s [sys_dup2 util__systems__os 116 13 none]
+G c Z s s [sys_close util__systems__os 120 13 none]
+G c Z s s [sys_open util__systems__os 124 13 none]
+G c Z s s [sys_fcntl util__systems__os 130 13 none]
+G c Z s s [sys_kill util__systems__os 135 13 none]
+G c Z s s [sys_stat util__systems__os 139 13 none]
+G c Z s s [sys_fstat util__systems__os 143 13 none]
+G c Z s s [sys_lseek util__systems__os 147 13 none]
+G c Z s s [sys_ftruncate util__systems__os 153 13 none]
+G c Z s s [sys_truncate util__systems__os 157 13 none]
+G c Z s s [sys_fchmod util__systems__os 161 13 none]
+G c Z s s [sys_chmod util__systems__os 166 13 none]
+G c Z s s [sys_chdir util__systems__os 171 13 none]
+G c Z s s [sys_rename util__systems__os 176 13 none]
+G c Z s s [errno util__systems__os 181 13 none]
+G c Z s s [strerror util__systems__os 184 13 none]
+X 12 interfac.ads
+38K9*Interfaces 184e15 37|20r6 21r6 41r19 42r25 57r26 58r26 61r26 62r26 63r26
+. 64r26 65r26 66r26 67r26 125r34 131r35 132r35 184r50
+X 13 i-c.ads
+18K20*C 230e17 37|20w17 21r17 41r30 42r36 57r37 58r37 61r37 62r37 63r37 64r37
+. 65r37 66r37 67r37 125r45 131r46 132r46 184r61
+35I9*int<integer> 37|57r39 58r39 61r39 62r39 63r39 64r39 65r39 66r39 67r39
+. 125r47 131r48 132r48
+43M9*unsigned
+X 14 i-cstrin.ads
+36K22*Strings 106e25 37|21w19 41r32 42r38 184r63
+47P9*chars_ptr 37|41r40 184r71
+50A9*chars_ptr_array(47P9)<13|60M9> 37|42r46
+X 15 system.ads
+37K9*System 156e11 37|19w6 78r29 83r30 107r39 112r32
+67M9*Address 37|78r36 83r37 107r46 112r39
+X 32 util.ads
+18K9*Util 28e9 37|22r6 23r6 24r6 28r9 39r8 45r25 53r13 57r46 58r46 61r46
+. 62r46 63r46 64r46 65r46 66r46 67r46 93r29 97r30 126r34 140r37 141r57 144r38
+. 145r57 148r36 149r36 150r31 154r40 158r39 162r35 167r35 187r5
+X 33 util-processes.ads
+23K14*Processes 208e19 37|22w11 93r34 97r35
+55I9*Process_Identifier<integer> 37|93r44 97r45
+X 35 util-systems.ads
+19K14*Systems 32|18k9 35|23e17 37|23r11 24r11 28r14 39r13 45r30 53r18 57r51
+. 58r51 61r51 62r51 63r51 64r51 65r51 66r51 67r51 126r39 140r42 141r62 144r43
+. 145r62 148r41 149r41 150r36 154r45 158r44 162r40 167r40 187r10
+X 36 util-systems-constants.ads
+3K22*Constants 37e27 37|23w19 39r21 57r59 58r59 61r59 62r59 63r59 64r59 65r59
+. 66r59 67r59
+8i4*O_RDONLY{13|35I9} 37|61r69
+9i4*O_WRONLY{13|35I9} 37|62r69
+10i4*O_RDWR{13|35I9} 37|63r69
+11i4*O_CREAT{13|35I9} 37|64r69
+12i4*O_EXCL{13|35I9} 37|65r69
+13i4*O_TRUNC{13|35I9} 37|66r69
+14i4*O_APPEND{13|35I9} 37|67r69
+21i4*F_SETFL{13|35I9} 37|57r69
+23i4*FD_CLOEXEC{13|35I9} 37|58r69
+35a4*SYMBOL_PREFIX{string} 37|75r57 80r57 85r57 90r56 94r57 98r57 103r57
+. 109r57 113r57 117r57 121r57 127r57 133r57 137r57 151r57 155r57 159r57 163r57
+. 168r57 172r57 178r57 182r57 185r57
+X 37 util-systems-os.ads
+28K22*Os 35|19k14 37|187l18 187e20
+31e4*Directory_Separator{character}
+34e4*Path_Separator{character}
+37a4*Line_Separator{string}
+41P12*Ptr{14|47P9} 101r35 124r34 139r33 157r38 166r35 171r34 176r39 177r39
+42A12*Ptr_Array{14|50A9}<13|60M9> 43r37 102r35
+43P9*Ptr_Ptr_Array(42A12)
+45I12*File_Type{38|29I9} 48r29 49r29 50r29 54r29 74r28 77r29 82r30 116r37
+. 120r32 126r68 130r35 143r32 147r32 153r36 161r35
+48i4*STDIN_FILENO{45I12}
+49i4*STDOUT_FILENO{45I12}
+50i4*STDERR_FILENO{45I12}
+54i4*NO_FILE{45I12}
+57i4*F_SETFL{13|35I9}
+58i4*FD_CLOEXEC{13|35I9}
+61i4*O_RDONLY{13|35I9}
+62i4*O_WRONLY{13|35I9}
+63i4*O_RDWR{13|35I9}
+64i4*O_CREAT{13|35I9}
+65i4*O_EXCL{13|35I9}
+66i4*O_TRUNC{13|35I9}
+67i4*O_APPEND{13|35I9}
+69M9*Size_T 79r29 84r30
+71I9*Ssize_T<long_integer> 79r44 84r45
+74V13*Close{integer} 74>20
+74i20 Fd{45I12}
+77V13*Read{71I9} 77>19 78>19 79>19
+77i19 Fd{45I12}
+78m19 Buf{15|67M9}
+79m19 Size{69M9}
+82V13*Write{71I9} 82>20 83>20 84>20
+82i20 Fd{45I12}
+83m20 Buf{15|67M9}
+84m20 Size{69M9}
+89U14*Sys_Exit 89>24
+89i24 Code{integer}
+93V13*Sys_Fork{33|55I9}
+97V13*Sys_VFork{33|55I9}
+101V13*Sys_Execvp{integer} 101>25 102>25
+101p25 File{41P12}
+102a25 Args{42A12}
+106V13*Sys_Waitpid{integer} 106>26 107>26 108>26
+106i26 Pid{integer}
+107m26 Status{15|67M9}
+108i26 Options{integer}
+112V13*Sys_Pipe{integer} 112>23
+112m23 Fds{15|67M9}
+116V13*Sys_Dup2{integer} 116>23 116>28
+116i23 Fd1{45I12}
+116i28 Fd2{45I12}
+120V13*Sys_Close{integer} 120>24
+120i24 Fd{45I12}
+124V13*Sys_Open{45I12} 124>23 125>23 126>23
+124p23 Path{41P12}
+125i23 Flags{13|35I9}
+126m23 Mode{38|13M12}
+130V13*Sys_Fcntl{integer} 130>24 131>24 132>24
+130i24 Fd{45I12}
+131i24 Cmd{13|35I9}
+132i24 Flags{13|35I9}
+135V13*Sys_Kill{integer} 135>23 136>23
+135i23 Pid{integer}
+136i23 Signal{integer}
+139V13*Sys_Stat{integer} 139>23 140^23
+139p23 Path{41P12}
+140p23 Stat(38|43R9)
+143V13*Sys_Fstat{integer} 143>24 144^24
+143i24 Fs{45I12}
+144p24 Stat(38|43R9)
+147V13*Sys_Lseek{38|7I12} 147>24 148>24 149>24
+147i24 Fs{45I12}
+148i24 Offset{38|7I12}
+149e24 Mode{38|38E9}
+153V13*Sys_Ftruncate{integer} 153>28 154>28
+153i28 Fs{45I12}
+154i28 Length{38|7I12}
+157V13*Sys_Truncate{integer} 157>27 158>27
+157p27 Path{41P12}
+158i27 Length{38|7I12}
+161V13*Sys_Fchmod{integer} 161>25 162>25
+161i25 Fd{45I12}
+162m25 Mode{38|13M12}
+166V13*Sys_Chmod{integer} 166>24 167>24
+166p24 Path{41P12}
+167m24 Mode{38|13M12}
+171V13*Sys_Chdir{integer} 171>24
+171p24 Path{41P12}
+176V13*Sys_Rename{integer} 176>25 177>25
+176p25 Oldpath{41P12}
+177p25 Newpath{41P12}
+181V13*Errno{integer}
+184V13*Strerror{14|47P9} 184>23
+184i23 Errno{integer}
+X 38 util-systems-types.ads
+3K22*Types 37|24w19 45r38 53r26 126r47 140r50 141r70 144r51 145r70 148r49
+. 149r49 150r44 154r53 158r52 162r48 167r48 38|65e23
+7I12*off_t{long_long_integer} 37|148r55 150r50 154r59 158r58
+13M12*mode_t{13|43M9} 37|126r53 162r54 167r54
+29I9*File_Type<13|35I9> 37|45r44 53r32
+38E9*Seek_Mode 37|149r55 38|38e52
+41a4*STAT_NAME{string} 37|141r76
+42a4*FSTAT_NAME{string} 37|145r76
+43R9*Stat_Type 37|140r56 144r57 38|61e14
+

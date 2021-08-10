@@ -1,0 +1,46 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_PROTECTED_TYPES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.concurrent.copies%b  util-concurrent-copies.adb  5a4409ad NE OO PK GE
+W util.concurrent%s	util-concurrent.ads	util-concurrent.ali
+
+U util.concurrent.copies%s  util-concurrent-copies.ads  da5b40e5 BN NE OO PR PK GE
+W util.concurrent%s	util-concurrent.ads	util-concurrent.ali
+
+D system.ads		20190518041255 4635ec04 system%s
+D util.ads		20210228093152 36301479 util%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-copies.ads  20210228093152 f35d7034 util.concurrent.copies%s
+D util-concurrent-copies.adb  20210228093152 a9197999 util.concurrent.copies%b
+G a e
+G c Z s b [copies util__concurrent 20 25 none]
+X 2 util.ads
+18K9*Util 28e9 4|20r9 45r5 5|19r14 40r5
+X 3 util-concurrent.ads
+18K14*Concurrent 2|18k9 3|22e20 4|20r14 45r10 5|19r19 40r10
+X 4 util-concurrent-copies.ads
+19+9 Element_Type 36r27 39r34 42r15 5|25r27 33r34
+20k25*Copies 3|18k14 4|19z9 45l21 45e27 5|19b30 40l21 40t27
+33W19*Atomic 42E7 43l8 43e14 5|21b19 38l8 38t14
+36V16 Get{19+9} 5|25b16 28l11 28t14
+39U17 Set 39>22 5|33b17 36l11 36t14
+39*22 Object{19+9} 5|33b22 35r19
+42*7 Value{19+9} 5|27r17 35m10
+

@@ -1,0 +1,163 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U util.streams.texts.wtr%b  util-streams-texts-wtr.ads  03d3efb2 NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.wide_wide_characters%s  a-zchara.ads	a-zchara.ali
+W ada.wide_wide_characters.handling%s  a-zchhan.adb  a-zchhan.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W util%s		util.ads		util.ali
+W util.streams.texts%s	util-streams-texts.adb	util-streams-texts.ali
+W util.texts%s		util-texts.ads		util-texts.ali
+W util.texts.transforms%s  util-texts-transforms.adb  util-texts-transforms.ali
+
+U util.streams.texts.wtr%s  util-streams-texts-wtr.ads  996950b9 EB NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.wide_wide_characters%s  a-zchara.ads	a-zchara.ali
+W ada.wide_wide_characters.handling%s  a-zchhan.adb  a-zchhan.ali
+W util%s		util.ads		util.ali
+W util.streams.texts%s	util-streams-texts.adb	util-streams-texts.ali
+W util.texts%s		util-texts.ads		util-texts.ali
+W util.texts.transforms%s  util-texts-transforms.adb  util-texts-transforms.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-calfor.ads		20190518041254 0a6f9afc ada.calendar.formatting%s
+D a-catizo.ads		20190518041256 409d7e5b ada.calendar.time_zones%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-zchara.ads		20190518041256 21c8f2b2 ada.wide_wide_characters%s
+D a-zchhan.ads		20190518041255 28d85bc4 ada.wide_wide_characters.handling%s
+D a-zchhan.adb		20190518041254 31600096 ada.wide_wide_characters.handling%b
+D a-zchuni.ads		20190518041254 44dd0d34 ada.wide_wide_characters.unicode%s
+D gnat.ads		20190518041256 b5988c27 gnat%s
+D g-calend.ads		20190518041255 cad86fa7 gnat.calendar%s
+D g-catiio.ads		20190518041254 b8a4f3d4 gnat.calendar.time_io%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-utf_32.ads		20190518041255 9e89e9cc system.utf_32%s
+D util.ads		20210228093152 36301479 util%s
+D util-streams.ads	20210228093152 e241dcc4 util.streams%s
+D util-streams-buffered.ads  20210228093152 a458193f util.streams.buffered%s
+D util-streams-texts.ads  20210228093152 e18922e6 util.streams.texts%s
+D util-streams-texts-wtr.ads  20210228093152 03d3efb2 util.streams.texts.wtr%s
+D util-streams-texts-wtr.ads  20210228093152 03d3efb2 util.streams.texts.wtr%b
+D util-texts.ads	20210228093152 096d4581 util.texts%s
+D util-texts-transforms.ads  20210228093152 53ebc629 util.texts.transforms%s
+D util-texts-transforms.adb  20210228093152 7d338470 util.texts.transforms%b
+G a e
+G c s s s [s util__streams__texts__wtr 20 1 none]
+G c Z s s [capitalize util__streams__texts__wtr 30 14 20_1]
+G c Z s s [capitalize util__streams__texts__wtr 34 13 20_1]
+G c Z s s [to_upper_case util__streams__texts__wtr 37 14 20_1]
+G c Z s s [to_upper_case util__streams__texts__wtr 41 13 20_1]
+G c Z s s [to_lower_case util__streams__texts__wtr 44 14 20_1]
+G c Z s s [to_lower_case util__streams__texts__wtr 46 13 20_1]
+G c Z s s [to_hex util__streams__texts__wtr 49 14 20_1]
+G c Z s s [escape_java_script util__streams__texts__wtr 55 14 20_1]
+G c Z s s [escape_java util__streams__texts__wtr 60 14 20_1]
+G c Z s s [escape_xml util__streams__texts__wtr 70 14 20_1]
+G c Z s s [translate_xml_entity util__streams__texts__wtr 75 14 20_1]
+G c Z s s [unescape_xml util__streams__texts__wtr 84 14 20_1]
+G c Z s s [put util__streams__texts__wtr 91 14 20_1]
+G c Z s s [escape_java util__streams__texts__wtr 94 14 20_1]
+G c Z s s [put_dec util__streams__texts__wtr 25 14 20_1]
+G c Z s s [to_hex util__streams__texts__wtr 28 14 20_1]
+G r i none [s util__streams__texts__wtr 20 1 none] [transforms util__texts 25 20 none]
+G r c none [capitalize util__streams__texts__wtr 30 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [to_upper_case util__streams__texts__wtr 37 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [to_lower_case util__streams__texts__wtr 44 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [to_hex util__streams__texts__wtr 49 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [escape_java_script util__streams__texts__wtr 55 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [escape_java util__streams__texts__wtr 60 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [escape_xml util__streams__texts__wtr 70 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [translate_xml_entity util__streams__texts__wtr 75 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [unescape_xml util__streams__texts__wtr 84 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [put util__streams__texts__wtr 91 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [escape_java util__streams__texts__wtr 94 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [put_dec util__streams__texts__wtr 25 14 20_1] [write_char util__streams__texts 70 14 none]
+G r c none [to_hex util__streams__texts__wtr 28 14 20_1] [write_char util__streams__texts 70 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 49|19r6 25r42 26r42
+X 17 a-zchara.ads
+16K13*Wide_Wide_Characters 18e29 49|19r10 25r46 26r46
+X 18 a-zchhan.ads
+16K34*Handling 132e38 49|19w31 25r67 26r67
+106V13*To_Lower{wide_wide_character} 49|26r76
+119V13*To_Upper{wide_wide_character} 49|25r76
+X 44 util.ads
+18K9*Util 28e9 49|18r6 20r9 21r7
+X 45 util-streams.ads
+46K14*Streams 44|18k9 45|118e17 49|20r14
+55h9*Output_Stream
+73h9*Input_Stream
+X 47 util-streams-texts.ads
+31K22*Texts 45|46k14 47|102e23 49|20r22
+38R9*Print_Stream<46|105R9> 98e75 49|21r40
+70U14*Write_Char 49|24r40
+X 49 util-streams-texts-wtr.ads
+20K28*WTR[51|25] 47|31k22
+X 50 util-texts.ads
+19K14*Texts 49|18r11 21r12 50|23e15
+X 51 util-texts-transforms.ads
+19+9 Stream 49|21r30
+20E9 Char 49|22r30
+21A9 Input(20E9)<integer> 49|23r30
+22U19 Put 49|24r30
+23V18 To_Upper{20E9} 49|25r30
+24V18 To_Lower{20E9} 49|26r30
+25k20*Transforms 49|18w17 21r18 51|97e26
+

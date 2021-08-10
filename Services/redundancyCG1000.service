@@ -1,0 +1,15 @@
+[Unit] 
+Description=Redundancy service 
+After=fep.service 
+StartLimitIntervalSec=5 
+
+[Service] 
+Type=simple 
+Restart=on-failure 
+RestartSec=2 
+User=root 
+WorkingDirectory=/home/debian/Redundancy_Service/bin 
+ExecStart=/home/debian/Redundancy_Service/bin/redundancy 
+
+[Install]
+WantedBy=multi-user.target

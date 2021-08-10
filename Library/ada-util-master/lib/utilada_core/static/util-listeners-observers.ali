@@ -1,0 +1,105 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_NESTED_FINALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.listeners.observers%b  util-listeners-observers.adb  474fdb34 NE OO PK GE
+W util.listeners%s	util-listeners.ads	util-listeners.ali
+
+U util.listeners.observers%s  util-listeners-observers.ads  f5966607 BN EE NE OO PK GE
+W util.listeners%s	util-listeners.ads	util-listeners.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atacco.ads		20190518041256 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-linux.ads		20190518041256 ed0b8aee system.linux%s
+D s-multip.ads		20190518041254 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190518093549 c13b1f65 system.os_constants%s
+D s-osinte.ads		20190518041257 baabc537 system.os_interface%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stausa.ads		20190518041255 017a0a05 system.stack_usage%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20190518041256 2b3f8252 system.task_info%s
+D s-taspri.ads		20190518041256 f40ac08d system.task_primitives%s
+D s-taskin.ads		20190518041257 b9d612e2 system.tasking%s
+D s-taprob.ads		20190518041256 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-arrays.ads  20210228093152 3b83d7f3 util.concurrent.arrays%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-listeners.ads	20210228093152 ef07edab util.listeners%s
+D util-listeners-observers.ads  20210228093152 1a918bac util.listeners.observers%s
+D util-listeners-observers.adb  20210228093152 5dde5098 util.listeners.observers%b
+G a e
+G c Z s b [observers util__listeners 24 24 none]
+X 23 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 35 util.ads
+18K9*Util 28e9 40|24r9 29r43 37r32 40r5 41|19r14 25r32 27r41 29r41 36r20
+. 41r5
+X 37 util-concurrent-arrays.ads
+73R9*Ref<3|43R9> 41|36r51[39|64]
+80U14*Iterate 41|38s9[39|64]
+81p23 Process 41|38r18[39|64]
+90R9*Vector<3|50R9>
+94V13*Get{73R9[39|64]} 41|36s63[39|64]
+X 39 util-listeners.ads
+57K14*Listeners 35|18k9 39|80e19 40|24r14 29r48 37r37 40r10 41|19r19 25r37
+. 27r46 29r46 36r25 41r10
+60h9*Listener 40|29r58
+61P9*Listener_Access(60R9) 41|27r56 29r56
+64K12*Listener_Arrays[37|70] 41|36r35
+72R12*List{37|90R9[64]} 40|37r47 41|25r47
+X 40 util-listeners-observers.ads
+23+9 Element_Type 33r36 38r32 41|26r32
+24k24*Observers 39|57k14 40|23z9 40l20 40e29 41|19b29 41l20 41t29
+29h9*Observer<39|60R9> 32p14 32r36 41|31r31 32r13
+32x14*Update 32>22 33>22 41|32R45
+32r22 Instance{29R9}
+33*22 Item{23+9}
+37U14*Notify 37>22 38>22 41|25b14 39l8 39t14
+37r22 List{39|72R12} 41|25b22 36r58
+38*22 Item{23+9} 41|26b22 32r53
+X 41 util-listeners-observers.adb
+27U17 Update 27>25 29b17 34l11 34t17 38r29
+27p25 Subscriber{39|61P9} 29b25 31r13 32r29
+36r7 R{37|73R9[39|64]} 38r7
+

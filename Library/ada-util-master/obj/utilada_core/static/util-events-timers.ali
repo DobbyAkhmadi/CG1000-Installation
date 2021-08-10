@@ -1,0 +1,399 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U util.events.timers%b	util-events-timers.adb	97c7e588 OO PF PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_deallocation%s
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W util%s		util.ads		util.ali
+W util.events%s		util-events.adb		util-events.ali
+W util.log%s		util-log.adb		util-log.ali
+W util.log.loggers%s	util-log-loggers.adb	util-log-loggers.ali  AD
+
+U util.events.timers%s	util-events-timers.ads	55adc269 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W util%s		util.ads		util.ali
+W util.concurrent%s	util-concurrent.ads	util-concurrent.ali
+W util.concurrent.counters%s  util-concurrent-counters.adb  util-concurrent-counters.ali
+W util.events%s		util-events.adb		util-events.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-reatim.ads		20190518041256 0240fc73 ada.real_time%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atacco.ads		20190518041256 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20190518041254 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20190518041256 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-linux.ads		20190518041256 ed0b8aee system.linux%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-multip.ads		20190518041254 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190518093549 c13b1f65 system.os_constants%s
+D s-osinte.ads		20190518041257 baabc537 system.os_interface%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stausa.ads		20190518041255 017a0a05 system.stack_usage%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-stratt.adb		20190518041255 56ef263e system.stream_attributes%b
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-tasinf.ads		20190518041256 2b3f8252 system.task_info%s
+D s-taspri.ads		20190518041256 f40ac08d system.task_primitives%s
+D s-taprop.ads		20190518041256 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20190518041257 b9d612e2 system.tasking%s
+D s-taprob.ads		20190518041256 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-concurrent-counters.adb  20210228093152 8cd422ae util.concurrent.counters%b
+D util-events.ads	20210228093152 278843ff util.events%s
+D util-events-timers.ads  20210228093152 b7a1e5db util.events.timers%s
+D util-events-timers.adb  20210228093152 99cc9c79 util.events.timers%b
+D util-log.ads		20210228093152 0fb1ac89 util.log%s
+D util-log-appenders.ads  20210228093152 898ccef8 util.log.appenders%s
+D util-log-loggers.ads	20210228093152 5659ff08 util.log.loggers%s
+D util-properties.ads	20210228093152 3ed4fee8 util.properties%s
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-texts.ads	20210228093152 096d4581 util.texts%s
+D util-texts-builders.ads  20210228093152 f2e717ef util.texts.builders%s
+D util-texts-builders.adb  20210228093152 38b5b7a7 util.texts.builders%b
+G a e
+G c b b b [b util__events__timers 20 1 none]
+G c Z s b [repeat util__events__timers 80 14 none]
+G c Z s b [cancel util__events__timers 84 14 none]
+G c Z s b [is_scheduled util__events__timers 87 13 none]
+G c Z s b [time_of_event util__events__timers 91 13 none]
+G c Z s b [set_timer util__events__timers 96 14 none]
+G c Z s b [set_timer util__events__timers 102 14 none]
+G c Z s b [process util__events__timers 110 14 none]
+G c Z s b [error util__events__timers 117 14 none]
+G c Z s b [adjust util__events__timers 134 14 none]
+G c Z s b [finalize util__events__timers 137 14 none]
+G c Z s b [add util__events__timers__timer_manager 151 17 none]
+G c Z s b [cancel util__events__timers__timer_manager 155 17 none]
+G c Z s b [find_next util__events__timers__timer_manager 158 17 none]
+G c Z s b [timer_manager__addN util__events__timers 151 7 none]
+G c Z s b [timer_manager__addP util__events__timers 151 7 none]
+G c Z s b [timer_manager__cancelN util__events__timers 155 7 none]
+G c Z s b [timer_manager__cancelP util__events__timers 155 7 none]
+G c Z s b [timer_manager__find_nextN util__events__timers 158 7 none]
+G c Z s b [timer_manager__find_nextP util__events__timers 158 7 none]
+G c Z s b [finalize util__events__timers 171 14 none]
+G c Z s s [timer_refDA util__events__timers 129 9 none]
+G c Z s s [timer_refDF util__events__timers 129 9 none]
+G c Z s s [timer_refIP util__events__timers 129 9 none]
+G c Z s s [timer_managerVIP util__events__timers 148 4 none]
+G c Z s s [timer_listDF util__events__timers 166 9 none]
+G c Z s s [timer_listIP util__events__timers 166 9 none]
+G c Z s s [timer_nodeIP util__events__timers 139 9 none]
+G c Z b b [free util__events__timers 26 14 none]
+G c Z b b [timer_manager__removeN util__events__timers 169 7 none]
+G c Z b b [timer_manager__removeP util__events__timers 169 7 none]
+G r c none [b util__events__timers 20 1 none] [create util__log__loggers 38 13 none]
+G r c none [repeat util__events__timers 80 14 none] [increment util__concurrent__counters 52 14 none]
+G r c none [cancel util__events__timers 84 14 none] [decrement util__concurrent__counters 65 14 none]
+G r c none [set_timer util__events__timers 96 14 none] [decrement util__concurrent__counters 65 14 none]
+G r c none [set_timer util__events__timers 96 14 none] [increment util__concurrent__counters 52 14 none]
+G r c none [set_timer util__events__timers 102 14 none] [decrement util__concurrent__counters 65 14 none]
+G r c none [set_timer util__events__timers 102 14 none] [increment util__concurrent__counters 52 14 none]
+G r c none [process util__events__timers 110 14 none] [error util__log__loggers 118 14 none]
+G r c none [process util__events__timers 110 14 none] [decrement util__concurrent__counters 65 14 none]
+G r c none [error util__events__timers 117 14 none] [error util__log__loggers 118 14 none]
+G r c none [adjust util__events__timers 134 14 none] [increment util__concurrent__counters 52 14 none]
+G r c none [finalize util__events__timers 137 14 none] [decrement util__concurrent__counters 65 14 none]
+G r c none [add util__events__timers__timer_manager 151 17 none] [increment util__concurrent__counters 52 14 none]
+G r c none [cancel util__events__timers__timer_manager 155 17 none] [decrement util__concurrent__counters 65 14 none]
+G r c none [finalize util__events__timers 171 14 none] [decrement util__concurrent__counters 65 14 none]
+G r c none [timer_refDA util__events__timers 129 9 none] [increment util__concurrent__counters 52 14 none]
+G r c none [timer_refDF util__events__timers 129 9 none] [decrement util__concurrent__counters 65 14 none]
+G r c none [timer_listDF util__events__timers 166 9 none] [decrement util__concurrent__counters 65 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 92|18r6 19r6 20r14 81r35 91r57 99r38 105r38 111r39 119r34 129r26
+. 145r18 152r36 158r42 159r43 166r27 93|18r6 22r13 27r10 34r35 65r57 67r69
+. 76r38 101r38 103r39 112r39 115r24 115r46 139r34 192r36 244r42 245r43 249r25
+. 257r28 269r18 272r36
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<22|43R9>
+X 21 a-except.ads
+54K13*Exceptions 349e19 92|19w10 119r38 93|139r38
+63R9*Exception_Occurrence 317e14 92|119r49 93|139r49
+X 22 a-finali.ads
+40K13*Finalization 68e21 92|20w18 129r30 166r31
+43H9*Controlled<54|40R9> 59e72 92|129r43
+50H9*Limited_Controlled<54|40R9> 66e55 92|166r44
+X 25 a-reatim.ads
+39K13*Real_Time 185e18 92|18w10 81r39 91r61 99r42 105r42 111r43 145r22 152r40
+. 158r46 159r47 93|22r17 34r39 65r61 67r73 76r42 101r42 103r43 112r43 115r28
+. 115r50 192r40 244r46 245r47 249r29 257r32 269r22 272r40
+49O9*Time<duration> 92|91r71 99r52 111r53 145r32 152r50 158r56 159r57 93|22r27
+. 65r71 76r52 112r53 115r38 192r50 244r56 245r57 269r32
+51o4*Time_Last{49O9} 93|67r83 249r39 257r42 272r50
+54O9*Time_Span<duration> 92|81r49 105r52 93|34r49 101r52
+61V13*Clock{49O9} 93|103s53 115s60
+65V14*"+"{49O9} 93|38s48 103s59
+74V14*"<"{boolean} 93|250r30
+78V14*">"{boolean} 93|202r33
+X 35 a-uncdea.ads
+17+9 Object 93|27r38
+18P9 Name(17+9) 93|28r38
+20u15*Unchecked_Deallocation 93|18w10 27r14
+X 39 system.ads
+67M9*Address
+X 56 s-memory.ads
+53V13*Alloc{39|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{39|67M9} 105i<c,__gnat_realloc>22
+X 65 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 67 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 84 util.ads
+18K9*Util 28e9 92|21r14 67r9 143r18 143r54 173r5 93|19r6 20r14 24r23 24r50
+. 149r10 158r10 196r10 235r10 278r5
+X 86 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 87 util-beans-objects.ads
+97h9*Object_Type
+X 88 util-concurrent.ads
+18K14*Concurrent 22e20 92|21r19 143r23 143r59 93|149r15 158r15 196r15 235r15
+X 89 util-concurrent-counters.ads
+39K25*Counters 91e29 92|21w30 143r34 143r70 93|149r26 158r26 196r26 235r26
+48R9*Counter 87e14 92|143r43
+52U14*Increment 93|149s35 196s35
+65U14*Decrement 93|158s35 235s35
+73r4*ONE{48R9} 92|143r79
+X 91 util-events.ads
+19K14*Events 84|18k9 91|34e16 92|67r14 173r10 93|20r19 278r10
+X 92 util-events-timers.ads
+67K21*Timers 91|19k14 92|123E9 173l17 173e23 93|20b26 278l17 278t23
+69R9*Timer_Ref<22|43R9> 22|46P14 92|77r43 80p14 80r39 84p14 84r37 87p13 87r38
+. 91p13 91r39 98r42 104r42 129c9 131e14 134P14 134r38 137P14 137r40 160r46
+. 93|33r39 45r37 56r38 65r39 75r42 100r42 114r15 146r38 154r40 246r46 268r18
+72h9*Timer 73r36 76p14 76r43
+73P9*Timer_Access(72R9) 97r38 103r38 118r34 144r18 93|74r38 99r38 138r34
+76x14*Time_Handler 76=28 77=28 93|121R33
+76r28 T{72R9}
+77c28 Event<69R9>
+80U14*Repeat 80=22 81>22 93|33b14 40l8 40t14
+80r22 Event{69R9} 93|33b22 35r45
+81o22 In_Time{25|54O9} 93|34b22 38r50
+84U14*Cancel 84=22 93|45b14 51l8 51t14
+84r22 Event{69R9} 93|45b22 47r10 47r39 48r10 48m39 48r39 49r10
+87V13*Is_Scheduled{boolean} 87>27 93|56b13 59l8 59t20
+87r27 Event{69R9} 93|56b27 58r14 58r43
+91V13*Time_Of_Event{25|49O9} 91>28 93|65b13 68l8 68t21
+91r28 Event{69R9} 93|65b28 67r18 67r43
+93R9*Timer_List<22|50R9> 22|53P14 54|42p14 92|96p14 96r42 102p14 102r42 110p14
+. 110r42 117p14 117r35 166c9 168e14 171P14 171r40 93|73r42 98r42 111r42 125r16
+. 137r35 267r40
+96U14*Set_Timer 96=25 97>25 98=25 99>25 93|73b14 93l8 93t17 103s12
+96r25 List{93R9} 93|73b25 86m47 86r47 91m21 91r21 92m7 92r7
+97p25 Handler{73P9} 93|74b25 83r24
+98c25 Event<69R9> 93|75b25 77r36 80m10 81r19
+99o25 At_Time{25|49O9} 93|76b25 92r32
+102U14*Set_Timer 102=25 103>25 104=25 105>25 93|98b14 104l8 104t17
+102r25 List{93R9} 93|98b25 103m7 103r7
+103p25 Handler{73P9} 93|99b25 103r23
+104c25 Event<69R9> 93|100b25 103m32
+105o25 In_Time{25|54O9} 93|101b25 103r61
+110U14*Process 110=23 111<23 112>23 93|111b14 130l8 130t15
+110r23 List{93R9} 93|111b23 118m10 118r10 125m34 125r34
+111o23 Timeout{25|49O9} 93|112b23 118m39
+112i23 Max_Count{natural} 93|113b23 117r25
+117U14*Error 117=21 118>21 119>21 93|125R40 137b14 143l8 143t13
+117r21 List{93R9} 93|137b21 140r28
+118p21 Handler{73P9} 93|138b21 140r34
+119r21 E{21|63R9} 93|139b21 142r55
+123W9 Timer_Manager 124r44 167r25
+124P9 Timer_Manager_Access(123W9) 142r18
+126R9 Timer_Node 127r41 139c9 146e14 93|27r48 80r29
+127P9 Timer_Node_Access(126R9) 130r15 140r18 141r18 151r36 155r40 163r14
+. 93|28r48 35r24 77r15 169r36 191r36 193r20 194r20 228r40
+130p7*Value{127P9} 93|35r51 47r16 47r45 48r16 48m45 49r16 58r20 58r49 67r24
+. 67r49 77r42 80m16 81r25 119r26 121r19 125r53 148r17 149r53 157r17 158r53
+. 160m26 160r26 162m20 251m19 273r26
+134U14 Adjust<22|47p14> 134=22 93|146b14 151l8 151t14
+134r22 Object{69R9} 93|146b22 148r10 149r46
+137U14 Finalize<22|48p14> 137=24 93|128s16 154b14 165l8 165t16 274s16
+137r24 Object{69R9} 93|154b24 157r10 158r46 160m19 160r19 162m13
+140p7*Next{127P9} 93|172r27 178m24 178r38 179r19 183m16 206m24 208m22 213r32
+. 219m18 222m16 252r26
+141p7*Prev{127P9} 93|173m19 175m21 177r22 178r19 179m24 179r38 184m16 209m24
+. 217m19 220m19 254m21
+142p7*List{124P9} 93|37r39 38r16 47r51 48r22 49m22 58r55 86r16 86r39 87r16
+. 91m13 185m16 197r19 231r19
+143r7*Counter{89|48R9} 93|149m59 158m59 196m52 235m52
+144p7*Handler{73P9} 93|83m13 121r25 125m59 125r59
+145o7*Deadline{25|49O9} 93|38r39 67r55 200m16 202r24 250r21 255r33 260r30
+148W19 Timer_Manager 163E7 164l8 164e21 93|167b19 264l8 264t21
+151U17 Add 151>22 152>22 93|38s21 92s20 191b17 223l11 223t14
+151p22 Timer{127P9} 93|191b22 196r46 197r13 198r21 200r10 204r27 206r32 208r16
+. 209r32 216r21 217r13 219r26 220r13 222r10
+152o22 Deadline{25|49O9} 93|192b22 200r28 202r35
+155U17 Cancel 155=25 93|48s31 87s21 228b17 239l11 239t17
+155p25 Timer{127P9} 93|228b25 231r13 234r18 235r46 237m19
+158U17 Find_Next 158>28 159<28 160=28 93|118s23 244b17 262l11 262t20 272s25
+158o28 Before{25|49O9} 93|244b28 250r32
+159o28 Deadline{25|49O9} 93|245b28 249m13 255m16 257m16 260m13
+160r28 Timer{69R9} 93|246b28 251m13
+163p7 List{127P9} 93|171r13 172r13 174r16 175r16 193r41 204r19 216r13 248r13
+. 250r16 251r28 252r13 252r21 253r16 254r16 255r28 260r25
+167w7*Manager{148W19} 93|86m52 91m26 92m12 118m15 272m17
+171U14 Finalize<22|54p14> 171=24 93|267b14 276l8 276t16
+171r24 Object{93R9} 93|267b24 272m10 272r10
+X 93 util-events-timers.adb
+24r4 Log{96|34R9} 142r7
+26U14 Free[35|20] 160s13 237s13
+35p7 Timer{92|127P9} 37r10 37r33 38r10 38r26 38r33
+77p7 Timer{92|127P9} 79r10 81m10 83r7 86r10 86r33 87r10 87m29 87r29 91r7
+. 92r25
+114r7 Timer{92|69R9} 118m48 118r48 119r20 121r13 121m47 121r47 125r47 128m10
+. 128r10
+115o7 Now{25|49O9} 118r34
+117i11 Count{integer}
+124r18 E{21|63R9} 125r68
+155b7 Is_Zero{boolean} 158m68 159r13
+169U17 Remove 169b17 186l11 186t17 198s13 234s10
+193p10 Current{92|127P9} 201r16 202r16 208r30 209r16 212r21 213m13 213r24
+194p10 Prev{92|127P9} 203r19 206r19 212m13 215r13 219r13 220r27
+229b10 Is_Zero{boolean} 235m61 236r13
+268r7 Timer{92|69R9} 272m70 272r70 273r20 274m10 274r10
+269o7 Timeout{25|49O9} 272m61
+X 94 util-log.ads
+166K14*Log 93|19r11 24r28 24r55 94|192e13
+X 96 util-log-loggers.ads
+24K18*Loggers 93|19w15 24r32 24r59 96|153e21
+34R9*Logger<22|50R9> 93|24r40 96|147e14
+38V13*Create{34R9} 93|24s67
+118U14*Error 93|142s11
+X 97 util-properties.ads
+256h12*Manager<86|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+

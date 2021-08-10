@@ -1,0 +1,239 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_NESTED_FINALIZATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.strings.transforms%b  util-strings-transforms.adb  d5b5b133 NE OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+W util.strings%s	util-strings.adb	util-strings.ali
+
+U util.strings.transforms%s  util-strings-transforms.ads  c411e77b NE OO PR PK
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W util%s		util.ads		util.ali
+W util.strings%s	util-strings.adb	util-strings.ali
+W util.texts%s		util-texts.ads		util-texts.ali
+W util.texts.transforms%s  util-texts-transforms.adb  util-texts-transforms.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chahan.ads		20190518041255 1601a50f ada.characters.handling%s
+D a-chahan.adb		20190518041254 0b9287e4 ada.characters.handling%b
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-stmaco.ads		20190518041254 1c0e5368 ada.strings.maps.constants%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-transforms.ads  20210228093152 0e5b9ac3 util.strings.transforms%s
+D util-strings-transforms.adb  20210228093152 dbee2bf0 util.strings.transforms%b
+D util-texts.ads	20210228093152 096d4581 util.texts%s
+D util-texts-transforms.ads  20210228093152 53ebc629 util.texts.transforms%s
+D util-texts-transforms.adb  20210228093152 7d338470 util.texts.transforms%b
+G a e
+G c s s s [s util__strings__transforms 21 1 none]
+G c Z s s [capitalize util__strings__transforms__tr 30 14 27_4]
+G c Z s s [capitalize util__strings__transforms__tr 34 13 27_4]
+G c Z s s [to_upper_case util__strings__transforms__tr 37 14 27_4]
+G c Z s s [to_upper_case util__strings__transforms__tr 41 13 27_4]
+G c Z s s [to_lower_case util__strings__transforms__tr 44 14 27_4]
+G c Z s s [to_lower_case util__strings__transforms__tr 46 13 27_4]
+G c Z s s [to_hex util__strings__transforms__tr 49 14 27_4]
+G c Z s s [escape_java_script util__strings__transforms__tr 55 14 27_4]
+G c Z s s [escape_java util__strings__transforms__tr 60 14 27_4]
+G c Z s s [escape_xml util__strings__transforms__tr 70 14 27_4]
+G c Z s s [translate_xml_entity util__strings__transforms__tr 75 14 27_4]
+G c Z s s [unescape_xml util__strings__transforms__tr 84 14 27_4]
+G c Z s s [put util__strings__transforms__tr 91 14 27_4]
+G c Z s s [escape_java util__strings__transforms__tr 94 14 27_4]
+G c Z s s [put_dec util__strings__transforms__tr 25 14 27_4]
+G c Z s s [to_hex util__strings__transforms__tr 28 14 27_4]
+G c Z s b [escape_javascript util__strings__transforms 65 13 none]
+G c Z s b [escape_java util__strings__transforms 72 13 none]
+G c Z s b [escape_xml util__strings__transforms 85 13 none]
+G r i none [s util__strings__transforms 21 1 none] [transforms util__texts 25 20 none]
+X 1 ada.ads
+16K9*Ada 20e8 59|19r6 20r6 25r8 31r43 32r45 33r45 60|26r16 29r14 37r16 40r14
+. 53r16 56r14
+X 2 a-charac.ads
+16K13*Characters 18e19 59|20r10 32r49 33r49
+X 3 a-chahan.ads
+36K24*Handling 159e28 59|20w21 32r60 33r60
+66V13*To_Lower{character} 59|33r69
+67V13*To_Upper{character} 59|32r69
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<20|43R9>
+X 21 a-iteint.ads
+24h9 Forward_Iterator
+X 23 a-string.ads
+16K13*Strings 35e16 59|19r10 25r12 31r47 60|26r20 29r18 37r20 40r18 53r20
+. 56r18
+X 27 a-strunb.ads
+82K21*Unbounded 756e26 59|19w18 25r20 31r55 60|26r28 29r26 37r28 40r26 53r28
+. 56r26
+87R9*Unbounded_String<20|43R9> 739e14 59|28r43 37r43 44r46 51r46 57r37 63r50
+. 70r44 82r43 88r52 94r57 96r48 60|26r38 37r38 53r38
+116V13*To_String{string} 60|29s36 40s36 56s36
+143U14*Append 59|31r65
+X 33 system.ads
+67M9*Address
+X 41 s-memory.ads
+53V13*Alloc{33|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{33|67M9} 105i<c,__gnat_realloc>22
+X 48 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 55 util.ads
+18K9*Util 28e9 59|18r6 21r9 28r10 99r5 60|19r14 59r5
+X 58 util-strings.ads
+24K14*Strings 55|18k9 58|139e17 59|21r14 99r10 60|19r19 59r10
+X 59 util-strings-transforms.ads
+21K22*Transforms 58|24k14 59|99l18 99e28 60|19b27 59l18 59t28
+27K12*TR[62|25] 38r34 40r33 45r37 47r36 52r34 54r36 58r52 64r41 71r35 83r35
+. 89r44 97r12 60|28r7 39r7 55r7
+36U14*Capitalize=38:37
+36a26 Content{string}
+37r26 Into{27|87R9}
+39V13*Capitalize=40:36{string}
+39a25 Content{string}
+43U14*To_Upper_Case=45:40
+43a29 Content{string}
+44r29 Into{27|87R9}
+46V13*To_Upper_Case=47:39{string}
+46a28 Content{string}
+50U14*To_Lower_Case=52:37
+50a29 Content{string}
+51r29 Into{27|87R9}
+53V13*To_Lower_Case=54:39{string}
+53a28 Content{string}
+57U14*To_Hex=58:55
+57r22 Into{27|87R9}
+58e22 Value{character}
+62U14*Escape_Javascript=64:44
+62a33 Content{string}
+63r33 Into{27|87R9}
+65V13*Escape_Javascript{string} 65>32 60|25b13 30l8 30t25
+65a32 Content{string} 60|25b32 28r30
+69U14*Escape_Java=71:38
+69a27 Content{string}
+70r27 Into{27|87R9}
+72V13*Escape_Java{string} 72>26 60|36b13 41l8 41t19
+72a26 Content{string} 60|36b26 39r23
+81U14*Escape_Xml=83:38
+81a26 Content{string}
+82r26 Into{27|87R9}
+85V13*Escape_Xml{string} 85>25 60|52b13 57l8 57t18
+85a25 Content{string} 60|52b25 55r22
+87U14*Translate_Xml_Entity=89:47 95r31
+87a36 Entity{string}
+88r36 Into{27|87R9}
+91U14*Unescape_Xml=97:15
+91a28 Content{string}
+92p28 Translator
+93a41 Entity{string}
+94r41 Into{27|87R9}
+96r28 Into{27|87R9}
+X 60 util-strings-transforms.adb
+26r7 Result{27|87R9} 28m39 28r39 29r47
+37r7 Result{27|87R9} 39m32 39r32 40r47
+53r7 Result{27|87R9} 55m31 55r31 56r47
+X 61 util-texts.ads
+19K14*Texts 59|18r11 28r15 61|23e15
+X 62 util-texts-transforms.ads
+19+9 Stream 59|28r33
+20E9 Char 59|29r33
+21A9 Input(20E9)<integer> 59|30r33
+22U19 Put 59|31r33
+23V18 To_Upper{20E9} 59|32r33
+24V18 To_Lower{20E9} 59|33r33
+25k20*Transforms 59|18w17 28r21 62|97e26
+30U14*Capitalize 59|38r37[27]
+34V13*Capitalize{string} 59|40r36[27]
+37U14*To_Upper_Case 59|45r40[27]
+41V13*To_Upper_Case{string} 59|47r39[27]
+44U14*To_Lower_Case 59|52r37[27]
+46V13*To_Lower_Case{string} 59|54r39[27]
+49U14*To_Hex 59|58r55[27]
+55U14*Escape_Java_Script 59|64r44[27] 60|28s10[59|27]
+60U14*Escape_Java 59|71r38[27] 60|39s10[59|27]
+70U14*Escape_Xml 59|83r38[27] 60|55s10[59|27]
+75U14*Translate_Xml_Entity 59|89r47[27]
+84U14*Unescape_Xml 59|97r15[27]
+

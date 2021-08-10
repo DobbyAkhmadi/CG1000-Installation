@@ -1,0 +1,155 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IO
+RV NO_NESTED_FINALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.properties.discrete%b  util-properties-discrete.adb  4dde9cd1 NE OO PK GE
+W util.properties%s	util-properties.adb	util-properties.ali
+
+U util.properties.discrete%s  util-properties-discrete.ads  f8b0a11a BN EE NE OO PK GE
+W util.properties%s	util-properties.adb	util-properties.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-properties.ads	20210228093152 3ed4fee8 util.properties%s
+D util-properties-discrete.ads  20210228093152 c6645ff2 util.properties.discrete%s
+D util-properties-discrete.adb  20210228093152 8bbac323 util.properties.discrete%b
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+G a e
+G c Z s b [discrete util__properties 23 25 none]
+X 15 a-conhel.ads
+84R12 Reference_Control_Type<21|43R9>
+X 23 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[17|75]>
+X 60 util.ads
+18K9*Util 28e9 67|23r9 40r5 68|18r14 37r24 39r10 43r35 58r5
+X 61 util-beans.ads
+50K14*Beans 54e15 68|37r29 39r15 43r40
+X 62 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 63 util-beans-objects.ads
+43K20*Objects 644e23 68|37r35 39r21 43r46
+83R9*Object<21|43R9> 632e14 68|37r43
+97h9*Object_Type
+140V13*Is_Null{boolean} 68|39s29
+182V13*To_String{string} 68|43s54
+X 66 util-properties.ads
+96K14*Properties 60|18k9 66|343e20 67|23r14 40r10 68|18r19 58r10
+106V14*"-"=106:62{string} 68|25s32
+113R9*Manager<21|43R9><62|54R9> 335e14 67|26r28 31r31 36r34 68|23r28 34r31
+. 52r33
+119V13*Get_Value{63|83R9}<62|47p13> 68|37R58
+146V13*Get{27|87R9} 68|25s33
+174U14*Set 68|55s7
+256h12*Manager<62|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 67 util-properties-discrete.ads
+20E9 Property_Type 27r43 33r31 33r53 38r30 68|24r43 27r14 36r31 36r53 43r14
+. 53r30 55r24
+23k25*Discrete 66|96k14 67|20z9 40l21 40e29 68|18b30 58l21 58t29
+26V13*Get{20E9} 26>18 27>18 68|23b13 28l8 28t11
+26c18 Self<66|113R9> 68|23b18 25r38
+27a18 Name{string} 68|24b18 25r44
+31V13*Get{20E9} 31>18 32>18 33>18 68|34b13 47l8 47t11
+31c18 Self<66|113R9> 68|34b18 37r53
+32a18 Name{string} 68|35b18 37r69
+33*18 Default{20E9} 68|36b18 40r17 46r17
+36U14*Set 36=19 37>19 38>19 68|52b14 56l8 56t11
+36c19 Self<66|113R9> 68|52b19 55m12
+37a19 Name{string} 68|52b48 55r18
+38*19 Value{20E9} 68|53b19 55r45
+X 68 util-properties-discrete.adb
+25a7 Val{string} 27r35
+37r7 Value{63|83R9} 39r38 43r65
+

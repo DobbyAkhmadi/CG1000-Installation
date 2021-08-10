@@ -1,0 +1,144 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_LONG_LONG_INTEGERS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.beans.objects.enums%b  util-beans-objects-enums.adb  f09d718e NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.conversions%s  a-chacon.adb	a-chacon.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+U util.beans.objects.enums%s  util-beans-objects-enums.ads  72e865e5 BN EE NE OO PK GE
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chacon.ads		20190518041255 5b23f5eb ada.characters.conversions%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-beans-objects-enums.ads  20210228093152 dc1f23cb util.beans.objects.enums%s
+D util-beans-objects-enums.adb  20210228093152 77a1a7ae util.beans.objects.enums%b
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+G a e
+G c Z s b [enums util__beans__objects 25 28 none]
+X 1 ada.ads
+16K9*Ada 20e8 38|18r6 21r8
+X 2 a-charac.ads
+16K13*Characters 18e19 38|18r10 21r12
+X 3 a-chacon.ads
+36K24*Conversions 86e31 38|18w21 21r23
+74V13*To_String{string} 38|107s29
+X 6 a-finali.ads
+43H9*Controlled<20|40R9> 59e72 38|67r23
+X 33 util.ads
+18K9*Util 28e9 37|25r9 32r34 34r5 38|19r14 77r34 124r5
+X 34 util-beans.ads
+50K14*Beans 33|18k9 34|54e15 37|25r14 32r39 34r10 38|19r19 77r39 124r10
+X 36 util-beans-objects.ads
+43K20*Objects 34|50k14 36|644e23 37|25r20 32r45 34r16 38|19r25 77r45 124r16
+53n23*TYPE_NULL{53E9} 38|109r15
+55n23*TYPE_BOOLEAN{53E9} 38|87r15
+57n23*TYPE_INTEGER{53E9} 38|68r42 80r15
+59n23*TYPE_FLOAT{53E9} 38|90r15
+61n23*TYPE_TIME{53E9} 38|112r15
+63n23*TYPE_STRING{53E9} 38|97r15
+65n23*TYPE_WIDE_STRING{53E9} 38|103r15
+67n23*TYPE_ARRAY{53E9} 38|118r15
+69n23*TYPE_BEAN{53E9} 38|115r15
+83R9*Object<6|43R9> 632e14 37|28r45 32r53 38|65r45 67r14 77r53
+84R9*Object_Value 623e14 38|36r38 54r38 68r14
+97h9*Object_Type
+98P9*Object_Type_Access(97R9)
+189V13*To_Long_Long_Integer{long_long_integer} 38|92s30 94s30
+257V13 To_Wide_Wide_String{wide_wide_string}<111p13>
+277V13 Is_Empty{boolean}<131p13>
+302R9 Int_Type<254R9> 302e52 38|28r26
+308V13 Get_Data_Type{53E9}<104p13>
+314V13 To_Long_Long{long_long_integer}<261p13>
+318V13 To_Long_Float{long_long_float}<265p13>
+322V13 To_Boolean{boolean}<269p13>
+326V13 To_Duration{duration}<273p13>
+568a7*Value{string} 38|101r50
+570P9 String_Proxy_Access(567R9)
+573a7*Value{wide_wide_string} 38|107r59
+575P9 Wide_String_Proxy_Access(572R9)
+592e23*Of_Type{53E9} 38|68m29 79r20
+599i13*Int_Value{long_long_integer} 38|57r36 69m29 82r38 84r38
+602b13*Bool_Value{boolean} 38|88r48
+611p13*String_Proxy{570P9} 38|98r24 101r36 101r37
+614p13*Wide_Proxy{575P9} 38|104r24 107r47 107r48
+630p7*Type_Def{98P9} 38|70m9
+631r7*V{84R9} 38|68m9 79r18 82r36 84r36 88r46 98r22 101r35 104r22 107r46
+X 37 util-beans-objects-enums.ads
+20E9 T 28r35 32r68 38|23r48 23r55 23r65 23r72 57r14 57r23 65r35 69r61 77r68
+. 82r23 84r23 88r20 92r23 94r23 101r20 107r20
+24b4 ROUND_VALUE{boolean} 38|81r16 91r16
+25k28*Enums 36|43k20 37|20z9 24z4 34l24 34e29 38|19b33 124l24 124t29
+28V13*To_Object{36|83R9} 28>24 38|65b13 71l8 71t17
+28*24 Value{20E9} 38|65b24 69r68
+32V13*To_Value{20E9} 32>23 38|77b13 122l8 122t16
+32r23 Value{36|83R9} 38|77b23 79r12 82r30 84r30 88r40 92r52 94r52 98r16 101r29
+. 104r16 107r40
+X 38 util-beans-objects-enums.adb
+23i4 Value_Range{long_long_integer} 82r52 92r63
+28R9 Enum_Type<36|302R9> 36|257P13 277P13 308P13 314P13 318P13 322P13 326P13
+. 38|28e51 32P13 32r37 35P13 35r38 43r34 53r38 60r35 60r48
+32V13 Get_Name{string}<36|305p13> 32>23 43b13 47l8 47t16
+32r23 Type_Def{28R9} 43b23 44r28
+35V13 To_String{string}<36|310p13> 35>24 36>24 53b13 58l8 58t17
+35r24 Type_Def{28R9} 53b24 55r28
+36r24 Value{36|84R9} 54b24 57r30
+60r4 Value_Type{28R9} 70r22
+

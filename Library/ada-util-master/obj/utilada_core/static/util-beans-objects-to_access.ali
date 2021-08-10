@@ -1,0 +1,97 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DISPATCH
+RV NO_FINALIZATION
+RV NO_UNCHECKED_ACCESS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.beans.objects.to_access%b  util-beans-objects-to_access.adb  850103b5 NE OO SU GE
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+U util.beans.objects.to_access%s  util-beans-objects-to_access.ads  743e956e BN EE NE OO GE
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.basic%s	util-beans-basic.ads	util-beans-basic.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-beans-objects-to_access.ads  20210228093152 4f0b06d1 util.beans.objects.to_access%s
+D util-beans-objects-to_access.adb  20210228093152 ca0a0564 util.beans.objects.to_access%b
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+G a e
+G c Z s b [to_access util__beans__objects 25 29 none]
+X 32 util.ads
+18K9*Util 28e9 36|21r6 23r26 25r10 37|23r10 38r5
+X 33 util-beans.ads
+50K14*Beans 54e15 36|21r11 23r31 25r15 37|23r15 38r10
+X 34 util-beans-basic.ads
+26K20*Basic 97e21 36|21w17 23r37
+42h9*Readonly_Bean 36|23r43
+47y13*Get_Value{35|83R9}
+X 35 util-beans-objects.ads
+43K20*Objects 644e23 36|25r21 37|23r21 38r16
+69n23*TYPE_BEAN{53E9} 37|25r26
+83R9*Object<5|43R9> 632e14 36|25r51 37|23r51
+97h9*Object_Type
+565P9 Bean_Proxy_Access(558R9)
+577R9 Bean_Proxy<558R9> 580e14 37|31r7 34r12 37r20
+578p7*Bean 37|31r38 37r51
+592e23*Of_Type{53E9} 37|25r15
+620p13*Proxy{565P9} 37|28r15 31r27 34r32 37r40
+631r7*V{84R9} 37|25r13 28r13 31r25 34r30 37r38
+X 36 util-beans-objects-to_access.ads
+23R9 T<34|42R9> 34|47p13 36|24r32 37|34r55 37r11
+24P9 T_Access(23R9) 25r66 37|23r66
+25v29*To_Access 35|43k20 36|25>40 37|23b29 38l24 38t33
+25r40 Value{35|83R9} 37|23b40 25r7 28r7 31r19 34r24 37r32
+

@@ -1,0 +1,377 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U ado.configs%b		ado-configs.adb		08b9297c OO PF PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.val_int%s	s-valint.adb		s-valint.ali
+W util%s		util.ads		util.ali
+W util.log%s		util-log.adb		util-log.ali
+W util.log.loggers%s	util-log-loggers.adb	util-log-loggers.ali  AD
+
+U ado.configs%s		ado-configs.ads		854c66f2 EE OO PF PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+W util%s		util.ads		util.ali
+W util.properties%s	util-properties.adb	util-properties.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strfix.ads		20190518041256 86d6bc21 ada.strings.fixed%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D ado.ads		20200810200714 1ec4b94f ado%s
+D ado-configs.ads	20200810200714 1a13a13e ado.configs%s
+D ado-configs.adb	20200810200714 40df90c5 ado.configs%b
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-exctab.adb		20190518041255 c756f391 system.exception_table%b
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20190518041254 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20190518041256 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-stratt.adb		20190518041255 56ef263e system.stream_attributes%b
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-valint.ads		20190518041255 b5ff6963 system.val_int%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20200215171848 36301479 util%s
+D util-beans.ads	20200215171848 362abe70 util.beans%s
+D util-beans-basic.ads	20200215171848 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20200215171848 aef7462e util.beans.objects%s
+D util-concurrent.ads	20200215171848 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20200215171848 2618dd23 util.concurrent.counters%s
+D util-log.ads		20200215171848 0fb1ac89 util.log%s
+D util-log-appenders.ads  20200215171848 ddbe02c8 util.log.appenders%s
+D util-log-loggers.ads	20200215171848 3003bbc2 util.log.loggers%s
+D util-nullables.ads	20200215171848 cb4c8fed util.nullables%s
+D util-properties.ads	20200215171848 3ed4fee8 util.properties%s
+D util-refs.ads		20200215171848 e592e98d util.refs%s
+D util-refs.adb		20200215171848 f4fdc937 util.refs%b
+D util-strings.ads	20200215171848 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+G a e
+G c b b b [b ado__configs 24 1 none]
+G c Z s b [initialize ado__configs 49 14 none]
+G c Z s b [initialize ado__configs 52 14 none]
+G c Z s b [get_config ado__configs 56 13 none]
+G c Z s b [is_on ado__configs 60 13 none]
+G c Z s b [set_connection ado__configs 75 14 none]
+G c Z s b [get_uri ado__configs 80 13 none]
+G c Z s b [get_log_uri ado__configs 84 13 none]
+G c Z s b [set_property ado__configs 89 14 none]
+G c Z s b [get_property ado__configs 95 13 none]
+G c Z s b [is_on ado__configs 99 13 none]
+G c Z s b [set_server ado__configs 103 14 none]
+G c Z s b [get_server ado__configs 107 13 none]
+G c Z s b [set_port ado__configs 110 14 none]
+G c Z s b [get_port ado__configs 114 13 none]
+G c Z s b [set_database ado__configs 117 14 none]
+G c Z s b [get_database ado__configs 121 13 none]
+G c Z s b [get_driver ado__configs 124 13 none]
+G c Z s b [iterate ado__configs 128 14 none]
+G c Z s s [configurationDA ado__configs 138 9 none]
+G c Z s s [configurationDF ado__configs 138 9 none]
+G c Z s s [configurationDI ado__configs 138 9 none]
+G c Z s s [configurationIP ado__configs 138 9 none]
+G r c none [b ado__configs 24 1 none] [create util__log__loggers 38 13 none]
+G r s manager [b ado__configs 24 1 none] [managerIP util__properties 333 9 none]
+G r c none [initialize ado__configs 49 14 none] [info util__log__loggers 91 14 none]
+G r c none [initialize ado__configs 49 14 none] [load_properties util__properties 227 14 none]
+G r c none [initialize ado__configs 49 14 none] [error util__log__loggers 116 14 none]
+G r c none [get_config ado__configs 56 13 none] [get util__properties 158 13 none]
+G r c none [is_on ado__configs 60 13 none] [get util__properties 158 13 none]
+G r c none [set_connection ado__configs 75 14 none] [error util__log__loggers 116 14 none]
+G r c none [set_connection ado__configs 75 14 none] [set util__properties 174 14 none]
+G r c none [set_connection ado__configs 75 14 none] [info util__log__loggers 104 14 none]
+G r c none [set_property ado__configs 89 14 none] [set util__properties 174 14 none]
+G r c none [get_property ado__configs 95 13 none] [get util__properties 158 13 none]
+G r c none [is_on ado__configs 99 13 none] [get util__properties 158 13 none]
+G r c none [iterate ado__configs 128 14 none] [iterate util__properties 202 14 none]
+G r d manager [configurationDA ado__configs 138 9 none] [adjust util__properties 338 14 none]
+G r e manager [configurationDF ado__configs 138 9 none] [finalize util__properties 341 14 none]
+G r s manager [configurationIP ado__configs 138 9 none] [managerIP util__properties 333 9 none]
+G r e manager [configurationIP ado__configs 138 9 none] [finalize util__properties 341 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 39|19r6 65r30 136r8 138r30 40|21r6 22r6 26r8 44r15
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<22|43R9>
+X 22 a-finali.ads
+40K13*Finalization 68e21 39|19w10 65r34 138r34
+43H9*Controlled<59|40R9> 59e72 39|65r47 138r47
+46U14*Initialize<59|44p14>
+47U14*Adjust<59|42p14>
+48U14*Finalize<59|43p14>
+X 23 a-ioexce.ads
+18K13*IO_Exceptions 30e22 40|21w10 44r19
+23X4*Name_Error 40|44r33
+X 24 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[18|75]>
+X 26 a-string.ads
+16K13*Strings 35e16 39|136r12 40|22r10 26r12
+X 27 a-strfix.ads
+43K21*Fixed 596e22 40|22w18 26r20
+117V13*Index{natural} 40|102s20 110s15 128s14 142s21 144s24
+143V13*Index{natural} 40|93s14
+X 30 a-strunb.ads
+82K21*Unbounded 756e26 39|136r20
+87R9*Unbounded_String<22|43R9> 739e14 39|139r20 140r20 141r20 142r20 144r20
+90r4*Null_Unbounded_String{87R9} 40|134r29
+103V13*To_Unbounded_String{87R9} 40|92s21 99s24 112s27 124s27 130s29 132s29
+. 140s28 241s24 267s26
+116V13*To_String{string} 40|183s14 192s14 232s14 275s14 283s14
+135U14*Append 40|145s16 148s19 154s22 156s19 162s22 168s16
+X 38 ado.ads
+25K9*ADO 150e8 39|23r9 148r5 40|24r14 297r5
+X 39 ado-configs.ads
+23K13*Configs 38|25k9 39|138E9 148l9 148e16 40|24b18 297l9 297t16
+26a4*QUERY_PATHS_CONFIG{string}
+30a4*QUERY_LOAD_CONFIG{string}
+33a4*DYNAMIC_DRIVER_LOAD{string}
+36a4*NO_ENTITY_LOAD{string}
+39N4*MAX_COLUMNS
+42N4*MAX_DRIVERS 132r48
+45X4*Connection_Error 40|96r16 105r16 119r22
+49U14*Initialize 49>26 40|37b14 49l8 49t18
+49a26 Config{string} 40|37b26 39r55 42r58 45r67
+52U14*Initialize 52>26 40|48s7 54b14 57l8 57t18
+52c26 Config<90|113R9> 40|54b26 56r49
+56V13*Get_Config{string} 56>25 57>25 40|63b13 67l8 67t18
+56a25 Name{string} 40|63b25 66r33
+57a25 Default{string} 40|64b25 66r39
+60V13*Is_On{boolean} 60>20 40|72b13 76l8 76t13
+60a20 Name{string} 40|72b20 73r53
+65R9*Configuration<22|43R9> 22|46P14 47P14 48P14 39|66r44 75p14 75r46 80p13
+. 80r34 84p13 84r38 89p14 89r44 95p13 95r39 99p13 99r32 103p14 103r42 107p13
+. 107r37 110p14 110r40 114p13 114r35 117p14 117r46 121p13 121r39 124p13 124r37
+. 128p14 128r36 138c9 146e14 40|87r46 181r34 190r38 200r44 211r39 220r32
+. 230r37 238r42 247r40 256r35 264r46 273r39 281r37 290r36
+66P9*Configuration_Access(65R9)
+75U14*Set_Connection 75=30 76>30 40|87b14 176l8 176t22
+75r30 Config{65R9} 40|87b30 92m7 99m7 112m10 114m13 123m10 124m10 130m10
+. 132m10 134m10 140m10 145m24 145r24 148m27 148r27 151m19 151r19 154m30 154r30
+. 156m27 156r27 159m19 159r19 162m30 162r30 167m16 167r16 168m24 168r24 173m10
+. 173r28 175r44
+76a30 URI{string} 40|88b30 92r42 93r21 94r17 95r52 97r36 99r45 99r50 102r27
+. 104r52 106r47 110r22 112r48 114r43 118r66 120r61 124r48 128r21 130r50 131r41
+. 132r50 132r72 140r49 140r54 141r22 142r28 144r31 145r40 146r29 151r42 152r42
+. 154r46 159r42 160r42 160r59 162r46 162r63 164r26 167r39 167r55 168r40 168r56
+. 169r23
+80V13*Get_URI{string} 80>22 40|181b13 184l8 184t15
+80r22 Config{65R9} 40|181b22 183r25
+84V13*Get_Log_URI{string} 84>26 40|190b13 193l8 193t19
+84r26 Config{65R9} 40|190b26 192r25
+89U14*Set_Property 89=28 90>28 91>28 40|200b14 205l8 205t20
+89r28 Config{65R9} 40|200b28 204m7 204r7
+90a28 Name{string} 40|201b28 204r30
+91a28 Value{string} 40|202b28 204r36
+95V13*Get_Property{string} 95>27 96>27 40|211b13 215l8 215t20 222s41
+95r27 Config{65R9} 40|211b27 214r14
+96a27 Name{string} 40|212b27 214r37
+99V13*Is_On{boolean} 99>20 100>20 40|220b13 225l8 225t13
+99r20 Config{65R9} 40|220b20 222r34
+100a20 Name{string} 40|221b20 222r55
+103U14*Set_Server 103=26 104>26 40|238b14 242l8 242t18
+103r26 Config{65R9} 40|238b26 241m7
+104a26 Server{string} 40|239b26 241r45
+107V13*Get_Server{string} 107>25 40|230b13 233l8 233t18
+107r25 Config{65R9} 40|230b25 232r25
+110U14*Set_Port 110=24 111>24 40|247b14 251l8 251t16
+110r24 Config{65R9} 40|247b24 250m7
+111i24 Port{natural} 40|248b24 250r22
+114V13*Get_Port{natural} 114>23 40|256b13 259l8 259t16
+114r23 Config{65R9} 40|256b23 258r14
+117U14*Set_Database 117=28 118>28 40|264b14 268l8 268t20
+117r28 Config{65R9} 40|264b28 267m7
+118a28 Database{string} 40|265b28 267r47
+121V13*Get_Database{string} 121>27 40|273b13 276l8 276t20
+121r27 Config{65R9} 40|273b27 275r25
+124V13*Get_Driver{string} 124>25 40|281b13 284l8 284t18
+124r25 Config{65R9} 40|281b25 283r25
+128U14*Iterate 128>23 129^23 40|290b14 295l8 295t15
+128r23 Config{65R9} 40|290b23 294r7
+129p23 Process 40|291b23 294r34
+129a51 Name{string}
+130r51 Item{90|102R12}
+132I9*Driver_Index<integer>
+139r7 URI{30|87R9} 40|92m14 173r35 183r32
+140r7 Log_URI{30|87R9} 40|140m17 145m31 148m34 154m37 156m34 162m37 168m31
+. 173m17 175r51 192r32
+141r7 Driver{30|87R9} 40|99m14 283r32
+142r7 Server{30|87R9} 40|112m17 124m17 232r32 241m14
+143i7 Port{natural} 40|114m20 123m17 250m14 258r21
+144r7 Database{30|87R9} 40|130m17 132m17 134m17 267m14 275r32
+145r7 Properties{90|113R9} 40|151m26 159m26 167m23 204m14 214r21 294r14
+X 40 ado-configs.adb
+28r4 Log{88|34R9} 39r7 45r13 95r10 104r10 118r16 175r7
+31r4 Global_Config{90|113R9} 42m43 42r43 48r19 56m7 66r14 73r34
+73a7 Value{string} 75r14 75r30 75r48
+89i7 Pos{natural} 93m7 94r10 99r63 101m7 101r14 102r37 103r22 110r32 111r18
+. 112r53 124r53 128m7 129r10 130r72 131r13 139r10 140r67 141r16 142r38 143r23
+. 145r45 146r34 151r47 157m19 159r47 164m19 167r44 168r45 169m16
+89i12 Pos2{natural} 110m7 111r10 112r60 114r48 142m13 143r16 144r41 145r56
+. 146r45 151r58 152r47 154r51 159r58 160r47 162r51
+89i18 Slash_Pos{natural} 102m7 103r10 114r60 124r60 128r31 129r20 130r55
+. 131r25 132r55 139r16
+89i29 Next{natural} 144m16 150r19 152r59 154r63 157r26
+90b7 Is_Hidden{boolean} 146m16 147r19 153r26 161r26
+222a7 Value{string} 224r14 224r30 224r48
+291a51 Name{string}
+292r51 Item{90|102R12}
+X 43 system.ads
+67M9*Address
+X 60 s-memory.ads
+53V13*Alloc{43|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{43|67M9} 105i<c,__gnat_realloc>22
+X 67 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 80 util.ads
+18K9*Util 39|21r6 52r38 130r61 145r20 40|19r6 28r19 28r46 31r20 42r10 54r38
+. 56r24 292r61 80|28e9
+X 82 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 83 util-beans-objects.ads
+97h9*Object_Type
+X 86 util-log.ads
+166K14*Log 40|19r11 28r24 28r51 86|192e13
+X 88 util-log-loggers.ads
+24K18*Loggers 40|19w15 28r28 28r55 88|165e21
+34R9*Logger<22|50R9> 40|28r36 88|159e14
+38V13*Create{34R9} 40|28s63
+91U14*Info 40|39s11
+104U14*Info 40|175s11
+116U14*Error 40|45s17 95s14 104s14 118s20
+X 90 util-properties.ads
+96K14*Properties 39|21w11 52r43 130r66 145r25 40|31r25 42r15 54r43 56r29
+. 292r66 90|343e20
+102R12*Value{83|83R9} 39|130r77 40|292r77
+113R9*Manager<22|43R9><82|54R9> 39|52r54 145r36 40|31r36 54r54 56r40 90|335e14
+158V13*Get{string} 40|66s28 73s48 214s32
+174U14*Set 40|151s37 159s37 167s34 204s25
+202U14*Iterate 40|294s25
+227U14*Load_Properties 40|42s26
+256h12*Manager<82|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+

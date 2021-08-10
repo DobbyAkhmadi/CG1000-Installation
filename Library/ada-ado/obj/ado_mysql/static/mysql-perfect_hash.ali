@@ -1,0 +1,365 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U mysql.perfect_hash%b	mysql-perfect_hash.adb	7a939af0 NE OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W interfaces%s		interfac.ads		interfac.ali
+W mysql%s		mysql.ads		mysql.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W util%s		util.ads		util.ali
+W util.strings%s	util-strings.adb	util-strings.ali
+W util.strings.transforms%s  util-strings-transforms.adb  util-strings-transforms.ali
+
+U mysql.perfect_hash%s	mysql-perfect_hash.ads	ee2d9643 NE OO PR PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W mysql%s		mysql.ads		mysql.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chahan.ads		20190518041255 1601a50f ada.characters.handling%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D mysql.ads		20200810200714 83c4e906 mysql%s
+D mysql-perfect_hash.ads  20200810200714 6de97f45 mysql.perfect_hash%s
+D mysql-perfect_hash.adb  20200810200714 43942d1e mysql.perfect_hash%b
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20200215171848 36301479 util%s
+D util-concurrent.ads	20200215171848 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20200215171848 2618dd23 util.concurrent.counters%s
+D util-strings.ads	20200215171848 99f66ec5 util.strings%s
+D util-strings-transforms.ads  20200215171848 0e5b9ac3 util.strings.transforms%s
+D util-texts.ads	20200215171848 096d4581 util.texts%s
+D util-texts-transforms.ads  20200215171848 53ebc629 util.texts.transforms%s
+D util-texts-transforms.adb  20200215171848 7d338470 util.texts.transforms%b
+G a e
+G c Z s b [hash mysql__perfect_hash 6 13 none]
+G c Z s b [is_keyword mysql__perfect_hash 9 13 none]
+G c Z s s [keyword_arrayIP mysql__perfect_hash 12 9 none]
+G r c none [is_keyword mysql__perfect_hash 9 13 none] [to_upper_case util__strings__transforms__tr 41 13 27_4]
+X 15 a-conhel.ads
+84R12 Reference_Control_Type<19|43R9>
+X 20 a-iteint.ads
+24h9 Forward_Iterator
+X 28 interfac.ads
+38K9*Interfaces 184e15 31|3w6 3r22
+63M9*Unsigned_8 31|7r38 28r33 57r33 86r37 117r11
+66M9*Unsigned_16 31|28r62 57r62
+X 29 mysql.ads
+19K9*Mysql 21e10 30|2r9 301r5 31|5r14 134r5
+X 30 mysql-perfect_hash.ads
+2K15*Perfect_Hash 29|19k9 30|16E4 301l11 301e23 31|5b20 134l11 134t23
+6V13*Hash{natural} 6>19 31|113b13 126l8 126t12 130s31
+6a19 S{string} 31|113b19 114r31 115r31 121r19
+9V13*Is_Keyword{boolean} 9>25 31|129b13 133l8 133t18
+9a25 S{string} 31|129b25 130r37 132r72
+11P9*Name_Access(string) 12r54
+12A9*Keyword_Array(11P9)<integer> 13r24 243r24
+13a4*Keywords{12A9} 243c4 31|132r14
+16a4 K_0{string} 244r7
+17a4 K_1{string} 244r19
+18a4 K_2{string} 244r31
+19a4 K_3{string} 244r43
+20a4 K_4{string} 245r7
+21a4 K_5{string} 245r19
+22a4 K_6{string} 245r31
+23a4 K_7{string} 245r43
+24a4 K_8{string} 246r7
+25a4 K_9{string} 246r19
+26a4 K_10{string} 246r31
+27a4 K_11{string} 246r44
+28a4 K_12{string} 247r7
+29a4 K_13{string} 247r20
+30a4 K_14{string} 247r33
+31a4 K_15{string} 247r46
+32a4 K_16{string} 248r7
+33a4 K_17{string} 248r20
+34a4 K_18{string} 248r33
+35a4 K_19{string} 248r46
+36a4 K_20{string} 249r7
+37a4 K_21{string} 249r20
+38a4 K_22{string} 249r33
+39a4 K_23{string} 249r46
+40a4 K_24{string} 250r7
+41a4 K_25{string} 250r20
+42a4 K_26{string} 250r33
+43a4 K_27{string} 250r46
+44a4 K_28{string} 251r7
+45a4 K_29{string} 251r20
+46a4 K_30{string} 251r33
+47a4 K_31{string} 251r46
+48a4 K_32{string} 252r7
+49a4 K_33{string} 252r20
+50a4 K_34{string} 252r33
+51a4 K_35{string} 252r46
+52a4 K_36{string} 253r7
+53a4 K_37{string} 253r20
+54a4 K_38{string} 253r33
+55a4 K_39{string} 253r46
+56a4 K_40{string} 254r7
+57a4 K_41{string} 254r20
+58a4 K_42{string} 254r33
+59a4 K_43{string} 254r46
+60a4 K_44{string} 255r7
+61a4 K_45{string} 255r20
+62a4 K_46{string} 255r33
+63a4 K_47{string} 255r46
+64a4 K_48{string} 256r7
+65a4 K_49{string} 256r20
+66a4 K_50{string} 256r33
+67a4 K_51{string} 256r46
+68a4 K_52{string} 257r7
+69a4 K_53{string} 257r20
+70a4 K_54{string} 257r33
+71a4 K_55{string} 257r46
+72a4 K_56{string} 258r7
+73a4 K_57{string} 258r20
+74a4 K_58{string} 258r33
+75a4 K_59{string} 258r46
+76a4 K_60{string} 259r7
+77a4 K_61{string} 259r20
+78a4 K_62{string} 259r33
+79a4 K_63{string} 259r46
+80a4 K_64{string} 260r7
+81a4 K_65{string} 260r20
+82a4 K_66{string} 260r33
+83a4 K_67{string} 260r46
+84a4 K_68{string} 261r7
+85a4 K_69{string} 261r20
+86a4 K_70{string} 261r33
+87a4 K_71{string} 261r46
+88a4 K_72{string} 262r7
+89a4 K_73{string} 262r20
+90a4 K_74{string} 262r33
+91a4 K_75{string} 262r46
+92a4 K_76{string} 263r7
+93a4 K_77{string} 263r20
+94a4 K_78{string} 263r33
+95a4 K_79{string} 263r46
+96a4 K_80{string} 264r7
+97a4 K_81{string} 264r20
+98a4 K_82{string} 264r33
+99a4 K_83{string} 264r46
+100a4 K_84{string} 265r7
+101a4 K_85{string} 265r20
+102a4 K_86{string} 265r33
+103a4 K_87{string} 265r46
+104a4 K_88{string} 266r7
+105a4 K_89{string} 266r20
+106a4 K_90{string} 266r33
+107a4 K_91{string} 266r46
+108a4 K_92{string} 267r7
+109a4 K_93{string} 267r20
+110a4 K_94{string} 267r33
+111a4 K_95{string} 267r46
+112a4 K_96{string} 268r7
+113a4 K_97{string} 268r20
+114a4 K_98{string} 268r33
+115a4 K_99{string} 268r46
+116a4 K_100{string} 269r7
+117a4 K_101{string} 269r21
+118a4 K_102{string} 269r35
+119a4 K_103{string} 269r49
+120a4 K_104{string} 270r7
+121a4 K_105{string} 270r21
+122a4 K_106{string} 270r35
+123a4 K_107{string} 270r49
+124a4 K_108{string} 271r7
+125a4 K_109{string} 271r21
+126a4 K_110{string} 271r35
+127a4 K_111{string} 271r49
+128a4 K_112{string} 272r7
+129a4 K_113{string} 272r21
+130a4 K_114{string} 272r35
+131a4 K_115{string} 272r49
+132a4 K_116{string} 273r7
+133a4 K_117{string} 273r21
+134a4 K_118{string} 273r35
+135a4 K_119{string} 273r49
+136a4 K_120{string} 274r7
+137a4 K_121{string} 274r21
+138a4 K_122{string} 274r35
+139a4 K_123{string} 274r49
+140a4 K_124{string} 275r7
+141a4 K_125{string} 275r21
+142a4 K_126{string} 275r35
+143a4 K_127{string} 275r49
+144a4 K_128{string} 276r7
+145a4 K_129{string} 276r21
+146a4 K_130{string} 276r35
+147a4 K_131{string} 276r49
+148a4 K_132{string} 277r7
+149a4 K_133{string} 277r21
+150a4 K_134{string} 277r35
+151a4 K_135{string} 277r49
+152a4 K_136{string} 278r7
+153a4 K_137{string} 278r21
+154a4 K_138{string} 278r35
+155a4 K_139{string} 278r49
+156a4 K_140{string} 279r7
+157a4 K_141{string} 279r21
+158a4 K_142{string} 279r35
+159a4 K_143{string} 279r49
+160a4 K_144{string} 280r7
+161a4 K_145{string} 280r21
+162a4 K_146{string} 280r35
+163a4 K_147{string} 280r49
+164a4 K_148{string} 281r7
+165a4 K_149{string} 281r21
+166a4 K_150{string} 281r35
+167a4 K_151{string} 281r49
+168a4 K_152{string} 282r7
+169a4 K_153{string} 282r21
+170a4 K_154{string} 282r35
+171a4 K_155{string} 282r49
+172a4 K_156{string} 283r7
+173a4 K_157{string} 283r21
+174a4 K_158{string} 283r35
+175a4 K_159{string} 283r49
+176a4 K_160{string} 284r7
+177a4 K_161{string} 284r21
+178a4 K_162{string} 284r35
+179a4 K_163{string} 284r49
+180a4 K_164{string} 285r7
+181a4 K_165{string} 285r21
+182a4 K_166{string} 285r35
+183a4 K_167{string} 285r49
+184a4 K_168{string} 286r7
+185a4 K_169{string} 286r21
+186a4 K_170{string} 286r35
+187a4 K_171{string} 286r49
+188a4 K_172{string} 287r7
+189a4 K_173{string} 287r21
+190a4 K_174{string} 287r35
+191a4 K_175{string} 287r49
+192a4 K_176{string} 288r7
+193a4 K_177{string} 288r21
+194a4 K_178{string} 288r35
+195a4 K_179{string} 288r49
+196a4 K_180{string} 289r7
+197a4 K_181{string} 289r21
+198a4 K_182{string} 289r35
+199a4 K_183{string} 289r49
+200a4 K_184{string} 290r7
+201a4 K_185{string} 290r21
+202a4 K_186{string} 290r35
+203a4 K_187{string} 290r49
+204a4 K_188{string} 291r7
+205a4 K_189{string} 291r21
+206a4 K_190{string} 291r35
+207a4 K_191{string} 291r49
+208a4 K_192{string} 292r7
+209a4 K_193{string} 292r21
+210a4 K_194{string} 292r35
+211a4 K_195{string} 292r49
+212a4 K_196{string} 293r7
+213a4 K_197{string} 293r21
+214a4 K_198{string} 293r35
+215a4 K_199{string} 293r49
+216a4 K_200{string} 294r7
+217a4 K_201{string} 294r21
+218a4 K_202{string} 294r35
+219a4 K_203{string} 294r49
+220a4 K_204{string} 295r7
+221a4 K_205{string} 295r21
+222a4 K_206{string} 295r35
+223a4 K_207{string} 295r49
+224a4 K_208{string} 296r7
+225a4 K_209{string} 296r21
+226a4 K_210{string} 296r35
+227a4 K_211{string} 296r49
+228a4 K_212{string} 297r7
+229a4 K_213{string} 297r21
+230a4 K_214{string} 297r35
+231a4 K_215{string} 297r49
+232a4 K_216{string} 298r7
+233a4 K_217{string} 298r21
+234a4 K_218{string} 298r35
+235a4 K_219{string} 298r49
+236a4 K_220{string} 299r7
+237a4 K_221{string} 299r21
+238a4 K_222{string} 299r35
+239a4 K_223{string} 299r49
+240a4 K_224{string} 300r7
+241a4 K_225{string} 300r21
+X 31 mysql-perfect_hash.adb
+7a4 C(28|63M9) 121r16
+25a4 P(natural) 119r16 120r24 121r22
+28a4 T1(28|66M9) 122r31
+57a4 T2(28|66M9) 123r31
+86a4 G(28|63M9) 125r24 125r43
+114i7 F{natural} 121r30
+115i7 L{natural} 120r20
+116i7 F1{natural} 122m10 122r17 125r27
+116i11 F2{natural} 123m10 123r17 125r46
+117m7 J{28|63M9} 121m10 122r38 123r38
+119i11 K{integer} 120r27 121r25 122r35 123r35
+130i7 H{natural} 132r24
+X 51 util.ads
+18K9*Util 31|2r6 132r33 51|28e9
+X 54 util-strings.ads
+24K14*Strings 31|2r11 132r38 54|139e17
+X 55 util-strings-transforms.ads
+21K22*Transforms 31|2w19 132r46 55|99e28
+46V13*To_Upper_Case=47:39{string} 31|132s57
+

@@ -1,0 +1,159 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.encoders.base16%b  util-encoders-base16.adb  d6fe6659 OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W util.encoders%s	util-encoders.adb	util-encoders.ali
+
+U util.encoders.base16%s  util-encoders-base16.ads  6808d944 BN EE OO PF PR PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W util.encoders%s	util-encoders.adb	util-encoders.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D util.ads		20210228093152 36301479 util%s
+D util-encoders.ads	20210228093152 6d2d5bc8 util.encoders%s
+D util-encoders-base16.ads  20210228093152 14be0d3f util.encoders.base16%s
+D util-encoders-base16.adb  20210228093152 c2406b66 util.encoders.base16%b
+G a e
+G c Z s b [transform util__encoders__base16 46 14 none]
+G c Z s b [transform util__encoders__base16 71 14 none]
+G c Z s s [encoderDA util__encoders__base16 79 9 none]
+G c Z s s [encoderDF util__encoders__base16 79 9 none]
+G c Z s s [encoderIP util__encoders__base16 79 9 none]
+G c Z s s [decoderDA util__encoders__base16 81 9 none]
+G c Z s s [decoderDF util__encoders__base16 81 9 none]
+G c Z s s [decoderIP util__encoders__base16 81 9 none]
+G c Z b b [encode util__encoders__base16__encoding_stream 91 17 134_4]
+G c Z b b [decode util__encoders__base16__encoding_stream 95 17 134_4]
+G c Z b b [to_output_char util__encoders__base16__encoding_stream 25 16 134_4]
+G c Z b b [Tconv_tableBIP util__encoders__base16__encoding_stream 27 7 134_4]
+X 1 ada.ads
+16K9*Ada 20e8 24|18r6 47r38 48r39 49r39 50r39 72r38 73r39 74r39 75r39 25|134r55
+. 135r55 136r62 137r61 138r62 139r55 157r38 158r39 159r39 160r39 182r38 183r39
+. 184r39 185r39
+X 4 a-stream.ads
+36K13*Streams 87e16 24|18w10 47r42 48r43 49r43 50r43 72r42 73r43 74r43 75r43
+. 25|134r59 135r59 136r66 137r65 138r66 139r59 157r42 158r43 159r43 160r43
+. 182r42 183r43 184r43 185r43
+42M9*Stream_Element 25|137r73 138r74
+44I9*Stream_Element_Offset<long_long_integer> 24|49r51 50r51 74r51 75r51
+. 25|135r67 136r74 159r51 160r51 184r51 185r51
+54A9*Stream_Element_Array(42M9)<44I9> 24|47r50 48r51 72r50 73r51 25|134r67
+. 139r67 157r50 158r51 182r50 183r51
+X 22 util.ads
+18K9*Util 28e9 24|22r9 31r24 56r24 79r24 81r24 101r5 25|19r14 191r5
+X 23 util-encoders.ads
+29K14*Encoders 22|18k9 23|239e18 24|22r14 31r29 56r29 79r29 81r29 101r10
+. 25|19r19 191r10
+36X4*Encoding_Error 25|96r19 116r19
+129h9*Transformer 24|31r38 56r38 79r38 81r38
+X 24 util-encoders-base16.ads
+22K23*Base16 23|29k14 24|79E9 101l19 101e25 25|19b28 191l19 191t25
+31R9*Encoder<23|129R9> 46P14 46r42 79c9 79e66 25|156r42
+46U14*Transform<23|146p14> 46=25 47>25 48<25 49<25 50<25 25|156b14 164l8
+. 164t17
+46r25 E{31R9} 25|156b25 161r28
+47a25 Data{4|54A9} 25|157b25 163r31
+48a25 Into{4|54A9} 25|158b25 163m37
+49i25 Last{4|44I9} 25|159b25 163m43
+50i25 Encoded{4|44I9} 25|160b25 163m49
+56R9*Decoder<23|129R9> 71P14 71r42 81c9 81e66 25|181r42
+71U14*Transform<23|146p14> 71=25 72>25 73<25 74<25 75<25 25|181b14 189l8
+. 189t17
+71r25 E{56R9} 25|181b25 186r28
+72a25 Data{4|54A9} 25|182b25 188r31
+73a25 Into{4|54A9} 25|183b25 188m37
+74i25 Last{4|44I9} 25|184b25 188m43
+75i25 Encoded{4|44I9} 25|185b25 188m49
+84E12 Input_Char 88r47 25|25r37 54r42 64r32 83r37 84r31 137r45
+85E12 Output_Char 89r55 25|27r45 30r15 31r15 32r15 33r15 34r15 35r15 36r15
+. 37r15 38r15 39r15 40r16 41r16 42r16 43r16 44r16 45r16 124r30 138r45
+86I12 Index 88r28 94r39 98r39 25|52r39 103r39 135r45
+87I12 Output_Index 89r29 93r36 97r39 25|51r39 54r25 55r16 102r39 105r18 136r45
+88A12 Input(84E12)<86I12> 91r35 95r38 25|49r38 100r38 139r45
+89A12 Output(85E12)<87I12> 92r39 96r42 25|50r42 101r42 134r45
+90k12 Encoding 84z12 85z12 86z12 87z12 88z12 89z12 99l8 99e16 25|21b17 132l8
+. 132t16 134r35
+91U17*Encode 91>25 92=25 93<25 94<25 25|49b17 81l11 81t17 163s23[134]
+91*25 From{88A12} 25|49b25 57r19 64r48 80r21
+92*25 Into{89A12} 25|50b25 55r32 58r26 71m19 74m19
+93*25 Last{87I12} 25|51b25 59m16 79m10
+94*25 Encoded{86I12} 25|52b25 60m16 80m10
+95U17*Decode 95>25 96=25 97<25 98<25 25|100b17 130l11 130t17 188s23[134]
+95*25 From{88A12} 25|100b25 108r27 110r16 111r24 113r24 115r23 118r19 120r41
+. 123r54
+96*25 Into{89A12} 25|101b25 105r34 108r13 109r24 124m16
+97*25 Last{87I12} 25|102b25 129m10
+98*25 Encoded{86I12} 25|103b25 109m13 111m13 113m13 115r13 118r33
+X 25 util-encoders-base16.adb
+23M12 Code 25r56 64r24 65r24 83r56 84r23 106r18
+25V16 To_Output_Char{23M12} 25>32 83b16 98l11 98t25 120s25 123s38
+25*32 Ch{24|84E12} 83b32 84r47
+27A12 Conv_Table(24|85E12)<integer> 29r29
+29a7 Conversion{27A12} 71r37 74r41
+54*10 N{24|87I12} 58r22 67r29 68r30
+55*10 Pos{24|87I12} 58r16 59r27 67m16 67r23 71r25 74r25 79r21
+57i14 I 60r27 64r54
+64m16 Value{23M12} 69r24 70m19 70r28 73r24 75m19 75r28
+65m16 P{23M12} 69m19 71r58 73m19 74r62
+68i20 J 71r31 74r31
+84m10 C{23M12} 86r13 86r42 87r20 89r16 89r45 90r20 92r16 92r45 93r20 96r78
+104b10 First{boolean} 119r16 121m16 126m16
+105*10 Pos{24|87I12} 124r22 125m16 125r23 129r18
+106m10 Value{23M12} 120m16 123m16 123r25 124r47
+118i14 I 120r47 123r60
+134K12 Encoding_Stream[24|90] 163r7 188r7
+

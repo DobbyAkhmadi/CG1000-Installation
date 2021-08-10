@@ -1,0 +1,686 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U ado.audits%b		ado-audits.adb		d6fab31e OO PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_deallocation%s
+W ado%s			ado.adb			ado.ali
+W ado.utils%s		ado-utils.adb		ado-utils.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+Z system.fat_lflt%s	s-fatlfl.ads		s-fatlfl.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+W util.beans.objects.time%s  util-beans-objects-time.adb  util-beans-objects-time.ali
+
+U ado.audits%s		ado-audits.ads		bce5b3ae BN EE OO PF PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+W ado.configs%s		ado-configs.adb		ado-configs.ali
+W ado.objects%s		ado-objects.adb		ado-objects.ali
+W ado.schemas%s		ado-schemas.adb		ado-schemas.ali
+W ado.sessions%s	ado-sessions.adb	ado-sessions.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihase.ads		20190518041254 4f8a62e0 ada.containers.indefinite_hashed_sets%s
+D a-cihase.adb		20190518041256 f54eebd2 ada.containers.indefinite_hashed_sets%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-convec.ads		20190518041256 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20190518041254 32f4e1a7 ada.containers.vectors%b
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D ado.ads		20200810200714 1ec4b94f ado%s
+D ado-audits.ads	20200810200714 2a544c7e ado.audits%s
+D ado-audits.adb	20200810200714 ffc2a397 ado.audits%b
+D ado-caches.ads	20200810200714 3f821007 ado.caches%s
+D ado-configs.ads	20200810200714 1a13a13e ado.configs%s
+D ado-connections.ads	20200810200714 53398a84 ado.connections%s
+D ado-dialects.ads	20200810200714 eb00eeaf ado.dialects%s
+D ado-objects.ads	20200810200714 b8c8fb60 ado.objects%s
+D ado-objects-cache.ads	20200810200714 aef66a18 ado.objects.cache%s
+D ado-parameters.ads	20200810200714 ad5888fa ado.parameters%s
+D ado-queries.ads	20200810200714 e566d425 ado.queries%s
+D ado-schemas.ads	20200810200714 b2b43658 ado.schemas%s
+D ado-schemas-entities.ads  20200810200714 3c0f0af5 ado.schemas.entities%s
+D ado-sequences.ads	20200810200714 1726cdc8 ado.sequences%s
+D ado-sessions.ads	20200810200714 20bb1cec ado.sessions%s
+D ado-sql.ads		20200810200714 ba8ff082 ado.sql%s
+D ado-statements.ads	20200810200714 752f695d ado.statements%s
+D ado-utils.ads		20200810200714 ef23a2c0 ado.utils%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrin.ads		20190518041255 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atacco.ads		20190518041256 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-linux.ads		20190518041256 ed0b8aee system.linux%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-multip.ads		20190518041254 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190518093549 c13b1f65 system.os_constants%s
+D s-osinte.ads		20190518041257 baabc537 system.os_interface%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stausa.ads		20190518041255 017a0a05 system.stack_usage%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-tasinf.ads		20190518041256 2b3f8252 system.task_info%s
+D s-taspri.ads		20190518041256 f40ac08d system.task_primitives%s
+D s-taskin.ads		20190518041257 b9d612e2 system.tasking%s
+D s-taprob.ads		20190518041256 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20200215171848 36301479 util%s
+D util-beans.ads	20200215171848 362abe70 util.beans%s
+D util-beans-basic.ads	20200215171848 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20200215171848 aef7462e util.beans.objects%s
+D util-beans-objects-time.ads  20200215171848 03bc9d15 util.beans.objects.time%s
+D util-concurrent.ads	20200215171848 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20200215171848 2618dd23 util.concurrent.counters%s
+D util-log.ads		20200215171848 0fb1ac89 util.log%s
+D util-log-appenders.ads  20200215171848 ddbe02c8 util.log.appenders%s
+D util-log-loggers.ads	20200215171848 3003bbc2 util.log.loggers%s
+D util-nullables.ads	20200215171848 cb4c8fed util.nullables%s
+D util-properties.ads	20200215171848 3ed4fee8 util.properties%s
+D util-refs.ads		20200215171848 e592e98d util.refs%s
+D util-refs.adb		20200215171848 f4fdc937 util.refs%b
+D util-strings.ads	20200215171848 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+G a e
+G c Z s b [finalize ado__audits 68 14 none]
+G c Z s b [audit_field ado__audits 71 14 none]
+G c Z s b [save ado__audits 87 14 none]
+G c Z s b [set_field_unbounded_string ado__audits 95 14 none]
+G c Z s b [set_field_string ado__audits 100 14 none]
+G c Z s b [set_field_string ado__audits 105 14 none]
+G c Z s b [set_field_string ado__audits 110 14 none]
+G c Z s b [set_field_time ado__audits 115 14 none]
+G c Z s b [set_field_time ado__audits 120 14 none]
+G c Z s b [set_field_integer ado__audits 125 14 none]
+G c Z s b [set_field_integer ado__audits 130 14 none]
+G c Z s b [set_field_natural ado__audits 135 14 none]
+G c Z s b [set_field_positive ado__audits 140 14 none]
+G c Z s b [set_field_boolean ado__audits 145 14 none]
+G c Z s b [set_field_float ado__audits 150 14 none]
+G c Z s b [set_field_long_float ado__audits 155 14 none]
+G c Z s b [set_field_object ado__audits 160 14 none]
+G c Z s b [set_field_identifier ado__audits 165 14 none]
+G c Z s b [set_field_entity_type ado__audits 170 14 none]
+G c Z s b [set_field_entity_type ado__audits 175 14 none]
+G c Z s b [set_field_key_value ado__audits 180 14 none]
+G c Z s b [set_field_key_value ado__audits 184 14 none]
+G c Z s b [set_field_key_value ado__audits 188 14 none]
+G c Z s s [column_index_arrayIP ado__audits 36 9 none]
+G c Z s s [auditable_mappingDF ado__audits 38 9 none]
+G c Z s s [auditable_mappingIP ado__audits 38 9 none]
+G c Z s s [auditable_object_recordDF ado__audits 204 9 none]
+G c Z s s [auditable_object_recordDI ado__audits 204 9 none]
+G c Z s s [auditable_object_recordIP ado__audits 204 9 none]
+G c Z s s [audit_infoDI ado__audits 47 9 none]
+G c Z s s [audit_infoDF ado__audits 47 9 none]
+G c Z s s [audit_infoIP ado__audits 47 9 none]
+G c Z s s [audit_arrayIP ado__audits 55 9 none]
+G c Z s s [audit_arrayDI ado__audits 55 9 none]
+G c Z s s [audit_arrayDF ado__audits 55 9 none]
+G c Z b b [free ado__audits 29 14 none]
+G r e object [finalize ado__audits 68 14 none] [finalize util__beans__objects 638 14 none]
+G r e object_record [finalize ado__audits 68 14 none] [finalize ado__objects 289 14 none]
+G r s object [audit_field ado__audits 71 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [audit_field ado__audits 71 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [save ado__audits 87 14 none] [get_audit_manager ado__sessions 174 13 none]
+G r e object [save ado__audits 87 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_unbounded_string ado__audits 95 14 none] [to_object util__beans__objects 219 13 none]
+G r s object [set_field_unbounded_string ado__audits 95 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_unbounded_string ado__audits 95 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_unbounded_string ado__audits 95 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_string ado__audits 100 14 none] [to_object util__beans__objects 219 13 none]
+G r c none [set_field_string ado__audits 100 14 none] [to_object util__beans__objects 217 13 none]
+G r s object [set_field_string ado__audits 100 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_string ado__audits 100 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_string ado__audits 100 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_string ado__audits 105 14 none] [to_object util__beans__objects 219 13 none]
+G r c none [set_field_string ado__audits 105 14 none] [to_object util__beans__objects 217 13 none]
+G r s object [set_field_string ado__audits 105 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_string ado__audits 105 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_string ado__audits 105 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_string ado__audits 110 14 none] [to_object util__beans__objects 219 13 none]
+G r s object [set_field_string ado__audits 110 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_string ado__audits 110 14 none] [finalize util__beans__objects 638 14 none]
+G r k nullable_string [set_field_string ado__audits 110 14 none] [nullable_stringDF util__nullables 80 9 none]
+G r j nullable_string [set_field_string ado__audits 110 14 none] [nullable_stringDA util__nullables 80 9 none]
+G r c none [set_field_string ado__audits 110 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_time ado__audits 115 14 none] [to_object util__beans__objects__time 24 13 none]
+G r s object [set_field_time ado__audits 115 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_time ado__audits 115 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_time ado__audits 115 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_time ado__audits 120 14 none] [to_object util__beans__objects__time 24 13 none]
+G r s object [set_field_time ado__audits 120 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_time ado__audits 120 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_time ado__audits 120 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_integer ado__audits 125 14 none] [to_object util__beans__objects 211 13 none]
+G r s object [set_field_integer ado__audits 125 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_integer ado__audits 125 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_integer ado__audits 125 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_integer ado__audits 130 14 none] [to_object util__beans__objects 211 13 none]
+G r s object [set_field_integer ado__audits 130 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_integer ado__audits 130 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_integer ado__audits 130 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_natural ado__audits 135 14 none] [to_object util__beans__objects 211 13 none]
+G r s object [set_field_natural ado__audits 135 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_natural ado__audits 135 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_natural ado__audits 135 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_positive ado__audits 140 14 none] [to_object util__beans__objects 211 13 none]
+G r s object [set_field_positive ado__audits 140 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_positive ado__audits 140 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_positive ado__audits 140 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_boolean ado__audits 145 14 none] [to_object util__beans__objects 221 13 none]
+G r s object [set_field_boolean ado__audits 145 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_boolean ado__audits 145 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_boolean ado__audits 145 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_float ado__audits 150 14 none] [to_object util__beans__objects 214 13 none]
+G r s object [set_field_float ado__audits 150 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_float ado__audits 150 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_float ado__audits 150 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_long_float ado__audits 155 14 none] [to_object util__beans__objects 215 13 none]
+G r s object [set_field_long_float ado__audits 155 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_long_float ado__audits 155 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_long_float ado__audits 155 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_object ado__audits 160 14 none] [get_key ado__objects 360 13 none]
+G r c none [set_field_object ado__audits 160 14 none] [to_object ado__objects 210 13 none]
+G r s object [set_field_object ado__audits 160 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_object ado__audits 160 14 none] [finalize util__beans__objects 638 14 none]
+G r k object_key [set_field_object ado__audits 160 14 none] [object_keyDF ado__objects 557 9 none]
+G r c none [set_field_object ado__audits 160 14 none] [set_field_object ado__objects 498 14 none]
+G r c none [set_field_identifier ado__audits 165 14 none] [to_object ado__utils 26 13 none]
+G r s object [set_field_identifier ado__audits 165 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_identifier ado__audits 165 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_identifier ado__audits 165 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_entity_type ado__audits 170 14 none] [to_object util__beans__objects 211 13 none]
+G r s object [set_field_entity_type ado__audits 170 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_entity_type ado__audits 170 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_entity_type ado__audits 170 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_entity_type ado__audits 175 14 none] [to_object util__beans__objects 211 13 none]
+G r s object [set_field_entity_type ado__audits 175 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_entity_type ado__audits 175 14 none] [finalize util__beans__objects 638 14 none]
+G r c none [set_field_entity_type ado__audits 175 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_key_value ado__audits 180 14 none] [get_key_value ado__objects 246 13 none]
+G r c none [set_field_key_value ado__audits 180 14 none] [get_key ado__objects 239 13 none]
+G r c none [set_field_key_value ado__audits 180 14 none] [to_object ado__objects 210 13 none]
+G r c none [set_field_key_value ado__audits 180 14 none] [to_object ado__utils 26 13 none]
+G r s object [set_field_key_value ado__audits 180 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_key_value ado__audits 180 14 none] [finalize util__beans__objects 638 14 none]
+G r k object_key [set_field_key_value ado__audits 180 14 none] [object_keyDF ado__objects 557 9 none]
+G r c none [set_field_key_value ado__audits 180 14 none] [set_key_value ado__objects 253 14 none]
+G r c none [set_field_key_value ado__audits 180 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_key_value ado__audits 184 14 none] [get_key_value ado__objects 242 13 none]
+G r c none [set_field_key_value ado__audits 184 14 none] [get_key ado__objects 239 13 none]
+G r c none [set_field_key_value ado__audits 184 14 none] [to_object ado__objects 210 13 none]
+G r c none [set_field_key_value ado__audits 184 14 none] [to_object util__beans__objects 217 13 none]
+G r s object [set_field_key_value ado__audits 184 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_key_value ado__audits 184 14 none] [finalize util__beans__objects 638 14 none]
+G r k object_key [set_field_key_value ado__audits 184 14 none] [object_keyDF ado__objects 557 9 none]
+G r c none [set_field_key_value ado__audits 184 14 none] [set_key_value ado__objects 259 14 none]
+G r c none [set_field_key_value ado__audits 184 14 none] [set_field ado__objects 545 14 none]
+G r c none [set_field_key_value ado__audits 188 14 none] [get_key_value ado__objects 242 13 none]
+G r c none [set_field_key_value ado__audits 188 14 none] [get_key ado__objects 239 13 none]
+G r c none [set_field_key_value ado__audits 188 14 none] [to_object ado__objects 210 13 none]
+G r c none [set_field_key_value ado__audits 188 14 none] [to_object util__beans__objects 219 13 none]
+G r s object [set_field_key_value ado__audits 188 14 none] [objectIP util__beans__objects 629 9 none]
+G r e object [set_field_key_value ado__audits 188 14 none] [finalize util__beans__objects 638 14 none]
+G r k object_key [set_field_key_value ado__audits 188 14 none] [object_keyDF ado__objects 557 9 none]
+G r c none [set_field_key_value ado__audits 188 14 none] [set_key_value ado__objects 256 14 none]
+G r c none [set_field_key_value ado__audits 188 14 none] [set_field ado__objects 545 14 none]
+G r e object [auditable_object_recordDF ado__audits 204 9 none] [finalize util__beans__objects 638 14 none]
+G r e object_record [auditable_object_recordDF ado__audits 204 9 none] [finalize ado__objects 289 14 none]
+G r k object_record [auditable_object_recordDF ado__audits 204 9 none] [object_recordDF ado__objects 591 9 none]
+G r s object_record [auditable_object_recordIP ado__audits 204 9 none] [object_recordIP ado__objects 591 9 none]
+G r e object [audit_infoDF ado__audits 47 9 none] [finalize util__beans__objects 638 14 none]
+G r s object [audit_infoIP ado__audits 47 9 none] [objectIP util__beans__objects 629 9 none]
+G r e object [audit_infoIP ado__audits 47 9 none] [finalize util__beans__objects 638 14 none]
+G r s object [audit_arrayIP ado__audits 55 9 none] [objectIP util__beans__objects 629 9 none]
+G r e object [audit_arrayIP ado__audits 55 9 none] [finalize util__beans__objects 638 14 none]
+G r e object [audit_arrayDI ado__audits 55 9 none] [finalize util__beans__objects 638 14 none]
+G r e object [audit_arrayDF ado__audits 55 9 none] [finalize util__beans__objects 638 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 40|18r6 97r58 98r54 102r48 117r46 118r42 190r47 41|18r6 23r8
+. 25r13 30r10 89r58 90r54 101r48 106r10 123r10 152r46 153r42 365r47
+X 2 a-calend.ads
+36K13*Calendar 409e17 40|117r50 118r46 41|25r17 152r50 153r46
+42I9*Time<222I9> 40|117r59 118r55 41|25r26 152r59 153r55
+222I9 Time_Rep<long_long_integer>
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<26|43R9>
+X 26 a-finali.ads
+53U14*Initialize<74|44p14>
+X 28 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[20|75]>
+X 30 a-string.ads
+16K13*Strings 35e16 40|18r10 97r62 98r58 102r52 190r51 41|23r12 89r62 90r58
+. 101r52 106r14 123r14 365r51
+X 32 a-strunb.ads
+82K21*Unbounded 756e26 40|18w18 97r70 98r66 102r60 190r59 41|23r20 89r70
+. 90r66 101r60 106r22 123r22 365r59
+87R9*Unbounded_String<26|43R9> 739e14 40|97r80 98r76 102r70 190r69 41|89r80
+. 90r76 101r70 365r69
+120U14*Set_Unbounded_String 41|106s32 123s32
+238V14*"="{boolean} 41|92s15 143s24 367s31
+244V14*"="{boolean} 41|104s15 116s42 355s31
+X 38 a-uncdea.ads
+17+9 Object 41|30r38
+18P9 Name(17+9) 41|31r38
+20u15*Unchecked_Deallocation 41|18w10 30r14
+X 39 ado.ads
+25K9*ADO 150e8 40|22r6 23r6 24r6 25r6 26r9 28r31 29r36 30r28 34r48 38r39
+. 53r53 64r12 72r42 83r37 88r37 107r48 112r48 113r44 122r46 123r42 132r49
+. 133r45 162r48 163r44 167r52 168r48 172r53 173r49 177r53 178r49 182r47 207r8
+. 211r5 41|20r6 21r14 24r13 34r37 54r42 84r7 84r29 113r48 130r48 131r44 164r46
+. 165r42 198r49 199r45 280r48 281r44 282r16 285r37 286r30 287r10 293r52 294r48
+. 305r53 306r49 318r53 319r49 341r47 344r37 346r10 356r37 358r10 368r37 370r10
+. 387r5
+39I9*Identifier<long_integer> 40|167r56 168r52 182r51 41|293r56 294r52 341r51
+43I9*Entity_Type<integer> 40|172r57 173r53 41|305r57 306r53
+68R12*Nullable_Integer{112|52R9} 40|132r53 133r49 41|198r53 199r49
+75R12*Nullable_String{112|80R9} 40|107r52 112r52 113r48 41|113r52 130r52
+. 131r48
+80R12*Nullable_Time{112|94R9} 40|122r50 123r46 41|164r50 165r46
+87R9*Nullable_Entity_Type 90e14 40|177r57 178r53 41|318r57 319r53
+88i7*Value{43I9} 41|323r87 328r66 331r18 331r33 332r66 333r60
+89b7*Is_Null{boolean} 41|321r15 322r23 327r19
+X 40 ado-audits.ads
+26K13*Audits 39|25k9 40|202E9 211l9 211e15 41|21b18 387l9 387t15
+28E12*Object_Key_Type{46|184E9} 61r47 204r47
+29P12*Class_Mapping_Access{50|35P9} 62r47 205r47
+30I12*Column_Index{50|25I9} 36r63 48r19 96r54 101r44 106r44 111r44 116r42
+. 121r42 126r45 131r45 136r45 141r46 146r45 151r43 156r48 161r44 166r48 171r49
+. 176r49 181r47 185r47 189r47 196r47 41|88r54 100r44 112r44 129r44 151r42
+. 163r42 185r45 197r45 219r45 231r46 243r45 255r43 267r48 279r44 292r48 304r49
+. 317r49 340r47 352r47 364r47 376r47
+32K12*UBO=32:35 49r19 50r19 73r42 74r42 194r53 41|55r42 56r42 93r37 93r59
+. 105r37 105r59 118r40 118r57 120r40 120r68 135r40 135r57 140r37 140r65 144r37
+. 144r65 169r40 174r66 190r37 190r59 203r40 203r57 208r37 208r65 212r37 212r65
+. 224r37 224r59 236r37 236r59 248r37 248r59 260r37 260r59 272r37 272r59 309r37
+. 310r30 323r40 323r57 328r37 328r75 332r37 333r30 357r30 369r30
+34I9*Audit_Index<integer> 36r38 39r39
+36A9*Column_Index_Array(30I12)<34I9> 41r17
+38R9*Auditable_Mapping 38d28 39d28 42e14 44r53
+38p28*Of_Class{50|35P9}
+39i28*Count{34I9} 41r42 41|60r78
+41a7*Members{36A9}
+44P9*Auditable_Mapping_Access(38R9) 63r47 206r47
+47R9*Audit_Info 51e14 55r61
+48i7*Field{30I12} 41|42r36 64r26 68r26 69m26
+49r7*Old_Value{105|83R9} 41|70m26
+50r7*New_Value{105|83R9} 41|65m26 71m26
+53I9*Audit_Info_Index<integer> 55r31 41|37r17 60r42
+55A9*Audit_Array(47R9)<53I9> 85r33 202r42 41|30r48 60r24
+61H9*Auditable_Object_Record<46|230R9> 26|53P14 40|61d34 62d34 63d34 68P14
+. 68r40 71p14 71r46 84r33 87r37 95r58 100r48 105r48 110r48 115r46 120r46
+. 125r49 130r49 135r49 140r50 145r49 150r47 155r52 160r48 165r52 170r53 175r53
+. 180r51 184r51 188r51 195r51 204c9 209e14 41|33r37 53r46 81r40 87r58 99r48
+. 111r48 128r48 150r46 162r46 184r49 196r49 218r49 230r50 242r49 254r47 266r52
+. 278r48 291r52 303r53 316r53 339r51 351r51 363r51 375r51 46|285p14 292p14
+. 298p14 302p14 306p14 311p14 315p14 74|42p14
+61e34*Key_Type{28E12} 204r34 207r47
+62p34*Of_Class{29P12} 205r34 207r69
+63p34*With_Audit{44P9} 206r34 41|60r67
+68U14*Finalize<46|289p14> 68=24 41|81b14 85l8 85t16
+68r24 Object{61R9} 41|81b24 83m13 83r13 84m56 84r56
+71U14*Audit_Field 71=27 72>27 73>27 74>27 41|53b14 75l8 75t19 93R17 105R17
+. 118R20 120R20 135R20 140R17 144R17 156R17 169R20 174R17 178R17 190R17 203R20
+. 208R17 212R17 224R17 236R17 248R17 260R17 272R17 285R17 297R17 309R17 323R20
+. 328R17 332R17 344R17 356R17 368R17 381R17
+71r27 Object{61R9} 41|53b27 57r38 60r60 61m10 63r18
+72i27 Field{50|25I9} 41|54b27 64r34 69r35
+73r27 Old_Value{105|83R9} 41|55b27 70r39
+74r27 New_Value{105|83R9} 41|56b27 65r39 71r39
+78h9*Audit_Manager 79r44 82p14 82r37 41|35r33
+79P9*Audit_Manager_Access(78R9)
+82x14*Save 82=20 83=20 84>20 85>20 41|45R18
+82r20 Manager{78R9}
+83c20 Session<53|140R9>
+84c20 Object<61R9>
+85a20 Changes{55A9}
+87U14*Save 87=20 88=20 41|33b14 48l8 48t12
+87c20 Object<61R9> 41|33b20 36r48 45r33 47m13 47r13
+88c20 Session<53|140R9> 41|34b20 35r56 45m24
+95U14*Set_Field_Unbounded_String 95=42 96>42 97=42 98>42 41|87b14 97l8 97t34
+95c42 Object<61R9> 41|87b42 93m10 93r10 95m10 95r10
+96i42 Field{30I12} 41|88b42 93r30 95r28
+97r42 Into{32|87R9} 41|89b42 92r10 93r52 94m10
+98r42 Value{32|87R9} 41|90b42 92r18 93r74 94r18
+100U14*Set_Field_String 100=32 101>32 102=32 103>32 41|99b14 109l8 109t24
+100c32 Object<61R9> 41|99b32 105m10 105r10 107m10 107r10
+101i32 Field{30I12} 41|100b32 105r30 107r28
+102r32 Into{32|87R9} 41|101b32 104r10 105r52 106m54
+103a32 Value{string} 41|102b32 104r18 105r74 106r60
+105U14*Set_Field_String 105=32 106>32 107=32 108>32 41|111b14 126l8 126t24
+105c32 Object<61R9> 41|111b32 118m13 118r13 120m13 120r13 124m10 124r10
+106i32 Field{30I12} 41|112b32 118r33 120r33 124r28
+107r32 Into{39|75R12} 41|113b32 116r10 116r31 117r13 120r55 122m10 123m54
+. 123r54
+108a32 Value{string} 41|114b32 116r45 118r72 120r83 123r66
+110U14*Set_Field_String 110=32 111>32 112=32 113>32 41|128b14 148l8 148t24
+110c32 Object<61R9> 41|128b32 135m13 135r13 137m13 137r13 140m10 140r10 142m10
+. 142r10 144m10 144r10 146m10 146r10
+111i32 Field{30I12} 41|129b32 135r33 137r31 140r30 142r28 144r30 146r28
+112r32 Into{39|75R12} 41|130b32 133r10 136m13 140r52 141m10 143r13 144r52
+. 145m10
+113r32 Value{39|75R12} 41|131b32 134r17 135r72 136r21 139r13 141r18 143r27
+. 144r80 145r18
+115U14*Set_Field_Time 115=30 116>30 117=30 118>30 41|150b14 160l8 160t22
+115c30 Object<61R9> 41|150b30 156m10 156r10 158m10 158r10
+116i30 Field{30I12} 41|151b30 156r30 158r28
+117i30 Into{2|42I9} 41|152b30 155r10 156r53 157m10
+118i30 Value{2|42I9} 41|153b30 155r18 156r76 157r18
+120U14*Set_Field_Time 120=30 121>30 122=30 123>30 41|162b14 182l8 182t22
+120c30 Object<61R9> 41|162b30 169m13 169r13 171m13 171r13 174m10 174r10 176m10
+. 176r10 178m10 178r10 180m10 180r10
+121i30 Field{30I12} 41|163b30 169r33 171r31 174r30 176r28 178r30 180r28
+122r30 Into{39|80R12} 41|164b30 167r10 170m13 174r53 175m10 177r13 178r53
+. 179m10
+123r30 Value{39|80R12} 41|165b30 168r17 169r73 170r21 173r13 175r18 177r27
+. 178r82 179r18
+125U14*Set_Field_Integer 125=33 126>33 127=33 128>33 41|184b14 194l8 194t25
+125c33 Object<61R9> 41|184b33 190m10 190r10 192m10 192r10
+126i33 Field{30I12} 41|185b33 190r30 192r28
+127i33 Into{integer} 41|186b33 189r10 190r52 191m10
+128i33 Value{integer} 41|187b33 189r18 190r74 191r18
+130U14*Set_Field_Integer 130=33 131>33 132=33 133>33 41|196b14 216l8 216t25
+130c33 Object<61R9> 41|196b33 203m13 203r13 205m13 205r13 208m10 208r10 210m10
+. 210r10 212m10 212r10 214m10 214r10
+131i33 Field{30I12} 41|197b33 203r33 205r31 208r30 210r28 212r30 214r28
+132r33 Into{39|68R12} 41|198b33 201r10 204m13 208r52 209m10 211r13 212r52
+. 213m10
+133r33 Value{39|68R12} 41|199b33 202r17 203r72 204r21 207r13 209r18 211r27
+. 212r80 213r18
+135U14*Set_Field_Natural 135=33 136>33 137=33 138>33 41|218b14 228l8 228t25
+135c33 Object<61R9> 41|218b33 224m10 224r10 226m10 226r10
+136i33 Field{30I12} 41|219b33 224r30 226r28
+137i33 Into{natural} 41|220b33 223r10 224r52 225m10
+138i33 Value{natural} 41|221b33 223r18 224r74 225r18
+140U14*Set_Field_Positive 140=34 141>34 142=34 143>34 41|230b14 240l8 240t26
+140c34 Object<61R9> 41|230b34 236m10 236r10 238m10 238r10
+141i34 Field{30I12} 41|231b34 236r30 238r28
+142i34 Into{positive} 41|232b34 235r10 236r52 237m10
+143i34 Value{positive} 41|233b34 235r18 236r74 237r18
+145U14*Set_Field_Boolean 145=33 146>33 147=33 148>33 41|242b14 252l8 252t25
+145c33 Object<61R9> 41|242b33 248m10 248r10 250m10 250r10
+146i33 Field{30I12} 41|243b33 248r30 250r28
+147b33 Into{boolean} 41|244b33 247r10 248r52 249m10
+148b33 Value{boolean} 41|245b33 247r18 248r74 249r18
+150U14*Set_Field_Float 150=31 151>31 152=31 153>31 41|254b14 264l8 264t23
+150c31 Object<61R9> 41|254b31 260m10 260r10 262m10 262r10
+151i31 Field{30I12} 41|255b31 260r30 262r28
+152f31 Into{float} 41|256b31 259r10 260r52 261m10
+153f31 Value{float} 41|257b31 259r18 260r74 261r18
+155U14*Set_Field_Long_Float 155=36 156>36 157=36 158>36 41|266b14 276l8 276t28
+155c36 Object<61R9> 41|266b36 272m10 272r10 274m10 274r10
+156i36 Field{30I12} 41|267b36 272r30 274r28
+157f36 Into{long_float} 41|268b36 271r10 272r52 273m10
+158f36 Value{long_float} 41|269b36 271r18 272r74 273r18
+160U14*Set_Field_Object 160=32 161>32 162=32 163>32 41|278b14 289l8 289t24
+160c32 Object<61R9> 41|278b32 285m10 285r10 287m40
+161i32 Field{30I12} 41|279b32 285r30 287r48
+162c32 Into<46|323R9> 41|280b32 284r10 285r60 287m55
+163c32 Value<46|323R9> 41|281b32 284r18 286r53 287r61
+165U14*Set_Field_Identifier 165=36 166>36 167=36 168>36 41|291b14 301l8 301t28
+165c36 Object<61R9> 41|291b36 297m10 297r10 299m10 299r10
+166i36 Field{30I12} 41|292b36 297r30 299r28
+167i36 Into{39|39I9} 41|293b36 296r10 297r54 298m10
+168i36 Value{39|39I9} 41|294b36 296r18 297r78 298r18
+170U14*Set_Field_Entity_Type 170=37 171>37 172=37 173>37 41|303b14 314l8
+. 314t29
+170c37 Object<61R9> 41|303b37 309m10 309r10 312m10 312r10
+171i37 Field{30I12} 41|304b37 309r30 312r28
+172i37 Into{39|43I9} 41|305b37 308r10 309r61 311m10
+173i37 Value{39|43I9} 41|306b37 308r18 310r54 311r18
+175U14*Set_Field_Entity_Type 175=37 176>37 177=37 178>37 41|316b14 337l8
+. 337t29
+175c37 Object<61R9> 41|316b37 323m13 323r13 325m13 325r13 328m10 328r10 330m10
+. 330r10 332m10 332r10 335m10 335r10
+176i37 Field{30I12} 41|317b37 323r33 325r31 328r30 330r28 332r30 335r28
+177r37 Into{39|87R9} 41|318b37 321r10 324m13 328r61 329m10 331r13 332r61
+. 334m10
+178r37 Value{39|87R9} 41|319b37 322r17 323r81 324r21 327r13 329r18 331r27
+. 333r54 334r18
+180U14*Set_Field_Key_Value 180=35 181>35 182>35 41|339b14 349l8 349t27
+180c35 Object<61R9> 41|339b35 343r10 344m10 344r10 344r60 346m37 347m10 347r10
+181i35 Field{30I12} 41|340b35 344r30 347r28
+182i35 Value{39|39I9} 41|341b35 343r34 345r47 346r45
+184U14*Set_Field_Key_Value 184=35 185>35 186>35 41|351b14 361l8 361t27
+184c35 Object<61R9> 41|351b35 355r10 356m10 356r10 356r60 358m37 359m10 359r10
+185i35 Field{30I12} 41|352b35 356r30 359r28
+186a35 Value{string} 41|353b35 355r34 357r45 358r45
+188U14*Set_Field_Key_Value 188=35 189>35 190>35 41|363b14 373l8 373t27
+188c35 Object<61R9> 41|363b35 367r10 368m10 368r10 368r60 370m37 371m10 371r10
+189i35 Field{30I12} 41|364b35 368r30 371r28
+190r35 Value{32|87R9} 41|365b35 367r34 369r45 370r45
+193+12 T 194r43 197r51 198r47 41|377r51 378r47
+194V21 To_Object{105|83R9} 194>32 41|381s37 381s55
+194*32 Value{193+12}
+195u14*Set_Field_Operation 195=35 196>35 197=35 198>35 41|375b14 385l8 385t27
+195c35 Object<61R9> 41|375b35 381m10 381r10 383m10 383r10
+196i35 Field{30I12} 41|376b35 381r30 383r28
+197*35 Into{193+12} 41|377b35 380r10 381r48 382m10
+198*35 Value{193+12} 41|378b35 380r18 381r66 382r18
+202P9 Audit_Array_Access(55A9) 208r16 41|31r48 36r26 57r16
+208p7 Audits{202P9} 41|36r55 47m20 47r20 57r45 61m17 63r25 83m20 83r20
+X 41 ado-audits.adb
+27K12 UBOT=27:44 156r37 156r60 169r57 174r37 178r37 178r66
+29U14 Free[38|20] 47s7 83s7
+35p7 Manager(40|78R9) 39r10 45r10
+36p7 Audits{40|202P9} 39r30 41r21 42r23 45r41
+37i7 Last{40|53I9} 40m10 43m13 45r54
+41i14 Pos<integer> 42r31 43r21
+57p7 Audits{40|202P9} 59r10 60m10 61r27 64r13 65r13 68r13 69r13 70r13 71r13
+63i11 Pos<integer> 64r21 65r21 68r21 69r21 70r21 71r21
+X 43 ado-configs.ads
+23K13*Configs 40|22w10 34r52 53r57 43|148e16
+39N4*MAX_COLUMNS 40|34r60 53r65
+X 46 ado-objects.ads
+155K13*Objects 40|23w10 28r35 64r16 162r52 163r48 207r12 41|84r11 84r33 280r52
+. 281r48 282r20 285r41 286r34 287r14 344r41 346r14 356r41 358r14 368r41 370r14
+. 46|602e16
+184E9*Object_Key_Type 40|28r43 46|184e53
+210V13*To_Object{105|83R9} 41|285s49 286s42 344s49 356s49 368s49
+230H9*Object_Record<26|50R9> 40|64r24 207r20 41|84r41 46|600e14
+239V13*Get_Key{185R9} 41|344s67 356s67 368s67
+242V13*Get_Key_Value{32|87R9} 41|355s17 367s17
+246V13*Get_Key_Value{39|39I9} 41|343s17
+253U14*Set_Key_Value 41|346s22
+256U14*Set_Key_Value 41|370s22
+259U14*Set_Key_Value 41|358s22
+285x14*Destroy
+289U14*Finalize<26|54p14> 41|84s19
+292x14*Find
+298x14*Save
+302x14*Create
+306x14*Delete
+311x14*Load
+315U14*Copy
+323H9*Object_Ref<26|43R9><104|42R9> 40|162r60 163r56 41|280r60 281r56 282r28
+. 46|573e14
+360V13*Get_Key{185R9} 41|285s65 286s59
+498U14*Set_Field_Object 41|287s22
+545U14*Set_Field 41|95s17 107s17 124s17 137s20 142s17 146s17 158s17 171s20
+. 176s17 180s17 192s17 205s20 210s17 214s17 226s17 238s17 250s17 262s17 274s17
+. 299s17 312s17 325s20 330s17 335s17 347s17 359s17 371s17 383s17
+X 48 ado-parameters.ads
+100h9*Expander
+X 50 ado-schemas.ads
+23K13*Schemas 40|24w10 29r40 30r32 38r43 72r46 41|24r17 54r46 50|215e16
+25I9*Column_Index<integer> 40|30r40 72r54 41|24r25 54r54
+35P9*Class_Mapping_Access(29R9) 40|29r48 38r51
+X 53 ado-sessions.ads
+51K13*Sessions 40|25w10 83r41 88r41 41|34r41 53|237e17
+140R9*Master_Session<71R9> 40|83r50 88r50 41|34r50 53|231e14
+174V13*Get_Audit_Manager 41|35R64
+X 56 ado-utils.ads
+23K13*Utils 41|20w10 297r37 297r61 345r30 56|45e14
+26V13*To_Object{105|83R9} 41|297s43 297s67 345s36
+X 61 system.ads
+67M9*Address
+X 74 s-finroo.ads
+42U14*Adjust
+X 76 s-memory.ads
+53V13*Alloc{61|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{61|67M9} 105i<c,__gnat_realloc>22
+X 85 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 87 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 102 util.ads
+18K9*Util 40|20r6 32r24 41|19r6 27r25 102|28e9
+X 103 util-beans.ads
+50K14*Beans 40|20r11 32r29 41|19r11 27r30 103|54e15
+X 104 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 105 util-beans-objects.ads
+43K20*Objects 40|20w17 32r35 41|19r17 27r36 105|644e23
+83R9*Object<26|43R9> 40|49r23 50r23 73r46 74r46 194r57 41|55r46 56r46 105|632e14
+90r4*Null_Object{83R9} 41|118r44 135r44 140r69 169r44 174r70 203r44 208r69
+. 323r44 328r79
+97h9*Object_Type
+211V13*To_Object{83R9} 41|190s41 190s63 203s61 208s41 212s41 212s69 224s41
+. 224s63 236s41 236s63 309s41 310s34 323s61 328s41 332s41 333s34
+214V13*To_Object{83R9} 41|260s41 260s63
+215V13*To_Object{83R9} 41|272s41 272s63
+217V13*To_Object{83R9} 41|105s63 118s61 120s72 357s34
+219V13*To_Object{83R9} 41|93s41 93s63 105s41 120s44 135s61 140s41 144s41
+. 144s69 369s34
+221V13*To_Object{83R9} 41|248s41 248s63
+X 106 util-beans-objects-time.ads
+21K28*Time 41|19w25 27r44 106|37e28
+24V13*To_Object{105|83R9} 41|156s42 156s65 169s62 174s42 178s42 178s71
+X 112 util-nullables.ads
+53i7*Value{integer} 41|203r78 208r57 211r18 211r33 212r57 212r86
+54b7*Is_Null{boolean} 41|201r15 202r23 207r19
+81r7*Value{32|87R9} 41|116r36 120r60 123m59 135r78 140r57 143r18 143r33 144r57
+. 144r86
+82b7*Is_Null{boolean} 41|116r15 117r18 122m15 133r15 134r23 139r19
+95i7*Value{2|42I9} 41|169r79 174r58 177r18 177r33 178r58 178r88
+96b7*Is_Null{boolean} 41|167r15 168r23 173r19
+X 113 util-properties.ads
+256h12*Manager<104|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+

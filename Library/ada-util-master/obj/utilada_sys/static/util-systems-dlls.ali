@@ -1,0 +1,135 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U util.systems.dlls%b	util-systems-dlls.adb	058c0921 NE OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W util.systems%s	util-systems.ads	util-systems.ali
+L "-ldl"
+
+U util.systems.dlls%s	util-systems-dlls.ads	3e7de952 EE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+W util%s		util.ads		util.ali
+W util.systems%s	util-systems.ads	util-systems.ali
+W util.systems.constants%s  util-systems-constants.ads  util-systems-constants.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrin.ads		20190518041255 341d0ddf interfaces.c.strings%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-exctab.adb		20190518041255 c756f391 system.exception_table%b
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D util.ads		20210228093152 36301479 util%s
+D util-systems.ads	20210228093152 be223f03 util.systems%s
+D util-systems-constants.ads  20210228093152 8d75e951 util.systems.constants%s
+D util-systems-dlls.ads	20210228093152 1f3ec29f util.systems.dlls%s
+D util-systems-dlls.adb	20210228093152 2eafc661 util.systems.dlls%b
+G a e
+G c Z s b [load util__systems__dlls 43 13 none]
+G c Z s b [unload util__systems__dlls 47 14 none]
+G c Z s b [get_symbol util__systems__dlls 51 13 none]
+G c Z b b [sys_dlopen util__systems__dlls 25 13 none]
+G c Z b b [sys_dlclose util__systems__dlls 29 13 none]
+G c Z b b [sys_dlsym util__systems__dlls 32 13 none]
+G c Z b b [sys_dlerror util__systems__dlls 36 13 none]
+G c Z b b [error_message util__systems__dlls 39 13 none]
+X 4 interfac.ads
+38K9*Interfaces 184e15 20|21r6 37r21 21|19r6 25r36 29r50 33r36 36r32 43r14
+. 52r16 52r50 55r7 67r16 83r16 83r50 86r7
+X 5 i-c.ads
+18K20*C 230e17 20|21w17 37r32 21|19r17 25r47 29r61 33r47 36r43 43r25 52r27
+. 52r61 55r18 67r27 83r27 83r61 86r18
+35I9*int<integer> 20|37r34 21|29r63 67r29
+X 6 i-cstrin.ads
+36K22*Strings 106e25 21|19w19 25r49 33r49 36r45 43r27 52r29 52r63 55r20 83r29
+. 83r63 86r20
+47P9*chars_ptr 21|25r57 33r57 36r53 52r37 83r37
+60V13*New_String{47P9} 21|52s71 83s71
+62U14*Free 21|55s28 86s28
+74V13*Value{string} 21|43s35
+X 7 system.ads
+37K9*System 156e11 20|19w6 52r50 56r23 58r45 21|33r75 80r50 81r16 84r25 87r19
+67M9*Address 20|52r57 56r30 21|33r82 80r57 81r23 84r32
+69m4*Null_Address{67M9} 20|58r52 21|87r26
+81V14*"="{boolean} 21|56r17 70r14 87r17
+X 17 util.ads
+18K9*Util 28e9 20|22r6 24r9 44r38 60r5 21|21r14 23r27 51r38 94r5
+X 18 util-systems.ads
+19K14*Systems 17|18k9 18|23e17 20|22r11 24r14 44r43 60r10 21|21r19 23r32
+. 51r43 94r10
+X 19 util-systems-constants.ads
+3K22*Constants 37e27 20|22w19 44r51 21|23r40 51r51
+26i4*RTLD_LAZY{5|35I9} 20|44r61 21|51r61
+34a4*DLL_OPTIONS{string} 21|23r50
+X 20 util-systems-dlls.ads
+24K22*DLLs 18|19k14 20|56E9 60l18 60e22 21|21b27 94l18 94t22
+27M9*Handle<7|67M9> 29r27 44r79 47r31 51r35 56c9 58r27 58r37 21|26r50 29r35
+. 32r36 51r79 53r25 66r31 79r35
+29m4*Null_Handle{27M9} 58c4 21|56r19 70r17
+32X4*Load_Error 21|57r16
+35X4*Not_Found 21|88r16
+37I12*Flags{5|35I9} 44r29 21|26r36 51r29
+39a4*Extension{string}
+43V13*Load{27M9} 43>19 44>19 21|50b13 61l8 61t12
+43a19 Path{string} 21|50b19 52r83
+44i19 Mode{37I12} 21|51b19 53r52
+47U14*Unload 47>22 21|66b14 73l8 73t14
+47m22 Lib{27M9} 21|66b22 70r10 71r33
+51V13*Get_Symbol{7|67M9} 51>25 52>25 21|79b13 92l8 92t18
+51m25 Lib{27M9} 21|79b25 84r54
+52a25 Name{string} 21|80b25 83r83
+X 21 util-systems-dlls.adb
+25V13 Sys_Dlopen{20|27M9} 25>25 26>25 27b<c,dlopen>22 53s35
+25p25 Path{6|47P9}
+26i25 Mode{20|37I12}
+29V13 Sys_Dlclose{5|35I9} 29>26 30b<c,dlclose>22 71s20
+29m26 Lib{20|27M9}
+32V13 Sys_Dlsym{7|67M9} 32>24 33>24 34b<c,dlsym>22 84s43
+32m24 Lib{20|27M9}
+33p24 Symbol{6|47P9}
+36V13 Sys_Dlerror{6|47P9} 37b<c,dlerror>22 43s42
+39V13 Error_Message{string} 41b13 44l8 44t21 57s32 88s31
+52p7 Lib{6|47P9} 53r47 55m34 55r34
+53m7 Result{20|27M9} 56r10 59r17
+67i7 Result{5|35I9} 68r28 71m10
+83p7 Symbol{6|47P9} 84r59 86m34 86r34
+84m7 Result{7|67M9} 87r10 90r17
+

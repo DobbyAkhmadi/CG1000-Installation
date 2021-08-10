@@ -1,0 +1,80 @@
+[GENERATED OBJECT FILE]
+b__ado_harness.o
+[PROJECT FILES]
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/ado_tests.gpr
+20200827070302
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/ado_mysql.gpr
+20200827070302
+/opt/GNAT/2019/share/gpr/xmlada_sax.gpr
+20190518093952
+/opt/GNAT/2019/share/gpr/xmlada_unicode.gpr
+20190518093953
+/opt/GNAT/2019/share/gpr/xmlada_input.gpr
+20190518093953
+/opt/GNAT/2019/share/gpr/utilada_xml.gpr
+20200827070258
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/ado.gpr
+20200827070302
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/ado_all.gpr
+20200827070302
+/opt/GNAT/2019/share/gpr/utilada_unit.gpr
+20200827070259
+/opt/GNAT/2019/share/gpr/utilada_base.gpr
+20200827070256
+/opt/GNAT/2019/share/gpr/utilada_core.gpr
+20200827070254
+/opt/GNAT/2019/share/gpr/utilada_sys.gpr
+20200827070257
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/config.gpr
+20200810200714
+[BOUND OBJECT FILES]
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/regtests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/regtests-audits.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/regtests-audits-model.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/regtests-images.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/regtests-images-model.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/regtests-simple.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/regtests-simple-model.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/regtests-comments.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/regtests-statements.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/regtests-statements-model.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-audits-tests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-datasets-tests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-drivers-tests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-objects-tests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-parameters-tests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-queries-tests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-schemas-tests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-sequences-tests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-statements-tests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-tests.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado-testsuite.o
+/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/ado_harness.o
+[GENERATED SOURCE FILES]
+b__ado_harness.ads
+b__ado_harness.adb
+b__ado_harness.ali
+[RESULTING OPTIONS]
+-L/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/
+-L/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/obj/
+-L/opt/GNAT/2019/lib/utilada_sys.static/
+-L/opt/GNAT/2019/lib/utilada_core.static/
+-L/opt/GNAT/2019/lib/utilada_base.static/
+-L/opt/GNAT/2019/lib/utilada_unit.static/
+-L/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/lib/ado_all/static/
+-L/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/lib/ado/static/
+-L/opt/GNAT/2019/lib/utilada_xml.static/
+-L/opt/GNAT/2019/lib/xmlada/xmlada_input.static/
+-L/opt/GNAT/2019/lib/xmlada/xmlada_unicode.static/
+-L/opt/GNAT/2019/lib/xmlada/xmlada_sax.static/
+-L/media/scada/SCADA/Instalasi TM1000/instalasi/ada-ado/lib/ado_mysql/static/
+-L/opt/GNAT/2019/lib/gcc/x86_64-pc-linux-gnu/8.3.1/adalib/
+-static
+-static-libgcc
+-lmariadb
+-ldl
+/opt/GNAT/2019/lib/gcc/x86_64-pc-linux-gnu/8.3.1/adalib/libgnarl.a
+/opt/GNAT/2019/lib/gcc/x86_64-pc-linux-gnu/8.3.1/adalib/libgnat.a
+-lrt
+-lpthread
+-ldl

@@ -1,0 +1,409 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U ado.sessions.factory%b  ado-sessions-factory.adb  8b44c3b8 OO PK IU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+W ado.queries%s		ado-queries.adb		ado-queries.ali
+W ado.queries.loaders%s	ado-queries-loaders.adb	ado-queries-loaders.ali
+W ado.schemas%s		ado-schemas.adb		ado-schemas.ali
+W ado.schemas.entities%s  ado-schemas-entities.adb  ado-schemas-entities.ali
+W ado.sequences%s	ado-sequences.adb	ado-sequences.ali
+W ado.sequences.hilo%s	ado-sequences-hilo.adb	ado-sequences-hilo.ali
+W ado.sessions%s	ado-sessions.adb	ado-sessions.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+
+U ado.sessions.factory%s  ado-sessions-factory.ads  edc0216e EB EE OO PF PK IU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado%s			ado.adb			ado.ali
+W ado.audits%s		ado-audits.adb		ado-audits.ali
+W ado.caches%s		ado-caches.adb		ado-caches.ali
+W ado.sequences%s	ado-sequences.adb	ado-sequences.ali
+W ado.sessions%s	ado-sessions.adb	ado-sessions.ali
+W ado.sessions.sources%s  ado-sessions-sources.adb  ado-sessions-sources.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihama.ads		20190518041255 bece8dbf ada.containers.indefinite_hashed_maps%s
+D a-cihama.adb		20190518041254 94909b4a ada.containers.indefinite_hashed_maps%b
+D a-cihase.ads		20190518041254 4f8a62e0 ada.containers.indefinite_hashed_sets%s
+D a-cihase.adb		20190518041256 f54eebd2 ada.containers.indefinite_hashed_sets%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-convec.ads		20190518041256 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20190518041254 32f4e1a7 ada.containers.vectors%b
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strhas.ads		20190518041256 c71c2a52 ada.strings.hash%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stunha.ads		20190518041255 115e053b ada.strings.unbounded.hash%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D ado.ads		20200810200714 1ec4b94f ado%s
+D ado-audits.ads	20200810200714 2a544c7e ado.audits%s
+D ado-caches.ads	20200810200714 3f821007 ado.caches%s
+D ado-configs.ads	20200810200714 1a13a13e ado.configs%s
+D ado-connections.ads	20200810200714 53398a84 ado.connections%s
+D ado-dialects.ads	20200810200714 eb00eeaf ado.dialects%s
+D ado-objects.ads	20200810200714 b8c8fb60 ado.objects%s
+D ado-objects-cache.ads	20200810200714 aef66a18 ado.objects.cache%s
+D ado-parameters.ads	20200810200714 ad5888fa ado.parameters%s
+D ado-queries.ads	20200810200714 e566d425 ado.queries%s
+D ado-queries-loaders.ads  20200810200714 92429eb9 ado.queries.loaders%s
+D ado-schemas.ads	20200810200714 b2b43658 ado.schemas%s
+D ado-schemas-entities.ads  20200810200714 3c0f0af5 ado.schemas.entities%s
+D ado-sequences.ads	20200810200714 1726cdc8 ado.sequences%s
+D ado-sequences-hilo.ads  20200810200714 25bc6f3a ado.sequences.hilo%s
+D ado-sessions.ads	20200810200714 20bb1cec ado.sessions%s
+D ado-sessions-factory.ads  20200810200714 1fe9ba9a ado.sessions.factory%s
+D ado-sessions-factory.adb  20200810200714 1f5c8254 ado.sessions.factory%b
+D ado-sessions-sources.ads  20200810200714 d06216a9 ado.sessions.sources%s
+D ado-sql.ads		20200810200714 ba8ff082 ado.sql%s
+D ado-statements.ads	20200810200714 752f695d ado.statements%s
+D ado-utils.ads		20200810200714 ef23a2c0 ado.utils%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrin.ads		20190518041255 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atacco.ads		20190518041256 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-linux.ads		20190518041256 ed0b8aee system.linux%s
+D s-maccod.ads		20190518041255 6d68a701 system.machine_code%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-multip.ads		20190518041254 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190518093549 c13b1f65 system.os_constants%s
+D s-osinte.ads		20190518041257 baabc537 system.os_interface%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stausa.ads		20190518041255 017a0a05 system.stack_usage%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-tasinf.ads		20190518041256 2b3f8252 system.task_info%s
+D s-taspri.ads		20190518041256 f40ac08d system.task_primitives%s
+D s-taskin.ads		20190518041257 b9d612e2 system.tasking%s
+D s-taprob.ads		20190518041256 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20200215171848 36301479 util%s
+D util-beans.ads	20200215171848 362abe70 util.beans%s
+D util-beans-basic.ads	20200215171848 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20200215171848 aef7462e util.beans.objects%s
+D util-concurrent.ads	20200215171848 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20200215171848 2618dd23 util.concurrent.counters%s
+D util-concurrent-counters.adb  20200215171848 b9ece202 util.concurrent.counters%b
+D util-log.ads		20200215171848 0fb1ac89 util.log%s
+D util-log-appenders.ads  20200215171848 ddbe02c8 util.log.appenders%s
+D util-log-loggers.ads	20200215171848 3003bbc2 util.log.loggers%s
+D util-nullables.ads	20200215171848 cb4c8fed util.nullables%s
+D util-properties.ads	20200215171848 3ed4fee8 util.properties%s
+D util-refs.ads		20200215171848 e592e98d util.refs%s
+D util-refs.adb		20200215171848 f4fdc937 util.refs%b
+D util-strings.ads	20200215171848 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+G a e
+G c Z s b [get_session ado__sessions__factory 65 13 none]
+G c Z s b [get_master_session ado__sessions__factory 68 13 none]
+G c Z s b [create ado__sessions__factory 72 14 none]
+G c Z s b [create ado__sessions__factory 77 14 none]
+G c Z s b [get_session ado__sessions__factory 82 13 none]
+G c Z s b [set_audit_manager ado__sessions__factory 85 14 none]
+G c Z s b [initialize_sequences ado__sessions__factory 107 14 none]
+G c Z s s [session_factoryDF ado__sessions__factory 94 9 none]
+G c Z s s [session_factoryDI ado__sessions__factory 94 9 none]
+G c Z s s [session_factoryIP ado__sessions__factory 94 9 none]
+G r s session [get_session ado__sessions__factory 65 13 none] [sessionIP ado__sessions 216 9 none]
+G r s session_record [get_session ado__sessions__factory 65 13 none] [session_recordIP ado__sessions 206 9 none]
+G r l session_record [get_session ado__sessions__factory 65 13 none] [session_recordDI ado__sessions 206 9 none]
+G r c none [get_session ado__sessions__factory 65 13 none] [create_connection ado__connections 109 14 none]
+G r d session [get_session ado__sessions__factory 65 13 none] [adjust ado__sessions 221 14 none]
+G r s master_session [get_master_session ado__sessions__factory 68 13 none] [master_sessionIP ado__sessions 228 9 none]
+G r s session_record [get_master_session ado__sessions__factory 68 13 none] [session_recordIP ado__sessions 206 9 none]
+G r l session_record [get_master_session ado__sessions__factory 68 13 none] [session_recordDI ado__sessions 206 9 none]
+G r c none [get_master_session ado__sessions__factory 68 13 none] [create_connection ado__connections 109 14 none]
+G r d session [get_master_session ado__sessions__factory 68 13 none] [adjust ado__sessions 221 14 none]
+G r s entity_cache [create ado__sessions__factory 72 14 none] [entity_cacheIP ado__schemas__entities 61 9 none]
+G r l entity_cache [create ado__sessions__factory 72 14 none] [entity_cacheDI ado__schemas__entities 61 9 none]
+G r c none [create ado__sessions__factory 72 14 none] [add_cache ado__caches 71 14 none]
+G r c none [create ado__sessions__factory 72 14 none] [initialize ado__queries__loaders 51 14 none]
+G r c none [create ado__sessions__factory 72 14 none] [set_default_generator ado__sequences 91 14 none]
+G r c none [create ado__sessions__factory 72 14 none] [get_database ado__configs 121 13 none]
+G r c none [create ado__sessions__factory 72 14 none] [is_on ado__configs 60 13 none]
+G r s session [create ado__sessions__factory 72 14 none] [sessionIP ado__sessions 216 9 none]
+G r s session_record [create ado__sessions__factory 72 14 none] [session_recordIP ado__sessions 206 9 none]
+G r l session_record [create ado__sessions__factory 72 14 none] [session_recordDI ado__sessions 206 9 none]
+G r c none [create ado__sessions__factory 72 14 none] [create_connection ado__connections 109 14 none]
+G r d session [create ado__sessions__factory 72 14 none] [adjust ado__sessions 221 14 none]
+G r e session [create ado__sessions__factory 72 14 none] [finalize ado__sessions 224 14 none]
+G r c none [create ado__sessions__factory 72 14 none] [initialize ado__schemas__entities 50 14 none]
+G r c none [create ado__sessions__factory 77 14 none] [set_connection ado__configs 75 14 none]
+G r s entity_cache [create ado__sessions__factory 77 14 none] [entity_cacheIP ado__schemas__entities 61 9 none]
+G r l entity_cache [create ado__sessions__factory 77 14 none] [entity_cacheDI ado__schemas__entities 61 9 none]
+G r c none [create ado__sessions__factory 77 14 none] [add_cache ado__caches 71 14 none]
+G r c none [create ado__sessions__factory 77 14 none] [initialize ado__queries__loaders 51 14 none]
+G r c none [create ado__sessions__factory 77 14 none] [set_default_generator ado__sequences 91 14 none]
+G r c none [create ado__sessions__factory 77 14 none] [get_database ado__configs 121 13 none]
+G r c none [create ado__sessions__factory 77 14 none] [is_on ado__configs 60 13 none]
+G r s session [create ado__sessions__factory 77 14 none] [sessionIP ado__sessions 216 9 none]
+G r s session_record [create ado__sessions__factory 77 14 none] [session_recordIP ado__sessions 206 9 none]
+G r l session_record [create ado__sessions__factory 77 14 none] [session_recordDI ado__sessions 206 9 none]
+G r c none [create ado__sessions__factory 77 14 none] [create_connection ado__connections 109 14 none]
+G r d session [create ado__sessions__factory 77 14 none] [adjust ado__sessions 221 14 none]
+G r e session [create ado__sessions__factory 77 14 none] [finalize ado__sessions 224 14 none]
+G r c none [create ado__sessions__factory 77 14 none] [initialize ado__schemas__entities 50 14 none]
+G r s session [get_session ado__sessions__factory 82 13 none] [sessionIP ado__sessions 216 9 none]
+G r c none [get_session ado__sessions__factory 82 13 none] [increment util__concurrent__counters 52 14 none]
+G r d session [get_session ado__sessions__factory 82 13 none] [adjust ado__sessions 221 14 none]
+G r c none [initialize_sequences ado__sessions__factory 107 14 none] [set_default_generator ado__sequences 91 14 none]
+G r e query_manager [session_factoryDF ado__sessions__factory 94 9 none] [finalize ado__queries 371 14 none]
+G r e cache_manager [session_factoryDF ado__sessions__factory 94 9 none] [finalize ado__caches 77 14 none]
+G r k factory [session_factoryDF ado__sessions__factory 94 9 none] [factoryDF ado__sequences 158 9 none]
+G r k data_source [session_factoryDF ado__sessions__factory 94 9 none] [data_sourceDF ado__sessions__sources 76 9 none]
+G r s data_source [session_factoryIP ado__sessions__factory 94 9 none] [data_sourceIP ado__sessions__sources 76 9 none]
+G r l data_source [session_factoryIP ado__sessions__factory 94 9 none] [data_sourceDI ado__sessions__sources 76 9 none]
+G r s factory [session_factoryIP ado__sessions__factory 94 9 none] [factoryIP ado__sequences 158 9 none]
+G r l factory [session_factoryIP ado__sessions__factory 94 9 none] [factoryDI ado__sequences 158 9 none]
+G r s cache_manager [session_factoryIP ado__sessions__factory 94 9 none] [cache_managerIP ado__caches 88 9 none]
+G r s query_manager [session_factoryIP ado__sessions__factory 94 9 none] [query_managerIP ado__queries 364 9 none]
+G r e query_manager [session_factoryIP ado__sessions__factory 94 9 none] [finalize ado__queries 371 14 none]
+G r e cache_manager [session_factoryIP ado__sessions__factory 94 9 none] [finalize ado__caches 77 14 none]
+G r k factory [session_factoryIP ado__sessions__factory 94 9 none] [factoryDF ado__sequences 158 9 none]
+G r k data_source [session_factoryIP ado__sessions__factory 94 9 none] [data_sourceDF ado__sessions__sources 76 9 none]
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<28|43R9>
+X 30 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[22|75]>
+X 43 ado.ads
+25K9*ADO 150e8 59|19r6 20r6 21r6 22r6 52r9 73r35 86r46 95r22 97r30 99r22
+. 100r30 101r22 102r30 103r22 109r5 60|19r6 20r6 21r6 23r14 76r11 80r30 89r35
+. 92r31 95r7 102r13 115r31 118r7 125r13 134r46 139r5
+X 44 ado-audits.ads
+26K13*Audits 211e15 59|21w10 86r50 103r26 60|134r50
+78h9*Audit_Manager
+79P9*Audit_Manager_Access(78R9) 59|86r57 103r33 60|134r57
+X 45 ado-caches.ads
+44K13*Caches 93e15 59|20w10 100r34 101r26
+57R9*Cache_Manager<28|50R9><51|100R9> 91e14 59|100r41
+59P9*Cache_Manager_Access(57R9) 59|101r33
+71U14*Add_Cache 60|94s21 117s21
+X 46 ado-configs.ads
+23K13*Configs 148e16 60|98r52 98r67 121r52 121r67
+36a4*NO_ENTITY_LOAD{string} 60|98r75 121r75
+60V13*Is_On{boolean} 60|98s60 121s60
+75U14*Set_Connection 60|114s22
+121V13*Get_Database{string} 60|98s25 121s25
+X 47 ado-connections.ads
+109U14*Create_Connection 60|36s22 68s22
+X 51 ado-parameters.ads
+100h9*Expander
+X 52 ado-queries.ads
+188K13*Queries 373e16 59|102r34 60|21r10 95r11 118r11
+203R9*Query_Manager<28|50R9> 368e14 59|102r42
+204P9*Query_Manager_Access(203R9)
+X 53 ado-queries-loaders.ads
+19K21*Loaders 66e24 60|21w18 95r19 118r19
+51U14*Initialize 60|95s27 118s27
+X 54 ado-schemas.ads
+23K13*Schemas 215e16 60|20r10 92r35 102r17 115r35 125r17
+X 55 ado-schemas-entities.ads
+25K21*Entities 65e25 60|20w18 92r43 102r25 115r43 125r25
+30R9*Entity_Cache<45|48R9> 63e14 60|92r52 115r52
+50U14*Initialize 60|102s34 125s34
+X 56 ado-sequences.ads
+45K13*Sequences 165e18 59|19w10 97r34 60|19r10 76r15 80r34
+56P9*Generator_Access(55R9)
+77R9*Factory<28|50R9> 160e14 59|97r44
+91U14*Set_Default_Generator 60|79s7
+X 57 ado-sequences-hilo.ads
+29K23*Hilo 61e23 60|19w20 80r44
+49V13*Create_HiLo_Generator{56|56P9} 60|80r49
+X 58 ado-sessions.ads
+51K13*Sessions 43|25k9 58|237e17 59|22r10 52r13 73r39 95r26 99r26 109r9 60|23r18
+. 89r39 139r9
+56X4*Session_Error 60|48r16
+71R9*Session<28|43R9> 218e14 59|65r63 82r67 60|28r63 29r12 44r67 45r11 100r17
+. 123r17
+140R9*Master_Session<71R9> 231e14 59|68r70 60|58r70 59r12
+184R9*Session_Record 214e14 60|30r50 60r52
+185P9*Session_Record_Access(184R9) 59|82r37 60|30r21 44r37 60r21
+189P9 Entity_Cache_Access 59|99r35
+207r7*Counter{112|48R9} 60|51m50
+208r7*Database{119|67R12[47|96]} 60|36m43 68m43
+211p7*Entities{189P9} 60|33m9 65m9
+212p7*Values{45|59P9} 60|34m9 66m9
+213p7*Queries{52|204P9} 60|35m9 67m9
+217p7*Impl{185P9} 60|32m9 50m9 51r45 62m9
+226P9 Factory_Access 59|96r22
+229p7 Sequences{226P9} 60|63m9
+230p7 Audit 60|64m9
+X 59 ado-sessions-factory.ads
+52K22*Factory 58|51k13 59|94E9 109l18 109e25 60|23b27 139l18 139t25
+56a4*ENTITY_CACHE_NAME{string} 60|94r32 117r32
+61R9*Session_Factory 62r46 65p13 65r39 68p13 68r46 72p14 72r36 77p14 77r36
+. 85p14 85r50 94c9 104e14 107p14 107r53 60|28r39 58r46 75r53 88r36 111r36
+. 133r50
+62P9*Session_Factory_Access(61R9)
+65V13*Get_Session{58|71R9} 65>26 60|28b13 38l8 38t19 100s36 123s36
+65r26 Factory{61R9} 60|28b26 33r21 34r21 35r21 36r7
+68V13*Get_Master_Session{58|140R9} 68>33 60|58b13 70l8 70t26
+68r33 Factory{61R9} 60|58b33 63r22 64r18 65r21 66r21 67r21 68r7
+72U14*Create 72<22 73>22 60|88b14 105l8 105t14
+72r22 Factory{61R9} 60|88b22 91m7 92m7 93m7 93m31 93r31 94m7 94r7 94r51 95m39
+. 95r39 95r56 96m29 98r10 100r28 102r46
+73r22 Source{61|38R9} 60|89b22 91r25
+77U14*Create 77<22 78>22 60|111b14 128l8 128t14
+77r22 Factory{61R9} 60|111b22 114m7 114r7 115m7 116m7 116m31 116r31 117m7
+. 117r7 117r51 118m39 118r39 118r56 119m29 121r10 123r28 125r46
+78a22 URI{string} 60|112b22 114r38
+82V13*Get_Session{58|71R9} 82>26 60|44b13 53l8 53t19
+82p26 Proxy{58|185P9} 60|44b26 47r10 50r17
+85U14*Set_Audit_Manager 85=33 86>33 60|133b14 137l8 137t25
+85r33 Factory{61R9} 60|133b33 136m7
+86p33 Manager{44|79P9} 60|134b33 136r24
+95r7*Source{61|38R9} 60|36r15 68r15 91m15 95r64 98r18 114m15 118r64 121r18
+96p7*Sequences{58|226P9} 60|63r30 78m15
+97r7*Seq_Factory{56|77R9} 60|78m36 79m38
+99p7*Entities{58|189P9} 60|33r29 65r29 92m15 94r59 102r54 115m15 117r59 125r54
+100r7*Cache{45|57R9} 60|93m39 94m15 116m39 117m15
+101p7*Cache_Values{45|59P9} 60|34r29 66r29 93m15 116m15
+102r7*Queries{52|203R9} 60|35m29 67m29 95m47 118m47
+103p7*Audit{44|79P9} 60|64r26 136m15
+107U14 Initialize_Sequences 107=36 60|75b14 82l8 82t28 96s7 119s7
+107r36 Factory{61R9} 60|75b36 78m7 78m28 78r28 79m30 79r30 81m30 81r30
+X 60 ado-sessions-factory.adb
+29r7 R{58|71R9} 32m7 37r14
+30p7 S{58|185P9} 32r17 33r7 34r7 35r7 36r41
+45r7 R{58|71R9} 50m7 51r43 52r14
+59r7 R{58|140R9} 62m7 63m7 64m7 69r14
+60p7 S{58|185P9} 62r17 65r7 66r7 67r7 68r41
+100r13 S{58|71R9} 102m68 102r68
+123r13 S{58|71R9} 125m68 125r68
+X 61 ado-sessions-sources.ads
+29K22*Sources 59|22w19 73r48 95r35 60|89r48 61|83e25
+38R9*Data_Source<47|103R9> 59|73r56 95r43 60|89r56 61|76e74
+X 69 system.ads
+67M9*Address
+X 81 s-memory.ads
+53V13*Alloc{69|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{69|67M9} 105i<c,__gnat_realloc>22
+X 90 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 92 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 107 util.ads
+18K9*Util 60|51r7 107|28e9
+X 109 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 110 util-beans-objects.ads
+97h9*Object_Type
+X 111 util-concurrent.ads
+18K14*Concurrent 60|51r12 111|22e20
+X 112 util-concurrent-counters.ads
+39K25*Counters 60|51r23 112|91e29
+52U14*Increment 60|51s32
+X 118 util-properties.ads
+256h12*Manager<109|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 119 util-refs.ads
+67R12*Ref<28|43R9>
+

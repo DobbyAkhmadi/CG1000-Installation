@@ -1,0 +1,1013 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_LONG_LONG_INTEGERS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U mysql.mysql%s		mysql-mysql.ads		10c1b679 NE OO PR PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W mysql%s		mysql.ads		mysql.ali
+W mysql.com%s		mysql-com.ads		mysql-com.ali
+W mysql.my_list%s	mysql-my_list.ads	mysql-my_list.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrin.ads		20190518041255 341d0ddf interfaces.c.strings%s
+D mysql.ads		20200810200714 83c4e906 mysql%s
+D mysql-com.ads		20200810200714 f2d5f63f mysql.com%s
+D mysql-my_list.ads	20200810200714 a10596bb mysql.my_list%s
+D mysql-mysql.ads	20200810200714 e6dccfbb mysql.mysql%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+G a e
+G c Z s s [mysql_server_init mysql__mysql 501 13 none]
+G c Z s s [mysql_server_end mysql__mysql 507 14 none]
+G c Z s s [mysql_get_parameters mysql__mysql 519 13 none]
+G c Z s s [mysql_thread_init mysql__mysql 528 13 none]
+G c Z s s [mysql_thread_end mysql__mysql 531 14 none]
+G c Z s s [mysql_num_rows mysql__mysql 538 13 none]
+G c Z s s [mysql_num_fields mysql__mysql 541 13 none]
+G c Z s s [mysql_eof mysql__mysql 544 13 none]
+G c Z s s [mysql_fetch_field_direct mysql__mysql 547 13 none]
+G c Z s s [mysql_fetch_fields mysql__mysql 551 13 none]
+G c Z s s [mysql_row_tell mysql__mysql 554 13 none]
+G c Z s s [mysql_field_tell mysql__mysql 557 13 none]
+G c Z s s [mysql_field_count mysql__mysql 560 13 none]
+G c Z s s [mysql_affected_rows mysql__mysql 563 13 none]
+G c Z s s [mysql_insert_id mysql__mysql 566 13 none]
+G c Z s s [mysql_errno mysql__mysql 569 13 none]
+G c Z s s [mysql_error mysql__mysql 572 13 none]
+G c Z s s [mysql_sqlstate mysql__mysql 575 13 none]
+G c Z s s [mysql_warning_count mysql__mysql 578 13 none]
+G c Z s s [mysql_info mysql__mysql 581 13 none]
+G c Z s s [mysql_thread_id mysql__mysql 584 13 none]
+G c Z s s [mysql_character_set_name mysql__mysql 587 13 none]
+G c Z s s [mysql_set_character_set mysql__mysql 590 13 none]
+G c Z s s [mysql_init mysql__mysql 593 13 none]
+G c Z s s [mysql_ssl_set mysql__mysql 596 13 none]
+G c Z s s [mysql_get_ssl_cipher mysql__mysql 605 13 none]
+G c Z s s [mysql_change_user mysql__mysql 608 13 none]
+G c Z s s [mysql_real_connect mysql__mysql 615 13 none]
+G c Z s s [mysql_select_db mysql__mysql 626 13 none]
+G c Z s s [mysql_query mysql__mysql 629 13 none]
+G c Z s s [mysql_send_query mysql__mysql 632 13 none]
+G c Z s s [mysql_real_query mysql__mysql 638 13 none]
+G c Z s s [mysql_store_result mysql__mysql 644 13 none]
+G c Z s s [mysql_use_result mysql__mysql 647 13 none]
+G c Z s s [mysql_master_query mysql__mysql 651 13 none]
+G c Z s s [mysql_master_send_query mysql__mysql 657 13 none]
+G c Z s s [mysql_slave_query mysql__mysql 664 13 none]
+G c Z s s [mysql_slave_send_query mysql__mysql 670 13 none]
+G c Z s s [mysql_get_character_set_info mysql__mysql 676 14 none]
+G c Z s s [mysql_set_local_infile_handler mysql__mysql 680 14 none]
+G c Z s s [mysql_set_local_infile_default mysql__mysql 698 14 none]
+G c Z s s [mysql_enable_rpl_parse mysql__mysql 705 14 none]
+G c Z s s [mysql_disable_rpl_parse mysql__mysql 708 14 none]
+G c Z s s [mysql_rpl_parse_enabled mysql__mysql 712 13 none]
+G c Z s s [mysql_enable_reads_from_master mysql__mysql 716 14 none]
+G c Z s s [mysql_disable_reads_from_master mysql__mysql 719 14 none]
+G c Z s s [mysql_reads_from_master_enabled mysql__mysql 723 13 none]
+G c Z s s [mysql_rpl_query_type mysql__mysql 726 13 none]
+G c Z s s [mysql_rpl_probe mysql__mysql 730 13 none]
+G c Z s s [mysql_set_master mysql__mysql 734 13 none]
+G c Z s s [mysql_add_slave mysql__mysql 742 13 none]
+G c Z s s [mysql_shutdown mysql__mysql 750 13 none]
+G c Z s s [mysql_dump_debug_info mysql__mysql 753 13 none]
+G c Z s s [mysql_refresh mysql__mysql 756 13 none]
+G c Z s s [mysql_kill mysql__mysql 759 13 none]
+G c Z s s [mysql_set_server_option mysql__mysql 762 13 none]
+G c Z s s [mysql_ping mysql__mysql 765 13 none]
+G c Z s s [mysql_stat mysql__mysql 768 13 none]
+G c Z s s [mysql_get_server_info mysql__mysql 771 13 none]
+G c Z s s [mysql_get_client_info mysql__mysql 774 13 none]
+G c Z s s [mysql_get_client_version mysql__mysql 777 13 none]
+G c Z s s [mysql_get_host_info mysql__mysql 780 13 none]
+G c Z s s [mysql_get_server_version mysql__mysql 783 13 none]
+G c Z s s [mysql_get_proto_info mysql__mysql 786 13 none]
+G c Z s s [mysql_list_dbs mysql__mysql 789 13 none]
+G c Z s s [mysql_list_tables mysql__mysql 792 13 none]
+G c Z s s [mysql_list_processes mysql__mysql 795 13 none]
+G c Z s s [mysql_options mysql__mysql 798 13 none]
+G c Z s s [mysql_free_result mysql__mysql 804 14 none]
+G c Z s s [mysql_data_seek mysql__mysql 807 14 none]
+G c Z s s [mysql_row_seek mysql__mysql 810 13 none]
+G c Z s s [mysql_field_seek mysql__mysql 813 13 none]
+G c Z s s [mysql_fetch_row mysql__mysql 816 13 none]
+G c Z s s [mysql_fetch_lengths mysql__mysql 819 13 none]
+G c Z s s [mysql_fetch_field mysql__mysql 822 13 none]
+G c Z s s [mysql_list_fields mysql__mysql 825 13 none]
+G c Z s s [mysql_escape_string mysql__mysql 831 13 none]
+G c Z s s [mysql_hex_string mysql__mysql 837 13 none]
+G c Z s s [mysql_real_escape_string mysql__mysql 843 13 none]
+G c Z s s [mysql_debug mysql__mysql 850 14 none]
+G c Z s s [myodbc_remove_escape mysql__mysql 853 14 none]
+G c Z s s [mysql_thread_safe mysql__mysql 856 13 none]
+G c Z s s [mysql_embedded mysql__mysql 859 13 none]
+G c Z s s [mysql_manager_init mysql__mysql 862 13 none]
+G c Z s s [mysql_manager_connect mysql__mysql 865 13 none]
+G c Z s s [mysql_manager_close mysql__mysql 873 14 none]
+G c Z s s [mysql_manager_command mysql__mysql 876 13 none]
+G c Z s s [mysql_manager_fetch_line mysql__mysql 882 13 none]
+G c Z s s [mysql_read_query_result mysql__mysql 888 13 none]
+G c Z s s [mysql_stmt_init mysql__mysql 1129 13 none]
+G c Z s s [mysql_stmt_prepare mysql__mysql 1132 13 none]
+G c Z s s [mysql_stmt_execute mysql__mysql 1138 13 none]
+G c Z s s [mysql_stmt_fetch mysql__mysql 1141 13 none]
+G c Z s s [mysql_stmt_fetch_column mysql__mysql 1144 13 none]
+G c Z s s [mysql_stmt_store_result mysql__mysql 1151 13 none]
+G c Z s s [mysql_stmt_param_count mysql__mysql 1154 13 none]
+G c Z s s [mysql_stmt_attr_set mysql__mysql 1157 13 none]
+G c Z s s [mysql_stmt_attr_get mysql__mysql 1163 13 none]
+G c Z s s [mysql_stmt_bind_param mysql__mysql 1169 13 none]
+G c Z s s [mysql_stmt_bind_result mysql__mysql 1172 13 none]
+G c Z s s [mysql_stmt_close mysql__mysql 1175 13 none]
+G c Z s s [mysql_stmt_reset mysql__mysql 1178 13 none]
+G c Z s s [mysql_stmt_free_result mysql__mysql 1181 13 none]
+G c Z s s [mysql_stmt_send_long_data mysql__mysql 1184 13 none]
+G c Z s s [mysql_stmt_result_metadata mysql__mysql 1191 13 none]
+G c Z s s [mysql_stmt_param_metadata mysql__mysql 1194 13 none]
+G c Z s s [mysql_stmt_errno mysql__mysql 1197 13 none]
+G c Z s s [mysql_stmt_error mysql__mysql 1200 13 none]
+G c Z s s [mysql_stmt_sqlstate mysql__mysql 1203 13 none]
+G c Z s s [mysql_stmt_row_seek mysql__mysql 1206 13 none]
+G c Z s s [mysql_stmt_row_tell mysql__mysql 1209 13 none]
+G c Z s s [mysql_stmt_data_seek mysql__mysql 1212 14 none]
+G c Z s s [mysql_stmt_num_rows mysql__mysql 1215 13 none]
+G c Z s s [mysql_stmt_affected_rows mysql__mysql 1218 13 none]
+G c Z s s [mysql_stmt_insert_id mysql__mysql 1221 13 none]
+G c Z s s [mysql_stmt_field_count mysql__mysql 1224 13 none]
+G c Z s s [mysql_commit mysql__mysql 1227 13 none]
+G c Z s s [mysql_rollback mysql__mysql 1230 13 none]
+G c Z s s [mysql_autocommit mysql__mysql 1233 13 none]
+G c Z s s [mysql_more_results mysql__mysql 1236 13 none]
+G c Z s s [mysql_next_result mysql__mysql 1239 13 none]
+G c Z s s [mysql_close mysql__mysql 1242 14 none]
+G c Z s s [st_mysql_fieldIP mysql__mysql 78 9 none]
+G c Z s s [row_fieldsIP mysql__mysql 117 9 none]
+G c Z s s [st_mysql_rowsIP mysql__mysql 139 9 none]
+G c Z s s [st_used_memIP mysql__mysql 171 9 none]
+G c Z s s [st_mem_rootIP mysql__mysql 183 9 none]
+G c Z s s [st_mysql_dataIP mysql__mysql 209 9 none]
+G c Z s s [st_mysql_optionsIP mysql__mysql 247 9 none]
+G c Z s s [character_setIP mysql__mysql 343 9 none]
+G c Z s s [Tanon1855_anon2254_arrayBIP mysql__mysql 1005 4 none]
+G c Z s s [Tanon1855_anon2255_arrayBIP mysql__mysql 1006 4 none]
+G c Z s s [st_mysql_stmtIP mysql__mysql 1007 9 none]
+G c Z s s [Tanon1856_anon1888_arrayBIP mysql__mysql 375 4 none]
+G c Z s s [st_mysqlIP mysql__mysql 376 9 none]
+G c Z s s [st_mysql_resIP mysql__mysql 441 9 none]
+G c Z s s [Tanon1915_anon1929_arrayBIP mysql__mysql 467 4 none]
+G c Z s s [st_mysql_managerIP mysql__mysql 468 9 none]
+G c Z s s [st_mysql_parametersIP mysql__mysql 488 9 none]
+G c Z s s [st_mysql_bindIP mysql__mysql 960 9 none]
+G c Z s s [st_mysql_methodsIP mysql__mysql 1090 9 none]
+G r s st_list [st_mysql_stmtIP mysql__mysql 1007 9 none] [st_listIP mysql__my_list 24 9 none]
+G r s st_net [st_mysqlIP mysql__mysql 376 9 none] [st_netIP mysql__com 259 9 none]
+G r s st_net [st_mysql_managerIP mysql__mysql 468 9 none] [st_netIP mysql__com 259 9 none]
+X 3 interfac.ads
+38K9*Interfaces 184e15 9|19r6 19r24 20r6 68r20 74r22 79r14 80r18 81r15 82r19
+. 83r12 84r17 85r13 117r51 254r14 255r14 256r18 257r21 258r12 260r21 261r22
+. 262r21 263r22 264r17 265r18 266r16 267r20 268r20 269r33 279r19 284r17 288r17
+. 293r17 346r16 347r14 348r17 349r13 379r14 380r14 381r16 382r21 383r24 384r19
+. 385r14 386r12 470r14 471r14 472r16 478r17 479r21 480r22 572r54 575r57 581r53
+. 587r67 590r66 598r14 599r14 600r14 601r14 602r14 605r63 610r14 611r14 612r14
+. 617r14 618r14 619r14 620r14 622r14 626r58 629r54 634r14 640r14 653r14 659r14
+. 666r14 672r14 684r17 688r17 693r17 726r42 736r14 738r14 739r14 744r14 746r14
+. 747r14 768r53 771r64 774r42 780r62 789r57 792r60 801r14 827r14 828r14 832r14
+. 833r14 838r14 839r14 845r14 846r14 850r34 853r64 867r14 868r14 869r14 878r14
+. 884r14 1095r17 1097r17 1117r70 1121r17 1122r17 1134r14 1187r14 1200r57
+. 1203r60
+X 4 i-c.ads
+18K20*C 230e17 9|19w17 19r35 20r17 68r31 74r33 79r25 80r29 81r26 82r30 83r23
+. 84r28 85r24 117r62 254r25 255r25 256r29 257r32 258r23 260r32 261r33 262r32
+. 263r33 264r28 265r29 266r27 267r31 268r31 269r44 279r30 284r28 288r28 293r28
+. 346r27 347r25 348r28 349r24 379r25 380r25 381r27 382r32 383r35 384r30 385r25
+. 386r23 470r25 471r25 472r27 478r28 479r32 480r33 572r65 575r68 581r64 587r78
+. 590r77 598r25 599r25 600r25 601r25 602r25 605r74 610r25 611r25 612r25 617r25
+. 618r25 619r25 620r25 622r25 626r69 629r65 634r25 640r25 653r25 659r25 666r25
+. 672r25 684r28 688r28 693r28 726r53 736r25 738r25 739r25 744r25 746r25 747r25
+. 768r64 771r75 774r53 780r73 789r68 792r71 801r25 827r25 828r25 832r25 833r25
+. 838r25 839r25 845r25 846r25 850r45 853r75 867r25 868r25 869r25 878r25 884r25
+. 1095r28 1097r28 1117r81 1121r28 1122r28 1134r25 1187r25 1200r68 1203r71
+35I9*int<integer> 9|285r40 289r34 294r34 476r28 477r28 481r30 502r14 504r37
+. 590r105 626r97 629r93 635r36 641r36 685r40 689r34 694r34 712r66 726r81
+. 739r53 747r53 750r95 753r64 756r73 759r75 762r100 765r53 801r53 879r14
+. 879r26 885r14 885r26 1018r89 1113r65 1114r69 1115r94 1122r56 1123r74 1135r36
+. 1138r59 1141r57 1148r36 1151r64 1239r60
+43M9*unsigned 9|71r25 88r29 89r33 90r30 91r34 92r27 93r32 94r28 95r23 96r26
+. 97r27 128r34 173r22 174r22 187r28 188r28 189r27 190r35 211r24 221r28 248r33
+. 249r30 250r31 251r22 252r26 289r17 294r17 320r28 325r35 337r30 344r24 345r23
+. 350r26 351r26 395r22 398r34 399r29 400r31 401r33 402r31 449r29 450r31 473r22
+. 541r56 547r64 560r60 569r54 578r62 621r14 689r17 694r17 737r14 745r14 756r56
+. 786r63 856r38 870r14 896r37 970r30 971r29 1022r31 1023r28 1024r29 1025r29
+. 1070r35 1104r17 1109r17 1147r14 1186r14 1197r57 1224r63
+45M9*unsigned_long 9|86r24 87r28 142r24 253r29 270r36 393r27 394r31 396r29
+. 397r37 446r24 489r37 490r36 584r58 623r14 635r14 641r14 654r14 660r14 667r14
+. 673r14 759r53 777r45 783r67 834r14 834r36 840r14 840r36 847r14 847r36 961r23
+. 966r31 968r24 969r30 1019r25 1020r23 1021r31 1096r17 1098r17 1107r24 1135r14
+. 1148r14 1154r63 1188r14
+47M9*unsigned_char 9|967r24 1031r34
+72E9*char<character> 9|66r23 375r63 467r64 1005r64 1006r62
+X 5 i-cstrin.ads
+36K22*Strings 106e25 9|20w19 68r33 74r35 79r27 80r31 81r28 82r32 83r25 84r30
+. 85r26 117r64 254r27 255r27 256r31 257r34 258r25 260r34 261r35 262r34 263r35
+. 264r30 265r31 266r29 267r33 268r33 269r46 279r32 284r30 288r30 293r30 346r29
+. 347r27 348r30 349r26 379r27 380r27 381r29 382r34 383r37 384r32 385r27 386r25
+. 470r27 471r27 472r29 478r30 479r34 480r35 572r67 575r70 581r66 587r80 590r79
+. 598r27 599r27 600r27 601r27 602r27 605r76 610r27 611r27 612r27 617r27 618r27
+. 619r27 620r27 622r27 626r71 629r67 634r27 640r27 653r27 659r27 666r27 672r27
+. 684r30 688r30 693r30 726r55 736r27 738r27 739r27 744r27 746r27 747r27 768r66
+. 771r77 774r55 780r75 789r70 792r73 801r27 827r27 828r27 832r27 833r27 838r27
+. 839r27 845r27 846r27 850r47 853r77 867r27 868r27 869r27 878r27 884r27 1095r30
+. 1097r30 1117r83 1121r30 1122r30 1134r27 1187r27 1200r70 1203r73
+47P9*chars_ptr 9|68r41 74r43 79r35 80r39 81r36 82r40 83r33 84r38 85r34 117r72
+. 254r35 255r35 256r39 257r42 258r33 260r42 261r43 262r42 263r43 264r38 265r39
+. 266r37 267r41 268r41 269r54 279r40 284r38 288r38 293r38 346r37 347r35 348r38
+. 349r34 379r35 380r35 381r37 382r42 383r45 384r40 385r35 386r33 470r35 471r35
+. 472r37 478r38 479r42 480r43 572r75 575r78 581r74 587r88 590r87 598r35 599r35
+. 600r35 601r35 602r35 605r84 610r35 611r35 612r35 617r35 618r35 619r35 620r35
+. 622r35 626r79 629r75 634r35 640r35 653r35 659r35 666r35 672r35 684r38 688r38
+. 693r38 726r63 736r35 738r35 739r35 744r35 746r35 747r35 768r74 771r85 774r63
+. 780r83 789r78 792r81 801r35 827r35 828r35 832r35 833r35 838r35 839r35 845r35
+. 846r35 850r55 853r85 867r35 868r35 869r35 878r35 884r35 1095r38 1097r38
+. 1117r91 1121r38 1122r38 1134r35 1187r35 1200r78 1203r81
+X 6 mysql.ads
+19K9*Mysql 21e10 9|22r6 23r6 25r9 1250r5
+X 7 mysql-com.ads
+23K15*Com 609e14 9|23w12 98r24 377r25 469r25 750r57 762r66 965r29 976r58
+. 1094r17
+201M12*enum_server_command{4|43M9} 9|1094r21
+259R9*st_net 292e14 9|976r62
+316R12*NET{259R9} 9|377r29 469r29
+318M12*enum_field_types{4|43M9} 9|98r28 965r33
+350M12*mysql_enum_shutdown_level{4|43M9} 9|750r61
+378M12*enum_mysql_set_option{4|43M9} 9|762r70
+X 8 mysql-my_list.ads
+4K15*My_list 54e18 9|22w12 413r22 1009r26
+31R12*LIST{24R9} 9|1009r34
+X 9 mysql-mysql.ads
+25K15*Mysql 6|19k9 9|30r8 1250l11 1250e16
+32N4*MAX_MYSQL_MANAGER_ERR
+33N4*MAX_MYSQL_MANAGER_MSG
+35N4*MANAGER_OK
+36N4*MANAGER_INFO
+37N4*MANAGER_ACCESS
+38N4*MANAGER_CLIENT_ERR
+39N4*MANAGER_INTERNAL_ERR
+41N4*LOCAL_INFILE_ERROR_LEN
+43N4*MYSQL_NO_DATA
+44N4*MYSQL_DATA_TRUNCATED
+66E12*my_bool{4|72E9} 271r25 272r26 273r28 274r27 275r27 276r33 277r33 280r29
+. 281r40 405r25 406r27 408r27 416r39 453r21 454r44 474r25 475r21 528r38 544r49
+. 602r53 612r53 654r36 660r36 667r36 673r36 723r74 730r58 859r35 888r66 962r24
+. 964r22 972r29 973r29 974r32 975r31 1029r38 1030r33 1032r44 1033r35 1091r72
+. 1099r17 1100r36 1112r93 1118r66 1160r37 1166r37 1169r81 1172r82 1175r57
+. 1178r57 1181r63 1188r36 1227r55 1230r57 1233r59 1233r75 1236r61
+68P12*gptr{5|47P9} 378r22
+71m4*mysql_port{4|43M9} 72m28 72r28
+74p4*mysql_unix_port{5|47P9} 75m28 75r28
+78R9*st_mysql_field 99e14 100r26 115r35
+79p7*name{5|47P9}
+80p7*org_name{5|47P9}
+81p7*table{5|47P9}
+82p7*org_table{5|47P9}
+83p7*db{5|47P9}
+84p7*catalog{5|47P9}
+85p7*def{5|47P9}
+86m7*length{4|45M9}
+87m7*max_length{4|45M9}
+88m7*name_length{4|43M9}
+89m7*org_name_length{4|43M9}
+90m7*table_length{4|43M9}
+91m7*org_table_length{4|43M9}
+92m7*db_length{4|43M9}
+93m7*catalog_length{4|43M9}
+94m7*def_length{4|43M9}
+95m7*flags{4|43M9}
+96m7*decimals{4|43M9}
+97m7*charsetnr{4|43M9}
+98m7*C_Type{7|318M12}
+115P9*MYSQL_FIELD(78R9) 388r16 443r16 548r46 551r58 822r57 979r17 983r17
+. 1013r16 1103r17 1111r66
+117A9*Row_Fields(5|47P9)<integer> 118r26 124r33
+120P9*System_Access(10|67M9) 121r31 816r55 819r59
+124P9*MYSQL_ROW(117A9) 125r26 141r14 451r13 452r21 1108r17
+128M12*MYSQL_FIELD_OFFSET{4|43M9} 557r56 813r56 813r83
+131I12*My_Ulonglong{long_long_integer} 210r22 390r31 391r27 392r28 442r27
+. 538r54 563r62 566r58 807r56 1016r31 1017r27 1212r62 1215r60 1218r65 1221r61
+132M9*Unsigned_Long_Long
+134R9*St_Mysql_Rows 135r30 139c9 143e14 144r26 147r40
+135P9*MYSQL_ROWS(134R9) 140r14 212r14 445r21 1015r21
+140p7*next{135P9}
+141p7*data{124P9}
+142m7*length{4|45M9}
+147P9*MYSQL_ROW_OFFSET(134R9) 554r54 810r54 810r79 1206r60 1206r85 1209r60
+150N3*ALLOC_MAX_BLOCK_TO_DROP
+151N3*ALLOC_MAX_BLOCK_USAGE_BEFORE_DROP
+171R9*st_used_mem 175e14
+172p7*next
+173m7*left{4|43M9}
+174m7*size{4|43M9}
+180R12*USED_MEM{171R9}
+183R9*st_mem_root 192e14 193r26 205r24
+184p7*free(171R9)
+185p7*used(171R9)
+186p7*pre_alloc(171R9)
+187m7*min_malloc{4|43M9}
+188m7*block_size{4|43M9}
+189m7*block_num{4|43M9}
+190m7*first_block_usage{4|43M9}
+191p7*error_handler
+205R12*MEM_ROOT{183R9} 213r23 389r29 448r29 1008r30
+209R9*st_mysql_data 215e14 216r26 219r34
+210i7*rows{131I12}
+211m7*fields{4|43M9}
+212p7*data{135P9}
+213r7*alloc{205R12}
+214m7*embedded_info{10|67M9}
+219P9*MYSQL_DATA(209R9) 444r14 1014r24 1104r34
+221M12*mysql_option{4|43M9} 222r41 223r34 224r36 225r34 226r39 227r40 228r37
+. 229r38 230r38 231r34 232r45 233r38 234r39 235r36 236r47 237r49 238r42 239r35
+. 240r33 241r44 242r35 243r48 278r32 800r14
+222m4*MYSQL_OPT_CONNECT_TIMEOUT{221M12}
+223m4*MYSQL_OPT_COMPRESS{221M12}
+224m4*MYSQL_OPT_NAMED_PIPE{221M12}
+225m4*MYSQL_INIT_COMMAND{221M12}
+226m4*MYSQL_READ_DEFAULT_FILE{221M12}
+227m4*MYSQL_READ_DEFAULT_GROUP{221M12}
+228m4*MYSQL_SET_CHARSET_DIR{221M12}
+229m4*MYSQL_SET_CHARSET_NAME{221M12}
+230m4*MYSQL_OPT_LOCAL_INFILE{221M12}
+231m4*MYSQL_OPT_PROTOCOL{221M12}
+232m4*MYSQL_SHARED_MEMORY_BASE_NAME{221M12}
+233m4*MYSQL_OPT_READ_TIMEOUT{221M12}
+234m4*MYSQL_OPT_WRITE_TIMEOUT{221M12}
+235m4*MYSQL_OPT_USE_RESULT{221M12}
+236m4*MYSQL_OPT_USE_REMOTE_CONNECTION{221M12}
+237m4*MYSQL_OPT_USE_EMBEDDED_CONNECTION{221M12}
+238m4*MYSQL_OPT_GUESS_CONNECTION{221M12}
+239m4*MYSQL_SET_CLIENT_IP{221M12}
+240m4*MYSQL_SECURE_AUTH{221M12}
+241m4*MYSQL_REPORT_DATA_TRUNCATION{221M12}
+242m4*MYSQL_OPT_RECONNECT{221M12}
+243m4*MYSQL_OPT_SSL_VERIFY_SERVER_CERT{221M12}
+247R9*st_mysql_options 296e14 297r26 403r25
+248m7*connect_timeout{4|43M9}
+249m7*read_timeout{4|43M9}
+250m7*write_timeout{4|43M9}
+251m7*port{4|43M9}
+252m7*protocol{4|43M9}
+253m7*client_flag{4|45M9}
+254p7*host{5|47P9}
+255p7*user{5|47P9}
+256p7*password{5|47P9}
+257p7*unix_socket{5|47P9}
+258p7*db{5|47P9}
+259m7*init_commands{10|67M9}
+260p7*my_cnf_file{5|47P9}
+261p7*my_cnf_group{5|47P9}
+262p7*charset_dir{5|47P9}
+263p7*charset_name{5|47P9}
+264p7*ssl_key{5|47P9}
+265p7*ssl_cert{5|47P9}
+266p7*ssl_ca{5|47P9}
+267p7*ssl_capath{5|47P9}
+268p7*ssl_cipher{5|47P9}
+269p7*shared_memory_base_name{5|47P9}
+270m7*max_allowed_packet{4|45M9}
+271e7*use_ssl{66E12}
+272e7*compress{66E12}
+273e7*named_pipe{66E12}
+274e7*rpl_probe{66E12}
+275e7*rpl_parse{66E12}
+276e7*no_master_reads{66E12}
+277e7*separate_thread{66E12}
+278m7*methods_to_use{221M12}
+279p7*client_ip{5|47P9}
+280e7*secure_auth{66E12}
+281e7*report_data_truncation{66E12}
+282p7*local_infile_init(4|35I9)
+283m10 arg1{10|67M9}
+284p10 arg2{5|47P9}
+285m10 arg3{10|67M9}
+286p7*local_infile_read(4|35I9)
+287m10 arg1{10|67M9}
+288p10 arg2{5|47P9}
+289m10 arg3{4|43M9}
+290p7*local_infile_end
+290m44 arg1{10|67M9}
+291p7*local_infile_error(4|35I9)
+292m10 arg1{10|67M9}
+293p10 arg2{5|47P9}
+294m10 arg3{4|43M9}
+295m7*local_infile_userdata{10|67M9}
+320M12*mysql_status{4|43M9} 321r34 322r39 323r39 404r24
+321m4*MYSQL_STATUS_READY{320M12}
+322m4*MYSQL_STATUS_GET_RESULT{320M12}
+323m4*MYSQL_STATUS_USE_RESULT{320M12}
+325M12*mysql_protocol_type{4|43M9} 326r38 327r34 328r37 329r35 330r37
+326m4*MYSQL_PROTOCOL_DEFAULT{325M12}
+327m4*MYSQL_PROTOCOL_TCP{325M12}
+328m4*MYSQL_PROTOCOL_SOCKET{325M12}
+329m4*MYSQL_PROTOCOL_PIPE{325M12}
+330m4*MYSQL_PROTOCOL_MEMORY{325M12}
+337M12*mysql_rpl_type{4|43M9} 338r32 339r31 340r31 726r93
+338m4*MYSQL_RPL_MASTER{337M12}
+339m4*MYSQL_RPL_SLAVE{337M12}
+340m4*MYSQL_RPL_ADMIN{337M12}
+343R9*character_set 352e14 353r26 362r31 676r79
+344m7*number{4|43M9}
+345m7*state{4|43M9}
+346p7*csname{5|47P9}
+347p7*name{5|47P9}
+348p7*comment{5|47P9}
+349p7*dir{5|47P9}
+350m7*mbminlen{4|43M9}
+351m7*mbmaxlen{4|43M9}
+362R12*MY_CHARSET_INFO{343R9}
+368R9*St_Mysql_Stmt 369r34 1007c9 1034e14 1035r26
+369P9*MYSQL_STMT(368R9) 1018r47 1100r17 1112r74 1113r46 1114r50 1123r55 1129r58
+. 1133r14 1138r40 1141r38 1145r14 1151r45 1154r44 1158r14 1164r14 1169r43
+. 1172r44 1175r38 1178r38 1181r44 1185r14 1191r48 1194r47 1197r38 1200r38
+. 1203r41 1206r41 1209r41 1212r43 1215r41 1218r46 1221r42 1224r44
+372R9*st_mysql 373r36 376c9 417e14 418r26
+373P9*Mysql_Access(372R9) 409r16 410r20 411r25 412r23 447r16 560r39 563r41
+. 566r37 569r33 572r33 575r36 578r41 581r32 584r37 587r46 590r45 593r32 593r53
+. 597r14 605r42 609r14 616r14 623r36 626r37 629r33 633r14 639r14 644r40 647r38
+. 652r14 658r14 665r14 671r14 676r51 681r14 698r53 705r45 708r46 712r45 716r53
+. 719r54 723r53 730r37 735r14 743r14 750r36 753r43 756r35 759r32 762r45 765r32
+. 768r32 771r43 780r41 783r46 786r42 789r36 792r39 795r42 799r14 826r14 844r14
+. 853r43 888r45 1010r19 1091r51 1093r17 1102r17 1105r44 1110r51 1111r45 1112r53
+. 1115r50 1116r52 1117r49 1118r45 1120r17 1129r37 1227r34 1230r36 1233r38
+. 1236r40 1239r39 1242r34
+375A9*anon1856_anon1888_array(4|72E9)<integer> 407r26
+377r7*the_net{7|316R12}
+378p7*connector_fd{68P12}
+379p7*host{5|47P9}
+380p7*user{5|47P9}
+381p7*passwd{5|47P9}
+382p7*unix_socket{5|47P9}
+383p7*server_version{5|47P9}
+384p7*host_info{5|47P9}
+385p7*info{5|47P9}
+386p7*db{5|47P9}
+387m7*charset{10|67M9}
+388p7*fields{115P9}
+389r7*field_alloc{205R12}
+390i7*affected_rows{131I12}
+391i7*insert_id{131I12}
+392i7*extra_info{131I12}
+393m7*thread_id{4|45M9}
+394m7*packet_length{4|45M9}
+395m7*port{4|43M9}
+396m7*client_flag{4|45M9}
+397m7*server_capabilities{4|45M9}
+398m7*protocol_version{4|43M9}
+399m7*field_count{4|43M9}
+400m7*server_status{4|43M9}
+401m7*server_language{4|43M9}
+402m7*warning_count{4|43M9}
+403r7*options{247R9}
+404m7*status{320M12}
+405e7*free_me{66E12}
+406e7*reconnect{66E12}
+407a7*scramble{375A9}
+408e7*rpl_pivot{66E12}
+409p7*master{373P9}
+410p7*next_slave{373P9}
+411p7*last_used_slave{373P9}
+412p7*last_used_con{373P9}
+413p7*stmts(8|24R9)
+414m7*methods{10|67M9}
+415m7*thd{10|67M9}
+416p7*unbuffered_fetch_owner(66E12)
+441R9*st_mysql_res 456e14 457r26 465r29
+442i7*row_count{131I12}
+443p7*fields{115P9}
+444p7*data{219P9}
+445p7*data_cursor{135P9}
+446p7*lengths(4|45M9)
+447p7*handle{373P9}
+448r7*field_alloc{205R12}
+449m7*field_count{4|43M9}
+450m7*current_field{4|43M9}
+451p7*row{124P9}
+452p7*current_row{124P9}
+453e7*eof{66E12}
+454e7*unbuffered_fetch_cancelled{66E12}
+455m7*methods{10|67M9}
+465P9*MYSQL_RES(441R9) 538r36 541r38 544r31 547r46 551r40 554r36 557r38 644r61
+. 647r59 789r96 792r99 795r63 804r40 807r38 810r36 813r38 816r37 819r41 822r39
+. 828r53 1105r65 1191r67 1194r66
+467A9*anon1915_anon1929_array(4|72E9)<integer> 482r28
+468R9*st_mysql_manager 483e14 484r26 486r37
+469r7*the_net{7|316R12}
+470p7*host{5|47P9}
+471p7*user{5|47P9}
+472p7*passwd{5|47P9}
+473m7*port{4|43M9}
+474e7*free_me{66E12}
+475e7*eof{66E12}
+476i7*cmd_status{4|35I9}
+477i7*last_errno{4|35I9}
+478p7*net_buf{5|47P9}
+479p7*net_buf_pos{5|47P9}
+480p7*net_data_end{5|47P9}
+481i7*net_buf_size{4|35I9}
+482a7*last_error{467A9}
+486P9*MYSQL_MANAGER(468R9) 862r40 862r62 866r14 870r31 873r42 877r14 883r14
+488R9*st_mysql_parameters 491e14 492r26 494r36
+489p7*p_max_allowed_packet(4|45M9)
+490p7*p_net_buffer_length(4|45M9)
+494P9*MYSQL_PARAMETERS(488R9) 519r41
+501V13*mysql_server_init{4|35I9} 502>7 503>7 504>7 505b28
+502i7 arg1{4|35I9}
+503m7 arg2{10|67M9}
+504m7 arg3{10|67M9}
+507U14*mysql_server_end 508b28
+519V13*mysql_get_parameters{494P9} 520b28
+528V13*mysql_thread_init{66E12} 529b28
+531U14*mysql_thread_end 532b28
+538V13*Mysql_Num_Rows{131I12} 538>29 539b28
+538p29 arg1{465P9}
+541V13*Mysql_Num_Fields{4|43M9} 541>31 542b28
+541p31 arg1{465P9}
+544V13*mysql_eof{66E12} 544>24 545b28
+544p24 arg1{465P9}
+547V13*Mysql_Fetch_Field_Direct{115P9} 547>39 547>57 549b28
+547p39 Arg1{465P9}
+547m57 Arg2{4|43M9}
+551V13*Mysql_Fetch_Fields{115P9} 551>33 552b28
+551p33 arg1{465P9}
+554V13*mysql_row_tell{147P9} 554>29 555b28
+554p29 arg1{465P9}
+557V13*mysql_field_tell{128M12} 557>31 558b28
+557p31 arg1{465P9}
+560V13*mysql_field_count{4|43M9} 560>32 561b28
+560p32 arg1{373P9}
+563V13*Mysql_Affected_Rows{131I12} 563>34 564b28
+563p34 arg1{373P9}
+566V13*mysql_insert_id{131I12} 566>30 567b28
+566p30 arg1{373P9}
+569V13*mysql_errno{4|43M9} 569>26 570b28
+569p26 arg1{373P9}
+572V13*Mysql_Error{5|47P9} 572>26 573b28
+572p26 arg1{373P9}
+575V13*mysql_sqlstate{5|47P9} 575>29 576b28
+575p29 arg1{373P9}
+578V13*mysql_warning_count{4|43M9} 578>34 579b28
+578p34 arg1{373P9}
+581V13*mysql_info{5|47P9} 581>25 582b28
+581p25 arg1{373P9}
+584V13*mysql_thread_id{4|45M9} 584>30 585b28
+584p30 arg1{373P9}
+587V13*mysql_character_set_name{5|47P9} 587>39 588b28
+587p39 arg1{373P9}
+590V13*mysql_set_character_set{4|35I9} 590>38 590>59 591b28
+590p38 arg1{373P9}
+590p59 arg2{5|47P9}
+593V13*mysql_init{373P9} 593>25 594b28
+593p25 arg1{373P9}
+596V13*mysql_ssl_set{66E12} 597>7 598>7 599>7 600>7 601>7 602>7 603b28
+597p7 arg1{373P9}
+598p7 arg2{5|47P9}
+599p7 arg3{5|47P9}
+600p7 arg4{5|47P9}
+601p7 arg5{5|47P9}
+602p7 arg6{5|47P9}
+605V13*mysql_get_ssl_cipher{5|47P9} 605>35 606b28
+605p35 arg1{373P9}
+608V13*mysql_change_user{66E12} 609>7 610>7 611>7 612>7 613b28
+609p7 arg1{373P9}
+610p7 arg2{5|47P9}
+611p7 arg3{5|47P9}
+612p7 arg4{5|47P9}
+615V13*mysql_real_connect{373P9} 616>7 617>7 618>7 619>7 620>7 621>7 622>7
+. 623>7 624b28
+616p7 arg1{373P9}
+617p7 arg2{5|47P9}
+618p7 arg3{5|47P9}
+619p7 arg4{5|47P9}
+620p7 arg5{5|47P9}
+621m7 arg6{4|43M9}
+622p7 arg7{5|47P9}
+623m7 arg8{4|45M9}
+626V13*mysql_select_db{4|35I9} 626>30 626>51 627b28
+626p30 arg1{373P9}
+626p51 arg2{5|47P9}
+629V13*Mysql_Query{4|35I9} 629>26 629>47 630b28
+629p26 arg1{373P9}
+629p47 arg2{5|47P9}
+632V13*mysql_send_query{4|35I9} 633>7 634>7 635>7 636b28
+633p7 arg1{373P9}
+634p7 arg2{5|47P9}
+635m7 arg3{4|45M9}
+638V13*mysql_real_query{4|35I9} 639>7 640>7 641>7 642b28
+639p7 arg1{373P9}
+640p7 arg2{5|47P9}
+641m7 arg3{4|45M9}
+644V13*Mysql_Store_Result{465P9} 644>33 645b28
+644p33 arg1{373P9}
+647V13*mysql_use_result{465P9} 647>31 648b28
+647p31 arg1{373P9}
+651V13*mysql_master_query{66E12} 652>7 653>7 654>7 655b28
+652p7 arg1{373P9}
+653p7 arg2{5|47P9}
+654m7 arg3{4|45M9}
+657V13*mysql_master_send_query{66E12} 658>7 659>7 660>7 661b28
+658p7 arg1{373P9}
+659p7 arg2{5|47P9}
+660m7 arg3{4|45M9}
+664V13*mysql_slave_query{66E12} 665>7 666>7 667>7 668b28
+665p7 arg1{373P9}
+666p7 arg2{5|47P9}
+667m7 arg3{4|45M9}
+670V13*mysql_slave_send_query{66E12} 671>7 672>7 673>7 674b28
+671p7 arg1{373P9}
+672p7 arg2{5|47P9}
+673m7 arg3{4|45M9}
+676U14*mysql_get_character_set_info 676>44 676^65 677b28
+676p44 arg1{373P9}
+676p65 arg2(343R9)
+680U14*mysql_set_local_infile_handler 681>7 682^7 686^7 690^7 691^7 695>7
+. 696b28
+681p7 arg1{373P9}
+682p7 arg2(4|35I9)
+683m10 arg1{10|67M9}
+684p10 arg2{5|47P9}
+685m10 arg3{10|67M9}
+686p7 arg3(4|35I9)
+687m10 arg1{10|67M9}
+688p10 arg2{5|47P9}
+689m10 arg3{4|43M9}
+690p7 arg4
+690m32 arg1{10|67M9}
+691p7 arg5(4|35I9)
+692m10 arg1{10|67M9}
+693p10 arg2{5|47P9}
+694m10 arg3{4|43M9}
+695m7 arg6{10|67M9}
+698U14*mysql_set_local_infile_default 698>46 699b28
+698p46 arg1{373P9}
+705U14*mysql_enable_rpl_parse 705>38 706b28
+705p38 arg1{373P9}
+708U14*mysql_disable_rpl_parse 708>39 709b28
+708p39 arg1{373P9}
+712V13*mysql_rpl_parse_enabled{4|35I9} 712>38 713b28
+712p38 arg1{373P9}
+716U14*mysql_enable_reads_from_master 716>46 717b28
+716p46 arg1{373P9}
+719U14*mysql_disable_reads_from_master 719>47 720b28
+719p47 arg1{373P9}
+723V13*mysql_reads_from_master_enabled{66E12} 723>46 724b28
+723p46 arg1{373P9}
+726V13*mysql_rpl_query_type{337M12} 726>35 726>74 727b28
+726p35 arg1{5|47P9}
+726i74 arg2{4|35I9}
+730V13*mysql_rpl_probe{66E12} 730>30 731b28
+730p30 arg1{373P9}
+734V13*mysql_set_master{4|35I9} 735>7 736>7 737>7 738>7 739>7 740b28
+735p7 arg1{373P9}
+736p7 arg2{5|47P9}
+737m7 arg3{4|43M9}
+738p7 arg4{5|47P9}
+739p7 arg5{5|47P9}
+742V13*mysql_add_slave{4|35I9} 743>7 744>7 745>7 746>7 747>7 748b28
+743p7 arg1{373P9}
+744p7 arg2{5|47P9}
+745m7 arg3{4|43M9}
+746p7 arg4{5|47P9}
+747p7 arg5{5|47P9}
+750V13*mysql_shutdown{4|35I9} 750>29 750>50 751b28
+750p29 arg1{373P9}
+750m50 arg2{7|350M12}
+753V13*mysql_dump_debug_info{4|35I9} 753>36 754b28
+753p36 arg1{373P9}
+756V13*mysql_refresh{4|35I9} 756>28 756>49 757b28
+756p28 arg1{373P9}
+756m49 arg2{4|43M9}
+759V13*mysql_kill{4|35I9} 759>25 759>46 760b28
+759p25 arg1{373P9}
+759m46 arg2{4|45M9}
+762V13*mysql_set_server_option{4|35I9} 762>38 762>59 763b28
+762p38 arg1{373P9}
+762m59 arg2{7|378M12}
+765V13*mysql_ping{4|35I9} 765>25 766b28
+765p25 arg1{373P9}
+768V13*mysql_stat{5|47P9} 768>25 769b28
+768p25 arg1{373P9}
+771V13*mysql_get_server_info{5|47P9} 771>36 772b28
+771p36 arg1{373P9}
+774V13*mysql_get_client_info{5|47P9} 775b28
+777V13*mysql_get_client_version{4|45M9} 778b28
+780V13*mysql_get_host_info{5|47P9} 780>34 781b28
+780p34 arg1{373P9}
+783V13*mysql_get_server_version{4|45M9} 783>39 784b28
+783p39 arg1{373P9}
+786V13*mysql_get_proto_info{4|43M9} 786>35 787b28
+786p35 arg1{373P9}
+789V13*mysql_list_dbs{465P9} 789>29 789>50 790b28
+789p29 arg1{373P9}
+789p50 arg2{5|47P9}
+792V13*mysql_list_tables{465P9} 792>32 792>53 793b28
+792p32 arg1{373P9}
+792p53 arg2{5|47P9}
+795V13*mysql_list_processes{465P9} 795>35 796b28
+795p35 arg1{373P9}
+798V13*mysql_options{4|35I9} 799>7 800>7 801>7 802b28
+799p7 arg1{373P9}
+800m7 arg2{221M12}
+801p7 arg3{5|47P9}
+804U14*Mysql_Free_Result 804>33 805b28
+804p33 arg1{465P9}
+807U14*mysql_data_seek 807>31 807>49 808b28
+807p31 arg1{465P9}
+807i49 arg2{131I12}
+810V13*mysql_row_seek{147P9} 810>29 810>47 811b28
+810p29 arg1{465P9}
+810p47 arg2{147P9}
+813V13*Mysql_Field_Seek{128M12} 813>31 813>49 814b28
+813p31 arg1{465P9}
+813m49 arg2{128M12}
+816V13*Mysql_Fetch_Row{120P9} 816>30 817b28
+816p30 arg1{465P9}
+819V13*mysql_fetch_lengths{120P9} 819>34 820b28
+819p34 arg1{465P9}
+822V13*mysql_fetch_field{115P9} 822>32 823b28
+822p32 arg1{465P9}
+825V13*mysql_list_fields{465P9} 826>7 827>7 828>7 829b28
+826p7 arg1{373P9}
+827p7 arg2{5|47P9}
+828p7 arg3{5|47P9}
+831V13*mysql_escape_string{4|45M9} 832>7 833>7 834>7 835b28
+832p7 arg1{5|47P9}
+833p7 arg2{5|47P9}
+834m7 arg3{4|45M9}
+837V13*mysql_hex_string{4|45M9} 838>7 839>7 840>7 841b28
+838p7 arg1{5|47P9}
+839p7 arg2{5|47P9}
+840m7 arg3{4|45M9}
+843V13*mysql_real_escape_string{4|45M9} 844>7 845>7 846>7 847>7 848b28
+844p7 arg1{373P9}
+845p7 arg2{5|47P9}
+846p7 arg3{5|47P9}
+847m7 arg4{4|45M9}
+850U14*mysql_debug 850>27 851b28
+850p27 arg1{5|47P9}
+853U14*myodbc_remove_escape 853>36 853>57 854b28
+853p36 arg1{373P9}
+853p57 arg2{5|47P9}
+856V13*mysql_thread_safe{4|43M9} 857b28
+859V13*mysql_embedded{66E12} 860b28
+862V13*mysql_manager_init{486P9} 862>33 863b28
+862p33 arg1{486P9}
+865V13*mysql_manager_connect{486P9} 866>7 867>7 868>7 869>7 870>7 871b28
+866p7 arg1{486P9}
+867p7 arg2{5|47P9}
+868p7 arg3{5|47P9}
+869p7 arg4{5|47P9}
+870m7 arg5{4|43M9}
+873U14*mysql_manager_close 873>35 874b28
+873p35 arg1{486P9}
+876V13*mysql_manager_command{4|35I9} 877>7 878>7 879>7 880b28
+877p7 arg1{486P9}
+878p7 arg2{5|47P9}
+879i7 arg3{4|35I9}
+882V13*mysql_manager_fetch_line{4|35I9} 883>7 884>7 885>7 886b28
+883p7 arg1{486P9}
+884p7 arg2{5|47P9}
+885i7 arg3{4|35I9}
+888V13*mysql_read_query_result{66E12} 888>38 889b28
+888p38 arg1{373P9}
+896M12*enum_mysql_stmt_state{4|43M9} 897r36 898r39 899r39 900r37 1026r23
+897m4*MYSQL_STMT_INIT_DONE{896M12}
+898m4*MYSQL_STMT_PREPARE_DONE{896M12}
+899m4*MYSQL_STMT_EXECUTE_DONE{896M12}
+900m4*MYSQL_STMT_FETCH_DONE{896M12}
+956R9*st_mysql_bind 957r30 960c9 985e14 986r26
+957P9*MYSQL_BIND(956R9) 976r77 978r17 982r17 1011r16 1012r14 1146r14 1169r62
+. 1172r63
+961p7*length(4|45M9)
+962p7*is_null(66E12)
+963m7*buffer{10|67M9}
+964p7*error(66E12)
+965m7*buffer_type{7|318M12}
+966m7*buffer_length{4|45M9}
+967p7*row_ptr(4|47M9)
+968m7*offset{4|45M9}
+969m7*length_value{4|45M9}
+970m7*param_number{4|43M9}
+971m7*pack_length{4|43M9}
+972e7*error_value{66E12}
+973e7*is_unsigned{66E12}
+974e7*long_data_used{66E12}
+975e7*is_null_value{66E12}
+976p7*store_param_func
+976p44 arg1(7|259R9)
+976p70 arg2{957P9}
+977p7*fetch_result
+978p10 arg1{957P9}
+979p10 arg2{115P9}
+980m10 arg3{10|67M9}
+981p7*skip_result
+982p10 arg1{957P9}
+983p10 arg2{115P9}
+984m10 arg3{10|67M9}
+1005A9*anon1855_anon2254_array(4|72E9)<integer> 1027r28
+1006A9*anon1855_anon2255_array(4|72E9)<integer> 1028r26
+1008r7*the_mem_root{205R12}
+1009r7*the_list{8|31R12}
+1010p7*the_mysql{373P9}
+1011p7*params{957P9}
+1012p7*bind{957P9}
+1013p7*fields{115P9}
+1014p7*result{219P9}
+1015p7*data_cursor{135P9}
+1016i7*affected_rows{131I12}
+1017i7*insert_id{131I12}
+1018p7*read_row_func(4|35I9)
+1018p40 arg1{369P9}
+1018m59 arg2{10|67M9}
+1019m7*stmt_id{4|45M9}
+1020m7*flags{4|45M9}
+1021m7*prefetch_rows{4|45M9}
+1022m7*server_status{4|43M9}
+1023m7*last_errno{4|43M9}
+1024m7*param_count{4|43M9}
+1025m7*field_count{4|43M9}
+1026m7*state{896M12}
+1027a7*last_error{1005A9}
+1028a7*sqlstate{1006A9}
+1029e7*send_types_to_server{66E12}
+1030e7*bind_param_done{66E12}
+1031m7*bind_result_done{4|47M9}
+1032e7*unbuffered_fetch_cancelled{66E12}
+1033e7*update_max_length{66E12}
+1070M12*enum_stmt_attr_type{4|43M9} 1071r43 1072r37 1073r39 1159r14 1165r14
+1071m4*STMT_ATTR_UPDATE_MAX_LENGTH{1070M12}
+1072m4*STMT_ATTR_CURSOR_TYPE{1070M12}
+1073m4*STMT_ATTR_PREFETCH_ROWS{1070M12}
+1090R9*st_mysql_methods 1124e14 1125r26 1127r29
+1091p7*read_query_result(4|72E9)
+1091p44 arg1{373P9}
+1092p7*advanced_command(4|72E9)
+1093p10 arg1{373P9}
+1094m10 arg2{7|201M12}
+1095p10 arg3{5|47P9}
+1096m10 arg4{4|45M9}
+1097p10 arg5{5|47P9}
+1098m10 arg6{4|45M9}
+1099e10 arg7{66E12}
+1100p10 arg8{369P9}
+1101p7*read_rows(219P9)
+1102p10 arg1{373P9}
+1103p10 arg2{115P9}
+1104m10 arg3{4|43M9}
+1105p7*use_result(465P9)
+1105p37 arg1{373P9}
+1106p7*fetch_lengths
+1107p10 arg1(4|45M9)
+1108p10 arg2{124P9}
+1109m10 arg3{4|43M9}
+1110p7*flush_use_result
+1110p44 arg1{373P9}
+1111p7*list_fields(115P9)
+1111p38 arg1{373P9}
+1112p7*read_prepare_result(4|72E9)
+1112p46 arg1{373P9}
+1112p67 arg2{369P9}
+1113p7*stmt_execute(4|35I9)
+1113p39 arg1{369P9}
+1114p7*read_binary_rows(4|35I9)
+1114p43 arg1{369P9}
+1115p7*unbuffered_fetch(4|35I9)
+1115p43 arg1{373P9}
+1115m64 arg2{10|67M9}
+1116p7*free_embedded_thd
+1116p45 arg1{373P9}
+1117p7*read_statistics(5|47P9)
+1117p42 arg1{373P9}
+1118p7*next_result(4|72E9)
+1118p38 arg1{373P9}
+1119p7*read_change_user_result(4|35I9)
+1120p10 arg1{373P9}
+1121p10 arg2{5|47P9}
+1122p10 arg3{5|47P9}
+1123p7*read_rows_from_cursor(4|35I9)
+1123p48 arg1{369P9}
+1127R12*MYSQL_METHODS{1090R9}
+1129V13*mysql_stmt_init{369P9} 1129>30 1130b28
+1129p30 arg1{373P9}
+1132V13*mysql_stmt_prepare{4|35I9} 1133>7 1134>7 1135>7 1136b28
+1133p7 arg1{369P9}
+1134p7 arg2{5|47P9}
+1135m7 arg3{4|45M9}
+1138V13*mysql_stmt_execute{4|35I9} 1138>33 1139b28
+1138p33 arg1{369P9}
+1141V13*mysql_stmt_fetch{4|35I9} 1141>31 1142b28
+1141p31 arg1{369P9}
+1144V13*mysql_stmt_fetch_column{4|35I9} 1145>7 1146>7 1147>7 1148>7 1149b28
+1145p7 arg1{369P9}
+1146p7 arg2{957P9}
+1147m7 arg3{4|43M9}
+1148m7 arg4{4|45M9}
+1151V13*mysql_stmt_store_result{4|35I9} 1151>38 1152b28
+1151p38 arg1{369P9}
+1154V13*mysql_stmt_param_count{4|45M9} 1154>37 1155b28
+1154p37 arg1{369P9}
+1157V13*mysql_stmt_attr_set{66E12} 1158>7 1159>7 1160>7 1161b28
+1158p7 arg1{369P9}
+1159m7 arg2{1070M12}
+1160m7 arg3{10|67M9}
+1163V13*mysql_stmt_attr_get{66E12} 1164>7 1165>7 1166>7 1167b28
+1164p7 arg1{369P9}
+1165m7 arg2{1070M12}
+1166m7 arg3{10|67M9}
+1169V13*mysql_stmt_bind_param{66E12} 1169>36 1169>55 1170b28
+1169p36 arg1{369P9}
+1169p55 arg2{957P9}
+1172V13*mysql_stmt_bind_result{66E12} 1172>37 1172>56 1173b28
+1172p37 arg1{369P9}
+1172p56 arg2{957P9}
+1175V13*mysql_stmt_close{66E12} 1175>31 1176b28
+1175p31 arg1{369P9}
+1178V13*mysql_stmt_reset{66E12} 1178>31 1179b28
+1178p31 arg1{369P9}
+1181V13*mysql_stmt_free_result{66E12} 1181>37 1182b28
+1181p37 arg1{369P9}
+1184V13*mysql_stmt_send_long_data{66E12} 1185>7 1186>7 1187>7 1188>7 1189b28
+1185p7 arg1{369P9}
+1186m7 arg2{4|43M9}
+1187p7 arg3{5|47P9}
+1188m7 arg4{4|45M9}
+1191V13*mysql_stmt_result_metadata{465P9} 1191>41 1192b28
+1191p41 arg1{369P9}
+1194V13*mysql_stmt_param_metadata{465P9} 1194>40 1195b28
+1194p40 arg1{369P9}
+1197V13*mysql_stmt_errno{4|43M9} 1197>31 1198b28
+1197p31 arg1{369P9}
+1200V13*mysql_stmt_error{5|47P9} 1200>31 1201b28
+1200p31 arg1{369P9}
+1203V13*mysql_stmt_sqlstate{5|47P9} 1203>34 1204b28
+1203p34 arg1{369P9}
+1206V13*mysql_stmt_row_seek{147P9} 1206>34 1206>53 1207b28
+1206p34 arg1{369P9}
+1206p53 arg2{147P9}
+1209V13*mysql_stmt_row_tell{147P9} 1209>34 1210b28
+1209p34 arg1{369P9}
+1212U14*mysql_stmt_data_seek 1212>36 1212>55 1213b28
+1212p36 arg1{369P9}
+1212i55 arg2{131I12}
+1215V13*mysql_stmt_num_rows{131I12} 1215>34 1216b28
+1215p34 arg1{369P9}
+1218V13*mysql_stmt_affected_rows{131I12} 1218>39 1219b28
+1218p39 arg1{369P9}
+1221V13*mysql_stmt_insert_id{131I12} 1221>35 1222b28
+1221p35 arg1{369P9}
+1224V13*mysql_stmt_field_count{4|43M9} 1224>37 1225b28
+1224p37 arg1{369P9}
+1227V13*mysql_commit{66E12} 1227>27 1228b28
+1227p27 arg1{373P9}
+1230V13*mysql_rollback{66E12} 1230>29 1231b28
+1230p29 arg1{373P9}
+1233V13*mysql_autocommit{66E12} 1233>31 1233>52 1234b28
+1233p31 arg1{373P9}
+1233e52 arg2{66E12}
+1236V13*mysql_more_results{66E12} 1236>33 1237b28
+1236p33 arg1{373P9}
+1239V13*mysql_next_result{4|35I9} 1239>32 1240b28
+1239p32 arg1{373P9}
+1242U14*mysql_close 1242>27 1243b28
+1242p27 arg1{373P9}
+X 10 system.ads
+37K9*System 9|21w6 120r37 214r23 259r23 283r17 285r17 287r17 290r51 292r17
+. 295r31 387r17 414r17 415r13 455r17 503r14 504r14 683r17 685r17 687r17 690r39
+. 692r17 695r14 963r16 980r17 984r17 1018r66 1115r71 1160r14 1166r14 10|156e11
+67M9*Address 9|120r44 214r30 259r30 283r24 285r24 287r24 290r58 292r24 295r38
+. 387r24 414r24 415r20 455r24 503r21 504r21 683r24 685r24 687r24 690r46 692r24
+. 695r21 963r23 980r24 984r24 1018r73 1115r78 1160r21 1166r21
+

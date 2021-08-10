@@ -1,0 +1,1085 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_LONG_LONG_INTEGERS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U regtests.comments%b	regtests-comments.adb	29a9004c OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_deallocation%s
+Z interfaces%s		interfac.ads		interfac.ali
+W regtests%s		regtests.adb		regtests.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+W util.beans.objects.time%s  util-beans-objects-time.adb  util-beans-objects-time.ali
+
+U regtests.comments%s	regtests-comments.ads	07f07ec8 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.generic_array_sort%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+W ada.containers.vectors%s
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+W ado%s			ado.adb			ado.ali
+W ado.objects%s		ado-objects.adb		ado-objects.ali
+W ado.schemas%s		ado-schemas.adb		ado-schemas.ali
+W ado.sessions%s	ado-sessions.adb	ado-sessions.ali
+W ado.sql%s		ado-sql.adb		ado-sql.ali
+W ado.statements%s	ado-statements.adb	ado-statements.ali
+W regtests%s		regtests.adb		regtests.ali
+W regtests.simple%s	regtests-simple.ads	regtests-simple.ali
+W regtests.simple.model%s  regtests-simple-model.adb  regtests-simple-model.ali
+Z system%s		system.ads		system.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.basic%s	util-beans-basic.ads	util-beans-basic.ali
+W util.beans.basic.lists%s  util-beans-basic-lists.adb  util-beans-basic-lists.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihase.ads		20190518041254 4f8a62e0 ada.containers.indefinite_hashed_sets%s
+D a-cihase.adb		20190518041256 f54eebd2 ada.containers.indefinite_hashed_sets%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-convec.ads		20190518041256 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20190518041254 32f4e1a7 ada.containers.vectors%b
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-stunha.ads		20190518041255 115e053b ada.strings.unbounded.hash%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D ado.ads		20200810200714 1ec4b94f ado%s
+D ado-audits.ads	20200810200714 2a544c7e ado.audits%s
+D ado-caches.ads	20200810200714 3f821007 ado.caches%s
+D ado-configs.ads	20200810200714 1a13a13e ado.configs%s
+D ado-connections.ads	20200810200714 53398a84 ado.connections%s
+D ado-dialects.ads	20200810200714 eb00eeaf ado.dialects%s
+D ado-objects.ads	20200810200714 b8c8fb60 ado.objects%s
+D ado-objects.adb	20200810200714 2301d3d0 ado.objects%b
+D ado-objects-cache.ads	20200810200714 aef66a18 ado.objects.cache%s
+D ado-parameters.ads	20200810200714 ad5888fa ado.parameters%s
+D ado-queries.ads	20200810200714 e566d425 ado.queries%s
+D ado-schemas.ads	20200810200714 b2b43658 ado.schemas%s
+D ado-schemas-entities.ads  20200810200714 3c0f0af5 ado.schemas.entities%s
+D ado-sequences.ads	20200810200714 1726cdc8 ado.sequences%s
+D ado-sessions.ads	20200810200714 20bb1cec ado.sessions%s
+D ado-sessions-factory.ads  20200810200714 1fe9ba9a ado.sessions.factory%s
+D ado-sessions-sources.ads  20200810200714 d06216a9 ado.sessions.sources%s
+D ado-sql.ads		20200810200714 ba8ff082 ado.sql%s
+D ado-statements.ads	20200810200714 752f695d ado.statements%s
+D ado-utils.ads		20200810200714 ef23a2c0 ado.utils%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrin.ads		20190518041255 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D regtests.ads		20200810200714 d2c8065c regtests%s
+D regtests-comments.ads	20200810200714 219f76a1 regtests.comments%s
+D regtests-comments.adb	20200810200714 e47988da regtests.comments%b
+D regtests-simple.ads	20200810200714 c3baf633 regtests.simple%s
+D regtests-simple-model.ads  20200810200714 fd3c6643 regtests.simple.model%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atacco.ads		20190518041256 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20190518041254 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20190518041256 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-imglli.ads		20190518041256 114f55d1 system.img_lli%s
+D s-linux.ads		20190518041256 ed0b8aee system.linux%s
+D s-maccod.ads		20190518041255 6d68a701 system.machine_code%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-multip.ads		20190518041254 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190518093549 c13b1f65 system.os_constants%s
+D s-osinte.ads		20190518041257 baabc537 system.os_interface%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stausa.ads		20190518041255 017a0a05 system.stack_usage%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-stratt.adb		20190518041255 56ef263e system.stream_attributes%b
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-tasinf.ads		20190518041256 2b3f8252 system.task_info%s
+D s-taspri.ads		20190518041256 f40ac08d system.task_primitives%s
+D s-taskin.ads		20190518041257 b9d612e2 system.tasking%s
+D s-taprob.ads		20190518041256 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-vallli.ads		20190518041255 6c6e92f0 system.val_lli%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20200215171848 36301479 util%s
+D util-beans.ads	20200215171848 362abe70 util.beans%s
+D util-beans-basic.ads	20200215171848 95c2d591 util.beans.basic%s
+D util-beans-basic-lists.ads  20200215171848 6d3b8ef7 util.beans.basic.lists%s
+D util-beans-objects.ads  20200215171848 aef7462e util.beans.objects%s
+D util-beans-objects-time.ads  20200215171848 03bc9d15 util.beans.objects.time%s
+D util-concurrent.ads	20200215171848 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20200215171848 2618dd23 util.concurrent.counters%s
+D util-concurrent-counters.adb  20200215171848 b9ece202 util.concurrent.counters%b
+D util-log.ads		20200215171848 0fb1ac89 util.log%s
+D util-log-appenders.ads  20200215171848 ddbe02c8 util.log.appenders%s
+D util-log-loggers.ads	20200215171848 3003bbc2 util.log.loggers%s
+D util-nullables.ads	20200215171848 cb4c8fed util.nullables%s
+D util-properties.ads	20200215171848 3ed4fee8 util.properties%s
+D util-refs.ads		20200215171848 e592e98d util.refs%s
+D util-refs.adb		20200215171848 f4fdc937 util.refs%b
+D util-strings.ads	20200215171848 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+G a e
+G c s s s [s regtests__comments 36 1 none]
+G c Z s b [comment_key regtests__comments 47 13 none]
+G c Z s b [comment_key regtests__comments 50 13 none]
+G c Z s b [Oeq regtests__comments 53 13 none]
+G c Z s b [set_id regtests__comments 56 14 none]
+G c Z s b [get_id regtests__comments 60 13 none]
+G c Z s b [get_version regtests__comments 63 13 none]
+G c Z s b [set_date regtests__comments 67 14 none]
+G c Z s b [get_date regtests__comments 71 13 none]
+G c Z s b [set_message regtests__comments 75 14 none]
+G c Z s b [set_message regtests__comments 77 14 none]
+G c Z s b [get_message regtests__comments 81 13 none]
+G c Z s b [get_message regtests__comments 83 13 none]
+G c Z s b [set_entity_id regtests__comments 87 14 none]
+G c Z s b [get_entity_id regtests__comments 91 13 none]
+G c Z s b [set_user regtests__comments 95 14 none]
+G c Z s b [get_user regtests__comments 99 13 none]
+G c Z s b [set_entity_type regtests__comments 103 14 none]
+G c Z s b [get_entity_type regtests__comments 107 13 none]
+G c Z s b [load regtests__comments 112 14 none]
+G c Z s b [load regtests__comments 118 14 none]
+G c Z s b [find regtests__comments 125 14 none]
+G c Z s b [save regtests__comments 134 14 none]
+G c Z s b [delete regtests__comments 139 14 none]
+G c Z s b [get_value regtests__comments 143 13 none]
+G c Z s b [allocate regtests__comments 151 14 none]
+G c Z s b [copy regtests__comments 154 14 none]
+G c Z s s [comment_refDA regtests__comments 40 9 none]
+G c Z s s [comment_refDF regtests__comments 40 9 none]
+G c Z s s [comment_refIP regtests__comments 40 9 none]
+G c Z s s [has_element regtests__comments__comment_vectors 107 13 157_4]
+G c Z s s [Oeq regtests__comments__comment_vectors 117 24 157_4]
+G c Z s s [to_vector regtests__comments__comment_vectors 126 13 157_4]
+G c Z s s [to_vector regtests__comments__comment_vectors 129 13 157_4]
+G c Z s s [Oconcat regtests__comments__comment_vectors 135 13 157_4]
+G c Z s s [Oconcat regtests__comments__comment_vectors 139 13 157_4]
+G c Z s s [Oconcat regtests__comments__comment_vectors 143 13 157_4]
+G c Z s s [Oconcat regtests__comments__comment_vectors 147 13 157_4]
+G c Z s s [capacity regtests__comments__comment_vectors 151 13 157_4]
+G c Z s s [reserve_capacity regtests__comments__comment_vectors 154 14 157_4]
+G c Z s s [length regtests__comments__comment_vectors 165 13 157_4]
+G c Z s s [set_length regtests__comments__comment_vectors 168 14 157_4]
+G c Z s s [is_empty regtests__comments__comment_vectors 177 13 157_4]
+G c Z s s [clear regtests__comments__comment_vectors 180 14 157_4]
+G c Z s s [to_cursor regtests__comments__comment_vectors 184 13 157_4]
+G c Z s s [to_index regtests__comments__comment_vectors 191 13 157_4]
+G c Z s s [element regtests__comments__comment_vectors 196 13 157_4]
+G c Z s s [element regtests__comments__comment_vectors 203 13 157_4]
+G c Z s s [replace_element regtests__comments__comment_vectors 207 14 157_4]
+G c Z s s [replace_element regtests__comments__comment_vectors 218 14 157_4]
+G c Z s s [query_element regtests__comments__comment_vectors 229 14 157_4]
+G c Z s s [query_element regtests__comments__comment_vectors 240 14 157_4]
+G c Z s s [update_element regtests__comments__comment_vectors 249 14 157_4]
+G c Z s s [update_element regtests__comments__comment_vectors 266 14 157_4]
+G c Z s s [constant_reference regtests__comments__comment_vectors 293 13 157_4]
+G c Z s s [reference regtests__comments__comment_vectors 298 13 157_4]
+G c Z s s [constant_reference regtests__comments__comment_vectors 303 13 157_4]
+G c Z s s [reference regtests__comments__comment_vectors 308 13 157_4]
+G c Z s s [assign regtests__comments__comment_vectors 313 14 157_4]
+G c Z s s [copy regtests__comments__comment_vectors 315 13 157_4]
+G c Z s s [move regtests__comments__comment_vectors 317 14 157_4]
+G c Z s s [insert regtests__comments__comment_vectors 323 14 157_4]
+G c Z s s [insert regtests__comments__comment_vectors 341 14 157_4]
+G c Z s s [insert regtests__comments__comment_vectors 352 14 157_4]
+G c Z s s [insert regtests__comments__comment_vectors 363 14 157_4]
+G c Z s s [insert regtests__comments__comment_vectors 370 14 157_4]
+G c Z s s [insert regtests__comments__comment_vectors 377 14 157_4]
+G c Z s s [insert regtests__comments__comment_vectors 386 14 157_4]
+G c Z s s [insert regtests__comments__comment_vectors 403 14 157_4]
+G c Z s s [prepend regtests__comments__comment_vectors 414 14 157_4]
+G c Z s s [prepend regtests__comments__comment_vectors 419 14 157_4]
+G c Z s s [append regtests__comments__comment_vectors 426 14 157_4]
+G c Z s s [append regtests__comments__comment_vectors 431 14 157_4]
+G c Z s s [insert_space regtests__comments__comment_vectors 438 14 157_4]
+G c Z s s [insert_space regtests__comments__comment_vectors 455 14 157_4]
+G c Z s s [delete regtests__comments__comment_vectors 466 14 157_4]
+G c Z s s [delete regtests__comments__comment_vectors 476 14 157_4]
+G c Z s s [delete_first regtests__comments__comment_vectors 485 14 157_4]
+G c Z s s [delete_last regtests__comments__comment_vectors 490 14 157_4]
+G c Z s s [reverse_elements regtests__comments__comment_vectors 498 14 157_4]
+G c Z s s [swap regtests__comments__comment_vectors 501 14 157_4]
+G c Z s s [swap regtests__comments__comment_vectors 506 14 157_4]
+G c Z s s [first_index regtests__comments__comment_vectors 512 13 157_4]
+G c Z s s [first regtests__comments__comment_vectors 515 13 157_4]
+G c Z s s [first_element regtests__comments__comment_vectors 519 13 157_4]
+G c Z s s [last_index regtests__comments__comment_vectors 522 13 157_4]
+G c Z s s [last regtests__comments__comment_vectors 526 13 157_4]
+G c Z s s [last_element regtests__comments__comment_vectors 530 13 157_4]
+G c Z s s [next regtests__comments__comment_vectors 533 13 157_4]
+G c Z s s [next regtests__comments__comment_vectors 539 14 157_4]
+G c Z s s [previous regtests__comments__comment_vectors 542 13 157_4]
+G c Z s s [previous regtests__comments__comment_vectors 548 14 157_4]
+G c Z s s [find_index regtests__comments__comment_vectors 551 13 157_4]
+G c Z s s [find regtests__comments__comment_vectors 561 13 157_4]
+G c Z s s [reverse_find_index regtests__comments__comment_vectors 575 13 157_4]
+G c Z s s [reverse_find regtests__comments__comment_vectors 587 13 157_4]
+G c Z s s [contains regtests__comments__comment_vectors 601 13 157_4]
+G c Z s s [iterate regtests__comments__comment_vectors 606 14 157_4]
+G c Z s s [reverse_iterate regtests__comments__comment_vectors 614 14 157_4]
+G c Z s s [iterate regtests__comments__comment_vectors 621 13 157_4]
+G c Z s s [iterate regtests__comments__comment_vectors 624 13 157_4]
+G c Z s s [adjust regtests__comments__comment_vectors__implementation 90 28 678_4_157_4]
+G c Z s s [finalize regtests__comments__comment_vectors__implementation 93 28 678_4_157_4]
+G c Z s s [zero_counts regtests__comments__comment_vectors__implementation 96 17 678_4_157_4]
+G c Z s s [busy regtests__comments__comment_vectors__implementation 100 17 678_4_157_4]
+G c Z s s [unbusy regtests__comments__comment_vectors__implementation 104 17 678_4_157_4]
+G c Z s s [lock regtests__comments__comment_vectors__implementation 108 17 678_4_157_4]
+G c Z s s [unlock regtests__comments__comment_vectors__implementation 112 17 678_4_157_4]
+G c Z s s [tc_check regtests__comments__comment_vectors__implementation 116 17 678_4_157_4]
+G c Z s s [te_check regtests__comments__comment_vectors__implementation 120 17 678_4_157_4]
+G c Z s s [initialize regtests__comments__comment_vectors__implementation 139 28 678_4_157_4]
+G c Z s s [finalize regtests__comments__comment_vectors__implementation 140 28 678_4_157_4]
+G c Z s s [initialize regtests__comments__comment_vectors__implementation 145 28 678_4_157_4]
+G c Z s s [finalize regtests__comments__comment_vectors__implementation 146 28 678_4_157_4]
+G c Z s s [reference_control_typeDA regtests__comments__comment_vectors__implementation 84 12 678_4_157_4]
+G c Z s s [reference_control_typeDF regtests__comments__comment_vectors__implementation 84 12 678_4_157_4]
+G c Z s s [reference_control_typeIP regtests__comments__comment_vectors__implementation 84 12 678_4_157_4]
+G c Z s s [with_busyDF regtests__comments__comment_vectors__implementation 136 12 678_4_157_4]
+G c Z s s [with_busyIP regtests__comments__comment_vectors__implementation 136 12 678_4_157_4]
+G c Z s s [with_lockDF regtests__comments__comment_vectors__implementation 142 12 678_4_157_4]
+G c Z s s [with_lockIP regtests__comments__comment_vectors__implementation 142 12 678_4_157_4]
+G c Z s s [adjust regtests__comments__comment_vectors 699 25 157_4]
+G c Z s s [finalize regtests__comments__comment_vectors 700 25 157_4]
+G c Z s s [write regtests__comments__comment_vectors 702 14 157_4]
+G c Z s s [read regtests__comments__comment_vectors 708 14 157_4]
+G c Z s s [read regtests__comments__comment_vectors 722 14 157_4]
+G c Z s s [write regtests__comments__comment_vectors 728 14 157_4]
+G c Z s s [write regtests__comments__comment_vectors 747 14 157_4]
+G c Z s s [read regtests__comments__comment_vectors 753 14 157_4]
+G c Z s s [write regtests__comments__comment_vectors 769 14 157_4]
+G c Z s s [read regtests__comments__comment_vectors 775 14 157_4]
+G c Z s s [pseudo_reference regtests__comments__comment_vectors 786 13 157_4]
+G c Z s s [get_element_access regtests__comments__comment_vectors 795 13 157_4]
+G c Z s s [cursorIP regtests__comments__comment_vectors 717 9 157_4]
+G c Z s s [vectorDA regtests__comments__comment_vectors 693 9 157_4]
+G c Z s s [vectorDF regtests__comments__comment_vectors 693 9 157_4]
+G c Z s s [vectorIP regtests__comments__comment_vectors 693 9 157_4]
+G c Z s s [constant_reference_typeDI regtests__comments__comment_vectors 737 9 157_4]
+G c Z s s [constant_reference_typeDA regtests__comments__comment_vectors 737 9 157_4]
+G c Z s s [constant_reference_typeDF regtests__comments__comment_vectors 737 9 157_4]
+G c Z s s [constant_reference_typeIP regtests__comments__comment_vectors 737 9 157_4]
+G c Z s s [reference_typeDI regtests__comments__comment_vectors 759 9 157_4]
+G c Z s s [reference_typeDA regtests__comments__comment_vectors 759 9 157_4]
+G c Z s s [reference_typeDF regtests__comments__comment_vectors 759 9 157_4]
+G c Z s s [reference_typeIP regtests__comments__comment_vectors 759 9 157_4]
+G c Z s s [finalize regtests__comments__comment_vectors 811 25 157_4]
+G c Z s s [first regtests__comments__comment_vectors 813 24 157_4]
+G c Z s s [last regtests__comments__comment_vectors 814 24 157_4]
+G c Z s s [next regtests__comments__comment_vectors 816 24 157_4]
+G c Z s s [previous regtests__comments__comment_vectors 820 24 157_4]
+G c Z s s [elements_arrayIP regtests__comments__comment_vectors 681 9 157_4]
+G c Z s s [elements_arrayDI regtests__comments__comment_vectors 681 9 157_4]
+G c Z s s [elements_arrayDA regtests__comments__comment_vectors 681 9 157_4]
+G c Z s s [elements_arrayDF regtests__comments__comment_vectors 681 9 157_4]
+G c Z s s [elements_typeDI regtests__comments__comment_vectors 684 9 157_4]
+G c Z s s [elements_typeDF regtests__comments__comment_vectors 684 9 157_4]
+G c Z s s [elements_typeIP regtests__comments__comment_vectors 684 9 157_4]
+G c Z s s [iteratorDF regtests__comments__comment_vectors 803 9 157_4]
+G c Z s s [iteratorIP regtests__comments__comment_vectors 803 9 157_4]
+G c Z s s [free regtests__comments__comment_vectors 41 14 157_4]
+G c Z s s [append_slow_path regtests__comments__comment_vectors 44 14 157_4]
+G c Z s b [list regtests__comments 163 14 none]
+G c Z s b [destroy regtests__comments 213 14 none]
+G c Z s b [find regtests__comments 216 14 none]
+G c Z s b [load regtests__comments 222 14 none]
+G c Z s b [load regtests__comments 224 14 none]
+G c Z s b [save regtests__comments 229 14 none]
+G c Z s b [create regtests__comments 232 14 none]
+G c Z s b [delete regtests__comments 236 14 none]
+G c Z s b [set_field regtests__comments 239 14 none]
+G c Z s s [Tcomment_implBDF regtests__comments 198 4 none]
+G c Z s s [Tcomment_implBDI regtests__comments 198 4 none]
+G c Z s s [Tcomment_implBIP regtests__comments 198 4 none]
+G r s object_ref [s regtests__comments 36 1 none] [object_refIP ado__objects 570 9 none]
+G r s object_key [comment_key regtests__comments 47 13 none] [object_keyIP ado__objects 557 9 none]
+G r l object_key [comment_key regtests__comments 47 13 none] [object_keyDI ado__objects 557 9 none]
+G r k object_key [comment_key regtests__comments 47 13 none] [object_keyDF ado__objects 557 9 none]
+G r c none [comment_key regtests__comments 47 13 none] [set_value ado__objects 216 14 none]
+G r j object_key [comment_key regtests__comments 47 13 none] [object_keyDA ado__objects 557 9 none]
+G r s object_key [comment_key regtests__comments 50 13 none] [object_keyIP ado__objects 557 9 none]
+G r l object_key [comment_key regtests__comments 50 13 none] [object_keyDI ado__objects 557 9 none]
+G r k object_key [comment_key regtests__comments 50 13 none] [object_keyDF ado__objects 557 9 none]
+G r c none [comment_key regtests__comments 50 13 none] [set_value ado__objects 220 14 none]
+G r j object_key [comment_key regtests__comments 50 13 none] [object_keyDA ado__objects 557 9 none]
+G r c none [Oeq regtests__comments 53 13 none] [Oeq ado__objects 375 13 none]
+G r c none [set_id regtests__comments 56 14 none] [prepare_modify ado__objects 332 14 none]
+G r c none [set_id regtests__comments 56 14 none] [set_field_key_value ado__objects 523 14 none]
+G r c none [get_id regtests__comments 60 13 none] [get_object ado__objects 356 13 none]
+G r c none [get_id regtests__comments 60 13 none] [get_key_value ado__objects 246 13 none]
+G r c none [get_version regtests__comments 63 13 none] [get_load_object ado__objects 352 13 none]
+G r c none [set_date regtests__comments 67 14 none] [prepare_modify ado__objects 332 14 none]
+G r c none [set_date regtests__comments 67 14 none] [set_field_time ado__objects 448 14 none]
+G r c none [get_date regtests__comments 71 13 none] [get_load_object ado__objects 352 13 none]
+G r c none [set_message regtests__comments 75 14 none] [prepare_modify ado__objects 332 14 none]
+G r c none [set_message regtests__comments 75 14 none] [set_field_unbounded_string ado__objects 428 14 none]
+G r c none [set_message regtests__comments 77 14 none] [prepare_modify ado__objects 332 14 none]
+G r c none [set_message regtests__comments 77 14 none] [set_field_string ado__objects 433 14 none]
+G r c none [get_message regtests__comments 81 13 none] [get_load_object ado__objects 352 13 none]
+G r c none [get_message regtests__comments 83 13 none] [get_load_object ado__objects 352 13 none]
+G r c none [set_entity_id regtests__comments 87 14 none] [prepare_modify ado__objects 332 14 none]
+G r c none [set_entity_id regtests__comments 87 14 none] [set_field_integer ado__objects 458 14 none]
+G r c none [get_entity_id regtests__comments 91 13 none] [get_load_object ado__objects 352 13 none]
+G r c none [set_user regtests__comments 95 14 none] [prepare_modify ado__objects 332 14 none]
+G r c none [set_user regtests__comments 95 14 none] [set_field_object ado__objects 498 14 none]
+G r c none [get_user regtests__comments 99 13 none] [get_load_object ado__objects 352 13 none]
+G r d object_ref [get_user regtests__comments 99 13 none] [adjust ado__objects 577 14 none]
+G r c none [set_entity_type regtests__comments 103 14 none] [prepare_modify ado__objects 332 14 none]
+G r c none [set_entity_type regtests__comments 103 14 none] [set_field_entity_type ado__objects 508 14 none]
+G r c none [get_entity_type regtests__comments 107 13 none] [get_load_object ado__objects 352 13 none]
+G r s object_record [load regtests__comments 112 14 none] [object_recordIP ado__objects 591 9 none]
+G r s user_ref [load regtests__comments 112 14 none] [user_refIP regtests__simple__model 40 9 none]
+G r e object_ref [load regtests__comments 112 14 none] [finalize ado__objects 581 14 none]
+G r k object_record [load regtests__comments 112 14 none] [object_recordDF ado__objects 591 9 none]
+G r s query [load regtests__comments 112 14 none] [queryIP ado__sql 86 9 none]
+G r l query [load regtests__comments 112 14 none] [queryDI ado__sql 86 9 none]
+G r k query [load regtests__comments 112 14 none] [queryDF ado__sql 86 9 none]
+G r c none [load regtests__comments 112 14 none] [bind_param ado__parameters 193 14 none]
+G r c none [load regtests__comments 112 14 none] [set_filter ado__sql 101 14 none]
+G r c none [load regtests__comments 112 14 none] [create_statement ado__sessions 120 13 none]
+G r d query_statement [load regtests__comments 112 14 none] [adjust ado__statements 494 14 none]
+G r e query_statement [load regtests__comments 112 14 none] [finalize ado__statements 497 14 none]
+G r c none [load regtests__comments 112 14 none] [execute ado__statements 170 14 none]
+G r c none [load regtests__comments 112 14 none] [has_elements ado__statements 176 13 none]
+G r c none [load regtests__comments 112 14 none] [get_identifier ado__statements 196 13 none]
+G r c none [load regtests__comments 112 14 none] [set_key_value ado__objects 253 14 none]
+G r c none [load regtests__comments 112 14 none] [get_time ado__statements 278 13 none]
+G r c none [load regtests__comments 112 14 none] [get_unbounded_string ado__statements 252 13 none]
+G r c none [load regtests__comments 112 14 none] [get_integer ado__statements 203 13 none]
+G r c none [load regtests__comments 112 14 none] [is_null ado__statements 182 13 none]
+G r c none [load regtests__comments 112 14 none] [set_key_value ado__objects 363 14 none]
+G r c none [load regtests__comments 112 14 none] [set_created ado__objects 270 14 none]
+G r c none [load regtests__comments 112 14 none] [next ado__statements 179 14 none]
+G r e object_record [load regtests__comments 112 14 none] [finalize ado__objects 289 14 none]
+G r c none [load regtests__comments 112 14 none] [set_object ado__objects 377 14 none]
+G r s object_record [load regtests__comments 118 14 none] [object_recordIP ado__objects 591 9 none]
+G r s user_ref [load regtests__comments 118 14 none] [user_refIP regtests__simple__model 40 9 none]
+G r e object_ref [load regtests__comments 118 14 none] [finalize ado__objects 581 14 none]
+G r k object_record [load regtests__comments 118 14 none] [object_recordDF ado__objects 591 9 none]
+G r s query [load regtests__comments 118 14 none] [queryIP ado__sql 86 9 none]
+G r l query [load regtests__comments 118 14 none] [queryDI ado__sql 86 9 none]
+G r k query [load regtests__comments 118 14 none] [queryDF ado__sql 86 9 none]
+G r c none [load regtests__comments 118 14 none] [bind_param ado__parameters 193 14 none]
+G r c none [load regtests__comments 118 14 none] [set_filter ado__sql 101 14 none]
+G r c none [load regtests__comments 118 14 none] [create_statement ado__sessions 120 13 none]
+G r d query_statement [load regtests__comments 118 14 none] [adjust ado__statements 494 14 none]
+G r e query_statement [load regtests__comments 118 14 none] [finalize ado__statements 497 14 none]
+G r c none [load regtests__comments 118 14 none] [execute ado__statements 170 14 none]
+G r c none [load regtests__comments 118 14 none] [has_elements ado__statements 176 13 none]
+G r c none [load regtests__comments 118 14 none] [get_identifier ado__statements 196 13 none]
+G r c none [load regtests__comments 118 14 none] [set_key_value ado__objects 253 14 none]
+G r c none [load regtests__comments 118 14 none] [get_time ado__statements 278 13 none]
+G r c none [load regtests__comments 118 14 none] [get_unbounded_string ado__statements 252 13 none]
+G r c none [load regtests__comments 118 14 none] [get_integer ado__statements 203 13 none]
+G r c none [load regtests__comments 118 14 none] [is_null ado__statements 182 13 none]
+G r c none [load regtests__comments 118 14 none] [set_key_value ado__objects 363 14 none]
+G r c none [load regtests__comments 118 14 none] [set_created ado__objects 270 14 none]
+G r c none [load regtests__comments 118 14 none] [next ado__statements 179 14 none]
+G r c none [load regtests__comments 118 14 none] [set_object ado__objects 377 14 none]
+G r e object_record [load regtests__comments 118 14 none] [finalize ado__objects 289 14 none]
+G r s object_record [find regtests__comments 125 14 none] [object_recordIP ado__objects 591 9 none]
+G r s user_ref [find regtests__comments 125 14 none] [user_refIP regtests__simple__model 40 9 none]
+G r e object_ref [find regtests__comments 125 14 none] [finalize ado__objects 581 14 none]
+G r k object_record [find regtests__comments 125 14 none] [object_recordDF ado__objects 591 9 none]
+G r c none [find regtests__comments 125 14 none] [create_statement ado__sessions 120 13 none]
+G r d query_statement [find regtests__comments 125 14 none] [adjust ado__statements 494 14 none]
+G r e query_statement [find regtests__comments 125 14 none] [finalize ado__statements 497 14 none]
+G r c none [find regtests__comments 125 14 none] [execute ado__statements 170 14 none]
+G r c none [find regtests__comments 125 14 none] [has_elements ado__statements 176 13 none]
+G r c none [find regtests__comments 125 14 none] [get_identifier ado__statements 196 13 none]
+G r c none [find regtests__comments 125 14 none] [set_key_value ado__objects 253 14 none]
+G r c none [find regtests__comments 125 14 none] [get_time ado__statements 278 13 none]
+G r c none [find regtests__comments 125 14 none] [get_unbounded_string ado__statements 252 13 none]
+G r c none [find regtests__comments 125 14 none] [get_integer ado__statements 203 13 none]
+G r c none [find regtests__comments 125 14 none] [is_null ado__statements 182 13 none]
+G r c none [find regtests__comments 125 14 none] [set_key_value ado__objects 363 14 none]
+G r c none [find regtests__comments 125 14 none] [set_created ado__objects 270 14 none]
+G r c none [find regtests__comments 125 14 none] [next ado__statements 179 14 none]
+G r c none [find regtests__comments 125 14 none] [set_object ado__objects 377 14 none]
+G r e object_record [find regtests__comments 125 14 none] [finalize ado__objects 289 14 none]
+G r c none [save regtests__comments 134 14 none] [get_object ado__objects 356 13 none]
+G r s object_record [save regtests__comments 134 14 none] [object_recordIP ado__objects 591 9 none]
+G r s user_ref [save regtests__comments 134 14 none] [user_refIP regtests__simple__model 40 9 none]
+G r e object_ref [save regtests__comments 134 14 none] [finalize ado__objects 581 14 none]
+G r k object_record [save regtests__comments 134 14 none] [object_recordDF ado__objects 591 9 none]
+G r c none [save regtests__comments 134 14 none] [set_object ado__objects 377 14 none]
+G r c none [save regtests__comments 134 14 none] [is_created ado__objects 267 13 none]
+G r c none [delete regtests__comments 139 14 none] [get_object ado__objects 356 13 none]
+G r c none [get_value regtests__comments 143 13 none] [is_null ado__objects 336 13 none]
+G r d object [get_value regtests__comments 143 13 none] [adjust util__beans__objects 635 14 none]
+G r c none [get_value regtests__comments 143 13 none] [get_load_object ado__objects 352 13 none]
+G r c none [get_value regtests__comments 143 13 none] [to_object util__beans__objects__time 24 13 none]
+G r c none [get_value regtests__comments 143 13 none] [to_object util__beans__objects 219 13 none]
+G r c none [get_value regtests__comments 143 13 none] [to_object util__beans__objects 213 13 none]
+G r c none [get_value regtests__comments 143 13 none] [get_key ado__objects 239 13 none]
+G r c none [get_value regtests__comments 143 13 none] [to_object ado__objects 210 13 none]
+G r s object_record [allocate regtests__comments 151 14 none] [object_recordIP ado__objects 591 9 none]
+G r s user_ref [allocate regtests__comments 151 14 none] [user_refIP regtests__simple__model 40 9 none]
+G r e object_ref [allocate regtests__comments 151 14 none] [finalize ado__objects 581 14 none]
+G r k object_record [allocate regtests__comments 151 14 none] [object_recordDF ado__objects 591 9 none]
+G r c none [allocate regtests__comments 151 14 none] [set_object ado__objects 377 14 none]
+G r s object_ref [copy regtests__comments 154 14 none] [object_refIP ado__objects 570 9 none]
+G r c none [copy regtests__comments 154 14 none] [is_null ado__objects 336 13 none]
+G r c none [copy regtests__comments 154 14 none] [set_object ado__objects 377 14 none]
+G r c none [copy regtests__comments 154 14 none] [copy ado__objects 315 14 none]
+G r c none [copy regtests__comments 154 14 none] [get_load_object ado__objects 352 13 none]
+G r s object_record [copy regtests__comments 154 14 none] [object_recordIP ado__objects 591 9 none]
+G r s user_ref [copy regtests__comments 154 14 none] [user_refIP regtests__simple__model 40 9 none]
+G r e object_ref [copy regtests__comments 154 14 none] [finalize ado__objects 581 14 none]
+G r k object_record [copy regtests__comments 154 14 none] [object_recordDF ado__objects 591 9 none]
+G r d object_ref [comment_refDA regtests__comments 40 9 none] [adjust ado__objects 577 14 none]
+G r e object_ref [comment_refDF regtests__comments 40 9 none] [finalize ado__objects 581 14 none]
+G r s object_ref [comment_refIP regtests__comments 40 9 none] [object_refIP ado__objects 570 9 none]
+G r c none [list regtests__comments 163 14 none] [create_statement ado__sessions 120 13 none]
+G r d query_statement [list regtests__comments 163 14 none] [adjust ado__statements 494 14 none]
+G r e query_statement [list regtests__comments 163 14 none] [finalize ado__statements 497 14 none]
+G r c none [list regtests__comments 163 14 none] [execute ado__statements 170 14 none]
+G r c none [list regtests__comments 163 14 none] [has_elements ado__statements 176 13 none]
+G r s object_ref [list regtests__comments 163 14 none] [object_refIP ado__objects 570 9 none]
+G r s object_record [list regtests__comments 163 14 none] [object_recordIP ado__objects 591 9 none]
+G r s user_ref [list regtests__comments 163 14 none] [user_refIP regtests__simple__model 40 9 none]
+G r e object_ref [list regtests__comments 163 14 none] [finalize ado__objects 581 14 none]
+G r k object_record [list regtests__comments 163 14 none] [object_recordDF ado__objects 591 9 none]
+G r c none [list regtests__comments 163 14 none] [get_identifier ado__statements 196 13 none]
+G r c none [list regtests__comments 163 14 none] [set_key_value ado__objects 253 14 none]
+G r c none [list regtests__comments 163 14 none] [get_time ado__statements 278 13 none]
+G r c none [list regtests__comments 163 14 none] [get_unbounded_string ado__statements 252 13 none]
+G r c none [list regtests__comments 163 14 none] [get_integer ado__statements 203 13 none]
+G r c none [list regtests__comments 163 14 none] [is_null ado__statements 182 13 none]
+G r c none [list regtests__comments 163 14 none] [set_key_value ado__objects 363 14 none]
+G r c none [list regtests__comments 163 14 none] [set_created ado__objects 270 14 none]
+G r c none [list regtests__comments 163 14 none] [set_object ado__objects 377 14 none]
+G r c none [list regtests__comments 163 14 none] [next ado__statements 179 14 none]
+G r e object_record [destroy regtests__comments 213 14 none] [finalize ado__objects 289 14 none]
+G r e object_ref [destroy regtests__comments 213 14 none] [finalize ado__objects 581 14 none]
+G r k object_record [destroy regtests__comments 213 14 none] [object_recordDF ado__objects 591 9 none]
+G r c none [find regtests__comments 216 14 none] [create_statement ado__sessions 120 13 none]
+G r d query_statement [find regtests__comments 216 14 none] [adjust ado__statements 494 14 none]
+G r e query_statement [find regtests__comments 216 14 none] [finalize ado__statements 497 14 none]
+G r c none [find regtests__comments 216 14 none] [execute ado__statements 170 14 none]
+G r c none [find regtests__comments 216 14 none] [has_elements ado__statements 176 13 none]
+G r c none [find regtests__comments 216 14 none] [get_identifier ado__statements 196 13 none]
+G r c none [find regtests__comments 216 14 none] [set_key_value ado__objects 253 14 none]
+G r c none [find regtests__comments 216 14 none] [get_time ado__statements 278 13 none]
+G r c none [find regtests__comments 216 14 none] [get_unbounded_string ado__statements 252 13 none]
+G r c none [find regtests__comments 216 14 none] [get_integer ado__statements 203 13 none]
+G r c none [find regtests__comments 216 14 none] [is_null ado__statements 182 13 none]
+G r c none [find regtests__comments 216 14 none] [set_key_value ado__objects 363 14 none]
+G r c none [find regtests__comments 216 14 none] [set_created ado__objects 270 14 none]
+G r c none [find regtests__comments 216 14 none] [next ado__statements 179 14 none]
+G r s query [load regtests__comments 222 14 none] [queryIP ado__sql 86 9 none]
+G r l query [load regtests__comments 222 14 none] [queryDI ado__sql 86 9 none]
+G r k query [load regtests__comments 222 14 none] [queryDF ado__sql 86 9 none]
+G r c none [load regtests__comments 222 14 none] [get_key_value ado__objects 246 13 none]
+G r c none [load regtests__comments 222 14 none] [bind_param ado__parameters 193 14 none]
+G r c none [load regtests__comments 222 14 none] [set_filter ado__sql 101 14 none]
+G r c none [load regtests__comments 222 14 none] [create_statement ado__sessions 120 13 none]
+G r d query_statement [load regtests__comments 222 14 none] [adjust ado__statements 494 14 none]
+G r e query_statement [load regtests__comments 222 14 none] [finalize ado__statements 497 14 none]
+G r c none [load regtests__comments 222 14 none] [execute ado__statements 170 14 none]
+G r c none [load regtests__comments 222 14 none] [has_elements ado__statements 176 13 none]
+G r c none [load regtests__comments 222 14 none] [get_identifier ado__statements 196 13 none]
+G r c none [load regtests__comments 222 14 none] [set_key_value ado__objects 253 14 none]
+G r c none [load regtests__comments 222 14 none] [get_time ado__statements 278 13 none]
+G r c none [load regtests__comments 222 14 none] [get_unbounded_string ado__statements 252 13 none]
+G r c none [load regtests__comments 222 14 none] [get_integer ado__statements 203 13 none]
+G r c none [load regtests__comments 222 14 none] [is_null ado__statements 182 13 none]
+G r c none [load regtests__comments 222 14 none] [set_key_value ado__objects 363 14 none]
+G r c none [load regtests__comments 222 14 none] [set_created ado__objects 270 14 none]
+G r c none [load regtests__comments 222 14 none] [next ado__statements 179 14 none]
+G r c none [load regtests__comments 224 14 none] [get_identifier ado__statements 196 13 none]
+G r c none [load regtests__comments 224 14 none] [set_key_value ado__objects 253 14 none]
+G r c none [load regtests__comments 224 14 none] [get_time ado__statements 278 13 none]
+G r c none [load regtests__comments 224 14 none] [get_unbounded_string ado__statements 252 13 none]
+G r c none [load regtests__comments 224 14 none] [get_integer ado__statements 203 13 none]
+G r c none [load regtests__comments 224 14 none] [is_null ado__statements 182 13 none]
+G r c none [load regtests__comments 224 14 none] [set_key_value ado__objects 363 14 none]
+G r c none [load regtests__comments 224 14 none] [set_created ado__objects 270 14 none]
+G r c none [save regtests__comments 229 14 none] [create_statement ado__sessions 164 13 none]
+G r d update_statement [save regtests__comments 229 14 none] [adjust ado__statements 556 14 none]
+G r e update_statement [save regtests__comments 229 14 none] [finalize ado__statements 559 14 none]
+G r c none [save regtests__comments 229 14 none] [is_modified ado__objects 276 13 none]
+G r c none [save regtests__comments 229 14 none] [get_key ado__objects 239 13 none]
+G r c none [save regtests__comments 229 14 none] [save_field ado__statements 434 14 none]
+G r k object_key [save regtests__comments 229 14 none] [object_keyDF ado__objects 557 9 none]
+G r c none [save regtests__comments 229 14 none] [clear_modified ado__objects 281 14 none]
+G r c none [save regtests__comments 229 14 none] [save_field ado__statements 404 14 none]
+G r c none [save regtests__comments 229 14 none] [save_field ado__statements 422 14 none]
+G r c none [save regtests__comments 229 14 none] [save_field ado__statements 356 14 none]
+G r c none [save regtests__comments 229 14 none] [save_field ado__statements 440 14 none]
+G r c none [save regtests__comments 229 14 none] [save_field ado__statements 392 14 none]
+G r c none [save regtests__comments 229 14 none] [has_save_fields ado__statements 456 13 none]
+G r c none [save regtests__comments 229 14 none] [set_filter ado__statements 153 14 none]
+G r c none [save regtests__comments 229 14 none] [add_param ado__statements 132 14 none]
+G r c none [save regtests__comments 229 14 none] [add_param ado__parameters 225 14 none]
+G r c none [save regtests__comments 229 14 none] [execute ado__statements 463 14 none]
+G r c none [create regtests__comments 232 14 none] [create_statement ado__sessions 169 13 none]
+G r d update_statement [create regtests__comments 232 14 none] [adjust ado__statements 556 14 none]
+G r e update_statement [create regtests__comments 232 14 none] [finalize ado__statements 559 14 none]
+G r c none [create regtests__comments 232 14 none] [allocate ado__sessions 152 14 none]
+G r c none [create regtests__comments 232 14 none] [get_key ado__objects 239 13 none]
+G r c none [create regtests__comments 232 14 none] [save_field ado__statements 434 14 none]
+G r k object_key [create regtests__comments 232 14 none] [object_keyDF ado__objects 557 9 none]
+G r c none [create regtests__comments 232 14 none] [save_field ado__statements 356 14 none]
+G r c none [create regtests__comments 232 14 none] [save_field ado__statements 404 14 none]
+G r c none [create regtests__comments 232 14 none] [save_field ado__statements 422 14 none]
+G r c none [create regtests__comments 232 14 none] [save_field ado__statements 440 14 none]
+G r c none [create regtests__comments 232 14 none] [save_field ado__statements 392 14 none]
+G r c none [create regtests__comments 232 14 none] [execute ado__statements 463 14 none]
+G r c none [create regtests__comments 232 14 none] [set_created ado__objects 270 14 none]
+G r c none [delete regtests__comments 236 14 none] [create_statement ado__sessions 159 13 none]
+G r d delete_statement [delete regtests__comments 236 14 none] [adjust ado__statements 544 14 none]
+G r e delete_statement [delete regtests__comments 236 14 none] [finalize ado__statements 547 14 none]
+G r c none [delete regtests__comments 236 14 none] [set_filter ado__statements 153 14 none]
+G r c none [delete regtests__comments 236 14 none] [get_key ado__objects 239 13 none]
+G r c none [delete regtests__comments 236 14 none] [add_param ado__statements 132 14 none]
+G r k object_key [delete regtests__comments 236 14 none] [object_keyDF ado__objects 557 9 none]
+G r c none [delete regtests__comments 236 14 none] [execute ado__statements 325 14 none]
+G r c none [set_field regtests__comments 239 14 none] [prepare_modify ado__objects 332 14 none]
+G r e object_record [Tcomment_implBDF regtests__comments 198 4 none] [finalize ado__objects 289 14 none]
+G r e object_ref [Tcomment_implBDF regtests__comments 198 4 none] [finalize ado__objects 581 14 none]
+G r k object_record [Tcomment_implBDF regtests__comments 198 4 none] [object_recordDF ado__objects 591 9 none]
+G r s object_record [Tcomment_implBIP regtests__comments 198 4 none] [object_recordIP ado__objects 591 9 none]
+G r s user_ref [Tcomment_implBIP regtests__comments 198 4 none] [user_refIP regtests__simple__model 40 9 none]
+G r e object_ref [Tcomment_implBIP regtests__comments 198 4 none] [finalize ado__objects 581 14 none]
+G r k object_record [Tcomment_implBIP regtests__comments 198 4 none] [object_recordDF ado__objects 591 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 67|29r6 30r6 31r6 68r36 72r25 76r39 82r25 158r11 203r15 204r18
+. 68|23r6 104r36 112r26 129r39 139r14 142r26 303r39
+X 2 a-calend.ads
+36K13*Calendar 409e17 67|29w10 68r40 72r29 203r19 68|104r40 112r30
+42I9*Time<222I9> 67|68r49 72r38 203r28 68|104r49 112r39
+222I9 Time_Rep<long_long_integer>
+X 5 a-contai.ads
+16K13*Containers 24e19 67|30r10 158r15
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<26|43R9>
+X 23 a-convec.ads
+61I9 Index_Type 67|158r35
+62+9 Element_Type 67|159r35
+64V19 "="{boolean} 67|160r36
+73k24*Vectors 824e27 67|30w21 158r26
+88R9*Vector<26|43R9> 67|161r46[157]
+180U14*Clear 68|476s23[67|157]
+431U14*Append 68|484s20[67|157]
+X 26 a-finali.ads
+46U14*Initialize<87|44p14>
+X 28 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[23|111]>
+X 30 a-string.ads
+16K13*Strings 35e16 67|31r10 76r43 82r29 204r22 68|129r43 139r18 142r30
+X 33 a-strunb.ads
+82K21*Unbounded 756e26 67|31w18 76r51 82r37 204r30 68|129r51 139r26 142r38
+87R9*Unbounded_String<26|43R9> 739e14 67|76r61 82r47 204r40 68|129r61 142r48
+116V13*To_String{string} 68|139s36
+X 41 a-uncdea.ads
+20u15*Unchecked_Deallocation 68|23w10 303r43
+X 42 ado.ads
+25K9*ADO 150e8 67|24r6 25r6 26r6 27r6 28r6 40r28 47r34 47r57 50r49 57r34
+. 61r25 104r43 108r25 113r37 114r33 119r37 120r33 126r37 127r33 135r37 140r39
+. 147r29 164r37 165r33 179r35 191r29 196r23 199r11 199r50 207r22 217r37 218r33
+. 223r37 225r37 226r37 230r37 233r39 237r39 68|27r13 28r13 32r34 32r57 33r16
+. 33r52 36r7 40r49 41r16 41r52 44r7 50r14 50r52 55r16 67r20 70r7 78r34 82r7
+. 86r26 108r7 125r7 133r7 155r7 172r7 185r43 189r7 193r26 212r13 226r37 227r33
+. 233r10 235r10 241r37 242r33 245r15 252r16 254r7 258r37 259r33 262r15 270r10
+. 275r37 276r14 280r10 282r14 290r39 291r23 313r37 314r33 316r14 331r37 333r15
+. 334r24 340r16 345r37 346r14 392r25 394r25 402r39 403r15 425r16 427r7 431r39
+. 432r14 446r14 455r17 470r37 471r33 472r14 483r13 494r37 495r37 504r29 506r7
+33i4*DEFAULT_TIME{2|42I9} 68|67r24
+39I9*Identifier<long_integer> 67|47r38 57r38 61r29 114r37 120r37 68|32r38
+. 78r38 86r30 242r37 259r37 334r28
+43I9*Entity_Type<integer> 67|104r47 108r29 207r26 68|185r47 193r30 504r33
+X 48 ado-objects.ads
+155K13*Objects 602e16 67|25w10 40r32 47r61 50r53 196r27 199r15 199r54 68|27r17
+. 28r17 32r61 33r20 33r56 36r11 40r53 41r20 41r56 44r11 50r18 50r56 55r20
+. 70r11 82r11 108r11 125r11 133r11 155r11 172r11 189r11 212r17 233r14 235r14
+. 252r20 254r11 270r14 276r18 280r14 282r18 291r27 340r20 392r29 394r29 425r20
+. 427r11 446r18 455r21 483r17 506r11
+159X4*LAZY_LOCK 68|394r37
+161X4*INSERT_ERROR 68|425r28
+163X4*UPDATE_ERROR 68|392r37
+166X4*NOT_FOUND 68|252r28 340r28
+184n29*KEY_INTEGER{184E9} 67|199r62 68|33r64 41r64
+185R9*Object_Key<26|43R9> 568e14 67|47r69 50r61 68|32r69 33r28 40r61 41r28
+210V13*To_Object{123|83R9} 68|455s29
+216U14*Set_Value 68|36s19
+220U14*Set_Value 68|44s19
+230H9*Object_Record<26|50R9> 600e14 67|199r23
+234P9*Object_Record_Access(230R9) 68|27r25 55r28 276r26 291r35 446r26
+239V13*Get_Key{185R9} 68|351s43 384s42 410s41 436s39 455s45
+246V13*Get_Key_Value{42|39I9} 68|90s19 334s49
+253U14*Set_Key_Value 68|497s14
+267V13*Is_Created{boolean} 68|282s26
+270U14*Set_Created 68|427s19 506s19
+276V13*Is_Modified{boolean} 68|349s17 354s17 359s17 364s17 369s17 374s17
+281U14*Clear_Modified 68|352s17 357s17 362s17 367s17 372s17 377s17
+298x14*Save 68|285R15
+302x14*Create 68|283R15
+306x14*Delete 68|294R15
+315U14*Copy 68|213s18
+323H9*Object_Ref<26|43R9><121|42R9> 573e14 67|40r40 196r35 68|28r25 50r26
+. 50r64
+332U14*Prepare_Modify 68|57s14
+336V13*Is_Null{boolean} 68|205s21 449s15
+352V13*Get_Load_Object{234P9} 68|97s34 114s34 144s34 161s34 178s34 195s34
+. 208s39 452s19
+356V13*Get_Object{234P9} 68|88s34 276s57 291s66
+363U14*Set_Key_Value 68|502s22
+375V14*"="{boolean} 67|160r52 68|50R50
+377U14*Set_Object 68|70s19 212s25 233s22 235s22 254s19 270s22 280s22 483s25
+428U14*Set_Field_Unbounded_String 68|133s19
+433U14*Set_Field_String 68|125s19
+448U14*Set_Field_Time 68|108s19
+458U14*Set_Field_Integer 68|155s19
+498U14*Set_Field_Object 68|172s19
+508U14*Set_Field_Entity_Type 68|189s19
+523U14*Set_Field_Key_Value 68|82s19
+577U14 Adjust<26|47p14>
+581U14 Finalize<26|48p14>
+X 51 ado-parameters.ads
+100h9*Expander
+193U14*Bind_Param 68|247s13 264s13 336s13
+194i26 Position{natural} 68|247r25 264r25 336r25
+195i26 Value{42|39I9} 68|247r40 264r40 336r40
+225U14*Add_Param 68|385s15
+226i26 Value{integer} 68|385r26
+X 53 ado-schemas.ads
+23K13*Schemas 215e16 67|28w10 147r33 179r39 191r33
+25I9*Column_Index<integer>
+27A9*Member_Names(135|29P9)<25I9>
+29R9*Class_Mapping 33e14 67|179r47
+29i24*Count{25I9} 67|180m7
+31p7*Table{135|29P9} 67|181m7
+32a7*Members{27A9} 67|182m7
+35P9*Class_Mapping_Access(29R9) 67|147r41 191r41
+X 56 ado-sessions.ads
+51K13*Sessions 237e17 67|24w10 113r41 119r41 126r41 135r41 140r43 164r41
+. 217r41 223r41 226r41 230r41 233r43 237r43 68|226r41 241r41 258r41 275r41
+. 290r43 313r41 331r41 345r41 402r43 431r43 470r41 495r41
+71R9*Session<26|43R9> 218e14 67|113r50 119r50 126r50 164r50 217r50 223r50
+. 226r50 68|226r50 241r50 258r50 313r50 331r50 470r50 495r50
+120V13*Create_Statement{60|165R9} 68|317R22 473R20
+140R9*Master_Session<71R9> 231e14 67|135r50 140r52 230r50 233r52 237r52 68|275r50
+. 290r52 345r50 402r52 431r52
+152U14*Allocate 68|408R15
+153c24 Id<48|230R9> 68|408r25
+159V13*Create_Statement{60|320R9} 68|433R21
+164V13*Create_Statement{60|335R9} 68|347R21
+169V13*Create_Statement{60|469R9} 68|404R30
+X 59 ado-sql.ads
+26K13*SQL 227e12 67|27w10 127r37 165r37 218r37 68|227r37 245r19 262r19 314r37
+. 333r19 471r37
+86R9*Query<51|255R9> 90e14 67|127r41 165r41 218r41 68|227r41 245r23 262r23
+. 314r41 333r23 471r41
+101U14*Set_Filter 68|248s13 265s13 337s13
+X 60 ado-statements.ads
+83K13*Statements 565e19 67|26w10 225r41 68|316r18 346r18 403r19 432r18 472r18
+. 494r41
+132U14*Add_Param 68|384s15 436s12
+133r25 Value{48|185R9} 68|384r26 436r23
+153U14*Set_Filter 68|383s15 435s12
+154a26 Filter{string} 68|383r27 435r24
+165R9*Query_Statement<103R9> 491e14 67|225r52 68|316r29 472r29 494r52
+170U14*Execute<157p14> 68|319s12 475s12
+176V13*Has_Elements{boolean} 68|320s15 323s28 477s18
+179U14*Next 68|322s15 486s15
+182V13*Is_Null{boolean} 68|501R19
+196V13*Get_Identifier{42|39I9} 68|497R34 502R42
+203V13*Get_Integer{integer} 68|500R32 504R51 505R30
+252V13*Get_Unbounded_String{33|87R9} 68|499R30
+278V13*Get_Time{2|42I9} 68|498R27
+320R9*Delete_Statement<103R9> 541e14 68|432r29
+325U14*Execute<157p14> 68|437s12
+335R9*Update_Statement<103R9> 553e14 68|346r29
+356U14*Save_Field 68|365s15 381s15 411s13 417s13
+357a26 Name{string} 68|365r27 381r27 411r25 417r25
+358i26 Value{integer} 68|366r27 382r27 412r25 418r25
+392U14*Save_Field 68|375s15 421s13
+393a26 Name{string} 68|375r27 421r25
+394i26 Value{42|43I9} 68|376r27 422r25
+404U14*Save_Field 68|355s15 413s13
+405a26 Name{string} 68|355r27 413r25
+406i26 Value{2|42I9} 68|356r27 414r25
+422U14*Save_Field 68|360s15 415s13
+423a26 Name{string} 68|360r27 415r25
+424r26 Value{33|87R9} 68|361r27 416r25
+434U14*Save_Field 68|350s15 409s13
+435a26 Name{string} 68|350r27 409r25
+436r26 Value{48|185R9} 68|351r27 410r25
+440U14*Save_Field 68|370s15 419s13
+441a26 Name{string} 68|370r27 419r25
+442c26 Value<48|323R9> 68|371r27 420r25
+456V13*Has_Save_Fields{boolean} 68|379s15
+463U14*Execute 68|389s18 423s13
+469R9*Insert_Statement<335R9> 563e14 68|403r30
+X 66 regtests.ads
+22K9*Regtests 39e13 67|34r6 36r9 96r36 100r25 206r15 241r5 68|25r14 168r36
+. 176r26 510r5
+X 67 regtests-comments.ads
+36K18*Comments 66|22k9 67|170E4 241l14 241e22 68|25b23 510l14 510t22
+40R9*Comment_Ref<48|323R9> 26|46P14 48|577P14 581P14 67|40e67 52r28 53r32
+. 56p14 56r38 60p13 60r33 63p13 63r38 67p14 67r40 71p13 71r35 75p14 75r43
+. 77p14 77r43 81p13 81r38 83p13 83r38 87p14 87r45 91p13 91r40 95p14 95r40
+. 99p13 99r35 103p14 103r47 107p13 107r42 112p14 112r37 118p14 118r37 125P14
+. 125r37 134P14 134r37 139P14 139r39 143P13 143r34 151P14 151r40 154p14 154r32
+. 155r36 159r51 195r28 196r10 239r41 68|48r32 53r41 62r40 77r38 85r33 94r38
+. 103r40 111r35 120r43 128r43 136r38 141r38 150r45 158r40 167r40 175r35 184r47
+. 192r42 201r32 202r36 203r16 225r37 240r37 257r37 274r37 289r39 444r34 479r20
+47V13*Comment_Key{48|185R9} 47>26 68|32b13 38l8 38t19
+47i26 Id{42|39I9} 68|32b26 36r38
+50V13*Comment_Key{48|185R9} 50>26 68|40b13 46l8 46t19
+50a26 Id{string} 68|40b26 44r38
+52r4*Null_Comment{40R9} 195c4
+53V14*"="{boolean} 53>18 53>24 68|48b14 51l9 51t11
+53c18 Left<40R9> 68|48b18 50r44
+53c24 Right<40R9> 68|48b24 50r82
+56U14*Set_Id 56=22 57>22 68|77b14 83l8 83t14
+56r22 Object{40R9} 68|77b22 81m18
+57i22 Value{42|39I9} 68|78b22 82r53
+60V13*Get_Id{42|39I9} 60>21 68|85b13 91l8 91t14
+60r21 Object{40R9} 68|85b21 88r27
+63V13*Get_Version{integer} 63>26 68|94b13 100l8 100t19
+63r26 Object{40R9} 68|94b26 97r27
+67U14*Set_Date 67=24 68>24 68|103b14 109l8 109t16
+67r24 Object{40R9} 68|103b24 107m18
+68i24 Value{2|42I9} 68|104b24 108r59
+71V13*Get_Date{2|42I9} 71>23 68|111b13 117l8 117t16
+71r23 Object{40R9} 68|111b23 114r27
+75U14*Set_Message 75=27 76>27 68|128b14 134l8 134t19
+75r27 Object{40R9} 68|128b27 132m18
+76r27 Value{33|87R9} 68|129b27 133r74
+77U14*Set_Message 77=27 78>27 68|120b14 126l8 126t19
+77r27 Object{40R9} 68|120b27 124m18
+78a27 Value{string} 68|121b28 125r64
+81V13*Get_Message{33|87R9} 81>26 68|139s54 141b13 147l8 147t19
+81r26 Object{40R9} 68|141b26 144r27
+83V13*Get_Message{string} 83>26 68|136b13 140l8 140t19
+83r26 Object{40R9} 68|136b26 139r47
+87U14*Set_Entity_Id 87=29 88>29 68|150b14 156l8 156t21
+87r29 Object{40R9} 68|150b29 154m18
+88i29 Value{integer} 68|151b29 155r67
+91V13*Get_Entity_Id{integer} 91>28 68|158b13 164l8 164t21
+91r28 Object{40R9} 68|158b28 161r27
+95U14*Set_User 95=24 96>24 68|167b14 173l8 173t16
+95r24 Object{40R9} 68|167b24 171m18
+96c24 Value<70|40R9> 68|168b24 172r61
+99V13*Get_User{70|40C9} 99>23 68|175b13 181l8 181t16
+99r23 Object{40R9} 68|175b23 178r27
+103U14*Set_Entity_Type 103=31 104>31 68|184b14 190l8 190t23
+103r31 Object{40R9} 68|184b31 188m18
+104i31 Value{42|43I9} 68|185b31 189r73
+107V13*Get_Entity_Type{42|43I9} 107>30 68|192b13 198l8 198t23
+107r30 Object{40R9} 68|192b30 195r27
+112U14*Load 112=20 113=20 114>20 68|240b14 255l8 255t12
+112r20 Object{40R9} 68|240b20 254m31
+113c20 Session<56|71R9> 68|241b20 249m18
+114i20 Id{42|39I9} 68|242b20 247r49
+118U14*Load 118=20 119=20 120>20 121<20 68|257b14 272l8 272t12
+118r20 Object{40R9} 68|257b20 270m34
+119c20 Session<56|71R9> 68|258b20 266m18
+120i20 Id{42|39I9} 68|259b20 264r49
+121b20 Found{boolean} 68|260b20 266m34 267r14
+125U14*Find<48|388p14> 125=20 126=20 127>20 128<20 68|225b14 238l8 238t12
+125r20 Object{40R9} 68|225b20 233m34 235m34
+126c20 Session<56|71R9> 68|226b20 231m18
+127c20 Query<59|86R9> 68|227b20 231r27
+128b20 Found{boolean} 68|228b20 231m34 232r10
+134U14*Save<48|395p14> 134=20 135=20 68|274b14 287l8 287t12
+134r20 Object{40R9} 68|274b20 276r50 280m34
+135c20 Session<56|140R9> 68|275b20 283m23 285m21
+139U14*Delete<48|399p14> 139=22 140=22 68|289b14 296l8 296t14
+139r22 Object{40R9} 68|289b22 291r59
+140c22 Session<56|140R9> 68|290b22 294m23
+143V13*Get_Value{123|83R9}<121|47p13> 143>24 144>24 68|444b13 466l8 466t17
+143r24 From{40R9} 68|444b24 449r10 452r14
+144a24 Name{string} 68|445b24 454r10 456r13 458r13 460r13 462r13
+147p4*COMMENT_TABLE{53|35P9} 191c4
+151U14*Allocate<48|385p14> 151=24 68|62b14 71l8 71t16
+151r24 Object{40R9} 68|62b24 70m31
+154U14*Copy 154>20 155=20 68|201b14 223l8 223t12
+154r20 Object{40R9} 68|201b20 205r14 208r32
+155r20 Into{40R9} 68|202b20 222m7
+157K12*Comment_Vectors[23|73] 161r30 68|476r7
+161R12*Comment_Vector{23|88R9[157]} 163r37 68|469r37
+163U14*List 163=20 164=20 165>20 68|469b14 488l8 488t12
+163r20 Object{161R12} 68|469b20 476m30 484m13 484r13
+164c20 Session<56|71R9> 68|470b20 473r12 482m30
+165c20 Query<59|86R9> 68|471b20 473r38
+170a4 COMMENT_NAME{string} 181r18
+171a4 COL_0_1_NAME{string} 183r15 68|350r36 409r34
+172a4 COL_1_1_NAME{string} 184r15 68|411r34
+173a4 COL_2_1_NAME{string} 185r15 68|355r36 413r34
+174a4 COL_3_1_NAME{string} 186r15 68|360r36 415r34
+175a4 COL_4_1_NAME{string} 187r15 68|365r36 417r34
+176a4 COL_5_1_NAME{string} 188r15 68|370r36 419r34
+177a4 COL_6_1_NAME{string} 189r15 68|375r36 421r34
+179r4 COMMENT_DEF{53|29R9} 192r10 200r50 68|34r52 42r52 317r47 347r39 404r48
+. 433r39 473r45
+198R9 Comment_Impl<48|591R9> 210r38 213r39 216r37 222r37 224r37 229r37 232r39
+. 236r39 68|58r15 65r19 88r13 97r13 114r13 144r13 161r13 178r13 195r13 208r18
+. 210r22 229r46 243r46 261r46 279r22 301r39 302r43 304r16 306r33 312r37 330r37
+. 344r37 401r39 430r39 447r21 453r15 480r51 493r37
+202i8*Version{integer} 68|66m12 99r19 214m18 214r34 380m17 380r35 382r43
+. 385r42 407m14 412r41 505m14
+203i8*Date{2|42I9} 68|67m12 108m53 116r19 215m18 215r31 356r43 414r41 457r57
+. 498m14
+204r8*Message{33|87R9} 68|125m55 133m65 146r19 216m18 216r34 361r43 416r41
+. 459r52 499m14
+205i8*Entity_Id{integer} 68|68m12 155m56 163r19 217m18 217r36 366r43 418r41
+. 461r71 500m14
+206r8*User{70|40R9} 68|172m55 180r19 218m18 218r31 371r43 420r41 502m17
+207i8*Entity_Type{42|43I9} 68|69m12 189m60 189r60 197r19 219m18 219r38 376r43
+. 422r41 463r71 504m14
+210P9 Comment_Access(198R9) 240r38 68|54r38 63r14 79r14 87r23 96r23 105r14
+. 113r23 122r14 130r14 143r23 152r14 160r23 169r14 177r23 186r14 194r23 207r29
+. 209r29 229r24 243r24 261r24 480r29
+213U14 Destroy<48|285p14> 213^23 68|236s10 251s10 268s10 301b14 310l8 310t15
+213p23 Object(198R9) 68|301b23 306r47
+216U14 Find<48|292p14> 216=20 217=20 218>20 219<20 68|231s12 249s12 266s12
+. 312b14 327l8 327t12 338s14
+216r20 Object{198R9} 68|312b20 321m10 321r10
+217c20 Session<56|71R9> 68|313b20 317r14 321m29
+218c20 Query<59|86R9> 68|314b20 317r40
+219b20 Found{boolean} 68|315b20 323m10 325m10
+222U14 Load<48|311p14> 222=20 223=20 68|330b14 342l8 342t12
+222r20 Object{198R9} 68|330b20 334r42 338m7 338r7
+223c20 Session<56|71R9> 68|331b20 338m20
+224U14 Load 224=20 225=20 226=20 68|321s17 482s18 493b14 507l8 507t12
+224r20 Object{198R9} 68|493b20 497m7 497r7 498m7 499m7 500m7 502m10 502r10
+. 504m7 505m7 506m32
+225c20 Stmt<60|165R9> 68|494b20 497r29 498r22 499r25 500r27 501r14 502r37
+. 504r46 505r25
+226c20 Session<56|71R9> 68|495b20 502r62
+229U14 Save<48|298p14> 229=20 230=20 68|344b14 399l8 399t12
+229r20 Object{198R9} 68|344b20 349r10 351r36 352m10 352r10 354r10 356r36
+. 357m10 357r10 359r10 361r36 362m10 362r10 364r10 366r36 367m10 367r10 369r10
+. 371r36 372m10 372r10 374r10 376r36 377m10 377r10 380m10 380r28 382r36 384r35
+. 385r35
+230c20 Session<56|140R9> 68|345b20 347r13
+232U14 Create<48|302p14> 232=22 233=22 68|401b14 428l8 428t14
+232r22 Object{198R9} 68|401b22 407m7 408m31 410r34 412r34 414r34 416r34 418r34
+. 420r34 422r34 427m32
+233c22 Session<56|140R9> 68|402b22 404r22 408m7 408r7
+236U14 Delete<48|306p14> 236=22 237=22 68|430b14 438l8 438t14
+236r22 Object{198R9} 68|430b22 436r32
+237c22 Session<56|140R9> 68|431b22 433r13
+239U14 Set_Field 239=25 240<25 68|53b14 59l8 59t17 81s7 107s7 124s7 132s7
+. 154s7 171s7 188s7
+239c25 Object<40R9> 68|53b25 57m7 57r7
+240p25 Impl{210P9} 68|54b25 58m7
+X 68 regtests-comments.adb
+33r7 Result{48|185R9} 36m30 36r30 37r14
+41r7 Result{48|185R9} 44m30 44r30 45r14
+55p7 Result{48|234P9} 57m30 57r30 58r29
+63p7 Impl{67|210P9} 65m7 66r7 67r7 68r7 69r7 70r39
+79p7 Impl{67|210P9} 81m26 81r26 82r40
+87p7 Impl{67|210P9} 90r14
+96p7 Impl{67|210P9} 99r14
+105p7 Impl{67|210P9} 107m26 107r26 108r35 108r48
+113p7 Impl{67|210P9} 116r14
+122p7 Impl{67|210P9} 124m26 124r26 125r37 125r50
+130p7 Impl{67|210P9} 132m26 132r26 133r47 133r60
+143p7 Impl{67|210P9} 146r14
+152p7 Impl{67|210P9} 154m26 154r26 155r38 155r51
+160p7 Impl{67|210P9} 163r14
+169p7 Impl{67|210P9} 171m26 171r26 172r37 172r50
+177p7 Impl{67|210P9} 180r14
+186p7 Impl{67|210P9} 188m26 188r26 189r42 189r55
+194p7 Impl{67|210P9} 197r14
+203r7 Result{67|40R9} 212m37 212r37 222r15
+207p13 Impl{67|210P9} 213r24 214r29 215r26 216r29 217r31 218r26 219r33
+209p13 Copy{67|210P9} 212r45 213r13 214r13 215r13 216r13 217r13 218r13 219r13
+229p7 Impl{67|210P9} 231r7 233r42 236r19
+243p7 Impl{67|210P9} 249r7 251r19 254r39
+244b7 Found{boolean} 249m34 250r14
+245r7 Query{59|86R9} 247m7 247r7 248m7 248r7 249r27
+261p7 Impl{67|210P9} 266r7 268r19 270r42
+262r7 Query{59|86R9} 264m7 264r7 265m7 265r7 266r27
+276p7 Impl{48|234P9} 278r10 279m10 280r42 282r38 283r10 285r10
+291p7 Impl{48|234P9} 293r10 294r10
+302P12 Comment_Impl_Ptr(67|198R9) 304r30 306r13
+303U17 Unchecked_Free[41|20] 309s7
+306p7 Ptr{302P12} 309m23 309r23
+316r7 Stmt{60|165R9} 319m7 319r7 320r10 321m23 321r23 322m10 322r10 323r23
+332b7 Found{boolean} 338m36 339r14
+333r7 Query{59|86R9} 336m7 336r7 337m7 337r7 338r29
+334i7 Id{42|39I9} 336r49
+346r7 Stmt{60|335R9} 350m10 350r10 355m10 355r10 360m10 360r10 365m10 365r10
+. 370m10 370r10 375m10 375r10 379r10 381m10 381r10 383m10 383r10 384m10 384r10
+. 385m10 385r10 389m13 389r13
+387i13 Result{integer} 389m27 390r16 391r19
+403r7 Query{60|469R9} 409m7 409r7 411m7 411r7 413m7 413r7 415m7 415r7 417m7
+. 417r7 419m7 419r7 421m7 421r7 423m7 423r7
+405i7 Result{integer} 423m22 424r10
+432r7 Stmt{60|320R9} 435m7 435r7 436m7 436r7 437m7 437r7
+446p7 Obj{48|234P9} 452m7 453r29
+447p7 Impl(67|198R9) 453m7 455r40 457r52 459r47 461r66 463r66
+472r7 Stmt{60|165R9} 475m7 475r7 477r13 482m24 482r24 486m10 486r10
+479r13 Item{67|40R9} 483m37 483r37 484r28
+480p13 Impl{67|210P9} 482r13 483r43
+X 69 regtests-simple.ads
+1K18*Simple 67|34r15 96r45 100r34 206r24 68|168r45 176r35 69|2e20
+X 70 regtests-simple-model.ads
+34K25*Model 67|34w22 96r52 100r41 206r31 68|168r52 176r42 70|372e26
+40C9*User_Ref<40R9>
+40R9*User_Ref<48|323R9> 67|96r58 100r47 206r37 68|168r58 176r48 70|40e64
+X 71 system.ads
+67M9*Address
+X 91 s-memory.ads
+53V13*Alloc{71|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{71|67M9} 105i<c,__gnat_realloc>22
+X 100 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 102 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 119 util.ads
+18K9*Util 67|32r6 33r6 144r49 68|24r6 445r49 450r17 457r17 459r17 461r17
+. 463r17 465r14 119|28e9
+X 120 util-beans.ads
+50K14*Beans 67|32r11 33r11 144r54 68|24r11 445r54 450r22 457r22 459r22 461r22
+. 463r22 465r19 120|54e15
+X 121 util-beans-basic.ads
+26K20*Basic 67|33r17 121|97e21
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+67h9*List_Bean<42R9>
+X 122 util-beans-basic-lists.ads
+28k26*Lists 67|33w23 122|88e27
+X 123 util-beans-objects.ads
+43K20*Objects 67|32w17 144r60 68|24r17 445r60 450r28 457r28 459r28 461r28
+. 463r28 465r25 123|644e23
+83R9*Object<26|43R9> 67|144r68 68|445r68 123|632e14
+90r4*Null_Object{83R9} 68|450r36 465r33
+97h9*Object_Type
+213V13*To_Object{83R9} 68|461s36 463s36
+219V13*To_Object{83R9} 68|459s36
+X 124 util-beans-objects-time.ads
+21K28*Time 68|24w25 457r36 124|37e28
+24V13*To_Object{123|83R9} 68|457s41
+X 132 util-properties.ads
+256h12*Manager<121|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 135 util-strings.ads
+29P9*Name_Access(string)
+

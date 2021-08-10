@@ -1,0 +1,934 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_LONG_LONG_INTEGERS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPE_ALLOCATORS
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_STREAMS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_ALIASING
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U ado.parameters.tests%b  ado-parameters-tests.adb  60b98e9c OO PF PK IU
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.hash_tables%s  a-cohata.ads	a-cohata.ali
+Z ada.containers.hash_tables.generic_keys%s
+Z ada.containers.hash_tables.generic_operations%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+Z ada.containers.indefinite_hashed_maps%s
+Z ada.containers.prime_numbers%s  a-coprnu.adb	a-coprnu.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.hash%s	a-strhas.adb		a-strhas.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_conversion%s
+Z ada.unchecked_deallocation%s
+W ado%s			ado.adb			ado.ali
+W ado.caches%s		ado-caches.adb		ado-caches.ali
+W ado.caches.discrete%s	ado-caches-discrete.adb	ado-caches-discrete.ali
+W ado.parameters%s	ado-parameters.adb	ado-parameters.ali
+Z ado.sessions%s	ado-sessions.adb	ado-sessions.ali
+W ahven%s		ahven.adb		ahven.ali
+Z ahven.framework%s	ahven-framework.adb	ahven-framework.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W util%s		util.ads		util.ali
+W util.measures%s	util-measures.adb	util-measures.ali
+W util.test_caller%s	util-test_caller.adb	util-test_caller.ali  ED
+Z util.tests%s		util-tests.adb		util-tests.ali
+Z util.xunit%s		util-xunit.adb		util-xunit.ali
+
+U ado.parameters.tests%s  ado-parameters-tests.ads  99c30169 EE OO PF PK IU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ado.parameters%s	ado-parameters.adb	ado-parameters.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W util%s		util.ads		util.ali
+W util.tests%s		util-tests.adb		util-tests.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-calend.adb		20190518041255 e65e26b2 ada.calendar%b
+D a-calfor.ads		20190518041254 0a6f9afc ada.calendar.formatting%s
+D a-catizo.ads		20190518041256 409d7e5b ada.calendar.time_zones%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-cihama.ads		20190518041255 bece8dbf ada.containers.indefinite_hashed_maps%s
+D a-cihama.adb		20190518041254 94909b4a ada.containers.indefinite_hashed_maps%b
+D a-cihase.ads		20190518041254 4f8a62e0 ada.containers.indefinite_hashed_sets%s
+D a-cihase.adb		20190518041256 f54eebd2 ada.containers.indefinite_hashed_sets%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-convec.ads		20190518041256 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20190518041254 32f4e1a7 ada.containers.vectors%b
+D a-direct.ads		20190518041255 078228da ada.directories%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-ststio.ads		20190518041255 a75f3183 ada.streams.stream_io%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strbou.ads		20190518041254 84c37afd ada.strings.bounded%s
+D a-strbou.adb		20190518041255 adb4aa70 ada.strings.bounded%b
+D a-strhas.ads		20190518041256 c71c2a52 ada.strings.hash%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strsea.ads		20190518041254 b9bc90ba ada.strings.search%s
+D a-strsup.ads		20190518041255 a27dcb33 ada.strings.superbounded%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20190518041256 750cba06 ada.strings.unbounded%b
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D ado.ads		20200810200714 1ec4b94f ado%s
+D ado.adb		20200810200714 d113ab7f ado%b
+D ado-audits.ads	20200810200714 2a544c7e ado.audits%s
+D ado-caches.ads	20200810200714 3f821007 ado.caches%s
+D ado-caches-discrete.ads  20200810200714 455b0e46 ado.caches.discrete%s
+D ado-caches-discrete.adb  20200810200714 5e80fd19 ado.caches.discrete%b
+D ado-configs.ads	20200810200714 1a13a13e ado.configs%s
+D ado-connections.ads	20200810200714 53398a84 ado.connections%s
+D ado-dialects.ads	20200810200714 eb00eeaf ado.dialects%s
+D ado-objects.ads	20200810200714 b8c8fb60 ado.objects%s
+D ado-objects-cache.ads	20200810200714 aef66a18 ado.objects.cache%s
+D ado-parameters.ads	20200810200714 ad5888fa ado.parameters%s
+D ado-parameters-tests.ads  20200810200714 239f99c5 ado.parameters.tests%s
+D ado-parameters-tests.adb  20200810200714 8d5f9b25 ado.parameters.tests%b
+D ado-queries.ads	20200810200714 e566d425 ado.queries%s
+D ado-schemas.ads	20200810200714 b2b43658 ado.schemas%s
+D ado-schemas-entities.ads  20200810200714 3c0f0af5 ado.schemas.entities%s
+D ado-sequences.ads	20200810200714 1726cdc8 ado.sequences%s
+D ado-sessions.ads	20200810200714 20bb1cec ado.sessions%s
+D ado-sql.ads		20200810200714 ba8ff082 ado.sql%s
+D ado-statements.ads	20200810200714 752f695d ado.statements%s
+D ado-utils.ads		20200810200714 ef23a2c0 ado.utils%s
+D ahven.ads		20200215171848 8c7a91f5 ahven%s
+D ahven-astrings.ads	20200215171848 1b9f3e2c ahven.astrings%s
+D ahven-astrings.ads	20200215171848 1b9f3e2c ahven.astrings%s
+D ahven-framework.ads	20200215171848 e0d710ed ahven.framework%s
+D ahven-listeners.ads	20200215171848 abe83d31 ahven.listeners%s
+D ahven-long_astrings.ads  20200215171848 26230525 ahven.long_astrings%s
+D ahven-long_astrings.ads  20200215171848 26230525 ahven.long_astrings%s
+D ahven-results.ads	20200215171848 c5fcc2f0 ahven.results%s
+D ahven-slist.ads	20200215171848 664b6dad ahven.slist%s
+D gnat.ads		20190518041256 b5988c27 gnat%s
+D g-calend.ads		20190518041255 cad86fa7 gnat.calendar%s
+D g-catiio.ads		20190518041254 b8a4f3d4 gnat.calendar.time_io%s
+D g-souinf.ads		20190518041256 291df751 gnat.source_info%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrin.ads		20190518041255 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-atacco.ads		20190518041256 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-carun8.ads		20190518041256 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-fatflt.ads		20190518041255 11beb392 system.fat_flt%s
+D s-fatgen.ads		20190518041256 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20190518041255 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20190518041255 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20190518041254 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20190518041256 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-imgint.ads		20190518041254 02dbe0c2 system.img_int%s
+D s-linux.ads		20190518041256 ed0b8aee system.linux%s
+D s-memory.ads		20190518041255 597d6634 system.memory%s
+D s-multip.ads		20190518041254 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190518093549 c13b1f65 system.os_constants%s
+D s-osinte.ads		20190518041257 baabc537 system.os_interface%s
+D s-osprim.ads		20190518041254 07fd65f6 system.os_primitives%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stausa.ads		20190518041255 017a0a05 system.stack_usage%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stalib.adb		20190518041254 f2fe2716 system.standard_library%b
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-stratt.adb		20190518041255 56ef263e system.stream_attributes%b
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-tasinf.ads		20190518041256 2b3f8252 system.task_info%s
+D s-taspri.ads		20190518041256 f40ac08d system.task_primitives%s
+D s-taskin.ads		20190518041257 b9d612e2 system.tasking%s
+D s-taprob.ads		20190518041256 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20200215171848 36301479 util%s
+D util-assertions.ads	20200215171848 b1e626d3 util.assertions%s
+D util-beans.ads	20200215171848 362abe70 util.beans%s
+D util-beans-basic.ads	20200215171848 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20200215171848 aef7462e util.beans.objects%s
+D util-concurrent.ads	20200215171848 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20200215171848 2618dd23 util.concurrent.counters%s
+D util-log.ads		20200215171848 0fb1ac89 util.log%s
+D util-log-appenders.ads  20200215171848 ddbe02c8 util.log.appenders%s
+D util-log-loggers.ads	20200215171848 3003bbc2 util.log.loggers%s
+D util-measures.ads	20200215171848 85a9cf09 util.measures%s
+D util-nullables.ads	20200215171848 cb4c8fed util.nullables%s
+D util-properties.ads	20200215171848 3ed4fee8 util.properties%s
+D util-refs.ads		20200215171848 e592e98d util.refs%s
+D util-refs.adb		20200215171848 f4fdc937 util.refs%b
+D util-streams.ads	20200215171848 a1e34b51 util.streams%s
+D util-streams-buffered.ads  20200215171848 f0f9e470 util.streams.buffered%s
+D util-streams-files.ads  20200215171848 06b5dc71 util.streams.files%s
+D util-streams-texts.ads  20200215171848 cf2f736e util.streams.texts%s
+D util-strings.ads	20200215171848 99f66ec5 util.strings%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20200215171848 bd939877 util.strings.vectors%s
+D util-test_caller.ads	20200215171848 31095d34 util.test_caller%s
+D util-test_caller.adb	20200215171848 3ae99ff4 util.test_caller%b
+D util-tests.ads	20200215171848 17041056 util.tests%s
+D util-xunit.ads	20200215171848 5610b6ca util.xunit%s
+G a e
+G c b b b [b ado__parameters__tests 23 1 none]
+G c Z s b [add_tests ado__parameters__tests 22 14 none]
+G c Z s b [test_expand_sql ado__parameters__tests 27 14 none]
+G c Z s b [test_expand_error ado__parameters__tests 30 14 none]
+G c Z s b [test_expand_perf ado__parameters__tests 33 14 none]
+G c Z s b [test_expand_with_expander ado__parameters__tests 36 14 none]
+G c Z s s [testDA ado__parameters__tests 24 9 none]
+G c Z s s [testDF ado__parameters__tests 24 9 none]
+G c Z s s [testDI ado__parameters__tests 24 9 none]
+G c Z s s [testIP ado__parameters__tests 24 9 none]
+G c Z b b [expand ado__parameters__tests__int_cache 37 13 27_4]
+G c Z b b [find ado__parameters__tests__int_cache 42 13 27_4]
+G c Z b b [insert ado__parameters__tests__int_cache 47 14 27_4]
+G c Z b b [delete ado__parameters__tests__int_cache 54 14 27_4]
+G c Z b b [initialize ado__parameters__tests__int_cache 59 14 27_4]
+G c Z b b [has_element ado__parameters__tests__int_cache__cache_map 72 13 64_4_27_4]
+G c Z b b [Oeq ado__parameters__tests__int_cache__cache_map 78 24 64_4_27_4]
+G c Z b b [capacity ado__parameters__tests__int_cache__cache_map 89 13 64_4_27_4]
+G c Z b b [reserve_capacity ado__parameters__tests__int_cache__cache_map 93 14 64_4_27_4]
+G c Z b b [length ado__parameters__tests__int_cache__cache_map 103 13 64_4_27_4]
+G c Z b b [is_empty ado__parameters__tests__int_cache__cache_map 106 13 64_4_27_4]
+G c Z b b [clear ado__parameters__tests__int_cache__cache_map 109 14 64_4_27_4]
+G c Z b b [key ado__parameters__tests__int_cache__cache_map 112 13 64_4_27_4]
+G c Z b b [element ado__parameters__tests__int_cache__cache_map 115 13 64_4_27_4]
+G c Z b b [replace_element ado__parameters__tests__int_cache__cache_map 118 14 64_4_27_4]
+G c Z b b [query_element ado__parameters__tests__int_cache__cache_map 124 14 64_4_27_4]
+G c Z b b [update_element ado__parameters__tests__int_cache__cache_map 131 14 64_4_27_4]
+G c Z b b [constant_reference ado__parameters__tests__int_cache__cache_map 148 13 64_4_27_4]
+G c Z b b [reference ado__parameters__tests__int_cache__cache_map 153 13 64_4_27_4]
+G c Z b b [constant_reference ado__parameters__tests__int_cache__cache_map 158 13 64_4_27_4]
+G c Z b b [reference ado__parameters__tests__int_cache__cache_map 163 13 64_4_27_4]
+G c Z b b [assign ado__parameters__tests__int_cache__cache_map 168 14 64_4_27_4]
+G c Z b b [copy ado__parameters__tests__int_cache__cache_map 170 13 64_4_27_4]
+G c Z b b [move ado__parameters__tests__int_cache__cache_map 172 14 64_4_27_4]
+G c Z b b [insert ado__parameters__tests__int_cache__cache_map 176 14 64_4_27_4]
+G c Z b b [insert ado__parameters__tests__int_cache__cache_map 194 14 64_4_27_4]
+G c Z b b [include ado__parameters__tests__int_cache__cache_map 205 14 64_4_27_4]
+G c Z b b [replace ado__parameters__tests__int_cache__cache_map 216 14 64_4_27_4]
+G c Z b b [exclude ado__parameters__tests__int_cache__cache_map 227 14 64_4_27_4]
+G c Z b b [delete ado__parameters__tests__int_cache__cache_map 236 14 64_4_27_4]
+G c Z b b [delete ado__parameters__tests__int_cache__cache_map 244 14 64_4_27_4]
+G c Z b b [first ado__parameters__tests__int_cache__cache_map 250 13 64_4_27_4]
+G c Z b b [next ado__parameters__tests__int_cache__cache_map 254 13 64_4_27_4]
+G c Z b b [next ado__parameters__tests__int_cache__cache_map 262 14 64_4_27_4]
+G c Z b b [find ado__parameters__tests__int_cache__cache_map 265 13 64_4_27_4]
+G c Z b b [contains ado__parameters__tests__int_cache__cache_map 271 13 64_4_27_4]
+G c Z b b [element ado__parameters__tests__int_cache__cache_map 274 13 64_4_27_4]
+G c Z b b [equivalent_keys ado__parameters__tests__int_cache__cache_map 277 13 64_4_27_4]
+G c Z b b [equivalent_keys ado__parameters__tests__int_cache__cache_map 281 13 64_4_27_4]
+G c Z b b [equivalent_keys ado__parameters__tests__int_cache__cache_map 285 13 64_4_27_4]
+G c Z b b [iterate ado__parameters__tests__int_cache__cache_map 289 14 64_4_27_4]
+G c Z b b [iterate ado__parameters__tests__int_cache__cache_map 294 13 64_4_27_4]
+G c Z b b [node_typeIP ado__parameters__tests__int_cache__cache_map 318 9 64_4_27_4]
+G c Z b b [adjust ado__parameters__tests__int_cache__cache_map__ht_types__implementation 90 28 58_7_324_4_64_4_27_4]
+G c Z b b [finalize ado__parameters__tests__int_cache__cache_map__ht_types__implementation 93 28 58_7_324_4_64_4_27_4]
+G c Z b b [zero_counts ado__parameters__tests__int_cache__cache_map__ht_types__implementation 96 17 58_7_324_4_64_4_27_4]
+G c Z b b [busy ado__parameters__tests__int_cache__cache_map__ht_types__implementation 100 17 58_7_324_4_64_4_27_4]
+G c Z b b [unbusy ado__parameters__tests__int_cache__cache_map__ht_types__implementation 104 17 58_7_324_4_64_4_27_4]
+G c Z b b [lock ado__parameters__tests__int_cache__cache_map__ht_types__implementation 108 17 58_7_324_4_64_4_27_4]
+G c Z b b [unlock ado__parameters__tests__int_cache__cache_map__ht_types__implementation 112 17 58_7_324_4_64_4_27_4]
+G c Z b b [tc_check ado__parameters__tests__int_cache__cache_map__ht_types__implementation 116 17 58_7_324_4_64_4_27_4]
+G c Z b b [te_check ado__parameters__tests__int_cache__cache_map__ht_types__implementation 120 17 58_7_324_4_64_4_27_4]
+G c Z b b [initialize ado__parameters__tests__int_cache__cache_map__ht_types__implementation 139 28 58_7_324_4_64_4_27_4]
+G c Z b b [finalize ado__parameters__tests__int_cache__cache_map__ht_types__implementation 140 28 58_7_324_4_64_4_27_4]
+G c Z b b [initialize ado__parameters__tests__int_cache__cache_map__ht_types__implementation 145 28 58_7_324_4_64_4_27_4]
+G c Z b b [finalize ado__parameters__tests__int_cache__cache_map__ht_types__implementation 146 28 58_7_324_4_64_4_27_4]
+G c Z b b [reference_control_typeDA ado__parameters__tests__int_cache__cache_map__ht_types__implementation 84 12 58_7_324_4_64_4_27_4]
+G c Z b b [reference_control_typeDF ado__parameters__tests__int_cache__cache_map__ht_types__implementation 84 12 58_7_324_4_64_4_27_4]
+G c Z b b [reference_control_typeIP ado__parameters__tests__int_cache__cache_map__ht_types__implementation 84 12 58_7_324_4_64_4_27_4]
+G c Z b b [with_busyDF ado__parameters__tests__int_cache__cache_map__ht_types__implementation 136 12 58_7_324_4_64_4_27_4]
+G c Z b b [with_busyIP ado__parameters__tests__int_cache__cache_map__ht_types__implementation 136 12 58_7_324_4_64_4_27_4]
+G c Z b b [with_lockDF ado__parameters__tests__int_cache__cache_map__ht_types__implementation 142 12 58_7_324_4_64_4_27_4]
+G c Z b b [with_lockIP ado__parameters__tests__int_cache__cache_map__ht_types__implementation 142 12 58_7_324_4_64_4_27_4]
+G c Z b b [buckets_typeIP ado__parameters__tests__int_cache__cache_map__ht_types 46 12 324_4_64_4_27_4]
+G c Z b b [hash_table_typeDA ado__parameters__tests__int_cache__cache_map__ht_types 52 12 324_4_64_4_27_4]
+G c Z b b [hash_table_typeDF ado__parameters__tests__int_cache__cache_map__ht_types 52 12 324_4_64_4_27_4]
+G c Z b b [hash_table_typeIP ado__parameters__tests__int_cache__cache_map__ht_types 52 12 324_4_64_4_27_4]
+G c Z b b [adjust ado__parameters__tests__int_cache__cache_map 331 25 64_4_27_4]
+G c Z b b [finalize ado__parameters__tests__int_cache__cache_map 333 25 64_4_27_4]
+G c Z b b [write ado__parameters__tests__int_cache__cache_map 339 14 64_4_27_4]
+G c Z b b [read ado__parameters__tests__int_cache__cache_map 345 14 64_4_27_4]
+G c Z b b [write ado__parameters__tests__int_cache__cache_map 360 14 64_4_27_4]
+G c Z b b [read ado__parameters__tests__int_cache__cache_map 366 14 64_4_27_4]
+G c Z b b [write ado__parameters__tests__int_cache__cache_map 385 14 64_4_27_4]
+G c Z b b [read ado__parameters__tests__int_cache__cache_map 391 14 64_4_27_4]
+G c Z b b [write ado__parameters__tests__int_cache__cache_map 407 14 64_4_27_4]
+G c Z b b [read ado__parameters__tests__int_cache__cache_map 413 14 64_4_27_4]
+G c Z b b [pseudo_reference ado__parameters__tests__int_cache__cache_map 424 13 64_4_27_4]
+G c Z b b [get_element_access ado__parameters__tests__int_cache__cache_map 431 13 64_4_27_4]
+G c Z b b [mapDA ado__parameters__tests__int_cache__cache_map 327 9 64_4_27_4]
+G c Z b b [mapDF ado__parameters__tests__int_cache__cache_map 327 9 64_4_27_4]
+G c Z b b [mapIP ado__parameters__tests__int_cache__cache_map 327 9 64_4_27_4]
+G c Z b b [cursorIP ado__parameters__tests__int_cache__cache_map 354 9 64_4_27_4]
+G c Z b b [constant_reference_typeDI ado__parameters__tests__int_cache__cache_map 375 9 64_4_27_4]
+G c Z b b [constant_reference_typeDA ado__parameters__tests__int_cache__cache_map 375 9 64_4_27_4]
+G c Z b b [constant_reference_typeDF ado__parameters__tests__int_cache__cache_map 375 9 64_4_27_4]
+G c Z b b [constant_reference_typeIP ado__parameters__tests__int_cache__cache_map 375 9 64_4_27_4]
+G c Z b b [reference_typeDI ado__parameters__tests__int_cache__cache_map 397 9 64_4_27_4]
+G c Z b b [reference_typeDA ado__parameters__tests__int_cache__cache_map 397 9 64_4_27_4]
+G c Z b b [reference_typeDF ado__parameters__tests__int_cache__cache_map 397 9 64_4_27_4]
+G c Z b b [reference_typeIP ado__parameters__tests__int_cache__cache_map 397 9 64_4_27_4]
+G c Z b b [finalize ado__parameters__tests__int_cache__cache_map 447 25 64_4_27_4]
+G c Z b b [first ado__parameters__tests__int_cache__cache_map 449 24 64_4_27_4]
+G c Z b b [next ado__parameters__tests__int_cache__cache_map 451 24 64_4_27_4]
+G c Z b b [iteratorDF ado__parameters__tests__int_cache__cache_map 440 9 64_4_27_4]
+G c Z b b [iteratorIP ado__parameters__tests__int_cache__cache_map 440 9 64_4_27_4]
+G c Z b b [free_key ado__parameters__tests__int_cache__cache_map 48 14 64_4_27_4]
+G c Z b b [free_element ado__parameters__tests__int_cache__cache_map 51 14 64_4_27_4]
+G c Z b b [copy_node ado__parameters__tests__int_cache__cache_map 58 13 64_4_27_4]
+G c Z b b [equivalent_key_node ado__parameters__tests__int_cache__cache_map 61 13 64_4_27_4]
+G c Z b b [find_equal_key ado__parameters__tests__int_cache__cache_map 66 13 64_4_27_4]
+G c Z b b [free ado__parameters__tests__int_cache__cache_map 70 14 64_4_27_4]
+G c Z b b [hash_node ado__parameters__tests__int_cache__cache_map 73 13 64_4_27_4]
+G c Z b b [next ado__parameters__tests__int_cache__cache_map 76 13 64_4_27_4]
+G c Z b b [read_node ado__parameters__tests__int_cache__cache_map 79 13 64_4_27_4]
+G c Z b b [set_next ado__parameters__tests__int_cache__cache_map 82 14 64_4_27_4]
+G c Z b b [vet ado__parameters__tests__int_cache__cache_map 85 13 64_4_27_4]
+G c Z b b [write_node ado__parameters__tests__int_cache__cache_map 87 14 64_4_27_4]
+G c Z b b [free_hash_table ado__parameters__tests__int_cache__cache_map__ht_ops 57 14 95_4_64_4_27_4]
+G c Z b b [index ado__parameters__tests__int_cache__cache_map__ht_ops 61 13 95_4_64_4_27_4]
+G c Z b b [index ado__parameters__tests__int_cache__cache_map__ht_ops 67 13 95_4_64_4_27_4]
+G c Z b b [checked_index ado__parameters__tests__int_cache__cache_map__ht_ops 74 13 95_4_64_4_27_4]
+G c Z b b [checked_index ado__parameters__tests__int_cache__cache_map__ht_ops 81 13 95_4_64_4_27_4]
+G c Z b b [adjust ado__parameters__tests__int_cache__cache_map__ht_ops 86 14 95_4_64_4_27_4]
+G c Z b b [finalize ado__parameters__tests__int_cache__cache_map__ht_ops 92 14 95_4_64_4_27_4]
+G c Z b b [clear ado__parameters__tests__int_cache__cache_map__ht_ops 108 14 95_4_64_4_27_4]
+G c Z b b [move ado__parameters__tests__int_cache__cache_map__ht_ops 113 14 95_4_64_4_27_4]
+G c Z b b [capacity ado__parameters__tests__int_cache__cache_map__ht_ops 119 13 95_4_64_4_27_4]
+G c Z b b [reserve_capacity ado__parameters__tests__int_cache__cache_map__ht_ops 122 14 95_4_64_4_27_4]
+G c Z b b [delete_node_at_index ado__parameters__tests__int_cache__cache_map__ht_ops 131 14 95_4_64_4_27_4]
+G c Z b b [delete_node_sans_free ado__parameters__tests__int_cache__cache_map__ht_ops 140 14 95_4_64_4_27_4]
+G c Z b b [first ado__parameters__tests__int_cache__cache_map__ht_ops 145 13 95_4_64_4_27_4]
+G c Z b b [first ado__parameters__tests__int_cache__cache_map__ht_ops 147 13 95_4_64_4_27_4]
+G c Z b b [next ado__parameters__tests__int_cache__cache_map__ht_ops 154 13 95_4_64_4_27_4]
+G c Z b b [next ado__parameters__tests__int_cache__cache_map__ht_ops 157 13 95_4_64_4_27_4]
+G c Z b b [new_buckets ado__parameters__tests__int_cache__cache_map__ht_ops 204 13 95_4_64_4_27_4]
+G c Z b b [free_buckets ado__parameters__tests__int_cache__cache_map__ht_ops 208 14 95_4_64_4_27_4]
+G c Z b b [index ado__parameters__tests__int_cache__cache_map__key_ops 56 13 103_4_64_4_27_4]
+G c Z b b [checked_index ado__parameters__tests__int_cache__cache_map__key_ops 62 13 103_4_64_4_27_4]
+G c Z b b [checked_equivalent_keys ado__parameters__tests__int_cache__cache_map__key_ops 69 13 103_4_64_4_27_4]
+G c Z b b [delete_key_sans_free ado__parameters__tests__int_cache__cache_map__key_ops 76 14 103_4_64_4_27_4]
+G c Z b b [find ado__parameters__tests__int_cache__cache_map__key_ops 84 13 103_4_64_4_27_4]
+G c Z b b [is_equalR ado__parameters__tests__int_cache__cache_map__is_equalGP4669 115 13 64_4_27_4]
+G c Z b b [is_equal ado__parameters__tests__int_cache__cache_map 115 13 64_4_27_4]
+G c Z b b [read_nodesR ado__parameters__tests__int_cache__cache_map__read_nodesGP25869 957 14 64_4_27_4]
+G c Z b b [read_nodes ado__parameters__tests__int_cache__cache_map 957 14 64_4_27_4]
+G c Z b b [write_nodesR ado__parameters__tests__int_cache__cache_map__write_nodesGP34912 1317 14 64_4_27_4]
+G c Z b b [write_nodes ado__parameters__tests__int_cache__cache_map 1317 14 64_4_27_4]
+G c Z b b [find ado__parameters__tests__int_cache__cache_controller 74 16 27_4]
+G c Z b b [insert ado__parameters__tests__int_cache__cache_controller 78 17 27_4]
+G c Z b b [delete ado__parameters__tests__int_cache__cache_controller 84 17 27_4]
+G c Z b b [cache_controller__findN ado__parameters__tests__int_cache 74 7 27_4]
+G c Z b b [cache_controller__findP ado__parameters__tests__int_cache 74 7 27_4]
+G c Z b b [cache_controller__insertN ado__parameters__tests__int_cache 78 7 27_4]
+G c Z b b [cache_controller__insertP ado__parameters__tests__int_cache 78 7 27_4]
+G c Z b b [cache_controller__deleteN ado__parameters__tests__int_cache 84 7 27_4]
+G c Z b b [cache_controller__deleteP ado__parameters__tests__int_cache 84 7 27_4]
+G c Z b b [cache_controllerVDI ado__parameters__tests__int_cache 70 4 27_4]
+G c Z b b [cache_controllerVDF ado__parameters__tests__int_cache 70 4 27_4]
+G c Z b b [cache_controllerVIP ado__parameters__tests__int_cache 70 4 27_4]
+G c Z b b [cache_typeDF ado__parameters__tests__int_cache 91 9 27_4]
+G c Z b b [cache_typeDI ado__parameters__tests__int_cache 91 9 27_4]
+G c Z b b [cache_typeIP ado__parameters__tests__int_cache 91 9 27_4]
+G c Z b b [is_reserved ado__parameters__tests 33 13 none]
+G c Z b b [get_identifier_quote ado__parameters__tests 38 13 none]
+G c Z b b [escape_sql ado__parameters__tests 42 14 none]
+G c Z b b [dialectDA ado__parameters__tests 29 9 none]
+G c Z b b [dialectDF ado__parameters__tests 29 9 none]
+G c Z b b [dialectIP ado__parameters__tests 29 9 none]
+G c Z b b [test_add_param_integerR ado__parameters__tests__test_add_param_integerGP3553 91 14 none]
+G c Z b b [test_add_param_integer ado__parameters__tests 91 14 none]
+G c Z b b [test_add_param_long_long_integerR ado__parameters__tests__test_add_param_long_long_integerGP3655 93 14 none]
+G c Z b b [test_add_param_long_long_integer ado__parameters__tests 93 14 none]
+G c Z b b [test_add_param_identifierR ado__parameters__tests__test_add_param_identifierGP3803 95 14 none]
+G c Z b b [test_add_param_identifier ado__parameters__tests 95 14 none]
+G c Z b b [test_add_param_booleanR ado__parameters__tests__test_add_param_booleanGP3915 97 14 none]
+G c Z b b [test_add_param_boolean ado__parameters__tests 97 14 none]
+G c Z b b [test_add_param_stringR ado__parameters__tests__test_add_param_stringGP4020 99 14 none]
+G c Z b b [test_add_param_string ado__parameters__tests 99 14 none]
+G c Z b b [test_add_param_calendarR ado__parameters__tests__test_add_param_calendarGP4135 101 14 none]
+G c Z b b [test_add_param_calendar ado__parameters__tests 101 14 none]
+G c Z b b [test_add_param_unbounded_stringR ado__parameters__tests__test_add_param_unbounded_stringGP4261 103 14 none]
+G c Z b b [test_add_param_unbounded_string ado__parameters__tests 103 14 none]
+G c Z b b [test_bind_param_integerR ado__parameters__tests__test_bind_param_integerGP4456 107 14 none]
+G c Z b b [test_bind_param_integer ado__parameters__tests 107 14 none]
+G c Z b b [test_bind_param_long_long_integerR ado__parameters__tests__test_bind_param_long_long_integerGP4561 109 14 none]
+G c Z b b [test_bind_param_long_long_integer ado__parameters__tests 109 14 none]
+G c Z b b [test_bind_param_identifierR ado__parameters__tests__test_bind_param_identifierGP4740 112 14 none]
+G c Z b b [test_bind_param_identifier ado__parameters__tests 112 14 none]
+G c Z b b [test_bind_param_entity_typeR ado__parameters__tests__test_bind_param_entity_typeGP4855 114 14 none]
+G c Z b b [test_bind_param_entity_type ado__parameters__tests 114 14 none]
+G c Z b b [test_bind_param_booleanR ado__parameters__tests__test_bind_param_booleanGP4973 116 14 none]
+G c Z b b [test_bind_param_boolean ado__parameters__tests 116 14 none]
+G c Z b b [test_bind_param_stringR ado__parameters__tests__test_bind_param_stringGP5081 118 14 none]
+G c Z b b [test_bind_param_string ado__parameters__tests 118 14 none]
+G c Z b b [test_bind_param_calendarR ado__parameters__tests__test_bind_param_calendarGP5199 120 14 none]
+G c Z b b [test_bind_param_calendar ado__parameters__tests 120 14 none]
+G c Z b b [test_bind_param_unbounded_stringR ado__parameters__tests__test_bind_param_unbounded_stringGP5328 122 14 none]
+G c Z b b [test_bind_param_unbounded_string ado__parameters__tests 122 14 none]
+G c Z b b [add_test ado__parameters__tests__caller 30 14 126_4]
+G c Z b b [to_x ado__parameters__tests__caller 26 13 126_4]
+G r i none [b ado__parameters__tests 23 1 none] [test_caller util 26 14 none]
+G r i none [b ado__parameters__tests 23 1 none] [discrete ado__caches 26 20 none]
+G r s test_object [b ado__parameters__tests 23 1 none] [test_objectIP util__xunit 45 9 none]
+G r s test [b ado__parameters__tests 23 1 none] [testIP util__tests 38 9 none]
+G r e test_case [b ado__parameters__tests 23 1 none] [finalize ahven__framework 158 14 none]
+G r k test [b ado__parameters__tests 23 1 none] [testDF util__tests 38 9 none]
+G r c none [add_tests ado__parameters__tests 22 14 none] [is_test_enabled util__tests 71 13 none]
+G r c none [add_tests ado__parameters__tests 22 14 none] [get_harness_prefix util__tests 53 13 none]
+G r c none [add_tests ado__parameters__tests 22 14 none] [set_name ahven__framework 161 14 none]
+G r c none [add_tests ado__parameters__tests 22 14 none] [register util__xunit 51 14 none]
+G r c none [add_tests ado__parameters__tests 22 14 none] [add_test_routine ahven__framework 179 14 none]
+G r s list [test_expand_sql ado__parameters__tests 27 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_expand_sql ado__parameters__tests 27 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_expand_sql ado__parameters__tests 27 14 none] [listDF ado__parameters 292 9 none]
+G r s dialect [test_expand_sql ado__parameters__tests 27 14 none] [dialectIP ado__dialects 63 9 none]
+G r c none [test_expand_sql ado__parameters__tests 27 14 none] [set_dialect ado__parameters 115 14 none]
+G r c none [test_expand_sql ado__parameters__tests 27 14 none] [bind_param ado__parameters 202 14 none]
+G r c none [test_expand_sql ado__parameters__tests 27 14 none] [bind_param ado__parameters 165 14 none]
+G r c none [test_expand_sql ado__parameters__tests 27 14 none] [bind_param ado__parameters 159 14 none]
+G r c none [test_expand_sql ado__parameters__tests 27 14 none] [bind_param ado__parameters 150 14 none]
+G r c none [test_expand_sql ado__parameters__tests 27 14 none] [bind_param ado__parameters 184 14 none]
+G r c none [test_expand_sql ado__parameters__tests 27 14 none] [bind_param ado__parameters 171 14 none]
+G r c none [test_expand_sql ado__parameters__tests 27 14 none] [bind_null_param ado__parameters 216 14 none]
+G r c none [test_expand_sql ado__parameters__tests 27 14 none] [expand ado__parameters 248 13 none]
+G r c none [test_expand_sql ado__parameters__tests 27 14 none] [assert_equals util__tests 111 14 none]
+G r s list [test_expand_error ado__parameters__tests 30 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_expand_error ado__parameters__tests 30 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_expand_error ado__parameters__tests 30 14 none] [listDF ado__parameters 292 9 none]
+G r c none [test_expand_error ado__parameters__tests 30 14 none] [expand ado__parameters 248 13 none]
+G r c none [test_expand_error ado__parameters__tests 30 14 none] [assert_equals util__tests 111 14 none]
+G r s list [test_expand_perf ado__parameters__tests 33 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_expand_perf ado__parameters__tests 33 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_expand_perf ado__parameters__tests 33 14 none] [listDF ado__parameters 292 9 none]
+G r s dialect [test_expand_perf ado__parameters__tests 33 14 none] [dialectIP ado__dialects 63 9 none]
+G r c none [test_expand_perf ado__parameters__tests 33 14 none] [set_dialect ado__parameters 115 14 none]
+G r c none [test_expand_perf ado__parameters__tests 33 14 none] [bind_param ado__parameters 196 14 none]
+G r c none [test_expand_perf ado__parameters__tests 33 14 none] [report util__measures 155 14 none]
+G r s stamp [test_expand_perf ado__parameters__tests 33 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_expand_perf ado__parameters__tests 33 14 none] [expand ado__parameters 248 13 none]
+G r s list [test_expand_with_expander ado__parameters__tests 36 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_expand_with_expander ado__parameters__tests 36 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_expand_with_expander ado__parameters__tests 36 14 none] [listDF ado__parameters 292 9 none]
+G r s dialect [test_expand_with_expander ado__parameters__tests 36 14 none] [dialectIP ado__dialects 63 9 none]
+G r s cache_manager [test_expand_with_expander ado__parameters__tests 36 14 none] [cache_managerIP ado__caches 88 9 none]
+G r s cache_type [test_expand_with_expander ado__parameters__tests 36 14 none] [cache_typeIP ado__caches 83 9 none]
+G r k cache_type [test_expand_with_expander ado__parameters__tests 36 14 none] [cache_typeDF ado__caches 83 9 none]
+G r c none [test_expand_with_expander ado__parameters__tests 36 14 none] [add_cache ado__caches 71 14 none]
+G r c none [test_expand_with_expander ado__parameters__tests 36 14 none] [set_dialect ado__parameters 115 14 none]
+G r c none [test_expand_with_expander ado__parameters__tests 36 14 none] [expand ado__parameters 248 13 none]
+G r c none [test_expand_with_expander ado__parameters__tests 36 14 none] [assert_equals util__tests 111 14 none]
+G r c none [test_expand_with_expander ado__parameters__tests 36 14 none] [fail util__tests 149 14 none]
+G r j test [testDA ado__parameters__tests 24 9 none] [testDA util__tests 38 9 none]
+G r e test_case [testDF ado__parameters__tests 24 9 none] [finalize ahven__framework 158 14 none]
+G r k test [testDF ado__parameters__tests 24 9 none] [testDF util__tests 38 9 none]
+G r s test [testIP ado__parameters__tests 24 9 none] [testIP util__tests 38 9 none]
+G r c none [expand ado__parameters__tests__int_cache 37 13 27_4] [info util__log__loggers 91 14 none]
+G r j parameter [expand ado__parameters__tests__int_cache 37 13 27_4] [parameterDA ado__parameters 67 9 none]
+G r c none [find ado__parameters__tests__int_cache 42 13 27_4] [info util__log__loggers 91 14 none]
+G r c none [find ado__parameters__tests__int_cache__cache_controller 74 16 27_4] [info util__log__loggers 91 14 none]
+G r k cache_type [cache_typeDF ado__parameters__tests__int_cache 91 9 27_4] [cache_typeDF ado__caches 83 9 none]
+G r s cache_type [cache_typeIP ado__parameters__tests__int_cache 91 9 27_4] [cache_typeIP ado__caches 83 9 none]
+G r k cache_type [cache_typeIP ado__parameters__tests__int_cache 91 9 27_4] [cache_typeDF ado__caches 83 9 none]
+G r c none [escape_sql ado__parameters__tests 42 14 none] [value ado__blob_references 72 16 106_4]
+G r s dialect [dialectIP ado__parameters__tests 29 9 none] [dialectIP ado__dialects 63 9 none]
+G r s list [test_add_param_integerR ado__parameters__tests__test_add_param_integerGP3553 91 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_add_param_integerR ado__parameters__tests__test_add_param_integerGP3553 91 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_add_param_integerR ado__parameters__tests__test_add_param_integerGP3553 91 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_add_param_integerR ado__parameters__tests__test_add_param_integerGP3553 91 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_add_param_integerR ado__parameters__tests__test_add_param_integerGP3553 91 14 none] [add_param ado__parameters 225 14 none]
+G r c none [test_add_param_integerR ado__parameters__tests__test_add_param_integerGP3553 91 14 none] [report util__measures 155 14 none]
+G r c none [test_add_param_integerR ado__parameters__tests__test_add_param_integerGP3553 91 14 none] [length ado__parameters 264 13 none]
+G r c none [test_add_param_integerR ado__parameters__tests__test_add_param_integerGP3553 91 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_add_param_long_long_integerR ado__parameters__tests__test_add_param_long_long_integerGP3655 93 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_add_param_long_long_integerR ado__parameters__tests__test_add_param_long_long_integerGP3655 93 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_add_param_long_long_integerR ado__parameters__tests__test_add_param_long_long_integerGP3655 93 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_add_param_long_long_integerR ado__parameters__tests__test_add_param_long_long_integerGP3655 93 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_add_param_long_long_integerR ado__parameters__tests__test_add_param_long_long_integerGP3655 93 14 none] [add_param ado__parameters 221 14 none]
+G r c none [test_add_param_long_long_integerR ado__parameters__tests__test_add_param_long_long_integerGP3655 93 14 none] [report util__measures 155 14 none]
+G r c none [test_add_param_long_long_integerR ado__parameters__tests__test_add_param_long_long_integerGP3655 93 14 none] [length ado__parameters 264 13 none]
+G r c none [test_add_param_long_long_integerR ado__parameters__tests__test_add_param_long_long_integerGP3655 93 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_add_param_identifierR ado__parameters__tests__test_add_param_identifierGP3803 95 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_add_param_identifierR ado__parameters__tests__test_add_param_identifierGP3803 95 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_add_param_identifierR ado__parameters__tests__test_add_param_identifierGP3803 95 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_add_param_identifierR ado__parameters__tests__test_add_param_identifierGP3803 95 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_add_param_identifierR ado__parameters__tests__test_add_param_identifierGP3803 95 14 none] [add_param ado__parameters 223 14 none]
+G r c none [test_add_param_identifierR ado__parameters__tests__test_add_param_identifierGP3803 95 14 none] [report util__measures 155 14 none]
+G r c none [test_add_param_identifierR ado__parameters__tests__test_add_param_identifierGP3803 95 14 none] [length ado__parameters 264 13 none]
+G r c none [test_add_param_identifierR ado__parameters__tests__test_add_param_identifierGP3803 95 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_add_param_booleanR ado__parameters__tests__test_add_param_booleanGP3915 97 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_add_param_booleanR ado__parameters__tests__test_add_param_booleanGP3915 97 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_add_param_booleanR ado__parameters__tests__test_add_param_booleanGP3915 97 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_add_param_booleanR ado__parameters__tests__test_add_param_booleanGP3915 97 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_add_param_booleanR ado__parameters__tests__test_add_param_booleanGP3915 97 14 none] [add_param ado__parameters 219 14 none]
+G r c none [test_add_param_booleanR ado__parameters__tests__test_add_param_booleanGP3915 97 14 none] [report util__measures 155 14 none]
+G r c none [test_add_param_booleanR ado__parameters__tests__test_add_param_booleanGP3915 97 14 none] [length ado__parameters 264 13 none]
+G r c none [test_add_param_booleanR ado__parameters__tests__test_add_param_booleanGP3915 97 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_add_param_stringR ado__parameters__tests__test_add_param_stringGP4020 99 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_add_param_stringR ado__parameters__tests__test_add_param_stringGP4020 99 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_add_param_stringR ado__parameters__tests__test_add_param_stringGP4020 99 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_add_param_stringR ado__parameters__tests__test_add_param_stringGP4020 99 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_add_param_stringR ado__parameters__tests__test_add_param_stringGP4020 99 14 none] [add_param ado__parameters 227 14 none]
+G r c none [test_add_param_stringR ado__parameters__tests__test_add_param_stringGP4020 99 14 none] [report util__measures 155 14 none]
+G r c none [test_add_param_stringR ado__parameters__tests__test_add_param_stringGP4020 99 14 none] [length ado__parameters 264 13 none]
+G r c none [test_add_param_stringR ado__parameters__tests__test_add_param_stringGP4020 99 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_add_param_calendarR ado__parameters__tests__test_add_param_calendarGP4135 101 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_add_param_calendarR ado__parameters__tests__test_add_param_calendarGP4135 101 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_add_param_calendarR ado__parameters__tests__test_add_param_calendarGP4135 101 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_add_param_calendarR ado__parameters__tests__test_add_param_calendarGP4135 101 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_add_param_calendarR ado__parameters__tests__test_add_param_calendarGP4135 101 14 none] [add_param ado__parameters 231 14 none]
+G r c none [test_add_param_calendarR ado__parameters__tests__test_add_param_calendarGP4135 101 14 none] [report util__measures 155 14 none]
+G r c none [test_add_param_calendarR ado__parameters__tests__test_add_param_calendarGP4135 101 14 none] [length ado__parameters 264 13 none]
+G r c none [test_add_param_calendarR ado__parameters__tests__test_add_param_calendarGP4135 101 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_add_param_unbounded_stringR ado__parameters__tests__test_add_param_unbounded_stringGP4261 103 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_add_param_unbounded_stringR ado__parameters__tests__test_add_param_unbounded_stringGP4261 103 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_add_param_unbounded_stringR ado__parameters__tests__test_add_param_unbounded_stringGP4261 103 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_add_param_unbounded_stringR ado__parameters__tests__test_add_param_unbounded_stringGP4261 103 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_add_param_unbounded_stringR ado__parameters__tests__test_add_param_unbounded_stringGP4261 103 14 none] [add_param ado__parameters 229 14 none]
+G r c none [test_add_param_unbounded_stringR ado__parameters__tests__test_add_param_unbounded_stringGP4261 103 14 none] [report util__measures 155 14 none]
+G r c none [test_add_param_unbounded_stringR ado__parameters__tests__test_add_param_unbounded_stringGP4261 103 14 none] [length ado__parameters 264 13 none]
+G r c none [test_add_param_unbounded_stringR ado__parameters__tests__test_add_param_unbounded_stringGP4261 103 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_bind_param_integerR ado__parameters__tests__test_bind_param_integerGP4456 107 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_bind_param_integerR ado__parameters__tests__test_bind_param_integerGP4456 107 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_bind_param_integerR ado__parameters__tests__test_bind_param_integerGP4456 107 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_bind_param_integerR ado__parameters__tests__test_bind_param_integerGP4456 107 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_bind_param_integerR ado__parameters__tests__test_bind_param_integerGP4456 107 14 none] [bind_param ado__parameters 159 14 none]
+G r c none [test_bind_param_integerR ado__parameters__tests__test_bind_param_integerGP4456 107 14 none] [report util__measures 155 14 none]
+G r c none [test_bind_param_integerR ado__parameters__tests__test_bind_param_integerGP4456 107 14 none] [length ado__parameters 264 13 none]
+G r c none [test_bind_param_integerR ado__parameters__tests__test_bind_param_integerGP4456 107 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_bind_param_long_long_integerR ado__parameters__tests__test_bind_param_long_long_integerGP4561 109 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_bind_param_long_long_integerR ado__parameters__tests__test_bind_param_long_long_integerGP4561 109 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_bind_param_long_long_integerR ado__parameters__tests__test_bind_param_long_long_integerGP4561 109 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_bind_param_long_long_integerR ado__parameters__tests__test_bind_param_long_long_integerGP4561 109 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_bind_param_long_long_integerR ado__parameters__tests__test_bind_param_long_long_integerGP4561 109 14 none] [bind_param ado__parameters 153 14 none]
+G r c none [test_bind_param_long_long_integerR ado__parameters__tests__test_bind_param_long_long_integerGP4561 109 14 none] [report util__measures 155 14 none]
+G r c none [test_bind_param_long_long_integerR ado__parameters__tests__test_bind_param_long_long_integerGP4561 109 14 none] [length ado__parameters 264 13 none]
+G r c none [test_bind_param_long_long_integerR ado__parameters__tests__test_bind_param_long_long_integerGP4561 109 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_bind_param_identifierR ado__parameters__tests__test_bind_param_identifierGP4740 112 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_bind_param_identifierR ado__parameters__tests__test_bind_param_identifierGP4740 112 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_bind_param_identifierR ado__parameters__tests__test_bind_param_identifierGP4740 112 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_bind_param_identifierR ado__parameters__tests__test_bind_param_identifierGP4740 112 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_bind_param_identifierR ado__parameters__tests__test_bind_param_identifierGP4740 112 14 none] [bind_param ado__parameters 156 14 none]
+G r c none [test_bind_param_identifierR ado__parameters__tests__test_bind_param_identifierGP4740 112 14 none] [report util__measures 155 14 none]
+G r c none [test_bind_param_identifierR ado__parameters__tests__test_bind_param_identifierGP4740 112 14 none] [length ado__parameters 264 13 none]
+G r c none [test_bind_param_identifierR ado__parameters__tests__test_bind_param_identifierGP4740 112 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_bind_param_entity_typeR ado__parameters__tests__test_bind_param_entity_typeGP4855 114 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_bind_param_entity_typeR ado__parameters__tests__test_bind_param_entity_typeGP4855 114 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_bind_param_entity_typeR ado__parameters__tests__test_bind_param_entity_typeGP4855 114 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_bind_param_entity_typeR ado__parameters__tests__test_bind_param_entity_typeGP4855 114 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_bind_param_entity_typeR ado__parameters__tests__test_bind_param_entity_typeGP4855 114 14 none] [bind_param ado__parameters 162 14 none]
+G r c none [test_bind_param_entity_typeR ado__parameters__tests__test_bind_param_entity_typeGP4855 114 14 none] [report util__measures 155 14 none]
+G r c none [test_bind_param_entity_typeR ado__parameters__tests__test_bind_param_entity_typeGP4855 114 14 none] [length ado__parameters 264 13 none]
+G r c none [test_bind_param_entity_typeR ado__parameters__tests__test_bind_param_entity_typeGP4855 114 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_bind_param_booleanR ado__parameters__tests__test_bind_param_booleanGP4973 116 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_bind_param_booleanR ado__parameters__tests__test_bind_param_booleanGP4973 116 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_bind_param_booleanR ado__parameters__tests__test_bind_param_booleanGP4973 116 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_bind_param_booleanR ado__parameters__tests__test_bind_param_booleanGP4973 116 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_bind_param_booleanR ado__parameters__tests__test_bind_param_booleanGP4973 116 14 none] [bind_param ado__parameters 150 14 none]
+G r c none [test_bind_param_booleanR ado__parameters__tests__test_bind_param_booleanGP4973 116 14 none] [report util__measures 155 14 none]
+G r c none [test_bind_param_booleanR ado__parameters__tests__test_bind_param_booleanGP4973 116 14 none] [length ado__parameters 264 13 none]
+G r c none [test_bind_param_booleanR ado__parameters__tests__test_bind_param_booleanGP4973 116 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_bind_param_stringR ado__parameters__tests__test_bind_param_stringGP5081 118 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_bind_param_stringR ado__parameters__tests__test_bind_param_stringGP5081 118 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_bind_param_stringR ado__parameters__tests__test_bind_param_stringGP5081 118 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_bind_param_stringR ado__parameters__tests__test_bind_param_stringGP5081 118 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_bind_param_stringR ado__parameters__tests__test_bind_param_stringGP5081 118 14 none] [bind_param ado__parameters 165 14 none]
+G r c none [test_bind_param_stringR ado__parameters__tests__test_bind_param_stringGP5081 118 14 none] [report util__measures 155 14 none]
+G r c none [test_bind_param_stringR ado__parameters__tests__test_bind_param_stringGP5081 118 14 none] [length ado__parameters 264 13 none]
+G r c none [test_bind_param_stringR ado__parameters__tests__test_bind_param_stringGP5081 118 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_bind_param_calendarR ado__parameters__tests__test_bind_param_calendarGP5199 120 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_bind_param_calendarR ado__parameters__tests__test_bind_param_calendarGP5199 120 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_bind_param_calendarR ado__parameters__tests__test_bind_param_calendarGP5199 120 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_bind_param_calendarR ado__parameters__tests__test_bind_param_calendarGP5199 120 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_bind_param_calendarR ado__parameters__tests__test_bind_param_calendarGP5199 120 14 none] [bind_param ado__parameters 171 14 none]
+G r c none [test_bind_param_calendarR ado__parameters__tests__test_bind_param_calendarGP5199 120 14 none] [report util__measures 155 14 none]
+G r c none [test_bind_param_calendarR ado__parameters__tests__test_bind_param_calendarGP5199 120 14 none] [length ado__parameters 264 13 none]
+G r c none [test_bind_param_calendarR ado__parameters__tests__test_bind_param_calendarGP5199 120 14 none] [assert_equals util__tests 92 14 none]
+G r s list [test_bind_param_unbounded_stringR ado__parameters__tests__test_bind_param_unbounded_stringGP5328 122 14 none] [listIP ado__parameters 292 9 none]
+G r l list [test_bind_param_unbounded_stringR ado__parameters__tests__test_bind_param_unbounded_stringGP5328 122 14 none] [listDI ado__parameters 292 9 none]
+G r k list [test_bind_param_unbounded_stringR ado__parameters__tests__test_bind_param_unbounded_stringGP5328 122 14 none] [listDF ado__parameters 292 9 none]
+G r s stamp [test_bind_param_unbounded_stringR ado__parameters__tests__test_bind_param_unbounded_stringGP5328 122 14 none] [stampIP util__measures 178 9 none]
+G r c none [test_bind_param_unbounded_stringR ado__parameters__tests__test_bind_param_unbounded_stringGP5328 122 14 none] [bind_param ado__parameters 168 14 none]
+G r c none [test_bind_param_unbounded_stringR ado__parameters__tests__test_bind_param_unbounded_stringGP5328 122 14 none] [report util__measures 155 14 none]
+G r c none [test_bind_param_unbounded_stringR ado__parameters__tests__test_bind_param_unbounded_stringGP5328 122 14 none] [length ado__parameters 264 13 none]
+G r c none [test_bind_param_unbounded_stringR ado__parameters__tests__test_bind_param_unbounded_stringGP5328 122 14 none] [assert_equals util__tests 92 14 none]
+G r c none [add_test ado__parameters__tests__caller 30 14 126_4] [is_test_enabled util__tests 71 13 none]
+G r c none [add_test ado__parameters__tests__caller 30 14 126_4] [get_harness_prefix util__tests 53 13 none]
+G r c none [add_test ado__parameters__tests__caller 30 14 126_4] [set_name ahven__framework 161 14 none]
+G r c none [add_test ado__parameters__tests__caller 30 14 126_4] [register util__xunit 51 14 none]
+G r c none [add_test ado__parameters__tests__caller 30 14 126_4] [add_test_routine ahven__framework 179 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 65|102r28 102r58 121r29 121r60 202r14 255r32
+X 2 a-calend.ads
+36K13*Calendar 409e17 65|102r32 102r62 121r33 121r64 255r36
+42I9*Time<222I9> 65|102r41 121r42
+56V13*Clock{42I9} 65|102s71 121s73 255s45
+222I9 Time_Rep<long_long_integer>
+X 19 a-conhel.ads
+84R12 Reference_Control_Type<32|43R9>
+X 32 a-finali.ads
+46U14*Initialize<107|44p14>
+47U14*Adjust<107|42p14>
+X 34 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[28|111]>
+X 35 a-stream.ads
+36K13*Streams 87e16 65|202r18
+42M9*Stream_Element 65|202r26
+54A9*Stream_Element_Array(42M9)<44I9>
+X 44 a-strunb.ads
+87R9*Unbounded_String<32|43R9> 739e14 65|43r42 104r28 123r29 198r42 313r23
+103V13*To_Unbounded_String{87R9} 65|104s57 123s59 314s15
+116V13*To_String{string} 65|320s39
+143U14*Append 65|205s7 210s16 211s16 214s16 215s16 218s16 219s16 222s16 223s16
+. 226s16 229s7
+X 52 ado.ads
+25K9*ADO 150e8 64|20r9 38r5 65|21r6 22r6 23r14 27r29 29r24 44r38 49r44 58r45
+. 68r15 72r21 81r15 85r22 199r38 203r23 236r13 276r13 299r13 378r13 380r21
+. 422r15 431r15 436r5
+39I9*Identifier<long_integer> 65|96r28 113r29
+43I9*Entity_Type<integer> 65|115r29
+102a7*Data{35|54A9} 65|206r21 207r20
+107R12*Blob_Ref{151|67R12[106]} 65|44r42 199r42
+108R12*Blob_Accessor{151|64R12[106]} 65|203r27
+X 55 ado-caches.ads
+44K13*Caches 93e15 65|21r10 22w10 27r33 380r25 422r19 431r19
+46X4*No_Value 65|422r26 431r26
+57R9*Cache_Manager<32|50R9><63|100R9> 91e14 65|380r32
+71U14*Add_Cache 65|392s9 393s9
+X 56 ado-caches-discrete.ads
+25E9 Element_Type 65|27r50
+26k20*Discrete 95e24 65|21w17 27r40
+30R9*Cache_Type<55|48R9> 65|381r67[27] 382r67[27]
+31P9*Cache_Type_Access(30R9[65|27]) 65|381r32[27] 382r32[27]
+47U14*Insert 65|395R9[27] 396R9[27] 397R9[27] 398R9[27] 399R9[27] 400R9[27]
+. 408R9[27] 425R9[27] 426R9[27] 428R12[27]
+50b22 Override{boolean} 65|426r25[27]
+54U14*Delete 65|413R9[27] 416R9[27] 418R12[27]
+56b22 Ignore{boolean} 65|416r22[27]
+X 60 ado-dialects.ads
+21K13*Dialects 65e17 65|29r28
+35H9*Dialect 63e47 65|29r37
+47U14*Escape_Sql
+57U14*Escape_Sql
+X 63 ado-parameters.ads
+58K13*Parameters 52|25k9 63|296e19 64|20r13 38r9 65|23r18 49r48 58r49 68r19
+. 72r25 81r19 85r26 236r17 276r17 299r17 378r17 436r9
+100h9*Expander
+101P9*Expander_Access(100R9)
+111H9*Abstract_List<32|43R9> 290e14 65|49r59 58r60 72r36 85r37
+115U14*Set_Dialect 65|248s11 302s11 401s11
+150U14*Bind_Param 65|117r38 253s11
+153U14*Bind_Param 65|110r48
+156U14*Bind_Param 65|113r41
+159U14*Bind_Param 65|108r38 252s11
+162U14*Bind_Param 65|115r42
+165U14*Bind_Param 65|119r37 251s11
+168U14*Bind_Param 65|123r47
+171U14*Bind_Param 65|121r48 255s11
+184U14*Bind_Param 65|254s11
+196U14*Bind_Param 65|307s17
+202U14*Bind_Param 65|249s11 250s11
+216U14*Bind_Null_Param 65|256s11
+219U14*Add_Param 65|98r37
+221U14*Add_Param 65|94r47
+223U14*Add_Param 65|96r40
+225U14*Add_Param 65|92r37
+227U14*Add_Param 65|100r36
+229U14*Add_Param 65|104r46
+231U14*Add_Param 65|102r47
+248V13*Expand{string} 65|242s42 281s42 333s43 347s43 361s43 386s37
+255R9*List<111R9> 294e14 65|68r30 81r30 236r28 276r28 299r28 378r28
+264V13*Length{natural}<134p13> 65|75s49 88s45
+289p7*Expander{101P9} 65|394m11
+X 64 ado-parameters-tests.ads
+20K24*Tests 63|58k13 64|38l20 38e25 65|23b29 436l20 436t25
+22U14*Add_Tests 22>25 65|128b14 170l8 170t17
+22p25 Suite{162|34P12} 65|128b25 130r24 132r24 134r24 137r24 139r24 141r24
+. 143r24 145r24 147r24 149r24 152r24 154r24 156r24 158r24 160r24 162r24 164r24
+. 166r24 168r24
+24R9*Test<162|38R9> 32|46P14 47P14 64|24e53 27p14 27r42 30p14 30r44 33p14
+. 33r43 36p14 36r52 65|53r47 63r48 66r47 79r48 126r44 235r42 275r44 296r43
+. 374r52 77|46p14 56p14 72p14 88p14 137P13 140P14 145P14 151P13 154P13 158P14
+. 161p14 163|91p14
+27U14*Test_Expand_Sql 27=31 65|131r24 235b14 270l8 270t23
+27r31 T{24R9} 65|235b31 244r25
+30U14*Test_Expand_Error 30=33 65|133r24 275b14 291l8 291t25
+30r33 T{24R9} 65|275b33 283r25
+33U14*Test_Expand_Perf 33=32 65|135r24 296b14 369l8 369t24
+33r32 T{24R9} 65|296b32 297r28
+36U14*Test_Expand_With_Expander 36=41 65|169r24 374b14 434l8 434t33
+36r41 T{24R9} 65|374b41 388r36 419r10
+X 65 ado-parameters-tests.adb
+27K12 Int_Cache[56|26] 381r22 381r57 382r22 382r57
+29R9 Dialect<60|35R9> 60|47p14 57p14 65|29e61 33P13 33r36 38P13 38r42 42P14
+. 42r38 176r36 187r42 197r38 237r21 300r21 379r21
+33V13 Is_Reserved{boolean}<60|39p13> 33>26 34>26 176b13 181l8 181t19
+33r26 D{29R9} 176b26 178r28
+34a26 Name{string} 177b26 178r31
+38V13 Get_Identifier_Quote{character}<60|43p13> 38>35 187b13 191l8 191t28
+38r35 D{29R9} 187b35 188r28
+42U14 Escape_Sql<60|52p14> 42>26 43=26 44>26 197b14 230l8 230t18
+42r26 D{29R9} 197b26 200r28
+43r26 Buffer{44|87R9} 198b26 205m15 210m24 211m24 214m24 215m24 218m24 219m24
+. 222m24 223m24 226m24 229m15
+44r26 Item{52|107R12} 199b26 203r44
+48+12 T 50r40 51r15
+49U22 Add_Param 49=33 50>33 72s10
+49r33 L{63|111R9}
+50*33 V{48+12}
+51*7 Value{48+12} 72r57
+52a7 Name{string} 74r47 75r85
+53u14 Test_Add_Param_T 53=32 66b14 76l8 76t24 92r10 94r10 96r10 98r10 100r10
+. 102r10 104r10
+53r32 Tst{64|24R9} 66b32 75r33
+57+12 T 60r41 61r15
+58U22 Bind_Param 58=34 59>34 60>34 85s10
+58r34 L{63|111R9}
+59a34 N{string}
+60*34 V{57+12}
+61*7 Value{57+12} 85r78
+62a7 Name{string} 87r48 88r81
+63u14 Test_Bind_Param_T 63=33 79b14 89l8 89t25 108r10 110r10 113r10 115r10
+. 117r10 119r10 121r10 123r10
+63r33 Tst{64|24R9} 79b33 88r33
+67i7 Count{positive} 71r21 74r76 75r38
+68r7 SQL{63|255R9} 72m51 72r51 75r45
+69r7 S{148|150R9} 74m29 74r29
+71i11 I{integer}
+80i7 Count{positive} 84r21 87r77
+81r7 SQL{63|255R9} 85m52 85r52 88r41
+82r7 S{148|150R9} 87m29 87r29
+84i11 I{integer}
+91U14 Test_Add_Param_Integer[53] 66b14 140r24
+93U14 Test_Add_Param_Long_Long_Integer[53] 66b14 142r24
+95U14 Test_Add_Param_Identifier[53] 66b14 144r24
+97U14 Test_Add_Param_Boolean[53] 66b14 138r24
+99U14 Test_Add_Param_String[53] 66b14 148r24
+101U14 Test_Add_Param_Calendar[53] 66b14 146r24
+103U14 Test_Add_Param_Unbounded_String[53] 66b14 150r24
+107U14 Test_Bind_Param_Integer[63] 79b14 155r24
+109U14 Test_Bind_Param_Long_Long_Integer[63] 79b14 157r24
+112U14 Test_Bind_Param_Identifier[63] 79b14 159r24
+114U14 Test_Bind_Param_Entity_Type[63] 79b14 167r24
+116U14 Test_Bind_Param_Boolean[63] 79b14 153r24
+118U14 Test_Bind_Param_String[63] 79b14 163r24
+120U14 Test_Bind_Param_Calendar[63] 79b14 161r24
+122U14 Test_Bind_Param_Unbounded_String[63] 79b14 165r24
+126K12 Caller[160|26] 130r7 132r7 134r7 137r7 139r7 141r7 143r7 145r7 147r7
+. 149r7 152r7 154r7 156r7 158r7 160r7 162r7 164r7 166r7 168r7
+202m7 C{35|42M9} 207m10 208r15 223r47 226r47
+203r7 Blob{52|108R12} 206r16 207r15
+206i11 I<long_long_integer> 207r26
+236r7 SQL{63|255R9} 242r38 248m7 248r7 249m7 249r7 250m7 250r7 251m7 251r7
+. 252m7 252r7 253m7 253r7 254m7 254r7 255m7 255r7 256m7 256r7
+237r7 D{29R9} 248m24 248r24
+239U17 Check 239>24 239>45 241b17 245l11 245t16 258s7 259s7 260s7 261s7 262s7
+. 263s7 265s7 266s7 267s7 269s7
+239a24 Pattern{string} 241b24 242r50
+239a45 Expect{string} 241b45 244r28
+242a10 Result{string} 244r36
+276r7 SQL{63|255R9} 281r38
+278U17 Check 278>24 278>45 280b17 284l11 284t16 287s7 288s7 289s7 290s7
+278a24 Pattern{string} 280b24 281r50
+278a45 Expect{string} 280b45 283r28
+281a10 Result{string} 283r36
+299r7 SQL{63|255R9} 302m7 302r7 307m13 307r13 333r39 347r39 361r39
+300r7 D{29R9} 302m24 302r24
+304r10 T{148|150R9} 309m32 309r32
+306i14 I{integer} 307r29 307r32
+313r10 B{44|87R9} 320r50
+316r10 T{148|150R9} 326m32 326r32
+318i14 I{integer}
+320a16 S{string} 321r37
+329r10 T{148|150R9} 340m32 340r32
+331i14 I{integer}
+333a16 S{string} 335r37
+343r10 T{148|150R9} 354m32 354r32
+345i14 I{integer}
+347a16 S{string} 349r37
+357r10 T{148|150R9} 367m32 367r32
+359i14 I{integer}
+361a16 S{string} 362r37
+375U17 Check 375>24 376>24 384b17 389l11 389t16 402s7 403s7 404s7 406s7 409s7
+. 411s7 414s7
+375a24 Content{string} 384b24 386r45 388r79
+376a24 Expect{string} 385b24 388r39
+378r7 SQL{63|255R9} 386r33 394m7 401m7 401r7
+379r7 D{29R9} 401m24 401r24
+380r7 C{55|57R9} 392m7 392r7 393m7 393r7 394m23 394r23
+381p7 M{56|31P9[27]} 392r34 395r7 396r7 397r7
+382p7 P{56|31P9[27]} 393r26 398r7 399r7 400r7 408r7 413r7 416r7 418r10 425r7
+. 426r7 428r10
+386a10 S{string} 388r47
+X 77 ahven-framework.ads
+33I9*Test_Count_Type<integer>
+46U14*Set_Up
+56U14*Tear_Down
+72U14*Run
+88U14*Run
+137V13*Get_Name{string}<66p13>
+140U14*Run<78p14>
+145U14*Run<95p14>
+151V13*Test_Count{33I9}<108p13>
+154V13*Test_Count{33I9}<112p13>
+158U14*Finalize<32|48p14>
+161U14*Set_Name
+X 91 system.ads
+67M9*Address
+X 110 s-memory.ads
+53V13*Alloc{91|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{91|67M9} 105i<c,__gnat_realloc>22
+X 120 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 122 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 138 util.ads
+18K9*Util 64|19r6 22r36 24r21 65|19r6 20r6 25r8 69r15 74r7 75r7 82r15 87r7
+. 88r7 126r26 128r36 304r14 309r10 316r14 326r10 329r14 340r10 343r14 354r10
+. 357r14 367r10 388r10 138|28e9
+X 141 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 142 util-beans-objects.ads
+97h9*Object_Type
+X 148 util-measures.ads
+96K14*Measures 65|20w11 69r20 74r12 82r20 87r12 304r19 309r15 316r19 326r15
+. 329r19 340r15 343r19 354r15 357r19 367r15 148|228e18
+150R9*Stamp 65|69r29 82r29 304r28 316r28 329r28 343r28 357r28 148|180e14
+155U14*Report 65|74s21 87s21 309s24 326s24 340s24 354s24 367s24
+X 150 util-properties.ads
+256h12*Manager<141|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 151 util-refs.ads
+64R12*Element_Accessor
+67R12*Ref<32|43R9>
+72V16*Value{64R12[52|106]} 65|203s49[52|106]
+X 153 util-streams.ads
+55h9*Output_Stream
+73h9*Input_Stream
+X 160 util-test_caller.ads
+26k14*Test_Caller 65|19w11 126r31 160|33e21
+30U14*Add_Test 65|130s14[126] 132s14[126] 134s14[126] 137s14[126] 139s14[126]
+. 141s14[126] 143s14[126] 145s14[126] 147s14[126] 149s14[126] 152s14[126]
+. 154s14[126] 156s14[126] 158s14[126] 160s14[126] 162s14[126] 164s14[126]
+. 166s14[126] 168s14[126]
+X 162 util-tests.ads
+27K14*Tests 64|19w11 22r41 24r26 65|25r13 75r12 88r12 128r41 388r15 162|171e15
+34P12*Access_Test_Suite{163|38P9} 64|22r47 65|128r47
+38R9*Test<163|88R9> 64|24r32 162|38e53
+92U14*Assert_Equals[139|28] 65|75s18 88s18
+111U14*Assert_Equals 65|244s10 283s10 388s21
+149U14*Fail 65|419s12
+X 163 util-xunit.ads
+38P9*Access_Test_Suite(37R12)
+91U14*Assert
+

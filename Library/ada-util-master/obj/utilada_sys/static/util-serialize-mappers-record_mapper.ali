@@ -1,0 +1,394 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.serialize.mappers.record_mapper%b  util-serialize-mappers-record_mapper.adb  6fd513e1 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_deallocation%s
+W util%s		util.ads		util.ali
+W util.log%s		util-log.adb		util-log.ali
+W util.log.loggers%s	util-log-loggers.adb	util-log-loggers.ali
+W util.serialize%s	util-serialize.ads	util-serialize.ali
+W util.serialize.contexts%s  util-serialize-contexts.adb  util-serialize-contexts.ali
+W util.serialize.mappers%s  util-serialize-mappers.adb  util-serialize-mappers.ali
+W util.strings%s	util-strings.adb	util-strings.ali
+W util.strings.transforms%s  util-strings-transforms.adb  util-strings-transforms.ali
+
+U util.serialize.mappers.record_mapper%s  util-serialize-mappers-record_mapper.ads  14ed8276 BN EE NE OO PK GE
+W util%s		util.ads		util.ali
+W util.beans%s		util-beans.ads		util-beans.ali
+W util.beans.objects%s	util-beans-objects.adb	util-beans-objects.ali
+W util.serialize%s	util-serialize.ads	util-serialize.ali
+W util.serialize.io%s	util-serialize-io.adb	util-serialize-io.ali
+W util.serialize.mappers%s  util-serialize-mappers.adb  util-serialize-mappers.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chahan.ads		20190518041255 1601a50f ada.characters.handling%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-log.ads		20210228093152 0fb1ac89 util.log%s
+D util-log-appenders.ads  20210228093152 898ccef8 util.log.appenders%s
+D util-log-loggers.ads	20210228093152 5659ff08 util.log.loggers%s
+D util-nullables.ads	20210228093152 cb4c8fed util.nullables%s
+D util-properties.ads	20210228093152 3ed4fee8 util.properties%s
+D util-serialize.ads	20210228093152 bb5084e8 util.serialize%s
+D util-serialize-contexts.ads  20210228093152 db3bf6df util.serialize.contexts%s
+D util-serialize-io.ads	20210228093152 f7823694 util.serialize.io%s
+D util-serialize-mappers.ads  20210228093152 f9a49ba3 util.serialize.mappers%s
+D util-serialize-mappers-record_mapper.ads  20210228093152 b43c696f util.serialize.mappers.record_mapper%s
+D util-serialize-mappers-record_mapper.adb  20210228093152 b7238ab8 util.serialize.mappers.record_mapper%b
+D util-stacks.ads	20210228093152 48d43a70 util.stacks%s
+D util-streams.ads	20210228093152 e241dcc4 util.streams%s
+D util-streams-buffered.ads  20210228093152 a458193f util.streams.buffered%s
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-transforms.ads  20210228093152 0e5b9ac3 util.strings.transforms%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-texts.ads	20210228093152 096d4581 util.texts%s
+D util-texts-builders.ads  20210228093152 f2e717ef util.texts.builders%s
+D util-texts-builders.adb  20210228093152 38b5b7a7 util.texts.builders%b
+D util-texts-transforms.ads  20210228093152 53ebc629 util.texts.transforms%s
+D util-texts-transforms.adb  20210228093152 7d338470 util.texts.transforms%b
+G a e
+G c Z s b [record_mapper util__serialize__mappers 41 32 none]
+X 1 ada.ads
+16K9*Ada 20e8 78|18r6 60r14 236r11
+X 17 a-conhel.ads
+84R12 Reference_Control_Type<23|43R9>
+X 23 a-finali.ads
+53U14*Initialize<46|44p14>
+X 25 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[19|75]>
+X 27 a-string.ads
+16K13*Strings 35e16 78|236r15
+X 29 a-strunb.ads
+82K21*Unbounded 756e26 78|236r23
+116V13*To_String{string} 78|241s36
+X 35 a-uncdea.ads
+17+9 Object 78|60r42
+18P9 Name(17+9) 78|61r42
+20u15*Unchecked_Deallocation 78|18w10 60r18
+X 46 s-finroo.ads
+42U14*Adjust
+X 62 util.ads
+18K9*Util 28e9 77|18r6 19r6 33r43 41r9 45r49 49r39 51r35 55r51 60r35 67r39
+. 73r29 93r23 100r40 101r36 115r38 120r48 133r44 144r38 148r34 150r38 155r29
+. 160r23 172r39 183r33 185r5 78|20r6 21r6 22r6 23r14 25r8 27r10 31r53 74r40
+. 75r36 79r16 85r19 112r38 142r39 154r39 167r44 190r17 200r11 219r38 232r34
+. 234r38 238r33 240r33 247r31 269r48 285r4 286r5
+X 63 util-beans.ads
+50K14*Beans 54e15 77|18r11 33r48 45r54 51r40 55r56 60r40 67r44 101r41 172r44
+. 78|75r41 142r44 154r44 247r36
+X 64 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 65 util-beans-objects.ads
+43K20*Objects 644e23 77|18w17 33r54 45r60 51r46 55r62 60r46 67r50 101r47
+. 172r50 78|75r47 142r50 154r50 247r42
+83R9*Object<23|43R9> 632e14 77|33r62 45r68 51r54 55r70 60r54 67r58 101r55
+. 172r58 78|75r55 142r58 154r58 247r50
+97h9*Object_Type
+X 68 util-log.ads
+166K14*Log 192e13 78|22r11 25r13 31r58
+170I12*Level_Type{natural}
+174i4*WARN_LEVEL{170I12} 78|31r62
+187h9*Logging
+X 70 util-log-loggers.ads
+24K18*Loggers 153e21 78|22w15 30r19 30r37
+34R9*Logger<23|50R9> 147e14 78|30r27
+41V13*Create{34R9} 78|30s45
+112U14*Error 78|157s14 223s14
+X 72 util-properties.ads
+256h12*Manager<64|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 73 util-serialize.ads
+18K14*Serialize 62|18k9 73|22e19 77|19r11 41r14 49r44 73r34 93r28 100r45
+. 115r43 120r53 133r49 144r43 148r39 150r43 155r34 160r28 183r38 185r10 78|20r11
+. 23r19 27r15 74r45 79r21 85r24 112r43 167r49 190r22 219r43 232r39 234r43
+. 238r38 240r38 269r53 285r9 286r10
+X 74 util-serialize-contexts.ads
+21K24*Contexts 81e28 77|49r54 73r44 100r55 133r59 155r44 78|20w21 27r25 74r55
+. 76r20 79r31 85r34 167r59 285r19
+23X4*No_Data 78|79r40 85r43
+28I9*Data_Key<integer> 78|27r34
+31U14*Allocate 78|285s28
+36R9*Data 65e43 77|73r53 155r53
+37P9*Data_Access(36R9) 78|76r29
+45R9*Context<23|50R9> 75e14 77|49r63 100r64 133r68 78|74r64 167r68
+49V13*Get_Data{37P9} 78|76R48
+55U14*Set_Data 78|174R11
+56i24 Key{28I9} 78|174r21
+57p24 Content{37P9} 78|174r33
+X 75 util-serialize-io.ads
+27K24*IO 231e22 77|19w21 144r53 150r53 78|219r53 234r53
+37h9*Output_Stream<80|55R9> 77|144r56 150r56 78|219r56 234r56
+45U14*Start_Entity 78|256R20
+48U14*End_Entity 78|258R20
+68x14*Write_Attribute 78|250R26
+69a31 Name{string} 78|250r43
+70r31 Value{65|83R9} 78|250r57
+109x14*Write_Entity 78|252R26
+110a28 Name{string} 78|252r40
+111r28 Value{65|83R9} 78|252r54
+X 76 util-serialize-mappers.ads
+26K24*Mappers 73|18k14 76|239e27 77|41r24 93r38 115r53 120r63 148r49 160r38
+. 183r48 185r20 78|23r29 112r53 184r67 185r25 190r32 232r49 238r48 240r48
+. 269r63 286r20
+28X4*Mapping_Error 78|158r16 224r16
+45H9*Mapping 188e14 77|50r35 53r51 58r35 65r39 99r36 165r34 78|73r36 152r39
+46P9*Mapping_Access(45R9)
+54R9*Mapper<23|50R9> 200e14 77|93r46 148r57 160r46 78|190r40 232r57 238r56
+. 240r56
+55P9*Mapper_Access(54R9) 77|115r61 120r71 183r56 78|112r61 184r75 185r33
+. 269r71
+72U14*Add_Mapping 78|102s12
+76U14*Add_Mapping 78|119s12
+85U14*Set_Member
+91U14*Start_Object
+95U14*Finish_Object
+101V13*Find_Mapper{55P9} 78|185R68 190s60
+106V13*Is_Proxy{boolean}
+109V13*Is_Wildcard{boolean}
+112V13*Get_Name{string}
+114U14*Iterate 78|257R17 263R15
+187b7*Is_Attribute{boolean} 78|249r21
+193p7*Mapper{55P9} 78|116m9 185r60 185r61 273m14 273r42
+194p7 Mapping{46P9} 78|243r17 246r50 274m14 274r42
+195r7 Name{29|87R9} 78|241r51 272m14 272r42
+196b7*Is_Proxy_Mapper{boolean} 78|118m9 275m14 275r42
+198b7*Is_Wildcard{boolean} 78|276m14 276r42
+199b7*Is_Deep_Wildcard{boolean} 78|277m14 277r42
+204U14 Finalize<23|54p14>
+X 77 util-serialize-mappers-record_mapper.ads
+21+9 Element_Type 22r43 31r47 44r34 54r55 59r39 66r43 145r34 151r34 171r43
+. 78|60r52 141r43 153r43 220r34 235r34
+22P9 Element_Type_Access(21+9) 77r57 82r40 134r40 156r17 78|36r57 46r40 61r52
+. 168r40
+23E9 Fields 32r43 45r34 108r38 166r17 78|98r38 202r20 204r54
+31U19 Set_Member 31=31 32>31 33>31 78|144s7
+31*31 Into{21+9}
+32*31 Field{23E9}
+33r31 Value{65|83R9}
+41k32*Record_Mapper 76|26k24 77|21z9 22z9 23z9 31z19 155E9 185l28 185e41
+. 78|23b37 286l28 286t41
+43P9*Get_Member_Access(65|83R9) 44>23 45>23 124r33 129r50 149r34 162r20 78|124r33
+. 135r50 233r34
+44*23 From{21+9}
+45*23 Field{23E9}
+48P9*Process_Object 49=22 50>22 51>22 52^22
+49c22 Ctx<74|45R9>
+50c22 Attr<76|45R9>
+51r22 Value{65|83R9}
+52p22 Process
+53c40 Attr<76|45R9>
+54*40 Item{21+9}
+55r40 Value{65|83R9}
+57P9*Proxy_Object 58>22 59=22 60>22 116r38 161r20 78|113r38
+58c22 Attr<76|45R9>
+59*22 Element{21+9}
+60r22 Value{65|83R9}
+65U14*Set_Member 65>26 66=26 67>26 161r36 78|152b14 161l8 161t18
+65c26 Attr<76|45R9> 78|152b26 156r15 160r26
+66*26 Element{21+9} 78|153b26 160m44
+67r26 Value{65|83R9} 78|154b26 160r53
+73R9*Element_Data<74|36R9> 74r43 77p13 77r36 81p14 81r44 88P14 88r38 155c9
+. 158e14 78|36r36 45r44 58r38 78r24 82r47 170r58
+74P9*Element_Data_Access(73R9) 78|82r24 170r31
+77V13*Get_Element{22P9} 77>26 78|36b13 39l8 39t19
+77r26 Data{73R9} 78|36b26 38r14
+81U14*Set_Element 81=27 82>27 83>27 78|45b14 51l8 51t19
+81r27 Data{73R9} 78|45b27 49m7 50m7
+82*27 Element{22P9} 78|46b27 49r23
+83b27 Release{boolean} 78|47b27 50r23
+88U14*Finalize<74|40p14> 88=24 78|58b14 66l8 66t16
+88r24 Data{73R9} 78|58b24 63r10 64m16 64r16
+93R9*Mapper<76|54R9> 23|53P14 46|42p14 76|72p14 76p14 85p14 91p14 95p14 101p13
+. 106p13 109p13 112p13 114p14 204P14 77|94r37 98P14 98r36 106p14 106r42 113p14
+. 113r42 120P13 120r33 123p14 123r37 126p14 126r37 129p13 129r35 140p14 140r49
+. 143p14 143r34 160c9 163e14 174r29 78|72r36 96r42 110r42 123r37 129r37 135r35
+. 199r49 218r34 269r33 270r46
+94P9*Mapper_Access(93R9) 127r33 78|130r33 270r25
+98U14*Execute<76|59p14> 98>23 99>23 100=23 101>23 78|72b14 89l8 89t15
+98r23 Handler{93R9} 78|72b23 87r10
+99c23 Map<76|45R9> 78|73b23 87r27
+100c23 Ctx<74|45R9> 78|74b23 76r44
+101r23 Value{65|83R9} 78|75b23 87r48
+106U14*Add_Mapping 106=27 107>27 108>27 78|96b14 103l8 103t19 207s21 209s21
+106r27 Into{93R9} 78|96b27 102m7 102r7
+107a27 Path{string} 78|97b27 102r25
+108*27 Field{23E9} 78|98b27 101r22
+113U14*Add_Mapping 113=27 114>27 115>27 116>27 78|110b14 120l8 120t19
+113r27 Into{93R9} 78|110b27 119m7 119r7
+114a27 Path{string} 78|111b27 119r25
+115p27 Map{76|55P9} 78|112b27 116r20
+116p27 Proxy{57P9} 78|113b27 117r20
+120V13*Clone{76|55P9}<76|81p13> 120>20 78|269b13 281l8 281t13
+120r20 Handler{93R9} 78|269b20 272r34 273r34 274r34 275r34 276r34 277r34
+. 278r34 279r34
+123U14*Bind 123=20 124>20 78|123b14 127l8 127t12
+123r20 Into{93R9} 78|123b20 126m7
+124p20 Getter{43P9} 78|124b20 126r26
+126U14*Bind 126=20 127>20 78|129b14 133l8 133t12
+126r20 Into{93R9} 78|129b20 132m7
+127p20 From{94P9} 78|130b20 132r26
+129V13*Get_Getter{43P9} 129>25 78|135b13 138l8 138t18
+129r25 From{93R9} 78|135b25 137r14
+133U14*Set_Context 133=27 134>27 135>27 78|167b14 175l8 175t19
+133c27 Ctx<74|45R9> 78|167b27 174m7 174r7
+134*27 Element{22P9} 78|168b27 172r31
+135b27 Release{boolean} 78|169b27 173r31
+140U14*Add_Default_Mapping 140=35 78|199b14 213l8 213t27
+140r35 Into{93R9} 78|199b35 207m16 207r16 209m16 209r16
+143U14*Write 143>21 144=21 145>21 78|218b14 227l8 227t13
+143r21 Handler{93R9} 78|218b21 222r10 226r14 226r23
+144c21 Stream<75|37R9> 78|219b21 226m43
+145*21 Element{21+9} 78|220b21 226r51
+148U14*Write 148>21 149>21 150=21 151>21 78|226s7 232b14 264l8 264t13
+148c21 Handler<76|54R9> 78|232b21 263r7
+149p21 Getter{43P9} 78|233b21 247r60
+150c21 Stream<75|37R9> 78|234b21 250m19 250r19 252m19 252r19 256m13 256r13
+. 258m13 258r13
+151*21 Element{21+9} 78|235b21 247r68
+156*7 Element{22P9} 78|38r19 49m12 64m21 84r16 87r35 172m20
+157b7 Release{boolean} 78|50m12 63r15 173m20
+161p7 Execute{57P9} 78|87r18 117m9 279m14 279r42
+162p7 Get_Member{43P9} 78|126m12 132m12 132r31 137r19 222r18 226r31 278m14
+. 278r42
+165R9 Attribute_Mapping<76|45R9> 167e14 168r48 170p14 170r39 78|99r54 140r39
+. 156r23 160r7 246r21
+166*7 Index{23E9} 78|101m11 144r33 247m79
+168P9 Attribute_Mapping_Access(165R9) 78|99r22 245r31
+170U14 Set_Member 170>26 171=26 172>26 78|140b14 145l8 145t18 160s32
+170r26 Attr{165R9} 78|140b26 144r28
+171*26 Element{21+9} 78|141b26 144m19
+172r26 Value{65|83R9} 78|142b26 144r40
+174R9 Proxy_Mapper<93R9> 23|53P14 46|42p14 76|72p14 76p14 85p14 91p14 95p14
+. 106p13 109p13 112p13 114p14 204P14 77|98P14 106p14 113p14 120P13 123p14
+. 126p14 129p13 140p14 143p14 174e52 175r43 180P13 180r42 78|114r47 182r42
+175P9 Proxy_Mapper_Access(174R9) 78|114r20
+180V13 Find_Mapper{76|55P9}<76|101p13> 180>26 181>26 182>26 78|182b13 192l8
+. 192t19
+180r26 Controller{174R9} 78|182b26 185r50 190r48
+181a26 Name{string} 78|183b26 185r81 190r73
+182b26 Attribute{boolean} 78|184b26 185r87 190r79
+X 78 util-serialize-mappers-record_mapper.adb
+27i4 Key{74|28I9} 76r58 174r28 285m38
+30r4 Log{70|34R9} 157r10 223r10
+59U17 Free[35|20] 64s10
+76p7 D{74|37P9} 78r15 82r67
+82p10 DE{77|74P9} 84r13 87r32
+99p7 Map{77|168P9} 101r7 102r31
+114p7 M{77|175P9} 116r7 117r7 118r7 119r31
+170p7 Data_Context{77|74P9} 172r7 173r7 174r44
+185p7 Result{76|55P9} 187r10 188r17
+202*11 Field{77|23E9} 204r68 207r70 209r40
+204a13 Name{string} 206r16 206r22 206r36 207r34 207r40 207r58 209r34
+238U17 Write 238>24 240b17 257r26 260l11 260t16 263r24
+238c24 Map<76|54R9> 240b24 241r47 243r13 246r46 257r13
+241a10 Name{string} 250r51 252r48 256r34 258r32
+245p16 M{77|168P9} 247r77 249r19
+247r16 Val{65|83R9} 250r66 252r63
+270p7 Result{77|94P9} 272r7 273r7 274r7 275r7 276r7 277r7 278r7 279r7 280r14
+X 80 util-streams.ads
+55h9*Output_Stream
+73h9*Input_Stream
+X 82 util-strings.ads
+24K14*Strings 78|21r11 200r16 82|139e17
+X 85 util-strings-transforms.ads
+21K22*Transforms 78|21w19 200r24 85|99e28
+53V13*To_Lower_Case=54:39{string} 78|204s39
+

@@ -1,0 +1,84 @@
+V "GNAT Lib v2019"
+M P W=b
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util_test_process%b	util_test_process.adb	b9b88d39 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.val_int%s	s-valint.adb		s-valint.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-comlin.ads		20190518041255 4aa66568 ada.command_line%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-valint.ads		20190518041255 b5ff6963 system.val_int%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util_test_process.adb	20210228093152 5dea3d3c util_test_process%b
+G a e
+G c Z b b [util_test_process standard 21 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 25|19r6 20r6 22r8 24r32 28r7 29r7 32r4 36r17 37r10 38r10 45r35
+. 47r10 53r7 54r7
+X 2 a-comlin.ads
+36K13*Command_Line 144e21 25|20w10 22r12 24r36 29r11 32r8 45r39 54r11
+39V13*Argument_Count{natural} 25|24s49
+52V13*Argument{string} 25|32s57 35s7 45s52
+70I9*Exit_Status<integer> 25|32r38
+75U14*Set_Exit_Status 25|29s24 32s21 54s24
+X 7 a-textio.ads
+57K13*Text_IO 727e16 25|19w10 28r11 36r21 37r14 38r14 47r14 53r11
+315V13*End_Of_File{boolean} 25|36s29
+381U14*Get 25|37s22
+392U14*Put 25|38s22
+508U14*Put_Line 25|28s19 47s22 53s19
+X 25 util_test_process.adb
+21U11*Util_Test_Process 21b11 55l5 55t22
+24i4 Count{natural} 27r7 43r18
+25e4 C{character} 37m27 38r27
+43i8 I{integer} 45r62
+45a10 Arg{string} 47r32
+

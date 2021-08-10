@@ -1,0 +1,80 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.texts.tokenizers%b  util-texts-tokenizers.adb  8f9716f5 NE OO PK GE
+W util.texts%s		util-texts.ads		util-texts.ali
+
+U util.texts.tokenizers%s  util-texts-tokenizers.ads  5cc6c92a BN NE OO PR PK GE
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W util.texts%s		util-texts.ads		util-texts.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D util.ads		20210228093152 36301479 util%s
+D util-texts.ads	20210228093152 096d4581 util.texts%s
+D util-texts-tokenizers.ads  20210228093152 c507eb3c util.texts.tokenizers%s
+D util-texts-tokenizers.adb  20210228093152 4a90fdc9 util.texts.tokenizers%b
+G a e
+G c Z s b [tokenizers util__texts 27 20 none]
+X 1 ada.ads
+16K9*Ada 20e8 9|18r6 25r38 25r63 40r45 40r70 10|32r45 32r70 33r11
+X 2 a-string.ads
+16K13*Strings 35e16 9|18w10 25r42 25r67 40r49 40r74 10|32r49 32r74 33r15
+32E9*Direction 32e42 9|25r50 40r57 10|32r57
+32n24*Forward{32E9} 9|25r75 40r82 10|32r82 40r15 43r57
+32n33*Backward{32E9} 10|58r15 61r57
+X 7 util.ads
+18K9*Util 28e9 9|27r9 42r5 10|19r14 79r5
+X 8 util-texts.ads
+19K14*Texts 7|18k9 8|23e15 9|27r14 42r10 10|19r19 79r10
+X 9 util-texts-tokenizers.ads
+20E9 Char 21r47
+21A9 Input(20E9)<integer> 22r38 23r38 36r45 37r45 38r71 10|28r45 29r45 30r71
+22V18 Index{natural} 22>25 23>25 24>25 25>25 10|43s27 61s27
+22*25 Item{21A9}
+23*25 Pattern{21A9}
+24i25 From{positive}
+25e25 Going{2|32E9}
+27k20*Tokenizers 8|19k14 9|20z9 21z9 22z18 42l16 42e26 10|19b25 79l16 79t26
+36U14*Iterate_Tokens 36>30 37>30 38^30 40>30 10|28b14 77l8 77t22
+36*30 Content{21A9} 10|28b30 37r37 41r20 43r34 52r37 59r20 60r26 61r34 63r30
+. 70r37 71r47
+37*30 Pattern{21A9} 10|29b30 43r43 55r37 61r43 73r37
+38p30 Process 10|30b30 52r19 70r19
+38*60 Token{21A9} 10|52r28 70r28
+39b60 Done{boolean} 10|52r63 70r63
+40e30 Going{2|32E9} 10|32b30 39r12
+X 10 util-texts-tokenizers.adb
+30*60 Token{9|21A9}
+31b60 Done{boolean}
+35i7 Sep_Pos{natural} 43m16 44r19 45m19 47m19 47r30 52r53 55r23 61m16 62r19
+. 63m19 65m19 65r30 70r46 71r37 73r23
+36i7 Pos{natural} 41m13 42r19 43r52 52r46 55m16 59m13 60r19 61r52 70r57 73m16
+37i7 Last{natural} 42r26 45r30
+50b19 Done{boolean} 52m71 53r29
+68b19 Done{boolean} 70m71 71r29
+

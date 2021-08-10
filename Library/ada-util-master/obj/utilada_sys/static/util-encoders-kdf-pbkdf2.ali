@@ -1,0 +1,106 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FINALIZATION
+RV NO_NESTED_FINALIZATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.encoders.kdf.pbkdf2%b  util-encoders-kdf-pbkdf2.adb  96b8cf0f NE OO SU GE
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W interfaces%s		interfac.ads		interfac.ali
+W util.encoders.kdf%s	util-encoders-kdf.ads	util-encoders-kdf.ali
+
+U util.encoders.kdf.pbkdf2%s  util-encoders-kdf-pbkdf2.ads  71ead7e0 BN EE NE OO GE
+W util.encoders.kdf%s	util-encoders-kdf.ads	util-encoders-kdf.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D util.ads		20210228093152 36301479 util%s
+D util-encoders.ads	20210228093152 6d2d5bc8 util.encoders%s
+D util-encoders-kdf.ads	20210228093152 08fa9d2e util.encoders.kdf%s
+D util-encoders-kdf-pbkdf2.ads  20210228093152 79104ace util.encoders.kdf.pbkdf2%s
+D util-encoders-kdf-pbkdf2.adb  20210228093152 b51dd7a9 util.encoders.kdf.pbkdf2%b
+G a e
+G c Z s b [pbkdf2 util__encoders__kdf 25 29 none]
+X 1 ada.ads
+16K9*Ada 20e8 24|22r35 23r35 24r36 25|26r21 27r12 30r12
+X 4 a-stream.ads
+36K13*Streams 87e16 24|22r39 23r39 24r40 25|26r25 27r16 30r16
+42M9*Stream_Element 25|36r25 37r29 38r29 39r29
+44I9*Stream_Element_Offset<long_long_integer> 24|21r13 25|26r33 27r24 30r24
+54A9*Stream_Element_Array(42M9)<44I9> 24|22r47 23r47 24r48
+X 7 interfac.ads
+38K9*Interfaces 184e15 25|18w6 23r8
+74M9*Unsigned_32 25|28r12
+121V13*Shift_Left{74M9} 25|36s41 37s45 38s45
+X 21 util.ads
+18K9*Util 28e9 24|25r11 25|19r11 62r5
+X 22 util-encoders.ads
+29K14*Encoders 239e18 24|25r16 25|19r16 62r10
+56I12*Key_Length{4|44I9} 25|25r21
+58R9*Secret_Key<3|50R9> 213e14 24|25r51 26r51 28r52 25|19r51 20r51 22r52
+. 29r12
+58i21 Length{56I12} 25|25r40
+212a7*Secret{4|54A9} 25|26r67 33r26 35m9 35r22 35r44 36m9 37m9 38m9 39m9
+. 40r21 44r30 45r23 46m23 50m14 50r53 52r33 53r26 54m26 56m20 56r53 56r82
+X 23 util-encoders-kdf.ads
+19K23*KDF 21e22 24|25r25 25|19r25 62r19
+X 24 util-encoders-kdf-pbkdf2.ads
+21i4 Length{4|44I9} 25|25r49 41r16 42r17 46r36 53r39 54r39 60r24
+22U19 Hash 22>25 23>25 24<25 25|44s7 52s10
+22a25 Key{4|54A9} 25|44r13 52r16
+23a25 Data{4|54A9} 25|45r13 53r16
+24a25 Into{4|54A9} 25|46r13 54r16
+25u29*PBKDF2 23|19k23 24|25>37 26>37 27>37 28<37 25|19b29 62l23 62t29
+25r37 Password{22|58R9} 25|19b37 44r21 52r24
+26r37 Salt{22|58R9} 25|20b37 25r35 26r62 35r17 35r39
+27i37 Counter{positive} 25|21b37 51r21
+28r37 Result{22|58R9} 25|22b37 33r19 40r14 50m7 50r7 56m13 56r46
+X 25 util-encoders-kdf-pbkdf2.adb
+25i4 Total{22|56I12} 29r24
+26i4 Pos{4|44I9} 36r17 37r17 38r17 39r17 45r36
+27i4 First{4|44I9} 33r10 40r35 50r22 50r31 56r28 56r61 60m7 60r16
+28m4 I{7|74M9} 36r53 37r57 38r57 39r45 59m7 59r12
+29r4 U{22|58R9} 35m7 36m7 37m7 38m7 39m7 45r21 46m21 46r21 50r51 53r24 54m24
+. 54r24 56r80
+30i4 Len{4|44I9} 40m7 41r10 42m10 50r39 50r66 55r24
+33l38 loop 61e12
+51i11 C{integer}
+51l33 loop 58e15
+55i14 J<long_long_integer> 56r36 56r69 56r90
+55l28 loop 57e18
+

@@ -1,0 +1,119 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U util.encoders.quoted_printable%b  util-encoders-quoted_printable.adb  a157381d NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W interfaces%s		interfac.ads		interfac.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W util.encoders%s	util-encoders.adb	util-encoders.ali
+
+U util.encoders.quoted_printable%s  util-encoders-quoted_printable.ads  9ea430d1 NE OO PR PK
+W util.encoders%s	util-encoders.adb	util-encoders.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chahan.ads		20190518041255 1601a50f ada.characters.handling%s
+D a-chahan.adb		20190518041254 0b9287e4 ada.characters.handling%b
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-stmaco.ads		20190518041254 1c0e5368 ada.strings.maps.constants%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D util.ads		20210228093152 36301479 util%s
+D util-encoders.ads	20210228093152 6d2d5bc8 util.encoders%s
+D util-encoders-quoted_printable.ads  20210228093152 f3896b19 util.encoders.quoted_printable%s
+D util-encoders-quoted_printable.adb  20210228093152 1e6aa463 util.encoders.quoted_printable%b
+G a e
+G c Z s b [decode util__encoders__quoted_printable 26 13 none]
+G c Z s b [q_decode util__encoders__quoted_printable 32 13 none]
+G c Z b b [from_hex util__encoders__quoted_printable 25 13 none]
+G c Z b b [from_hex util__encoders__quoted_printable 30 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 32|18r6 22r8
+X 2 a-charac.ads
+16K13*Characters 18e19 32|18r10 22r12
+X 3 a-chahan.ads
+36K24*Handling 159e28 32|18w21 22r23
+53V13*Is_Hexadecimal_Digit{boolean} 32|56s20 61s20 95s27 97s28
+X 14 interfac.ads
+38K9*Interfaces 184e15 32|19w6 23r13 25r48 31r38
+63M9*Unsigned_8 32|23r24 25r59
+81V13*Shift_Left{63M9} 32|31s49
+X 29 util.ads
+18K9*Util 28e9 31|19r9 34r5 32|20r14 113r5
+X 30 util-encoders.ads
+29K14*Encoders 29|18k9 30|239e18 31|19r14 34r10 32|20r19 113r10
+36X4*Encoding_Error 32|52r22 58r22 63r22
+X 31 util-encoders-quoted_printable.ads
+19K23*Quoted_Printable 30|29k14 31|34l19 34e35 32|20b28 113l19 113t35
+26V13*Decode{string} 26>21 27>21 32|38b13 75l8 75t14
+26a21 Content{string} 32|38b21 40r32 41r30 46r25 47r15 49r34 50r31 55r18
+. 60r19
+27b21 Strict{boolean} 32|39b21 51r30 57r30 62r30
+32V13*Q_Decode{string} 32>23 32|82b13 111l8 111t16
+32a23 Content{string} 32|82b23 83r32 84r30 89r25 90r15 92r34 92r70 94r18
+. 96r19
+X 32 util-encoders-quoted_printable.adb
+25V13 From_Hex{14|63M9} 25>23 31s22 31s61
+25e23 C{character} 26r10 26r23 26r52 27r13 27r26 27r55
+30V13 From_Hex{character} 30>23 30>27 66s35 99s35
+30e23 C1{character} 31r71
+30e27 C2{character} 31r32
+40a7 Result{string} 42r30 66m13 70m13 74r14
+41i7 Read_Pos{natural} 46r13 47r24 49r23 50r16 54m13 54r25 55r27 60r28 67m13
+. 67r25 72m10 72r22
+42i7 Write_Pos{natural} 65m13 65r26 66r21 69m13 69r26 70r21 74r27
+43e7 C{character} 47m10 48r13 55m13 56r42 61r42 66r45 70r35
+44e7 C2{character} 60m13 66r48
+83a7 Result{string} 85r30 99m13 103m13 106m13 110r14
+84i7 Read_Pos{natural} 89r13 90r24 92r23 92r55 93m13 93r25 94r27 96r28 100m13
+. 100r25 108m10 108r22
+85i7 Write_Pos{natural} 98m13 98r26 99r21 102m13 102r26 103r21 105m13 105r26
+. 106r21 110r27
+86e7 C{character} 90m10 91r13 94m13 95r49 97r50 99r45 101r16 106r35
+87e7 C2{character} 96m13 99r48
+

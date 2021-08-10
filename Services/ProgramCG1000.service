@@ -1,0 +1,19 @@
+[Unit]
+Description=CG1000 service
+After=mysqld.service
+StartLimitIntervalSec=5
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=2
+TimeoutSec=1
+KillMode=control-group
+
+User=root
+WorkingDirectory=/opt/ProgramCG1000/
+ExecStart=/opt/ProgramCG1000/SiLVueFEP
+
+[Install]
+WantedBy=multi-user.target
+

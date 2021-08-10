@@ -1,0 +1,333 @@
+V "GNAT Lib v2019"
+A -O2
+A -gnatA
+A -g
+A -gnat2012
+A -gnata
+A -gnatf
+A -gnatn
+A -gnato
+A -gnatVa
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_ALIASING
+RV SPARK_05
+
+U util.serialize.mappers.vector_mapper%b  util-serialize-mappers-vector_mapper.adb  c7678515 NE OO PK GE
+W util%s		util.ads		util.ali
+W util.log%s		util-log.adb		util-log.ali
+W util.log.loggers%s	util-log-loggers.adb	util-log-loggers.ali
+W util.serialize.mappers%s  util-serialize-mappers.adb  util-serialize-mappers.ali
+
+U util.serialize.mappers.vector_mapper%s  util-serialize-mappers-vector_mapper.ads  f59afb48 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.containers.vectors%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W util%s		util.ads		util.ali
+W util.serialize%s	util-serialize.ads	util-serialize.ali
+W util.serialize.contexts%s  util-serialize-contexts.adb  util-serialize-contexts.ali
+W util.serialize.io%s	util-serialize-io.adb	util-serialize-io.ali
+W util.serialize.mappers%s  util-serialize-mappers.adb  util-serialize-mappers.ali
+W util.serialize.mappers.record_mapper%s  util-serialize-mappers-record_mapper.adb  util-serialize-mappers-record_mapper.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-calend.ads		20190518041255 474d9720 ada.calendar%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20190518041254 61e5e089 ada.containers%s
+D a-cgarso.ads		20190518041254 9129bfa8 ada.containers.generic_array_sort%s
+D a-cohata.ads		20190518041256 80a8c839 ada.containers.hash_tables%s
+D a-chtgke.ads		20190518041256 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20190518041254 7d66b1e3 ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20190518041255 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20190518041254 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20190518041255 8205bf40 ada.containers.hashed_maps%s
+D a-cohama.adb		20190518041255 f5accd12 ada.containers.hashed_maps%b
+D a-cohase.ads		20190518041254 5cc78687 ada.containers.hashed_sets%s
+D a-cohase.adb		20190518041256 00d6265f ada.containers.hashed_sets%b
+D a-conhel.ads		20190518041254 20298884 ada.containers.helpers%s
+D a-conhel.adb		20190518041256 9cc5095b ada.containers.helpers%b
+D a-coinve.ads		20190518041256 b7300cfa ada.containers.indefinite_vectors%s
+D a-coinve.adb		20190518041256 c3b709cc ada.containers.indefinite_vectors%b
+D a-coprnu.ads		20190518041254 0cdf1864 ada.containers.prime_numbers%s
+D a-convec.ads		20190518041256 7e2b0fdf ada.containers.vectors%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20190518041255 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-string.ads		20190518041255 90ac6797 ada.strings%s
+D a-strmap.ads		20190518041255 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041255 1656705b ada.strings.unbounded%s
+D a-stzmap.ads		20190518041255 e0c31b30 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20190518041256 404b19b5 ada.strings.wide_wide_unbounded%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-assert.ads		20190518041255 cd8d2c94 system.assertions%s
+D s-atocou.ads		20190518041256 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20190518041255 b65612c0 system.atomic_counters%b
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041255 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-pooglo.ads		20190518041254 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041255 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041254 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D util.ads		20210228093152 36301479 util%s
+D util-beans.ads	20210228093152 362abe70 util.beans%s
+D util-beans-basic.ads	20210228093152 95c2d591 util.beans.basic%s
+D util-beans-objects.ads  20210228093152 aef7462e util.beans.objects%s
+D util-concurrent.ads	20210228093152 290630d1 util.concurrent%s
+D util-concurrent-counters.ads  20210228093152 51920a80 util.concurrent.counters%s
+D util-log.ads		20210228093152 0fb1ac89 util.log%s
+D util-log-appenders.ads  20210228093152 898ccef8 util.log.appenders%s
+D util-log-loggers.ads	20210228093152 5659ff08 util.log.loggers%s
+D util-nullables.ads	20210228093152 cb4c8fed util.nullables%s
+D util-properties.ads	20210228093152 3ed4fee8 util.properties%s
+D util-serialize.ads	20210228093152 bb5084e8 util.serialize%s
+D util-serialize-contexts.ads  20210228093152 db3bf6df util.serialize.contexts%s
+D util-serialize-io.ads	20210228093152 f7823694 util.serialize.io%s
+D util-serialize-mappers.ads  20210228093152 f9a49ba3 util.serialize.mappers%s
+D util-serialize-mappers-record_mapper.ads  20210228093152 b43c696f util.serialize.mappers.record_mapper%s
+D util-serialize-mappers-vector_mapper.ads  20210228093152 8b752699 util.serialize.mappers.vector_mapper%s
+D util-serialize-mappers-vector_mapper.adb  20210228093152 1a4b5c84 util.serialize.mappers.vector_mapper%b
+D util-stacks.ads	20210228093152 48d43a70 util.stacks%s
+D util-streams.ads	20210228093152 e241dcc4 util.streams%s
+D util-streams-buffered.ads  20210228093152 a458193f util.streams.buffered%s
+D util-strings.ads	20210228093152 99f66ec5 util.strings%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-builders.ads  20210228093152 3dddb8be util.strings.builders%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-strings-vectors.ads  20210228093152 bd939877 util.strings.vectors%s
+D util-texts.ads	20210228093152 096d4581 util.texts%s
+D util-texts-builders.ads  20210228093152 f2e717ef util.texts.builders%s
+D util-texts-builders.adb  20210228093152 38b5b7a7 util.texts.builders%b
+G a e
+G c Z s b [vector_mapper util__serialize__mappers 34 32 none]
+X 1 ada.ads
+16K9*Ada 20e8 78|18r6 19r6 27r10 79|174r27 180r25
+X 5 a-contai.ads
+16K13*Containers 24e19 78|18w10 19r10 27r14
+X 16 a-conhel.ads
+84R12 Reference_Control_Type<23|43R9>
+X 21 a-convec.ads
+61I9 Index_Type 78|40r34[26]
+62+9 Element_Type 78|31r49[26] 36r36[26]
+73k24*Vectors 824e27 78|19w21 27r25
+88R9 Vector<23|43R9> 78|38r30[26] 99r42[26] 79|171r42[78|26]
+99R9 Cursor 79|172r21[78|26]
+107V13 Has_Element{boolean} 79|175s21[78|26]
+203V13 Element{62+9[78|26]} 79|177s48[78|26]
+249U14 Update_Element 79|100s10[78|26] 154s20[78|26]
+251*7 Index{61I9[78|26]} 79|154r36[78|26]
+252p7 Process 79|154r58[78|26]
+438U14 Insert_Space 79|153s10[78|26]
+515V13 First{99R9[78|26]} 79|172s39[78|26]
+539U14 Next 79|178s18[78|26]
+X 25 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[21|111]>
+X 27 a-string.ads
+16K13*Strings 35e16 79|174r31 180r29
+X 29 a-strunb.ads
+82K21*Unbounded 756e26 79|174r39 180r37
+116V13*To_String{string} 79|174s49 180s47
+X 46 s-finroo.ads
+42U14*Adjust
+X 62 util.ads
+18K9*Util 28e9 78|20r6 21r6 22r6 34r9 46r39 53r28 66r23 73r40 74r36 77r41
+. 86r57 89r45 93r46 98r38 103r28 108r23 115r5 79|18r6 20r14 23r8 27r53 29r10
+. 60r41 75r40 76r36 91r16 97r19 116r57 128r45 145r16 151r19 160r46 170r38
+. 185r4 186r5
+X 63 util-beans.ads
+50K14*Beans 54e15 78|74r41 79|76r41
+X 64 util-beans-basic.ads
+42h9*Readonly_Bean
+54h9*Bean<42R9>
+X 65 util-beans-objects.ads
+43K20*Objects 644e23 78|74r47 79|76r47
+83R9*Object<23|43R9> 632e14 78|74r55 79|76r55
+97h9*Object_Type
+X 68 util-log.ads
+166K14*Log 192e13 79|18r11 23r13 27r58
+170I12*Level_Type{natural}
+174i4*WARN_LEVEL{170I12} 79|27r62
+187h9*Logging
+X 70 util-log-loggers.ads
+24K18*Loggers 153e21 79|18w15 26r19 26r37
+34R9*Logger<23|50R9> 147e14 79|26r27
+41V13*Create{34R9} 79|26s45
+62U14*Debug 79|88s11 142s11
+X 72 util-properties.ads
+256h12*Manager<64|54R9>
+279h12*Shared_Manager<256R12>
+301R15 Manager_Type<256R12>
+X 73 util-serialize.ads
+18K14*Serialize 62|18k9 73|22e19 78|20r11 21r11 22r11 34r14 46r44 53r33 66r28
+. 73r45 77r46 86r62 89r50 93r51 98r43 103r33 108r28 115r10 79|20r19 29r15
+. 60r46 75r45 91r21 97r24 116r62 128r50 145r21 151r24 160r51 170r43 185r9
+. 186r10
+X 74 util-serialize-contexts.ads
+21K24*Contexts 81e28 78|20w21 46r54 53r43 73r55 77r56 89r60 93r61 103r43
+. 79|29r25 60r56 75r55 86r20 91r31 97r34 128r60 134r20 145r31 151r34 160r61
+. 185r19
+23X4*No_Data 79|91r40 97r43 145r40 151r43
+28I9*Data_Key<integer> 79|29r34
+31U14*Allocate 79|185s28
+36R9*Data 65e43 78|53r52 103r52
+37P9*Data_Access(36R9) 79|86r29 134r29
+40U14*Finalize
+45R9*Context<23|50R9> 75e14 78|46r63 73r64 77r65 89r69 93r70 79|60r65 75r64
+. 128r69 160r70
+49V13*Get_Data{37P9} 79|86R48 134R52
+55U14*Set_Data 79|66R11
+56i24 Key{28I9} 79|66r21
+57p24 Content{37P9} 79|66r33
+X 75 util-serialize-io.ads
+27K24*IO 231e22 78|22w21 98r53 79|170r53
+37h9*Output_Stream<81|55R9> 78|98r56 79|170r56
+141U14*Start_Array 79|174R14
+144U14*End_Array 79|180R14
+X 76 util-serialize-mappers.ads
+26K24*Mappers 73|18k14 76|239e27 78|21r21 34r24 66r38 86r72 108r38 115r20
+. 79|20r29 116r72 186r20
+45H9*Mapping 188e14 78|72r36 79|74r36
+54R9*Mapper<23|50R9> 200e14 78|66r46 108r46
+55P9*Mapper_Access(54R9) 78|86r80 79|116r80
+72U14*Add_Mapping
+76U14*Add_Mapping
+81V13*Clone{55P9}
+85U14*Set_Member
+101V13*Find_Mapper{55P9} 79|118R32
+106V13*Is_Proxy{boolean}
+109V13*Is_Wildcard{boolean}
+112V13*Get_Name{string}
+114U14*Iterate
+193p7*Mapper{55P9} 79|107m12 118r24 118r25 124m18 176r40
+195r7*Name{29|87R9} 79|174r68 180r66
+204U14 Finalize<23|54p14>
+X 77 util-serialize-mappers-record_mapper.ads
+21+9 Element_Type 78|31r25
+41k32*Record_Mapper 185e41 78|21w29 31r10
+43P9 Get_Member_Access(65|83R9)
+65U14 Set_Member 79|83s25[78|30]
+93R9 Mapper<76|54R9> 78|109r44[30]
+94P9 Mapper_Access(93R9[78|30]) 78|81r53[30] 79|105r53[78|30]
+126U14 Bind 79|108s16[78|30]
+129V13 Get_Getter{43P9[78|30]} 79|176s64[78|30]
+133U14 Set_Context 79|138s25[78|30]
+133c27 Ctx<74|45R9> 79|138r38[78|30]
+134*27 Element(21|62+9[78|26]) 79|138r54[78|30]
+148U14 Write 79|176s25[78|30]
+X 78 util-serialize-mappers-vector_mapper.ads
+26K17 Vectors[21|73] 31r41 36r28 38r22 40r26 99r34 79|22r8 171r34 172r13
+. 175r13 177r40 178r10
+30K17 Element_Mapper[77|41] 81r38 109r29 79|83r10 105r38 138r10 176r10
+34k32*Vector_Mapper 76|26k24 78|26z17 30z17 103E9 115l28 115e41 79|20b37
+. 186l28 186t41
+36+12*Element_Type{21|62+9[26]} 79|79r43 81r43 132r44 136r44
+38R12*Vector{21|88R9[26]} 42r42 47r73
+40I12*Index_Type{21|61I9[26]} 105r18 79|65r32
+42P9*Vector_Type_Access(38R12) 57r55 61r38 78r37 104r18 79|39r55 48r38 61r37
+45P9*Process_Object 46=22 47^22
+46c22 Ctx<74|45R9>
+47p22 Process
+47r59 Item{38R12}
+53R9*Vector_Data<74|36R9> 74|40p14 78|54r42 57p13 57r35 60p14 60r42 103c9
+. 106e14 79|39r35 47r42 62r57 90r24 94r46 144r24 148r46
+54P9*Vector_Data_Access(53R9) 79|62r31 94r24 148r24
+57V13*Get_Vector{42P9} 57>25 79|39b13 42l8 42t18
+57r25 Data{53R9} 79|39b25 41r14
+60U14*Set_Vector 60=26 61>26 79|47b14 51l8 51t18
+60r26 Data{53R9} 79|47b26 50m7
+61p26 Vector{42P9} 79|48b26 50r22
+66R9*Mapper<76|54R9> 46|42p14 76|72p14 76p14 81p13 85p14 101p13 106p13 109p13
+. 112p13 114p14 204P14 78|67r37 71P14 71r36 80p14 80r42 85p13 85r42 88P14
+. 88r41 92P14 92r42 97p14 97r34 108c9 110e14 113P14 113r46 79|73r36 104r42
+. 115r42 122r46 127r41 159r42 169r34
+67P9*Mapper_Access(66R9)
+71U14*Execute<76|59p14> 71>23 72>23 73=23 74>23 79|73b14 102l8 102t15
+71r23 Handler{66R9} 79|73b23 77r28
+72c23 Map<76|45R9> 79|74b23 83r37
+73c23 Ctx<74|45R9> 79|75b23 86r44
+74r23 Value{65|83R9} 79|76b23 83r51
+77U14*Set_Context 77=27 78>27 79|60b14 67l8 67t19
+77c27 Ctx<74|45R9> 79|60b27 66m7 66r7
+78p27 Data{42P9} 79|61b27 64r32
+80U14*Set_Mapping 80=27 81>27 79|104b14 109l8 109t19
+80r27 Into{66R9} 79|104b27 107m7 108m7 108r7
+81p27 Inner{77|94P9[30]} 79|105b27 107r22 108r22
+85V13*Find_Mapper{76|55P9} 85>26 86>26 79|115b13 119l8 119t19
+85r26 Controller{66R9} 79|115b26 118r14
+86a26 Name{string} 79|116b26 118r45
+88U14*Start_Object<76|91p14> 88>28 89=28 90>28 79|127b14 157l8 157t20
+88r28 Handler{66R9} 79|127b28 130r28
+89c28 Context<74|45R9> 79|128b28 134r44 138m45
+90a28 Name{string} 79|129b28 142r49
+92U14*Finish_Object<76|95p14> 92>29 93=29 94>29 79|159b14 164l8 164t21
+92r29 Handler{66R9} 79|159b29
+93c29 Context<74|45R9> 79|160b29
+94a29 Name{string} 79|161b29
+97U14*Write 97>21 98=21 99>21 79|169b14 181l8 181t13
+97r21 Handler{66R9} 79|169b21 174r60 176r32 176r52 180r58
+98c21 Stream<75|37R9> 79|170b21 174m7 174r7 177m32 180m7 180r7
+99r21 Element{21|88R9[26]} 79|171b21 172r31
+104p7 Vector{42P9} 79|41r19 50m12 64m20 96r16 100r29 150r16 153r27 154r12
+. 154r13
+105*7 Position{40I12} 79|65m20 100r44 153r42 154r48 155m13 155r28
+109r7 Map{77|93R9[30]} 79|108m12 124m39 176r60
+113U14 Initialize<23|53p14> 113=26 79|122b14 125l8 125t18
+113r26 Controller{66R9} 79|122b26 124m7 124m28 124r28
+X 79 util-serialize-mappers-vector_mapper.adb
+26r4 Log{70|34R9} 88r7 142r7
+29i4 Key{74|28I9} 66r28 86r58 134r62 185m38
+62p7 Data_Context{78|54P9} 64r7 65r7 66r44
+79U17 Process 79=26 81b17 84l11 84t18 100r58
+79*26 Element{78|36+12} 81b26 83m42
+86p7 D{74|37P9} 90r15 94r65
+94p10 DE{78|54P9} 96r13 100r26 100r41
+132U17 Set_Context 132=30 136b17 139l11 139t22 154r69
+132*30 Item{78|36+12} 136b30 138m65 138r65
+134p7 D{74|37P9} 144r15 148r65
+148p10 DE{78|54P9} 150r13 153r24 153r39 154r10 154r45 155r10 155r25
+172r7 Pos{21|99R9[78|26]} 175r34 177r57 178m24 178r24
+X 81 util-streams.ads
+55h9*Output_Stream
+73h9*Input_Stream
+
