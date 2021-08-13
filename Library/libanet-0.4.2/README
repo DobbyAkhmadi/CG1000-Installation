@@ -1,0 +1,109 @@
+Anet
+====
+
+Anet is a networking library for the Ada programming language.
+
+Features
+--------
+The Anet networking library has the following features:
+
+* BSD socket implementation
+* High abstraction level
+* Extendable socket type hierarchy
+* Socket receiver tasks (Stream and Datagram)
+* Ada type serialisation/deserialisation over sockets
+* Supported socket families
+  - IPv4 (AF_INET)
+  - IPv6 (AF_INET6)
+  - Packet (AF_PACKET)
+  - UNIX domain (AF_UNIX)
+  - Netlink (AF_NETLINK)
+* Supported socket modes
+  - Stream (TCP)
+  - Datagram (UDP)
+  - RAW
+* Support for IPv4/IPv6 multicast
+* Support for non-blocking operation
+* ARP packet serialization/deserialization
+* UDP/IPv4 packet creation and validation
+* Binding to the Linux Packet Filter (LPF) system
+
+
+Download
+--------
+
+Release version
+~~~~~~~~~~~~~~~
+The current release version of Anet is available at
+http://www.codelabs.ch/download/.
+
+Verify a Release
+~~~~~~~~~~~~~~~~
+To verify the integrity and authenticity of the distribution tarball type the
+following commands:
+
+  $ wget -q https://www.codelabs.ch/keys/0xDBF6D7E1095FD0D9.asc -O - | gpg --import
+  $ gpg --verify libanet-{version}.tar.bz2.sig
+
+The key fingerprint of the public key ('0xDBF6D7E1095FD0D9') is:
+
+  Key fingerprint = 298F 4B32 C3C4 1D88 5949  86F3 DBF6 D7E1 095F D0D9
+
+Development version
+~~~~~~~~~~~~~~~~~~~
+The current development version of Anet is available through its git repository:
+
+  $ git clone http://git.codelabs.ch/git/anet.git
+
+A browsable version of the repository is also available here:
+http://git.codelabs.ch/?p=anet.git
+
+
+Installation
+------------
+To compile and install Anet on your system, you need to have the following
+software installed:
+
+* GNAT Ada compiler:
+  http://www.gnu.org/software/gnat
+
+If you want to run the unit tests before installation of Anet (which is
+recommended) you furthermore need to have the following installed:
+
+* Ahven (Test-Framework):
+  http://ahven.stronglytyped.org/
+
+Anet supports BSD and Linux operating systems. To build for BSD, append
+`OS=bsd` to the `make` commands below. The building and installation process of
+Anet is straightforward. Just type in the following commands.
+
+  $ make
+  $ make PREFIX=/usr/local install
+
+If neither `PREFIX` nor `OS` are specified, `$(HOME)/libraries` is used as
+installation directory and the library is built for Linux.
+
+
+Testing
+-------
+Anet contains a comprehensive unit test suite which can be run by entering the
+following command:
+
+  $ make tests
+
+All tests should be marked with *PASS* behind the test name. To run the tests
+on BSD, type:
+
+  $ make tests OS=bsd
+
+
+Licence
+-------
+--------------------------------------------------------------------------------
+Copyright (C) 2011-2019 secunet Security Networks AG
+Copyright (C) 2011-2019 Reto Buerki <reet@codelabs.ch>
+Copyright (C) 2011-2019 Adrian-Ken Rueegsegger <ken@codelabs.ch>
+
+Free use of this software is granted under the terms of the GNAT Modified
+General Public License (GMGPL).
+--------------------------------------------------------------------------------

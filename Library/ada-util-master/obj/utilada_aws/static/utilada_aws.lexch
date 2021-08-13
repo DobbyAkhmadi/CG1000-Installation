@@ -1,9 +1,0 @@
-[LIBRARY PATH]
-/home/scada/Downloads/ada-util-master/lib/utilada_aws/static/libutilada_aws.a
-[OBJECT FILES]
-/home/scada/Downloads/ada-util-master/obj/utilada_aws/static/aws-client-ext.o
-20210315020355
-/home/scada/Downloads/ada-util-master/obj/utilada_aws/static/util-http-clients-aws__2.o
-20210315020357
-/home/scada/Downloads/ada-util-master/obj/utilada_aws/static/util-http-clients-aws_i.o
-20210315020354

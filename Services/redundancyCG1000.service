@@ -1,5 +1,5 @@
 [Unit] 
-Description=Redundancy service 
+Description=Redundancy service SILVUE CG1000
 After=fep.service 
 StartLimitIntervalSec=5 
 
@@ -8,8 +8,8 @@ Type=simple
 Restart=on-failure 
 RestartSec=2 
 User=root 
-WorkingDirectory=/home/debian/Redundancy_Service/bin 
-ExecStart=/home/debian/Redundancy_Service/bin/redundancy 
+WorkingDirectory=/opt/SILVUECG1000/
+ExecStart=/opt/SILVUECG1000/redundancy 
 
 [Install]
 WantedBy=multi-user.target
