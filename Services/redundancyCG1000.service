@@ -1,6 +1,6 @@
 [Unit] 
 Description=Redundancy service SILVUE CG1000
-After=fep.service 
+After=ProgramCG1000.service 
 StartLimitIntervalSec=5 
 
 [Service] 

@@ -1,0 +1,12 @@
+[Unit] 
+Description=Web Server service SILVUE CG1000
+After=RedundancyCG1000.service 
+
+[Service] 
+User=root
+WorkingDirectory=/opt/SILVUECG1000/ProgramCG1000/
+ExecStart=/opt/SILVUECG1000/ProgramCG1000/WebCG1000.sh 
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

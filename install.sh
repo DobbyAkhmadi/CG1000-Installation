@@ -36,15 +36,14 @@ sudo apt-get --assume-yes install aria2
 sudo apt-get --assume-yes install libncurses5
 sudo apt-get --assume-yes install git
 
-echo "${SoftwareVersion} | ${green}==>Instaling Apache2 WebServer Packages .. ${reset}"
-
-sudo apt-get --assume-yes install apache2
 
 echo "${SoftwareVersion} | ${green}==>Installing PHP Library Version 7.3 .. ${reset}"
 
 sudo apt-get --assume-yes install php7.3
 
 sudo apt install --assume-yes wget php7.3 php7.3-cli php7.3-common php7.3-curl php7.3-mbstring php7.3-mysql php7.3-xml php-zip unzip
+sed -i 's/^upload_max_filesize.*/upload_max_filesize = 100M/' /etc/php/7.3/fpm/php.ini
+sed -i 's/^post_max_size.*/post_max_size = 100M/' /etc/php/7.3/fpm/php.ini
 
 echo "${SoftwareVersion} | ${green}==>Installing Composer For Laravel library latest Version .. ${reset}"
 
@@ -209,26 +208,33 @@ cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Main Program Services SiLVue CG1000 .. ${reset}"
 cd /opt/SILVUECG1000/Services/
-sudo cp -r *.service /etc/systemd/system/
+sudo cp -r * /etc/systemd/system/
 cd ..
 echo "${SoftwareVersion} | ${green}==>Installing WebService SiLVue CG1000 .. ${reset}"
 
 cd /var/www/html/
 
+DIR="/var/www/html/"
+if [ -d "$DIR" ]; then
+echo "${green}Web Server Has Installed! .. ${reset}"
+else
 git clone https://DobbyAkhmadi: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@github.com/lenfep/CG1000.git
+fi
 
-
-cd /var/www/html/CG1000
+cd /var/www/html/CG1000/
 chmod -R 777 *
-
 echo "${SoftwareVersion}| ${green}==>Finishing Installation And Run Program SilVue CG1000 ${reset}"
 
-systenctl restart apache2
-systenctl restart mariadb
+systemctl restart mariadb
 
 systemctl enable ProgramCG1000
 systemctl enable redundancyCG1000
-systemctl start ProgramCG1000
-systemctl start redundancyCG1000
+systemctl enable WebCG1000
+
+systemctl restart ProgramCG1000
+systemctl restart redundancyCG1000
+systemctl restart WebCG1000
+
+systemctl daemon-reload
 
 echo "${SoftwareVersion}| ${green}==>The Installation is Finished! Thank You ! ${reset}"
