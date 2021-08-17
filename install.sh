@@ -35,6 +35,7 @@ sudo apt-get --assume-yes install curl
 sudo apt-get --assume-yes install aria2
 sudo apt-get --assume-yes install libncurses5
 sudo apt-get --assume-yes install git
+sudo apt-get --assume-yes install mariadb-client libmariadb-client-lgpl-dev
 
 
 echo "${SoftwareVersion} | ${green}==>Installing PHP Library Version 7.3 .. ${reset}"
@@ -187,23 +188,21 @@ mkdir build
 cd build
 cmake  -DCMAKE_BUILD_TYPE=MinSizeRel -DUA_NAMESPACE_ZERO=MINIMAL -DUA_DEBUG=0  -DUA_LOGLEVEL=650  ..
 make -j4
-make install prefix=/opt/GNAT/2019/
+make INSTALL_PREFIX=/usr/local install
+cd ..
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Library Modbus OPC Version 3.1.6 ${reset}"
 cd /opt/SILVUECG1000/Library/libmodbus-3.1.6/
 chmod -R 777 *
-./configure
-make
-make install prefix=/opt/GNAT/2019/
+./configure && make INSTALL_PREFIX=/usr/local install
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Library IEC 61850 Version 1.5.0  ${reset}"
 cd /opt/SILVUECG1000/Library/libiec61850-1.5.0/
 chmod -R 777 *
-./configure
-make
-make install prefix=/opt/GNAT/2019/
+make WITH_MBEDTLS=1
+make INSTALL_PREFIX=/usr/local install
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Main Program Services SiLVue CG1000 .. ${reset}"
@@ -222,6 +221,7 @@ git clone https://DobbyAkhmadi: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@github.c
 fi
 
 cd /var/www/html/CG1000/
+composer update
 chmod -R 777 *
 echo "${SoftwareVersion}| ${green}==>Finishing Installation And Run Program SilVue CG1000 ${reset}"
 
