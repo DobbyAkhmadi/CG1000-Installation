@@ -8,8 +8,8 @@ Type=simple
 Restart=on-failure 
 RestartSec=2 
 User=root 
-WorkingDirectory=/opt/SILVUECG1000/
-ExecStart=/opt/SILVUECG1000/redundancy 
+WorkingDirectory=/opt/SILVUECG1000/ProgramCG1000/
+ExecStart=/opt/SILVUECG1000/ProgramCG1000/redundancy 
 
 [Install]
 WantedBy=multi-user.target

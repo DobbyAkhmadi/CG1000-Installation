@@ -1,13 +1,14 @@
 #!/bin/bash
 
 red=`tput setaf 1`
-
 green=`tput setaf 2`
 blue=`tput setaf 4`
 reset=`tput sgr0`
+SoftwareVersion="${red}SiLVue CG1000 Len Ver 1.0"
 
-SoftwareVersion="${red}SiLVue CG1000 Len Version 0.1 Beta Install"
-
+echo "${SoftwareVersion} | ${green}==>CHECKING OPERATING SYSTEM !${reset}"
+hostnamectl
+echo "${SoftwareVersion} | ${green}==>RUNNING INSTALLER SILVUE CG1000 Packages .. ${reset}"
 echo "${SoftwareVersion} | ${green}==>Checking APT Packages Online .. ${reset}"
 
 sudo apt update
@@ -32,6 +33,8 @@ sudo apt-get --assume-yes install check
 sudo apt-get --assume-yes install keepalived
 sudo apt-get --assume-yes install curl
 sudo apt-get --assume-yes install aria2
+sudo apt-get --assume-yes install libncurses5
+sudo apt-get --assume-yes install git
 
 echo "${SoftwareVersion} | ${green}==>Instaling Apache2 WebServer Packages .. ${reset}"
 
@@ -57,24 +60,59 @@ mkdir -p /opt/SILVUECG1000/Database/
 mkdir -p /opt/SILVUECG1000/Config/
 mkdir -p /opt/SILVUECG1000/Database/
 mkdir -p /opt/SILVUECG1000/Library/
+mkdir -p /opt/SILVUECG1000/Services/
 mkdir -p /opt/SILVUECG1000/ProgramCG1000/
 mkdir -p /opt/SILVUECG1000/install/
 DIR1="/opt/SILVUECG1000/"
 DIR2="/opt/SILVUECG1000/Database/"
 DIR3="/opt/SILVUECG1000/Config/"
 DIR4="/opt/SILVUECG1000/Library/"
+DIR4="/opt/SILVUECG1000/Services/"
 DIR5="/opt/SILVUECG1000/ProgramCG1000/"
 DIR6="/opt/SILVUECG1000/install/"
 [ -d "$DIR1" ] && echo "${SoftwareVersion} | ${green}==>Creating Directory ${red}SILVUECG1000${green} Succesfully"
 [ -d "$DIR2" ] && echo "${SoftwareVersion} | ${green}==>Creating Directory ${red}SILVUECG1000/Database${green} Succesfully"
 [ -d "$DIR3" ] && echo "${SoftwareVersion} | ${green}==>Creating Directory ${red}SILVUECG1000/Config ${green} Succesfully"
+[ -d "$DIR4" ] && echo "${SoftwareVersion} | ${green}==>Creating Directory ${red}SILVUECG1000/Services ${green} Succesfully"
 [ -d "$DIR4" ] && echo "${SoftwareVersion} | ${green}==>Creating Directory ${red}SILVUECG1000/Library ${green} Succesfully"
 [ -d "$DIR5" ] && echo "${SoftwareVersion} | ${green}==>Creating Directory ${red}SILVUECG1000/ProgramCG1000 ${green} uccesfully"
 [ -d "$DIR6" ] && echo "${SoftwareVersion} | ${green}==>Creating Directory Install Succesfully"
 
 echo "${SoftwareVersion} | ${green}==>Creating PATH and Copying Files Directory CG1000 on /OPT/CG1000/ .. ${reset}"
 sudo chmod -R 777 *
-cp -R /Library/ /opt/SILVUECG1000/Library/
+cd Library
+chmod -R 777 /opt/SILVUECG1000/Library/
+sudo cp -r * /opt/SILVUECG1000/Library/ 
+cd ..
+
+cd Database
+chmod -R 777 /opt/SILVUECG1000/Database/
+sudo cp -r * /opt/SILVUECG1000/Database/ 
+cd ..
+
+cd Config
+chmod -R 777 /opt/SILVUECG1000/Config/
+sudo cp -r * /opt/SILVUECG1000/Config/ 
+cd ..
+
+cd Services
+chmod -R 777 /opt/SILVUECG1000/Services/
+sudo cp -r * /opt/SILVUECG1000/Services/ 
+cd ..
+
+cd ProgramCG1000
+chmod -R 777 /opt/SILVUECG1000/ProgramCG1000/
+sudo cp -r * /opt/SILVUECG1000/ProgramCG1000/ 
+chmod -R 777 /opt/SILVUECG1000/
+cd ..
+
+echo "${SoftwareVersion} | ${green}==>Adding PATH Environtment Variable GNAT 2019 ! ${reset}"
+
+sed -i '1s/.*/export PATH=$PATH:\/opt\/GNAT\/2019\/bin/' ~/.bashrc
+sed -i '2s/.*/export PATH=$PATH:\/opt\/gps\/bin/' ~/.bashrc
+sed -i '3s/.*/export PATH=$PATH:\/usr\/local/' ~/.bashrc
+source ~/.bashrc
+
 
 echo "${SoftwareVersion} | ${green}==>Installing Mariadb Database Latest Version .. ${reset}"
 
@@ -109,68 +147,88 @@ echo "${green}Downloading Files GNAT 2019! .. ${reset}"
 sudo aria2c --auto-file-renaming=false -d , --dir=/opt/SILVUECG1000/install/ "https://community.download.adacore.com/v1/0cd3e2a668332613b522d9612ffa27ef3eb0815b?filename=gnat-community-2019-20190517-x86_64-linux-bin&rand=433"
 
 echo "${green}Executing GNAT 2019 installer! .. ${reset}"
-sudo chmod -R 777 ./
-sudo chmod u+x ./opt/SILVUECG1000/install/gnat-community-2019-20190517-x86_64-linux-bin
+cd /opt/SILVUECG1000/install/
+chmod -R 777 *
+DIR="/opt/GNAT/2019/"
+if [ -d "$DIR" ]; then
+echo "${green}GNAT 2019 Has Been Installed! .. ${reset}"
+else
+sudo -uscada ./gnat-community-2019-20190517-x86_64-linux-bin
+fi
+cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Ada GNAT Networking Version 0.4.2 ${reset}"
-cd /Library/libanet-0.4.2/
-sudo make
-sudo make install prefix=/opt/GNAT/2019/
+cd /opt/SILVUECG1000/Library/libanet-0.4.2/
+chmod -R 777 *
+make
+make install prefix=/opt/GNAT/2019/
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Ada GNAT Utility Version 2.4.1  ${reset}"
-cd /Library/ada-util-2.4.1/
+cd /opt/SILVUECG1000/Library/ada-util-2.4.1/
+chmod -R 777 *
 ./configure
-sudo make
-sudo make install prefix=/opt/GNAT/2019/
+make
+make install prefix=/opt/GNAT/2019/
+cd ..
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Ada GNAT Ado Database Version 2.2.0 ${reset}"
-cd /Library/ada-ado-2.2.0/
+cd /opt/SILVUECG1000/Library/ada-ado-2.2.0/
+chmod -R 777 *
 ./configure
-sudo make
-sudo make install prefix=/opt/GNAT/2019/
+make
+make install prefix=/opt/GNAT/2019/
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Library OPCUA Protocol Version 1.2.2 ${reset}"
-cd /Library/open62541-1.2.2/
+cd /opt/SILVUECG1000/Library/open62541-1.2.2/
+chmod -R 777 *
 mkdir build
 cd build
 cmake  -DCMAKE_BUILD_TYPE=MinSizeRel -DUA_NAMESPACE_ZERO=MINIMAL -DUA_DEBUG=0  -DUA_LOGLEVEL=650  ..
-sudo make -j4
-sudo make install prefix=/opt/GNAT/2019/
+make -j4
+make install prefix=/opt/GNAT/2019/
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Library Modbus OPC Version 3.1.6 ${reset}"
-cd /Library/libmodbus-3.1.6/
+cd /opt/SILVUECG1000/Library/libmodbus-3.1.6/
+chmod -R 777 *
 ./configure
-sudo make
-sudo make install prefix=/opt/GNAT/2019/
+make
+make install prefix=/opt/GNAT/2019/
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Library IEC 61850 Version 1.5.0  ${reset}"
-cd /Library/libiec61850-1.5.0/
+cd /opt/SILVUECG1000/Library/libiec61850-1.5.0/
+chmod -R 777 *
 ./configure
-sudo make
-sudo make install prefix=/opt/GNAT/2019/
+make
+make install prefix=/opt/GNAT/2019/
 cd ..
 
-echo "${SoftwareVersion} | ${green}==>Installing Main Program SiLVue CG1000 .. ${reset}"
-yes | cp -rf ProgramCG1000/ /opt/SILVUECG1000/
-yes | cp -rf Services/ProgramCG1000.service /etc/systemd/system/ProgramCG1000.service
-yes | cp -rf Services/redundancyCG1000.service /etc/systemd/system/redundancyCG1000.service
-
+echo "${SoftwareVersion} | ${green}==>Installing Main Program Services SiLVue CG1000 .. ${reset}"
+cd /opt/SILVUECG1000/Services/
+sudo cp -r *.service /etc/systemd/system/
+cd ..
 echo "${SoftwareVersion} | ${green}==>Installing WebService SiLVue CG1000 .. ${reset}"
-yes | cp -rf apache2/apache2.conf /etc/apache2/apache2.conf
-yes | cp -rf apache2/000-default.conf /etc/apache2/sites-available/000-default.conf
-git clone https://github.com/lenfep/CG1000.git
 
-echo "${SoftwareVersion}| ${green}==>Finishing Installation SilVue CG1000 And Default Configuration .. ${reset}"
+cd /var/www/html/
 
-systemctl enable ProgramCG1000
-systemctl start redundancyCG1000
+git clone https://DobbyAkhmadi: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@github.com/lenfep/CG1000.git
+
 
 cd /var/www/html/CG1000
-chgrp -R www-data storage bootstrap/cache
-chmod -R ug+rwx storage bootstrap/cache
-a2enmod rewrite
+chmod -R 777 *
+
+echo "${SoftwareVersion}| ${green}==>Finishing Installation And Run Program SilVue CG1000 ${reset}"
+
+systenctl restart apache2
+systenctl restart mariadb
+
+systemctl enable ProgramCG1000
+systemctl enable redundancyCG1000
+systemctl start ProgramCG1000
+systemctl start redundancyCG1000
+
+echo "${SoftwareVersion}| ${green}==>The Installation is Finished! Thank You ! ${reset}"

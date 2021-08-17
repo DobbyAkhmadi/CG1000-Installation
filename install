@@ -6,7 +6,7 @@ green=`tput setaf 2`
 blue=`tput setaf 4`
 reset=`tput sgr0`
 
-SoftwareVersion="${red}SiLVue CG1000 Len Version 0.1 Beta Install"
+SoftwareVersion="${red}SiLVue CG1000 Len Ver 1.0 cat /etc/debian_version"
 
 echo "${SoftwareVersion} | ${green}==>Checking APT Packages Online .. ${reset}"
 
@@ -32,6 +32,8 @@ sudo apt-get --assume-yes install check
 sudo apt-get --assume-yes install keepalived
 sudo apt-get --assume-yes install curl
 sudo apt-get --assume-yes install aria2
+sudo apt-get --assume-yes install libncurses5
+sudo apt-get --install libgtk-3-dev
 
 echo "${SoftwareVersion} | ${green}==>Instaling Apache2 WebServer Packages .. ${reset}"
 
@@ -74,7 +76,33 @@ DIR6="/opt/SILVUECG1000/install/"
 
 echo "${SoftwareVersion} | ${green}==>Creating PATH and Copying Files Directory CG1000 on /OPT/CG1000/ .. ${reset}"
 sudo chmod -R 777 *
-cp -R /Library/ /opt/SILVUECG1000/Library/
+cd Library
+chmod -R 777 /opt/SILVUECG1000/Library/
+sudo cp -r * /opt/SILVUECG1000/Library/ 
+cd ..
+
+cd Database
+chmod -R 777 /opt/SILVUECG1000/Database/
+sudo cp -r * /opt/SILVUECG1000/Database/ 
+cd ..
+
+cd Config
+chmod -R 777 /opt/SILVUECG1000/Config/
+sudo cp -r * /opt/SILVUECG1000/Config/ 
+cd ..
+
+cd Config
+chmod -R 777 /opt/SILVUECG1000/ProgramCG1000/
+sudo cp -r * /opt/SILVUECG1000/ProgramCG1000/ 
+chmod -R 777 /opt/SILVUECG1000/
+cd ..
+echo "${SoftwareVersion} | ${green}==>Adding PATH Environtment Variable GNAT 2019 ! ${reset}"
+
+sed -i '1s/.*/export PATH=$PATH:\/opt\/GNAT\/2019\/bin/' ~/.bashrc
+sed -i '2s/.*/export PATH=$PATH:\/opt\/gps\/bin/' ~/.bashrc
+sed -i '3s/.*/export PATH=$PATH:\/usr\/local/' ~/.bashrc
+source ~/.bashrc
+
 
 echo "${SoftwareVersion} | ${green}==>Installing Mariadb Database Latest Version .. ${reset}"
 
@@ -109,31 +137,40 @@ echo "${green}Downloading Files GNAT 2019! .. ${reset}"
 sudo aria2c --auto-file-renaming=false -d , --dir=/opt/SILVUECG1000/install/ "https://community.download.adacore.com/v1/0cd3e2a668332613b522d9612ffa27ef3eb0815b?filename=gnat-community-2019-20190517-x86_64-linux-bin&rand=433"
 
 echo "${green}Executing GNAT 2019 installer! .. ${reset}"
-sudo chmod -R 777 ./
-sudo chmod u+x ./opt/SILVUECG1000/install/gnat-community-2019-20190517-x86_64-linux-bin
+cd /opt/SILVUECG1000/install/
+chmod -R 777 *
+DIR="/opt/GNAT/2019/"
+if [ -d "$DIR" ]; then
+echo "${green} GNAT 2019 Has Been Installed! .. ${reset}"
+else
+sudo -uscada ./gnat-community-2019-20190517-x86_64-linux-bin
+fi
+cd ..
+
+
 
 echo "${SoftwareVersion} | ${green}==>Installing Ada GNAT Networking Version 0.4.2 ${reset}"
-cd /Library/libanet-0.4.2/
+cd /opt/SILVUECG1000/Library/libanet-0.4.2/
 sudo make
 sudo make install prefix=/opt/GNAT/2019/
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Ada GNAT Utility Version 2.4.1  ${reset}"
-cd /Library/ada-util-2.4.1/
+cd /opt/Library/SILVUECG1000/ada-util-2.4.1/
 ./configure
 sudo make
 sudo make install prefix=/opt/GNAT/2019/
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Ada GNAT Ado Database Version 2.2.0 ${reset}"
-cd /Library/ada-ado-2.2.0/
+cd /opt/Library/SILVUECG1000/ada-ado-2.2.0/
 ./configure
 sudo make
 sudo make install prefix=/opt/GNAT/2019/
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Library OPCUA Protocol Version 1.2.2 ${reset}"
-cd /Library/open62541-1.2.2/
+cd /opt/Library/SILVUECG1000/open62541-1.2.2/
 mkdir build
 cd build
 cmake  -DCMAKE_BUILD_TYPE=MinSizeRel -DUA_NAMESPACE_ZERO=MINIMAL -DUA_DEBUG=0  -DUA_LOGLEVEL=650  ..
@@ -142,14 +179,14 @@ sudo make install prefix=/opt/GNAT/2019/
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Library Modbus OPC Version 3.1.6 ${reset}"
-cd /Library/libmodbus-3.1.6/
+cd /opt/Library/SILVUECG1000/libmodbus-3.1.6/
 ./configure
 sudo make
 sudo make install prefix=/opt/GNAT/2019/
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Library IEC 61850 Version 1.5.0  ${reset}"
-cd /Library/libiec61850-1.5.0/
+cd /opt/Library/SILVUECG1000/libiec61850-1.5.0/
 ./configure
 sudo make
 sudo make install prefix=/opt/GNAT/2019/

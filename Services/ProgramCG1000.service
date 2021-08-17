@@ -11,8 +11,8 @@ TimeoutSec=1
 KillMode=control-group
 
 User=root
-WorkingDirectory=/opt/SILVUECG1000/
-ExecStart=/opt/SILVUECG1000/SiLVueFEP
+WorkingDirectory=/opt/SILVUECG1000/ProgramCG1000/
+ExecStart=/opt/SILVUECG1000/ProgramCG1000/SiLVueFEP
 
 [Install]
 WantedBy=multi-user.target
