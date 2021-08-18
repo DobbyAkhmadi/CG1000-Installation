@@ -35,16 +35,14 @@ sudo apt-get --assume-yes install curl
 sudo apt-get --assume-yes install aria2
 sudo apt-get --assume-yes install libncurses5
 sudo apt-get --assume-yes install git
-sudo apt-get --assume-yes install mariadb-client libmariadb-client-lgpl-dev
 
 
-echo "${SoftwareVersion} | ${green}==>Installing PHP Library Version 7.3 .. ${reset}"
 
-sudo apt-get --assume-yes install php7.3
+echo "${SoftwareVersion} | ${green}==>Installing PHP Library Version 7.2 .. ${reset}"
 
-sudo apt install --assume-yes wget php7.3 php7.3-cli php7.3-common php7.3-curl php7.3-mbstring php7.3-mysql php7.3-xml php-zip unzip
-sed -i 's/^upload_max_filesize.*/upload_max_filesize = 100M/' /etc/php/7.3/fpm/php.ini
-sed -i 's/^post_max_size.*/post_max_size = 100M/' /etc/php/7.3/fpm/php.ini
+sudo apt-get --assume-yes install php7.2
+
+sudo apt install --assume-yes wget php7.2 php7.2-cli php7.2-common php7.2-curl php7.2-mbstring php7.2-mysql php7.2-xml php-zip unzip
 
 echo "${SoftwareVersion} | ${green}==>Installing Composer For Laravel library latest Version .. ${reset}"
 
@@ -112,12 +110,12 @@ sed -i '1s/.*/export PATH=$PATH:\/opt\/GNAT\/2019\/bin/' ~/.bashrc
 sed -i '2s/.*/export PATH=$PATH:\/opt\/gps\/bin/' ~/.bashrc
 sed -i '3s/.*/export PATH=$PATH:\/usr\/local/' ~/.bashrc
 source ~/.bashrc
-
+export ADA_PROJECT_PATH=/opt/GNAT/2019//
 
 echo "${SoftwareVersion} | ${green}==>Installing Mariadb Database Latest Version .. ${reset}"
 
 sudo apt-get --assume-yes install mariadb-server
-
+sudo apt-get --assume-yes install mariadb-client libmariadb-client-lgpl-dev
 echo "${SoftwareVersion} | ${green}==>Installing Database .. ${reset}"
 
 DBNAME="SILVUECG1000"
@@ -144,7 +142,7 @@ fi
 
 echo "${SoftwareVersion} | ${green}==>Installing Ada GNAT Compiler 2019 .. ${reset}"
 echo "${green}Downloading Files GNAT 2019! .. ${reset}"
-sudo aria2c --auto-file-renaming=false -d , --dir=/opt/SILVUECG1000/install/ "https://community.download.adacore.com/v1/0cd3e2a668332613b522d9612ffa27ef3eb0815b?filename=gnat-community-2019-20190517-x86_64-linux-bin&rand=433"
+sudo aria2c --auto-file-renaming=false -d , --dir=/opt/SILVUECG1000/install/ "https://community.download.adacore.com/v1/a639696a9fd3bdf0be21376cc2dc3129323cbe42?filename=gnat-2019-20190818-x86_64-linux-bin&rand=1492"
 
 echo "${green}Executing GNAT 2019 installer! .. ${reset}"
 cd /opt/SILVUECG1000/install/
@@ -153,7 +151,7 @@ DIR="/opt/GNAT/2019/"
 if [ -d "$DIR" ]; then
 echo "${green}GNAT 2019 Has Been Installed! .. ${reset}"
 else
-sudo -uscada ./gnat-community-2019-20190517-x86_64-linux-bin
+sudo -uscada ./gnat-2019-20190818-x86_64-linux-bin
 fi
 cd ..
 
@@ -212,27 +210,30 @@ cd ..
 echo "${SoftwareVersion} | ${green}==>Installing WebService SiLVue CG1000 .. ${reset}"
 
 cd /var/www/html/
-
-DIR="/var/www/html/"
+DIR="/var/www/html/CG1000"
 if [ -d "$DIR" ]; then
 echo "${green}Web Server Has Installed! .. ${reset}"
+git pull https://DobbyAkhmadi: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@github.com/lenfep/CG1000.git
 else
 git clone https://DobbyAkhmadi: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@github.com/lenfep/CG1000.git
 fi
-
+echo "${green}Configure Environtment Files! .. ${reset}"
 cd /var/www/html/CG1000/
-composer update
 chmod -R 777 *
+sed -i 's/FEP/SILVUECG1000/' .env
+sed -i 's/root/CG1000/' .env
+sed -i 's/DB_PASSWORD=/DB_PASSWORD=cg1000/' .env
+
 echo "${SoftwareVersion}| ${green}==>Finishing Installation And Run Program SilVue CG1000 ${reset}"
 
 systemctl restart mariadb
 
 systemctl enable ProgramCG1000
-systemctl enable redundancyCG1000
+systemctl enable RedundancyCG1000
 systemctl enable WebCG1000
 
 systemctl restart ProgramCG1000
-systemctl restart redundancyCG1000
+systemctl restart RedundancyCG1000
 systemctl restart WebCG1000
 
 systemctl daemon-reload
