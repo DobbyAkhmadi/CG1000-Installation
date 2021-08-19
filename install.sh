@@ -35,14 +35,19 @@ sudo apt-get --assume-yes install curl
 sudo apt-get --assume-yes install aria2
 sudo apt-get --assume-yes install libncurses5
 sudo apt-get --assume-yes install git
+sudo apt-get --assume-yes install libmodbus-dev
 
 
+echo "${SoftwareVersion} | ${green}==>Installing PHP Library Version 7.3 .. ${reset}"
+sudo apt-get update
 
-echo "${SoftwareVersion} | ${green}==>Installing PHP Library Version 7.2 .. ${reset}"
+apt --assume-yes install ca-certificates apt-transport-https 
+wget -q https://packages.sury.org/php/apt.gpg -O- | apt-key add -
+echo "deb https://packages.sury.org/php/ stretch main" | tee /etc/apt/sources.list.d/php.list
+apt update
+apt --assume-yes install php7.3
 
-sudo apt-get --assume-yes install php7.2
-
-sudo apt install --assume-yes wget php7.2 php7.2-cli php7.2-common php7.2-curl php7.2-mbstring php7.2-mysql php7.2-xml php-zip unzip
+sudo apt install --assume-yes wget php7.3 php7.3-cli php7.3-common php7.3-curl php7.3-mbstring php7.3-mysql php7.3-xml php-zip unzip
 
 echo "${SoftwareVersion} | ${green}==>Installing Composer For Laravel library latest Version .. ${reset}"
 
@@ -109,8 +114,11 @@ echo "${SoftwareVersion} | ${green}==>Adding PATH Environtment Variable GNAT 201
 sed -i '1s/.*/export PATH=$PATH:\/opt\/GNAT\/2019\/bin/' ~/.bashrc
 sed -i '2s/.*/export PATH=$PATH:\/opt\/gps\/bin/' ~/.bashrc
 sed -i '3s/.*/export PATH=$PATH:\/usr\/local/' ~/.bashrc
+
 source ~/.bashrc
-export ADA_PROJECT_PATH=/opt/GNAT/2019//
+
+echo "${SoftwareVersion} | ${green}==>Adding User SCADA to Execute GNAT! ${reset}"
+#sed -i '/^root.*/a scada  ALL=(ALL:ALL) ALL' /etc/sudoers
 
 echo "${SoftwareVersion} | ${green}==>Installing Mariadb Database Latest Version .. ${reset}"
 
@@ -134,15 +142,20 @@ if [ "$RESULT_VARIABLE" = 1 ]; then
 echo "${green}Creating User Succesfully .. ${reset}"
 else
 mysql <<EOF
-CREATE USER 'CG1000'@'localhost' IDENTIFIED BY 'cg1000';
-GRANT ALL PRIVILEGES ON SILVUECG1000.* TO 'CG1000'@'localhost';
+CREATE USER CG1000@'%' IDENTIFIED BY 'cg1000';
+GRANT ALL PRIVILEGES ON SILVUECG1000.* TO CG1000@'%';
 FLUSH PRIVILEGES;
+
+CREATE USER CG1000@'localhost' IDENTIFIED BY 'cg1000';
+GRANT ALL PRIVILEGES ON SILVUECG1000.* TO CG1000@'localhost';
+FLUSH PRIVILEGES;
+
 EOF
 fi
 
 echo "${SoftwareVersion} | ${green}==>Installing Ada GNAT Compiler 2019 .. ${reset}"
 echo "${green}Downloading Files GNAT 2019! .. ${reset}"
-sudo aria2c --auto-file-renaming=false -d , --dir=/opt/SILVUECG1000/install/ "https://community.download.adacore.com/v1/a639696a9fd3bdf0be21376cc2dc3129323cbe42?filename=gnat-2019-20190818-x86_64-linux-bin&rand=1492"
+aria2c --auto-file-renaming=false -d , --dir=/opt/SILVUECG1000/install/ "https://community.download.adacore.com/v1/0cd3e2a668332613b522d9612ffa27ef3eb0815b?filename=gnat-community-2019-20190517-x86_64-linux-bin&rand=1678"
 
 echo "${green}Executing GNAT 2019 installer! .. ${reset}"
 cd /opt/SILVUECG1000/install/
@@ -151,7 +164,9 @@ DIR="/opt/GNAT/2019/"
 if [ -d "$DIR" ]; then
 echo "${green}GNAT 2019 Has Been Installed! .. ${reset}"
 else
-sudo -uscada ./gnat-2019-20190818-x86_64-linux-bin
+cd /opt/SILVUECG1000/install/
+chmod +x ./gnat-community-2019-20190517-x86_64-linux-bin
+./gnat-community-2019-20190517-x86_64-linux-bin
 fi
 cd ..
 
@@ -172,7 +187,7 @@ cd ..
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Ada GNAT Ado Database Version 2.2.0 ${reset}"
-cd /opt/SILVUECG1000/Library/ada-ado-2.2.0/
+cd /opt/SILVUECG1000/Library/ada-ado-2.0/
 chmod -R 777 *
 ./configure
 make
@@ -191,16 +206,23 @@ cd ..
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Library Modbus OPC Version 3.1.6 ${reset}"
-cd /opt/SILVUECG1000/Library/libmodbus-3.1.6/
+cd /opt/SILVUECG1000/Library/libmodbus-3.0.8/
 chmod -R 777 *
-./configure && make INSTALL_PREFIX=/usr/local install
+./configure && make install
 cd ..
 
+cd /opt/SILVUECG1000/Library/
+sudo cp -r /modbus/ /usr/include/
+cd ..
 echo "${SoftwareVersion} | ${green}==>Installing Library IEC 61850 Version 1.5.0  ${reset}"
 cd /opt/SILVUECG1000/Library/libiec61850-1.5.0/
 chmod -R 777 *
-make WITH_MBEDTLS=1
 make INSTALL_PREFIX=/usr/local install
+cd ..
+
+echo "${SoftwareVersion} | ${green}==>Installing KeepAlived SiLVue CG1000 .. ${reset}"
+cd /opt/SILVUECG1000/Config/
+sudo cp -r * /etc/keepalived/
 cd ..
 
 echo "${SoftwareVersion} | ${green}==>Installing Main Program Services SiLVue CG1000 .. ${reset}"
@@ -223,6 +245,7 @@ chmod -R 777 *
 sed -i 's/FEP/SILVUECG1000/' .env
 sed -i 's/root/CG1000/' .env
 sed -i 's/DB_PASSWORD=/DB_PASSWORD=cg1000/' .env
+sed -i 's/DB_PASSWORD=cg1000cg1000/DB_PASSWORD=cg1000/' .env
 
 echo "${SoftwareVersion}| ${green}==>Finishing Installation And Run Program SilVue CG1000 ${reset}"
 
